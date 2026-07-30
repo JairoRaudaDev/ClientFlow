@@ -1,0 +1,67 @@
+{
+  "C:\\Users\\jairo\\dev\\ClientFlow\\.claude\\settings.json": {
+    "mtime": 1785442639.9629757,
+    "ast_hash": "af5683cedca023035194f9ad92eb0eef",
+    "semantic_hash": "af5683cedca023035194f9ad92eb0eef"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\.codex\\hooks.json": {
+    "mtime": 1785444201.0401788,
+    "ast_hash": "a2b1d4dadfb95a1cfafcffce7947ab24",
+    "semantic_hash": "a2b1d4dadfb95a1cfafcffce7947ab24"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\AGENTS.md": {
+    "mtime": 1785444483.063,
+    "ast_hash": "d10e3e0a66fca22e6ccd7949040d9230",
+    "semantic_hash": "d10e3e0a66fca22e6ccd7949040d9230"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\CLAUDE.md": {
+    "mtime": 1785444491.261,
+    "ast_hash": "494c8beadb9871befd40f20bf0cd0bb0",
+    "semantic_hash": "494c8beadb9871befd40f20bf0cd0bb0"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\.agents\\skills\\graphify\\SKILL.md": {
+    "mtime": 1785444201.027663,
+    "ast_hash": "7869351527b616553075b86f6148b0dc",
+    "semantic_hash": "7869351527b616553075b86f6148b0dc"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\.agents\\skills\\graphify\\references\\add-watch.md": {
+    "mtime": 1780528995.6170406,
+    "ast_hash": "0df0589623217ca38a12bdcabfb42f4c",
+    "semantic_hash": "0df0589623217ca38a12bdcabfb42f4c"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\.agents\\skills\\graphify\\references\\exports.md": {
+    "mtime": 1780528995.6185489,
+    "ast_hash": "7fb1a81aca17a462db70684a324fcfb0",
+    "semantic_hash": "7fb1a81aca17a462db70684a324fcfb0"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\.agents\\skills\\graphify\\references\\extraction-spec.md": {
+    "mtime": 1780528995.619557,
+    "ast_hash": "a86a7321597b23cc2b22e011b3dc6e1d",
+    "semantic_hash": "a86a7321597b23cc2b22e011b3dc6e1d"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\.agents\\skills\\graphify\\references\\github-and-merge.md": {
+    "mtime": 1780528995.619557,
+    "ast_hash": "cde13df085e4c492aeb7ba298a996d0d",
+    "semantic_hash": "cde13df085e4c492aeb7ba298a996d0d"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\.agents\\skills\\graphify\\references\\hooks.md": {
+    "mtime": 1780528995.620557,
+    "ast_hash": "3f545db6ce646650bb9de588f5512a27",
+    "semantic_hash": "3f545db6ce646650bb9de588f5512a27"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\.agents\\skills\\graphify\\references\\query.md": {
+    "mtime": 1780528995.6604476,
+    "ast_hash": "c2a8e798674a81b02aa9975f43023819",
+    "semantic_hash": "c2a8e798674a81b02aa9975f43023819"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\.agents\\skills\\graphify\\references\\transcribe.md": {
+    "mtime": 1780528995.6644678,
+    "ast_hash": "70f6aa30d6211f3a2c7e9fc45479f50c",
+    "semantic_hash": "70f6aa30d6211f3a2c7e9fc45479f50c"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\.agents\\skills\\graphify\\references\\update.md": {
+    "mtime": 1780528995.666468,
+    "ast_hash": "735932eaa4f0c8fef9566c538ae3e5f8",
+    "semantic_hash": "735932eaa4f0c8fef9566c538ae3e5f8"
+  }
+}

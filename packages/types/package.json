@@ -1,0 +1,13 @@
+{
+  "name": "@clientflow/types",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "lint": "node -e \"console.log('@clientflow/types has no lint configuration yet.')\"",
+    "typecheck": "tsc --project tsconfig.json --noEmit",
+    "clean": "node -e \"require('node:fs').rmSync('dist', { recursive: true, force: true })\""
+  }
+}
+
