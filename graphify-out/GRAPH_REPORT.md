@@ -1,16 +1,16 @@
 # Graph Report - ClientFlow  (2026-07-30)
 
 ## Corpus Check
-- 35 files · ~9,446 words
+- 37 files · ~10,175 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 269 nodes · 233 edges · 42 communities (28 shown, 14 thin omitted)
+- 282 nodes · 244 edges · 44 communities (29 shown, 15 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 1 edges (avg confidence: 0.85)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `5eed8cfc`
+- Built from commit: `c3260ab6`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -53,6 +53,8 @@
 - [[_COMMUNITY_Community 36|Community 36]]
 - [[_COMMUNITY_Community 37|Community 37]]
 - [[_COMMUNITY_Community 38|Community 38]]
+- [[_COMMUNITY_Community 42|Community 42]]
+- [[_COMMUNITY_Community 43|Community 43]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `compilerOptions` - 16 edges
@@ -85,7 +87,7 @@
 - **Graphify Auto-Suggestion Hooks (Claude Code + Codex)** — _claude_settings_pretooluse_bash_hook, _claude_settings_pretooluse_read_glob_hook, _codex_hooks_pretooluse_bash_hook [INFERRED 0.85]
 - **Graphify Extraction Pipeline** — agents_skills_graphify_skill_structural_extraction, agents_skills_graphify_skill_semantic_extraction, agents_skills_graphify_skill_semantic_cache [EXTRACTED 1.00]
 
-## Communities (42 total, 14 thin omitted)
+## Communities (44 total, 15 thin omitted)
 
 ### Community 0 - "Core Graphify Workflow"
 Cohesion: 0.13
@@ -124,16 +126,16 @@ Cohesion: 0.17
 Nodes (11): devDependencies, @clientflow/config, name, private, scripts, build, clean, dev (+3 more)
 
 ### Community 15 - "Community 15"
-Cohesion: 0.25
-Nodes (6): Definition of done, Graphify, Project, Rules, Validation, Workflow
+Cohesion: 0.22
+Nodes (7): Definition of done, Graphify, Interface design, Project, Rules, Validation, Workflow
 
 ### Community 16 - "Community 16"
 Cohesion: 0.25
 Nodes (7): graphify reference: extra exports and benchmark, Step 6b - Wiki (only if --wiki flag), Step 7 - Neo4j export (only if --neo4j or --neo4j-push flag), Step 7b - SVG export (only if --svg flag), Step 7c - GraphML export (only if --graphml flag), Step 7d - MCP server (only if --mcp flag), Step 8 - Token reduction benchmark (only if total_words > 5000)
 
 ### Community 17 - "Community 17"
-Cohesion: 0.33
-Nodes (5): ClientFlow, Installation, Monorepo structure, Prerequisites, Root scripts
+Cohesion: 0.29
+Nodes (6): ClientFlow, Docker development environment, Installation, Monorepo structure, Prerequisites, Root scripts
 
 ### Community 18 - "Community 18"
 Cohesion: 0.12
@@ -183,20 +185,24 @@ Nodes (4): compilerOptions, noEmit, extends, include
 Cohesion: 0.40
 Nodes (4): compilerOptions, noEmit, extends, include
 
+### Community 42 - "Community 42"
+Cohesion: 0.33
+Nodes (3): port, server, healthResponse
+
 ## Knowledge Gaps
-- **182 isolated node(s):** `PreToolUse`, `PreToolUse`, `name`, `version`, `private` (+177 more)
+- **189 isolated node(s):** `PreToolUse`, `PreToolUse`, `name`, `version`, `private` (+184 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **14 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **15 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `devDependencies` connect `Community 32` to `Updates and Ingestion`?**
-  _High betweenness centrality (0.015) - this node is a cross-community bridge._
-- **Why does `tasks` connect `Project Query Workflow` to `Community 32`?**
   _High betweenness centrality (0.014) - this node is a cross-community bridge._
+- **Why does `tasks` connect `Project Query Workflow` to `Community 32`?**
+  _High betweenness centrality (0.013) - this node is a cross-community bridge._
 - **What connects `PreToolUse`, `PreToolUse`, `name` to the rest of the system?**
-  _184 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _191 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Core Graphify Workflow` be split into smaller, more focused modules?**
   _Cohesion score 0.13071895424836602 - nodes in this community are weakly interconnected._
 - **Should `Project Query Workflow` be split into smaller, more focused modules?**

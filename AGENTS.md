@@ -22,6 +22,18 @@ ClientFlow is a Dockerized monorepo:
 
 More specific `AGENTS.md` files override these rules within their directories.
 
+## Design
+
+`.interface-design/system.md` is the source of truth for shared visual design.
+
+* Use `interface-design` for product UI, dashboards, forms, settings, and admin screens.
+* Use `landing-design` for landing pages, pricing pages, and other public marketing pages.
+* Preserve existing colors, typography, spacing, controls, icons, and motion.
+* Marketing pages may use more expressive layouts, but must still look like the same product.
+* When a page includes product UI, `interface-design` governs those embedded components.
+* Record shared decisions in `.interface-design/system.md` and marketing-only patterns in `.interface-design/marketing.md`.
+
+
 ## Workflow
 
 * Work directly on `main`.

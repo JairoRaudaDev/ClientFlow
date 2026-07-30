@@ -195,6 +195,60 @@
       "norm_label": "@clientflow/config"
     },
     {
+      "label": "dev-server.mjs",
+      "file_type": "code",
+      "source_file": "apps/api/src/dev-server.mjs",
+      "source_location": "L1",
+      "id": "apps_api_src_dev_server_mjs_src_dev_server",
+      "community": 42,
+      "norm_label": "dev-server.mjs"
+    },
+    {
+      "label": "port",
+      "file_type": "code",
+      "source_file": "apps/api/src/dev-server.mjs",
+      "source_location": "L7",
+      "id": "apps_api_src_dev_server_mjs_src_dev_server_port",
+      "community": 42,
+      "norm_label": "port"
+    },
+    {
+      "label": "healthResponse",
+      "file_type": "code",
+      "source_file": "apps/api/src/dev-server.mjs",
+      "source_location": "L8",
+      "id": "src_dev_server_healthresponse",
+      "community": 42,
+      "norm_label": "healthresponse"
+    },
+    {
+      "label": "server",
+      "file_type": "code",
+      "source_file": "apps/api/src/dev-server.mjs",
+      "source_location": "L14",
+      "id": "apps_api_src_dev_server_mjs_src_dev_server_server",
+      "community": 42,
+      "norm_label": "server"
+    },
+    {
+      "label": "parsePort()",
+      "file_type": "code",
+      "source_file": "apps/api/src/dev-server.mjs",
+      "source_location": "L40",
+      "id": "apps_api_src_dev_server_mjs_src_dev_server_parseport",
+      "community": 42,
+      "norm_label": "parseport()"
+    },
+    {
+      "label": "shutDown()",
+      "file_type": "code",
+      "source_file": "apps/api/src/dev-server.mjs",
+      "source_location": "L50",
+      "id": "apps_api_src_dev_server_mjs_src_dev_server_shutdown",
+      "community": 42,
+      "norm_label": "shutdown()"
+    },
+    {
       "label": "index.ts",
       "file_type": "code",
       "source_file": "apps/api/src/index.ts",
@@ -355,6 +409,51 @@
       "id": "web_package_devdependencies_clientflow_config",
       "community": 14,
       "norm_label": "@clientflow/config"
+    },
+    {
+      "label": "dev-server.mjs",
+      "file_type": "code",
+      "source_file": "apps/web/src/dev-server.mjs",
+      "source_location": "L1",
+      "id": "apps_web_src_dev_server_mjs_src_dev_server",
+      "community": 43,
+      "norm_label": "dev-server.mjs"
+    },
+    {
+      "label": "port",
+      "file_type": "code",
+      "source_file": "apps/web/src/dev-server.mjs",
+      "source_location": "L7",
+      "id": "apps_web_src_dev_server_mjs_src_dev_server_port",
+      "community": 43,
+      "norm_label": "port"
+    },
+    {
+      "label": "server",
+      "file_type": "code",
+      "source_file": "apps/web/src/dev-server.mjs",
+      "source_location": "L24",
+      "id": "apps_web_src_dev_server_mjs_src_dev_server_server",
+      "community": 43,
+      "norm_label": "server"
+    },
+    {
+      "label": "parsePort()",
+      "file_type": "code",
+      "source_file": "apps/web/src/dev-server.mjs",
+      "source_location": "L50",
+      "id": "apps_web_src_dev_server_mjs_src_dev_server_parseport",
+      "community": 43,
+      "norm_label": "parseport()"
+    },
+    {
+      "label": "shutDown()",
+      "file_type": "code",
+      "source_file": "apps/web/src/dev-server.mjs",
+      "source_location": "L60",
+      "id": "apps_web_src_dev_server_mjs_src_dev_server_shutdown",
+      "community": 43,
+      "norm_label": "shutdown()"
     },
     {
       "label": "index.ts",
@@ -2022,10 +2121,19 @@
       "norm_label": "definition of done"
     },
     {
-      "label": "Graphify",
+      "label": "Interface design",
       "file_type": "document",
       "source_file": "AGENTS.md",
       "source_location": "L58",
+      "id": "agents_interface_design",
+      "community": 15,
+      "norm_label": "interface design"
+    },
+    {
+      "label": "Graphify",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L65",
       "id": "agents_graphify",
       "community": 15,
       "norm_label": "graphify"
@@ -2079,7 +2187,7 @@
       "label": "Monorepo structure",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L5",
+      "source_location": "L7",
       "id": "readme_monorepo_structure",
       "community": 17,
       "norm_label": "monorepo structure"
@@ -2088,16 +2196,25 @@
       "label": "Prerequisites",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L16",
+      "source_location": "L18",
       "id": "readme_prerequisites",
       "community": 17,
       "norm_label": "prerequisites"
     },
     {
+      "label": "Docker development environment",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L23",
+      "id": "readme_docker_development_environment",
+      "community": 17,
+      "norm_label": "docker development environment"
+    },
+    {
       "label": "Installation",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L21",
+      "source_location": "L53",
       "id": "readme_installation",
       "community": 17,
       "norm_label": "installation"
@@ -2106,7 +2223,7 @@
       "label": "Root scripts",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L27",
+      "source_location": "L59",
       "id": "readme_root_scripts",
       "community": 17,
       "norm_label": "root scripts"
@@ -2597,9 +2714,9 @@
       "source_file": "apps/api/package.json",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_package",
-      "target": "api_package_devdependencies",
-      "confidence_score": 1.0
+      "target": "api_package_devdependencies"
     },
     {
       "relation": "contains",
@@ -2697,8 +2814,58 @@
       "source_file": "apps/api/package.json",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_package_devdependencies",
-      "target": "api_package_devdependencies_clientflow_config",
+      "target": "api_package_devdependencies_clientflow_config"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/dev-server.mjs",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "apps_api_src_dev_server_mjs_src_dev_server",
+      "target": "apps_api_src_dev_server_mjs_src_dev_server_parseport",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/dev-server.mjs",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "apps_api_src_dev_server_mjs_src_dev_server",
+      "target": "apps_api_src_dev_server_mjs_src_dev_server_port",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/dev-server.mjs",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "apps_api_src_dev_server_mjs_src_dev_server",
+      "target": "apps_api_src_dev_server_mjs_src_dev_server_server",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/dev-server.mjs",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "apps_api_src_dev_server_mjs_src_dev_server",
+      "target": "apps_api_src_dev_server_mjs_src_dev_server_shutdown",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/dev-server.mjs",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "apps_api_src_dev_server_mjs_src_dev_server",
+      "target": "src_dev_server_healthresponse",
       "confidence_score": 1.0
     },
     {
@@ -2707,9 +2874,9 @@
       "source_file": "apps/api/tsconfig.json",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_tsconfig",
-      "target": "api_tsconfig_compileroptions",
-      "confidence_score": 1.0
+      "target": "api_tsconfig_compileroptions"
     },
     {
       "relation": "contains",
@@ -2717,9 +2884,9 @@
       "source_file": "apps/api/tsconfig.json",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_tsconfig",
-      "target": "api_tsconfig_extends",
-      "confidence_score": 1.0
+      "target": "api_tsconfig_extends"
     },
     {
       "relation": "contains",
@@ -2727,9 +2894,9 @@
       "source_file": "apps/api/tsconfig.json",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_tsconfig",
-      "target": "api_tsconfig_include",
-      "confidence_score": 1.0
+      "target": "api_tsconfig_include"
     },
     {
       "relation": "contains",
@@ -2737,9 +2904,9 @@
       "source_file": "apps/api/tsconfig.json",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_tsconfig_compileroptions",
-      "target": "api_tsconfig_compileroptions_noemit",
-      "confidence_score": 1.0
+      "target": "api_tsconfig_compileroptions_noemit"
     },
     {
       "relation": "contains",
@@ -2747,9 +2914,9 @@
       "source_file": "apps/web/package.json",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_package",
-      "target": "web_package_devdependencies",
-      "confidence_score": 1.0
+      "target": "web_package_devdependencies"
     },
     {
       "relation": "contains",
@@ -2847,8 +3014,48 @@
       "source_file": "apps/web/package.json",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_package_devdependencies",
-      "target": "web_package_devdependencies_clientflow_config",
+      "target": "web_package_devdependencies_clientflow_config"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/web/src/dev-server.mjs",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "apps_web_src_dev_server_mjs_src_dev_server",
+      "target": "apps_web_src_dev_server_mjs_src_dev_server_parseport",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/web/src/dev-server.mjs",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "apps_web_src_dev_server_mjs_src_dev_server",
+      "target": "apps_web_src_dev_server_mjs_src_dev_server_port",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/web/src/dev-server.mjs",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "apps_web_src_dev_server_mjs_src_dev_server",
+      "target": "apps_web_src_dev_server_mjs_src_dev_server_server",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/web/src/dev-server.mjs",
+      "source_location": "L60",
+      "weight": 1.0,
+      "source": "apps_web_src_dev_server_mjs_src_dev_server",
+      "target": "apps_web_src_dev_server_mjs_src_dev_server_shutdown",
       "confidence_score": 1.0
     },
     {
@@ -2857,9 +3064,9 @@
       "source_file": "apps/web/tsconfig.json",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_tsconfig",
-      "target": "web_tsconfig_compileroptions",
-      "confidence_score": 1.0
+      "target": "web_tsconfig_compileroptions"
     },
     {
       "relation": "contains",
@@ -2867,9 +3074,9 @@
       "source_file": "apps/web/tsconfig.json",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_tsconfig",
-      "target": "web_tsconfig_extends",
-      "confidence_score": 1.0
+      "target": "web_tsconfig_extends"
     },
     {
       "relation": "contains",
@@ -2877,9 +3084,9 @@
       "source_file": "apps/web/tsconfig.json",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_tsconfig",
-      "target": "web_tsconfig_include",
-      "confidence_score": 1.0
+      "target": "web_tsconfig_include"
     },
     {
       "relation": "contains",
@@ -2887,9 +3094,9 @@
       "source_file": "apps/web/tsconfig.json",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_tsconfig_compileroptions",
-      "target": "web_tsconfig_compileroptions_noemit",
-      "confidence_score": 1.0
+      "target": "web_tsconfig_compileroptions_noemit"
     },
     {
       "relation": "imports_from",
@@ -2898,9 +3105,9 @@
       "source_file": "eslint.config.mjs",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "eslint_config",
-      "target": "eslint_base",
-      "confidence_score": 1.0
+      "target": "eslint_base"
     },
     {
       "relation": "contains",
@@ -2998,9 +3205,9 @@
       "source_file": "package.json",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_scripts",
-      "target": "package_scripts_format",
-      "confidence_score": 1.0
+      "target": "package_scripts_format"
     },
     {
       "relation": "contains",
@@ -3008,9 +3215,9 @@
       "source_file": "package.json",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_scripts",
-      "target": "package_scripts_format_check",
-      "confidence_score": 1.0
+      "target": "package_scripts_format_check"
     },
     {
       "relation": "contains",
@@ -3038,9 +3245,9 @@
       "source_file": "package.json",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_devdependencies",
-      "target": "package_devdependencies_eslint",
-      "confidence_score": 1.0
+      "target": "package_devdependencies_eslint"
     },
     {
       "relation": "contains",
@@ -3048,9 +3255,9 @@
       "source_file": "package.json",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_devdependencies",
-      "target": "package_devdependencies_eslint_config_prettier",
-      "confidence_score": 1.0
+      "target": "package_devdependencies_eslint_config_prettier"
     },
     {
       "relation": "contains",
@@ -3058,9 +3265,9 @@
       "source_file": "package.json",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_devdependencies",
-      "target": "package_devdependencies_eslint_js",
-      "confidence_score": 1.0
+      "target": "package_devdependencies_eslint_js"
     },
     {
       "relation": "contains",
@@ -3068,9 +3275,9 @@
       "source_file": "package.json",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_devdependencies",
-      "target": "package_devdependencies_globals",
-      "confidence_score": 1.0
+      "target": "package_devdependencies_globals"
     },
     {
       "relation": "contains",
@@ -3078,9 +3285,9 @@
       "source_file": "package.json",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_devdependencies",
-      "target": "package_devdependencies_prettier",
-      "confidence_score": 1.0
+      "target": "package_devdependencies_prettier"
     },
     {
       "relation": "contains",
@@ -3098,9 +3305,9 @@
       "source_file": "package.json",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_devdependencies",
-      "target": "package_devdependencies_types_node",
-      "confidence_score": 1.0
+      "target": "package_devdependencies_types_node"
     },
     {
       "relation": "contains",
@@ -3118,9 +3325,9 @@
       "source_file": "package.json",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_devdependencies",
-      "target": "package_devdependencies_typescript_eslint",
-      "confidence_score": 1.0
+      "target": "package_devdependencies_typescript_eslint"
     },
     {
       "relation": "imports",
@@ -3139,9 +3346,9 @@
       "source_file": "packages/config/eslint/base.js",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "eslint_base",
-      "target": "eslint_base_ignoreddirectories",
-      "confidence_score": 1.0
+      "target": "eslint_base_ignoreddirectories"
     },
     {
       "relation": "imports_from",
@@ -3150,9 +3357,9 @@
       "source_file": "packages/config/eslint/node.js",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "eslint_node",
-      "target": "eslint_base",
-      "confidence_score": 1.0
+      "target": "eslint_base"
     },
     {
       "relation": "contains",
@@ -3160,9 +3367,9 @@
       "source_file": "packages/config/package.json",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "config_package",
-      "target": "config_package_exports",
-      "confidence_score": 1.0
+      "target": "config_package_exports"
     },
     {
       "relation": "contains",
@@ -3190,9 +3397,9 @@
       "source_file": "packages/config/package.json",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "config_package",
-      "target": "config_package_scripts",
-      "confidence_score": 1.0
+      "target": "config_package_scripts"
     },
     {
       "relation": "contains",
@@ -3200,9 +3407,9 @@
       "source_file": "packages/config/package.json",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "config_package",
-      "target": "config_package_type",
-      "confidence_score": 1.0
+      "target": "config_package_type"
     },
     {
       "relation": "contains",
@@ -3220,9 +3427,9 @@
       "source_file": "packages/config/package.json",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "config_package_exports",
-      "target": "config_package_exports_eslint_base",
-      "confidence_score": 1.0
+      "target": "config_package_exports_eslint_base"
     },
     {
       "relation": "contains",
@@ -3230,9 +3437,9 @@
       "source_file": "packages/config/package.json",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "config_package_exports",
-      "target": "config_package_exports_eslint_node",
-      "confidence_score": 1.0
+      "target": "config_package_exports_eslint_node"
     },
     {
       "relation": "contains",
@@ -3240,9 +3447,9 @@
       "source_file": "packages/config/package.json",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "config_package_exports",
-      "target": "config_package_exports_prettier",
-      "confidence_score": 1.0
+      "target": "config_package_exports_prettier"
     },
     {
       "relation": "contains",
@@ -3250,9 +3457,9 @@
       "source_file": "packages/config/package.json",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "config_package_exports",
-      "target": "config_package_exports_typescript_base_json",
-      "confidence_score": 1.0
+      "target": "config_package_exports_typescript_base_json"
     },
     {
       "relation": "contains",
@@ -3260,9 +3467,9 @@
       "source_file": "packages/config/package.json",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "config_package_exports",
-      "target": "config_package_exports_typescript_node_json",
-      "confidence_score": 1.0
+      "target": "config_package_exports_typescript_node_json"
     },
     {
       "relation": "contains",
@@ -3270,9 +3477,9 @@
       "source_file": "packages/config/package.json",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "config_package_scripts",
-      "target": "config_package_scripts_build",
-      "confidence_score": 1.0
+      "target": "config_package_scripts_build"
     },
     {
       "relation": "contains",
@@ -3280,9 +3487,9 @@
       "source_file": "packages/config/package.json",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "config_package_scripts",
-      "target": "config_package_scripts_clean",
-      "confidence_score": 1.0
+      "target": "config_package_scripts_clean"
     },
     {
       "relation": "contains",
@@ -3290,9 +3497,9 @@
       "source_file": "packages/config/package.json",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "config_package_scripts",
-      "target": "config_package_scripts_dev",
-      "confidence_score": 1.0
+      "target": "config_package_scripts_dev"
     },
     {
       "relation": "contains",
@@ -3300,9 +3507,9 @@
       "source_file": "packages/config/package.json",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "config_package_scripts",
-      "target": "config_package_scripts_lint",
-      "confidence_score": 1.0
+      "target": "config_package_scripts_lint"
     },
     {
       "relation": "contains",
@@ -3310,9 +3517,9 @@
       "source_file": "packages/config/package.json",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "config_package_scripts",
-      "target": "config_package_scripts_typecheck",
-      "confidence_score": 1.0
+      "target": "config_package_scripts_typecheck"
     },
     {
       "relation": "imports_from",
@@ -3321,9 +3528,9 @@
       "source_file": "prettier.config.mjs",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "prettier_config",
-      "target": "prettier_index",
-      "confidence_score": 1.0
+      "target": "prettier_index"
     },
     {
       "relation": "contains",
@@ -3331,9 +3538,9 @@
       "source_file": "packages/config/prettier/index.js",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "prettier_index",
-      "target": "prettier_index_config",
-      "confidence_score": 1.0
+      "target": "prettier_index_config"
     },
     {
       "relation": "contains",
@@ -3341,9 +3548,9 @@
       "source_file": "packages/config/tsconfig.json",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "config_tsconfig",
-      "target": "config_tsconfig_compileroptions",
-      "confidence_score": 1.0
+      "target": "config_tsconfig_compileroptions"
     },
     {
       "relation": "contains",
@@ -3351,9 +3558,9 @@
       "source_file": "packages/config/tsconfig.json",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "config_tsconfig",
-      "target": "config_tsconfig_extends",
-      "confidence_score": 1.0
+      "target": "config_tsconfig_extends"
     },
     {
       "relation": "contains",
@@ -3361,9 +3568,9 @@
       "source_file": "packages/config/tsconfig.json",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "config_tsconfig",
-      "target": "config_tsconfig_include",
-      "confidence_score": 1.0
+      "target": "config_tsconfig_include"
     },
     {
       "relation": "contains",
@@ -3371,9 +3578,9 @@
       "source_file": "packages/config/tsconfig.json",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "config_tsconfig_compileroptions",
-      "target": "config_tsconfig_compileroptions_allowjs",
-      "confidence_score": 1.0
+      "target": "config_tsconfig_compileroptions_allowjs"
     },
     {
       "relation": "contains",
@@ -3381,9 +3588,9 @@
       "source_file": "packages/config/tsconfig.json",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "config_tsconfig_compileroptions",
-      "target": "config_tsconfig_compileroptions_checkjs",
-      "confidence_score": 1.0
+      "target": "config_tsconfig_compileroptions_checkjs"
     },
     {
       "relation": "contains",
@@ -3391,9 +3598,9 @@
       "source_file": "packages/config/tsconfig.json",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "config_tsconfig_compileroptions",
-      "target": "config_tsconfig_compileroptions_noemit",
-      "confidence_score": 1.0
+      "target": "config_tsconfig_compileroptions_noemit"
     },
     {
       "relation": "contains",
@@ -3401,9 +3608,9 @@
       "source_file": "packages/config/typescript/base.json",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "typescript_base",
-      "target": "typescript_base_compileroptions",
-      "confidence_score": 1.0
+      "target": "typescript_base_compileroptions"
     },
     {
       "relation": "contains",
@@ -3411,9 +3618,9 @@
       "source_file": "packages/config/typescript/base.json",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "typescript_base",
-      "target": "typescript_base_schema",
-      "confidence_score": 1.0
+      "target": "typescript_base_schema"
     },
     {
       "relation": "contains",
@@ -3421,9 +3628,9 @@
       "source_file": "packages/config/typescript/base.json",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "typescript_base_compileroptions",
-      "target": "typescript_base_compileroptions_declaration",
-      "confidence_score": 1.0
+      "target": "typescript_base_compileroptions_declaration"
     },
     {
       "relation": "contains",
@@ -3431,9 +3638,9 @@
       "source_file": "packages/config/typescript/base.json",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "typescript_base_compileroptions",
-      "target": "typescript_base_compileroptions_declarationmap",
-      "confidence_score": 1.0
+      "target": "typescript_base_compileroptions_declarationmap"
     },
     {
       "relation": "contains",
@@ -3441,9 +3648,9 @@
       "source_file": "packages/config/typescript/base.json",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "typescript_base_compileroptions",
-      "target": "typescript_base_compileroptions_esmoduleinterop",
-      "confidence_score": 1.0
+      "target": "typescript_base_compileroptions_esmoduleinterop"
     },
     {
       "relation": "contains",
@@ -3451,9 +3658,9 @@
       "source_file": "packages/config/typescript/base.json",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "typescript_base_compileroptions",
-      "target": "typescript_base_compileroptions_forceconsistentcasinginfilenames",
-      "confidence_score": 1.0
+      "target": "typescript_base_compileroptions_forceconsistentcasinginfilenames"
     },
     {
       "relation": "contains",
@@ -3461,9 +3668,9 @@
       "source_file": "packages/config/typescript/base.json",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "typescript_base_compileroptions",
-      "target": "typescript_base_compileroptions_module",
-      "confidence_score": 1.0
+      "target": "typescript_base_compileroptions_module"
     },
     {
       "relation": "contains",
@@ -3471,9 +3678,9 @@
       "source_file": "packages/config/typescript/base.json",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "typescript_base_compileroptions",
-      "target": "typescript_base_compileroptions_moduleresolution",
-      "confidence_score": 1.0
+      "target": "typescript_base_compileroptions_moduleresolution"
     },
     {
       "relation": "contains",
@@ -3481,9 +3688,9 @@
       "source_file": "packages/config/typescript/base.json",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "typescript_base_compileroptions",
-      "target": "typescript_base_compileroptions_noemitonerror",
-      "confidence_score": 1.0
+      "target": "typescript_base_compileroptions_noemitonerror"
     },
     {
       "relation": "contains",
@@ -3491,9 +3698,9 @@
       "source_file": "packages/config/typescript/base.json",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "typescript_base_compileroptions",
-      "target": "typescript_base_compileroptions_nofallthroughcasesinswitch",
-      "confidence_score": 1.0
+      "target": "typescript_base_compileroptions_nofallthroughcasesinswitch"
     },
     {
       "relation": "contains",
@@ -3501,9 +3708,9 @@
       "source_file": "packages/config/typescript/base.json",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "typescript_base_compileroptions",
-      "target": "typescript_base_compileroptions_noimplicitoverride",
-      "confidence_score": 1.0
+      "target": "typescript_base_compileroptions_noimplicitoverride"
     },
     {
       "relation": "contains",
@@ -3511,9 +3718,9 @@
       "source_file": "packages/config/typescript/base.json",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "typescript_base_compileroptions",
-      "target": "typescript_base_compileroptions_nouncheckedindexedaccess",
-      "confidence_score": 1.0
+      "target": "typescript_base_compileroptions_nouncheckedindexedaccess"
     },
     {
       "relation": "contains",
@@ -3521,9 +3728,9 @@
       "source_file": "packages/config/typescript/base.json",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "typescript_base_compileroptions",
-      "target": "typescript_base_compileroptions_resolvejsonmodule",
-      "confidence_score": 1.0
+      "target": "typescript_base_compileroptions_resolvejsonmodule"
     },
     {
       "relation": "contains",
@@ -3531,9 +3738,9 @@
       "source_file": "packages/config/typescript/base.json",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "typescript_base_compileroptions",
-      "target": "typescript_base_compileroptions_skiplibcheck",
-      "confidence_score": 1.0
+      "target": "typescript_base_compileroptions_skiplibcheck"
     },
     {
       "relation": "contains",
@@ -3541,9 +3748,9 @@
       "source_file": "packages/config/typescript/base.json",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "typescript_base_compileroptions",
-      "target": "typescript_base_compileroptions_sourcemap",
-      "confidence_score": 1.0
+      "target": "typescript_base_compileroptions_sourcemap"
     },
     {
       "relation": "contains",
@@ -3551,9 +3758,9 @@
       "source_file": "packages/config/typescript/base.json",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "typescript_base_compileroptions",
-      "target": "typescript_base_compileroptions_strict",
-      "confidence_score": 1.0
+      "target": "typescript_base_compileroptions_strict"
     },
     {
       "relation": "contains",
@@ -3561,9 +3768,9 @@
       "source_file": "packages/config/typescript/base.json",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "typescript_base_compileroptions",
-      "target": "typescript_base_compileroptions_target",
-      "confidence_score": 1.0
+      "target": "typescript_base_compileroptions_target"
     },
     {
       "relation": "contains",
@@ -3571,9 +3778,9 @@
       "source_file": "packages/config/typescript/node.json",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "typescript_node",
-      "target": "typescript_node_compileroptions",
-      "confidence_score": 1.0
+      "target": "typescript_node_compileroptions"
     },
     {
       "relation": "contains",
@@ -3581,9 +3788,9 @@
       "source_file": "packages/config/typescript/node.json",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "typescript_node",
-      "target": "typescript_node_extends",
-      "confidence_score": 1.0
+      "target": "typescript_node_extends"
     },
     {
       "relation": "contains",
@@ -3591,9 +3798,9 @@
       "source_file": "packages/config/typescript/node.json",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "typescript_node",
-      "target": "typescript_node_schema",
-      "confidence_score": 1.0
+      "target": "typescript_node_schema"
     },
     {
       "relation": "contains",
@@ -3601,9 +3808,9 @@
       "source_file": "packages/config/typescript/node.json",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "typescript_node_compileroptions",
-      "target": "typescript_node_compileroptions_lib",
-      "confidence_score": 1.0
+      "target": "typescript_node_compileroptions_lib"
     },
     {
       "relation": "contains",
@@ -3611,9 +3818,9 @@
       "source_file": "packages/config/typescript/node.json",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "typescript_node_compileroptions",
-      "target": "typescript_node_compileroptions_types",
-      "confidence_score": 1.0
+      "target": "typescript_node_compileroptions_types"
     },
     {
       "relation": "contains",
@@ -3621,9 +3828,9 @@
       "source_file": "packages/types/package.json",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "types_package",
-      "target": "types_package_devdependencies",
-      "confidence_score": 1.0
+      "target": "types_package_devdependencies"
     },
     {
       "relation": "contains",
@@ -3701,9 +3908,9 @@
       "source_file": "packages/types/package.json",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "types_package_scripts",
-      "target": "types_package_scripts_dev",
-      "confidence_score": 1.0
+      "target": "types_package_scripts_dev"
     },
     {
       "relation": "contains",
@@ -3731,9 +3938,9 @@
       "source_file": "packages/types/package.json",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "types_package_devdependencies",
-      "target": "types_package_devdependencies_clientflow_config",
-      "confidence_score": 1.0
+      "target": "types_package_devdependencies_clientflow_config"
     },
     {
       "relation": "contains",
@@ -3751,9 +3958,9 @@
       "source_file": "packages/types/tsconfig.json",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "types_tsconfig",
-      "target": "types_tsconfig_extends",
-      "confidence_score": 1.0
+      "target": "types_tsconfig_extends"
     },
     {
       "relation": "contains",
@@ -3901,9 +4108,9 @@
       "source_file": "turbo.json",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "turbo_tasks",
-      "target": "turbo_tasks_clientflow_types_build",
-      "confidence_score": 1.0
+      "target": "turbo_tasks_clientflow_types_build"
     },
     {
       "relation": "contains",
@@ -3981,9 +4188,9 @@
       "source_file": "turbo.json",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "turbo_tasks_clientflow_types_build",
-      "target": "turbo_clientflow_types_build_dependson",
-      "confidence_score": 1.0
+      "target": "turbo_clientflow_types_build_dependson"
     },
     {
       "relation": "contains",
@@ -3991,9 +4198,9 @@
       "source_file": "turbo.json",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "turbo_tasks_clientflow_types_build",
-      "target": "turbo_clientflow_types_build_outputs",
-      "confidence_score": 1.0
+      "target": "turbo_clientflow_types_build_outputs"
     },
     {
       "relation": "contains",
@@ -4031,9 +4238,9 @@
       "source_file": "turbo.json",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "turbo_tasks_clean",
-      "target": "turbo_clean_dependson",
-      "confidence_score": 1.0
+      "target": "turbo_clean_dependson"
     },
     {
       "relation": "contains",
@@ -4539,6 +4746,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "AGENTS.md",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "agents_agents_md",
+      "target": "agents_interface_design",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
       "source_location": "L3",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -4609,6 +4826,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "readme_clientflow",
+      "target": "readme_docker_development_environment",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
       "source_location": "L21",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -4661,9 +4888,9 @@
       "source_file": "packages/config/README.md",
       "source_location": "L26",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "config_readme_clientflow_config",
-      "target": "config_readme_eslint",
-      "confidence_score": 1.0
+      "target": "config_readme_eslint"
     },
     {
       "relation": "contains",
@@ -4671,9 +4898,9 @@
       "source_file": "packages/config/README.md",
       "source_location": "L38",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "config_readme_clientflow_config",
-      "target": "config_readme_prettier",
-      "confidence_score": 1.0
+      "target": "config_readme_prettier"
     },
     {
       "relation": "contains",
@@ -4681,9 +4908,9 @@
       "source_file": "packages/config/README.md",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "config_readme_clientflow_config",
-      "target": "config_readme_typescript",
-      "confidence_score": 1.0
+      "target": "config_readme_typescript"
     },
     {
       "relation": "references",
@@ -4914,5 +5141,5 @@
       "source_file": ".agents/skills/graphify/SKILL.md"
     }
   ],
-  "built_at_commit": "5eed8cfce810eedf81e71d4355ddcf5605084994"
+  "built_at_commit": "c3260ab6a77fa29577d1b6736c30cc43eccfbb1d"
 }

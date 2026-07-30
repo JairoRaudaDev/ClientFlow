@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "node -e \"console.log('@clientflow/api is a placeholder; Express has not been initialized yet.')\"",
+    "dev": "node src/dev-server.mjs",
     "build": "tsc --project tsconfig.json --noEmit",
     "lint": "eslint .",
     "typecheck": "tsc --project tsconfig.json --noEmit",
