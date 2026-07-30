@@ -14,7 +14,7 @@
         "relation": "participate_in",
         "confidence": "INFERRED",
         "confidence_score": 0.85,
-        "source_file": "C:/Users/jairo/dev/ClientFlow/.claude/settings.json"
+        "source_file": ".claude/settings.json"
       },
       {
         "id": "graphify_pipeline_stages",
@@ -33,56 +33,1469 @@
   },
   "nodes": [
     {
+      "label": "settings.json",
+      "file_type": "code",
+      "source_file": ".claude/settings.json",
+      "source_location": "L1",
+      "id": "claude_settings",
+      "community": 24,
+      "norm_label": "settings.json"
+    },
+    {
+      "label": "hooks",
+      "file_type": "code",
+      "source_file": ".claude/settings.json",
+      "source_location": "L2",
+      "id": "claude_settings_hooks",
+      "community": 24,
+      "norm_label": "hooks"
+    },
+    {
+      "label": "PreToolUse",
+      "file_type": "code",
+      "source_file": ".claude/settings.json",
+      "source_location": "L3",
+      "id": "claude_settings_hooks_pretooluse",
+      "community": 24,
+      "norm_label": "pretooluse"
+    },
+    {
+      "label": "hooks.json",
+      "file_type": "code",
+      "source_file": ".codex/hooks.json",
+      "source_location": "L1",
+      "id": "codex_hooks",
+      "community": 25,
+      "norm_label": "hooks.json"
+    },
+    {
+      "label": "hooks",
+      "file_type": "code",
+      "source_file": ".codex/hooks.json",
+      "source_location": "L2",
+      "id": "codex_hooks_hooks",
+      "community": 25,
+      "norm_label": "hooks"
+    },
+    {
+      "label": "PreToolUse",
+      "file_type": "code",
+      "source_file": ".codex/hooks.json",
+      "source_location": "L3",
+      "id": "codex_hooks_hooks_pretooluse",
+      "community": 25,
+      "norm_label": "pretooluse"
+    },
+    {
+      "label": "package.json",
+      "file_type": "code",
+      "source_file": "apps/api/package.json",
+      "source_location": "L1",
+      "id": "api_package",
+      "community": 11,
+      "norm_label": "package.json"
+    },
+    {
+      "label": "name",
+      "file_type": "code",
+      "source_file": "apps/api/package.json",
+      "source_location": "L2",
+      "id": "api_package_name",
+      "community": 11,
+      "norm_label": "name"
+    },
+    {
+      "label": "version",
+      "file_type": "code",
+      "source_file": "apps/api/package.json",
+      "source_location": "L3",
+      "id": "api_package_version",
+      "community": 11,
+      "norm_label": "version"
+    },
+    {
+      "label": "private",
+      "file_type": "code",
+      "source_file": "apps/api/package.json",
+      "source_location": "L4",
+      "id": "api_package_private",
+      "community": 11,
+      "norm_label": "private"
+    },
+    {
+      "label": "scripts",
+      "file_type": "code",
+      "source_file": "apps/api/package.json",
+      "source_location": "L5",
+      "id": "api_package_scripts",
+      "community": 11,
+      "norm_label": "scripts"
+    },
+    {
+      "label": "dev",
+      "file_type": "code",
+      "source_file": "apps/api/package.json",
+      "source_location": "L6",
+      "id": "api_package_scripts_dev",
+      "community": 11,
+      "norm_label": "dev"
+    },
+    {
+      "label": "build",
+      "file_type": "code",
+      "source_file": "apps/api/package.json",
+      "source_location": "L7",
+      "id": "api_package_scripts_build",
+      "community": 11,
+      "norm_label": "build"
+    },
+    {
+      "label": "lint",
+      "file_type": "code",
+      "source_file": "apps/api/package.json",
+      "source_location": "L8",
+      "id": "api_package_scripts_lint",
+      "community": 11,
+      "norm_label": "lint"
+    },
+    {
+      "label": "typecheck",
+      "file_type": "code",
+      "source_file": "apps/api/package.json",
+      "source_location": "L9",
+      "id": "api_package_scripts_typecheck",
+      "community": 11,
+      "norm_label": "typecheck"
+    },
+    {
+      "label": "clean",
+      "file_type": "code",
+      "source_file": "apps/api/package.json",
+      "source_location": "L10",
+      "id": "api_package_scripts_clean",
+      "community": 11,
+      "norm_label": "clean"
+    },
+    {
+      "label": "package.json",
+      "file_type": "code",
+      "source_file": "apps/web/package.json",
+      "source_location": "L1",
+      "id": "web_package",
+      "community": 14,
+      "norm_label": "package.json"
+    },
+    {
+      "label": "name",
+      "file_type": "code",
+      "source_file": "apps/web/package.json",
+      "source_location": "L2",
+      "id": "web_package_name",
+      "community": 14,
+      "norm_label": "name"
+    },
+    {
+      "label": "version",
+      "file_type": "code",
+      "source_file": "apps/web/package.json",
+      "source_location": "L3",
+      "id": "web_package_version",
+      "community": 14,
+      "norm_label": "version"
+    },
+    {
+      "label": "private",
+      "file_type": "code",
+      "source_file": "apps/web/package.json",
+      "source_location": "L4",
+      "id": "web_package_private",
+      "community": 14,
+      "norm_label": "private"
+    },
+    {
+      "label": "scripts",
+      "file_type": "code",
+      "source_file": "apps/web/package.json",
+      "source_location": "L5",
+      "id": "web_package_scripts",
+      "community": 14,
+      "norm_label": "scripts"
+    },
+    {
+      "label": "dev",
+      "file_type": "code",
+      "source_file": "apps/web/package.json",
+      "source_location": "L6",
+      "id": "web_package_scripts_dev",
+      "community": 14,
+      "norm_label": "dev"
+    },
+    {
+      "label": "build",
+      "file_type": "code",
+      "source_file": "apps/web/package.json",
+      "source_location": "L7",
+      "id": "web_package_scripts_build",
+      "community": 14,
+      "norm_label": "build"
+    },
+    {
+      "label": "lint",
+      "file_type": "code",
+      "source_file": "apps/web/package.json",
+      "source_location": "L8",
+      "id": "web_package_scripts_lint",
+      "community": 14,
+      "norm_label": "lint"
+    },
+    {
+      "label": "typecheck",
+      "file_type": "code",
+      "source_file": "apps/web/package.json",
+      "source_location": "L9",
+      "id": "web_package_scripts_typecheck",
+      "community": 14,
+      "norm_label": "typecheck"
+    },
+    {
+      "label": "clean",
+      "file_type": "code",
+      "source_file": "apps/web/package.json",
+      "source_location": "L10",
+      "id": "web_package_scripts_clean",
+      "community": 14,
+      "norm_label": "clean"
+    },
+    {
+      "label": "package.json",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L1",
+      "id": "package",
+      "community": 3,
+      "norm_label": "package.json"
+    },
+    {
+      "label": "name",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L2",
+      "id": "package_name",
+      "community": 3,
+      "norm_label": "name"
+    },
+    {
+      "label": "version",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L3",
+      "id": "package_version",
+      "community": 3,
+      "norm_label": "version"
+    },
+    {
+      "label": "private",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L4",
+      "id": "package_private",
+      "community": 3,
+      "norm_label": "private"
+    },
+    {
+      "label": "packageManager",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L5",
+      "id": "package_packagemanager",
+      "community": 3,
+      "norm_label": "packagemanager"
+    },
+    {
+      "label": "scripts",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L6",
+      "id": "package_scripts",
+      "community": 3,
+      "norm_label": "scripts"
+    },
+    {
+      "label": "dev",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L7",
+      "id": "package_scripts_dev",
+      "community": 3,
+      "norm_label": "dev"
+    },
+    {
+      "label": "build",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L8",
+      "id": "package_scripts_build",
+      "community": 3,
+      "norm_label": "build"
+    },
+    {
+      "label": "lint",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L9",
+      "id": "package_scripts_lint",
+      "community": 3,
+      "norm_label": "lint"
+    },
+    {
+      "label": "typecheck",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L10",
+      "id": "package_scripts_typecheck",
+      "community": 3,
+      "norm_label": "typecheck"
+    },
+    {
+      "label": "clean",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L11",
+      "id": "package_scripts_clean",
+      "community": 3,
+      "norm_label": "clean"
+    },
+    {
+      "label": "devDependencies",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L13",
+      "id": "package_devdependencies",
+      "community": 3,
+      "norm_label": "devdependencies"
+    },
+    {
+      "label": "turbo",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L14",
+      "id": "package_devdependencies_turbo",
+      "community": 3,
+      "norm_label": "turbo"
+    },
+    {
+      "label": "typescript",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L15",
+      "id": "package_devdependencies_typescript",
+      "community": 3,
+      "norm_label": "typescript"
+    },
+    {
+      "label": "package.json",
+      "file_type": "code",
+      "source_file": "packages/config/package.json",
+      "source_location": "L1",
+      "id": "config_package",
+      "community": 18,
+      "norm_label": "package.json"
+    },
+    {
+      "label": "name",
+      "file_type": "code",
+      "source_file": "packages/config/package.json",
+      "source_location": "L2",
+      "id": "config_package_name",
+      "community": 18,
+      "norm_label": "name"
+    },
+    {
+      "label": "version",
+      "file_type": "code",
+      "source_file": "packages/config/package.json",
+      "source_location": "L3",
+      "id": "config_package_version",
+      "community": 18,
+      "norm_label": "version"
+    },
+    {
+      "label": "private",
+      "file_type": "code",
+      "source_file": "packages/config/package.json",
+      "source_location": "L4",
+      "id": "config_package_private",
+      "community": 18,
+      "norm_label": "private"
+    },
+    {
+      "label": "package.json",
+      "file_type": "code",
+      "source_file": "packages/types/package.json",
+      "source_location": "L1",
+      "id": "types_package",
+      "community": 13,
+      "norm_label": "package.json"
+    },
+    {
+      "label": "name",
+      "file_type": "code",
+      "source_file": "packages/types/package.json",
+      "source_location": "L2",
+      "id": "types_package_name",
+      "community": 13,
+      "norm_label": "name"
+    },
+    {
+      "label": "version",
+      "file_type": "code",
+      "source_file": "packages/types/package.json",
+      "source_location": "L3",
+      "id": "types_package_version",
+      "community": 13,
+      "norm_label": "version"
+    },
+    {
+      "label": "private",
+      "file_type": "code",
+      "source_file": "packages/types/package.json",
+      "source_location": "L4",
+      "id": "types_package_private",
+      "community": 13,
+      "norm_label": "private"
+    },
+    {
+      "label": "type",
+      "file_type": "code",
+      "source_file": "packages/types/package.json",
+      "source_location": "L5",
+      "id": "types_package_type",
+      "community": 13,
+      "norm_label": "type"
+    },
+    {
+      "label": "scripts",
+      "file_type": "code",
+      "source_file": "packages/types/package.json",
+      "source_location": "L6",
+      "id": "types_package_scripts",
+      "community": 13,
+      "norm_label": "scripts"
+    },
+    {
+      "label": "build",
+      "file_type": "code",
+      "source_file": "packages/types/package.json",
+      "source_location": "L7",
+      "id": "types_package_scripts_build",
+      "community": 13,
+      "norm_label": "build"
+    },
+    {
+      "label": "lint",
+      "file_type": "code",
+      "source_file": "packages/types/package.json",
+      "source_location": "L8",
+      "id": "types_package_scripts_lint",
+      "community": 13,
+      "norm_label": "lint"
+    },
+    {
+      "label": "typecheck",
+      "file_type": "code",
+      "source_file": "packages/types/package.json",
+      "source_location": "L9",
+      "id": "types_package_scripts_typecheck",
+      "community": 13,
+      "norm_label": "typecheck"
+    },
+    {
+      "label": "clean",
+      "file_type": "code",
+      "source_file": "packages/types/package.json",
+      "source_location": "L10",
+      "id": "types_package_scripts_clean",
+      "community": 13,
+      "norm_label": "clean"
+    },
+    {
+      "label": "index.ts",
+      "file_type": "code",
+      "source_file": "packages/types/src/index.ts",
+      "source_location": "L1",
+      "id": "src_index",
+      "community": 30,
+      "norm_label": "index.ts"
+    },
+    {
+      "label": "tsconfig.json",
+      "file_type": "code",
+      "source_file": "packages/types/tsconfig.json",
+      "source_location": "L1",
+      "id": "types_tsconfig",
+      "community": 10,
+      "norm_label": "tsconfig.json"
+    },
+    {
+      "label": "compilerOptions",
+      "file_type": "code",
+      "source_file": "packages/types/tsconfig.json",
+      "source_location": "L2",
+      "id": "types_tsconfig_compileroptions",
+      "community": 10,
+      "norm_label": "compileroptions"
+    },
+    {
+      "label": "target",
+      "file_type": "code",
+      "source_file": "packages/types/tsconfig.json",
+      "source_location": "L3",
+      "id": "types_tsconfig_compileroptions_target",
+      "community": 10,
+      "norm_label": "target"
+    },
+    {
+      "label": "module",
+      "file_type": "code",
+      "source_file": "packages/types/tsconfig.json",
+      "source_location": "L4",
+      "id": "types_tsconfig_compileroptions_module",
+      "community": 10,
+      "norm_label": "module"
+    },
+    {
+      "label": "moduleResolution",
+      "file_type": "code",
+      "source_file": "packages/types/tsconfig.json",
+      "source_location": "L5",
+      "id": "types_tsconfig_compileroptions_moduleresolution",
+      "community": 10,
+      "norm_label": "moduleresolution"
+    },
+    {
+      "label": "strict",
+      "file_type": "code",
+      "source_file": "packages/types/tsconfig.json",
+      "source_location": "L6",
+      "id": "types_tsconfig_compileroptions_strict",
+      "community": 10,
+      "norm_label": "strict"
+    },
+    {
+      "label": "declaration",
+      "file_type": "code",
+      "source_file": "packages/types/tsconfig.json",
+      "source_location": "L7",
+      "id": "types_tsconfig_compileroptions_declaration",
+      "community": 10,
+      "norm_label": "declaration"
+    },
+    {
+      "label": "outDir",
+      "file_type": "code",
+      "source_file": "packages/types/tsconfig.json",
+      "source_location": "L8",
+      "id": "types_tsconfig_compileroptions_outdir",
+      "community": 10,
+      "norm_label": "outdir"
+    },
+    {
+      "label": "rootDir",
+      "file_type": "code",
+      "source_file": "packages/types/tsconfig.json",
+      "source_location": "L9",
+      "id": "types_tsconfig_compileroptions_rootdir",
+      "community": 10,
+      "norm_label": "rootdir"
+    },
+    {
+      "label": "noEmitOnError",
+      "file_type": "code",
+      "source_file": "packages/types/tsconfig.json",
+      "source_location": "L10",
+      "id": "types_tsconfig_compileroptions_noemitonerror",
+      "community": 10,
+      "norm_label": "noemitonerror"
+    },
+    {
+      "label": "skipLibCheck",
+      "file_type": "code",
+      "source_file": "packages/types/tsconfig.json",
+      "source_location": "L11",
+      "id": "types_tsconfig_compileroptions_skiplibcheck",
+      "community": 10,
+      "norm_label": "skiplibcheck"
+    },
+    {
+      "label": "include",
+      "file_type": "code",
+      "source_file": "packages/types/tsconfig.json",
+      "source_location": "L13",
+      "id": "types_tsconfig_include",
+      "community": 10,
+      "norm_label": "include"
+    },
+    {
+      "label": "turbo.json",
+      "file_type": "code",
+      "source_file": "turbo.json",
+      "source_location": "L1",
+      "id": "turbo",
+      "community": 1,
+      "norm_label": "turbo.json"
+    },
+    {
+      "label": "$schema",
+      "file_type": "code",
+      "source_file": "turbo.json",
+      "source_location": "L2",
+      "id": "turbo_schema",
+      "community": 1,
+      "norm_label": "$schema"
+    },
+    {
+      "label": "tasks",
+      "file_type": "code",
+      "source_file": "turbo.json",
+      "source_location": "L3",
+      "id": "turbo_tasks",
+      "community": 1,
+      "norm_label": "tasks"
+    },
+    {
+      "label": "dev",
+      "file_type": "code",
+      "source_file": "turbo.json",
+      "source_location": "L4",
+      "id": "turbo_tasks_dev",
+      "community": 1,
+      "norm_label": "dev"
+    },
+    {
+      "label": "cache",
+      "file_type": "code",
+      "source_file": "turbo.json",
+      "source_location": "L5",
+      "id": "turbo_dev_cache",
+      "community": 1,
+      "norm_label": "cache"
+    },
+    {
+      "label": "persistent",
+      "file_type": "code",
+      "source_file": "turbo.json",
+      "source_location": "L6",
+      "id": "turbo_dev_persistent",
+      "community": 1,
+      "norm_label": "persistent"
+    },
+    {
+      "label": "build",
+      "file_type": "code",
+      "source_file": "turbo.json",
+      "source_location": "L8",
+      "id": "turbo_tasks_build",
+      "community": 1,
+      "norm_label": "build"
+    },
+    {
+      "label": "dependsOn",
+      "file_type": "code",
+      "source_file": "turbo.json",
+      "source_location": "L9",
+      "id": "turbo_build_dependson",
+      "community": 1,
+      "norm_label": "dependson"
+    },
+    {
+      "label": "outputs",
+      "file_type": "code",
+      "source_file": "turbo.json",
+      "source_location": "L12",
+      "id": "turbo_build_outputs",
+      "community": 1,
+      "norm_label": "outputs"
+    },
+    {
+      "label": "lint",
+      "file_type": "code",
+      "source_file": "turbo.json",
+      "source_location": "L17",
+      "id": "turbo_tasks_lint",
+      "community": 1,
+      "norm_label": "lint"
+    },
+    {
+      "label": "dependsOn",
+      "file_type": "code",
+      "source_file": "turbo.json",
+      "source_location": "L18",
+      "id": "turbo_lint_dependson",
+      "community": 1,
+      "norm_label": "dependson"
+    },
+    {
+      "label": "typecheck",
+      "file_type": "code",
+      "source_file": "turbo.json",
+      "source_location": "L22",
+      "id": "turbo_tasks_typecheck",
+      "community": 1,
+      "norm_label": "typecheck"
+    },
+    {
+      "label": "dependsOn",
+      "file_type": "code",
+      "source_file": "turbo.json",
+      "source_location": "L23",
+      "id": "turbo_typecheck_dependson",
+      "community": 1,
+      "norm_label": "dependson"
+    },
+    {
+      "label": "clean",
+      "file_type": "code",
+      "source_file": "turbo.json",
+      "source_location": "L27",
+      "id": "turbo_tasks_clean",
+      "community": 1,
+      "norm_label": "clean"
+    },
+    {
+      "label": "cache",
+      "file_type": "code",
+      "source_file": "turbo.json",
+      "source_location": "L28",
+      "id": "turbo_clean_cache",
+      "community": 1,
+      "norm_label": "cache"
+    },
+    {
+      "label": "SKILL.md",
+      "file_type": "document",
+      "source_file": ".agents/skills/graphify/SKILL.md",
+      "source_location": "L1",
+      "id": "graphify_skill",
+      "community": 12,
+      "norm_label": "skill.md"
+    },
+    {
+      "label": "/graphify",
+      "file_type": "document",
+      "source_file": ".agents/skills/graphify/SKILL.md",
+      "source_location": "L7",
+      "id": "graphify_skill_graphify",
+      "community": 12,
+      "norm_label": "/graphify"
+    },
+    {
+      "label": "Usage",
+      "file_type": "document",
+      "source_file": ".agents/skills/graphify/SKILL.md",
+      "source_location": "L11",
+      "id": "graphify_skill_usage",
+      "community": 12,
+      "norm_label": "usage"
+    },
+    {
+      "label": "What graphify is for",
+      "file_type": "document",
+      "source_file": ".agents/skills/graphify/SKILL.md",
+      "source_location": "L44",
+      "id": "graphify_skill_what_graphify_is_for",
+      "community": 12,
+      "norm_label": "what graphify is for"
+    },
+    {
+      "label": "What You Must Do When Invoked",
+      "file_type": "document",
+      "source_file": ".agents/skills/graphify/SKILL.md",
+      "source_location": "L48",
+      "id": "graphify_skill_what_you_must_do_when_invoked",
+      "community": 2,
+      "norm_label": "what you must do when invoked"
+    },
+    {
+      "label": "Step 0 - GitHub repos and multi-path merge (only if a URL or several paths)",
+      "file_type": "document",
+      "source_file": ".agents/skills/graphify/SKILL.md",
+      "source_location": "L60",
+      "id": "graphify_skill_step_0_github_repos_and_multi_path_merge_only_if_a_url_or_several_paths",
+      "community": 2,
+      "norm_label": "step 0 - github repos and multi-path merge (only if a url or several paths)"
+    },
+    {
+      "label": "Step 1 - Ensure graphify is installed",
+      "file_type": "document",
+      "source_file": ".agents/skills/graphify/SKILL.md",
+      "source_location": "L64",
+      "id": "graphify_skill_step_1_ensure_graphify_is_installed",
+      "community": 2,
+      "norm_label": "step 1 - ensure graphify is installed"
+    },
+    {
+      "label": "Step 2 - Detect files",
+      "file_type": "document",
+      "source_file": ".agents/skills/graphify/SKILL.md",
+      "source_location": "L106",
+      "id": "graphify_skill_step_2_detect_files",
+      "community": 2,
+      "norm_label": "step 2 - detect files"
+    },
+    {
+      "label": "Step 2.5 - Video and audio (only if video files detected)",
+      "file_type": "document",
+      "source_file": ".agents/skills/graphify/SKILL.md",
+      "source_location": "L143",
+      "id": "graphify_skill_step_2_5_video_and_audio_only_if_video_files_detected",
+      "community": 2,
+      "norm_label": "step 2.5 - video and audio (only if video files detected)"
+    },
+    {
+      "label": "Step 3 - Extract entities and relationships",
+      "file_type": "document",
+      "source_file": ".agents/skills/graphify/SKILL.md",
+      "source_location": "L147",
+      "id": "graphify_skill_step_3_extract_entities_and_relationships",
+      "community": 2,
+      "norm_label": "step 3 - extract entities and relationships"
+    },
+    {
+      "label": "Part A - Structural extraction for code files",
+      "file_type": "document",
+      "source_file": ".agents/skills/graphify/SKILL.md",
+      "source_location": "L164",
+      "id": "graphify_skill_part_a_structural_extraction_for_code_files",
+      "community": 2,
+      "norm_label": "part a - structural extraction for code files"
+    },
+    {
+      "label": "Part B - Semantic extraction (parallel subagents)",
+      "file_type": "document",
+      "source_file": ".agents/skills/graphify/SKILL.md",
+      "source_location": "L190",
+      "id": "graphify_skill_part_b_semantic_extraction_parallel_subagents",
+      "community": 2,
+      "norm_label": "part b - semantic extraction (parallel subagents)"
+    },
+    {
+      "label": "Part C - Merge AST + semantic into final extraction",
+      "file_type": "document",
+      "source_file": ".agents/skills/graphify/SKILL.md",
+      "source_location": "L332",
+      "id": "graphify_skill_part_c_merge_ast_semantic_into_final_extraction",
+      "community": 2,
+      "norm_label": "part c - merge ast + semantic into final extraction"
+    },
+    {
+      "label": "Step 4 - Build graph, cluster, analyze, generate outputs",
+      "file_type": "document",
+      "source_file": ".agents/skills/graphify/SKILL.md",
+      "source_location": "L366",
+      "id": "graphify_skill_step_4_build_graph_cluster_analyze_generate_outputs",
+      "community": 2,
+      "norm_label": "step 4 - build graph, cluster, analyze, generate outputs"
+    },
+    {
+      "label": "Step 5 - Label communities",
+      "file_type": "document",
+      "source_file": ".agents/skills/graphify/SKILL.md",
+      "source_location": "L418",
+      "id": "graphify_skill_step_5_label_communities",
+      "community": 2,
+      "norm_label": "step 5 - label communities"
+    },
+    {
+      "label": "Step 6 - Generate Obsidian vault (opt-in) + HTML",
+      "file_type": "document",
+      "source_file": ".agents/skills/graphify/SKILL.md",
+      "source_location": "L458",
+      "id": "graphify_skill_step_6_generate_obsidian_vault_opt_in_html",
+      "community": 2,
+      "norm_label": "step 6 - generate obsidian vault (opt-in) + html"
+    },
+    {
+      "label": "Steps 6b-8 - Wiki, Neo4j, SVG, GraphML, MCP, benchmark (only on their flags)",
+      "file_type": "document",
+      "source_file": ".agents/skills/graphify/SKILL.md",
+      "source_location": "L478",
+      "id": "graphify_skill_steps_6b_8_wiki_neo4j_svg_graphml_mcp_benchmark_only_on_their_flags",
+      "community": 2,
+      "norm_label": "steps 6b-8 - wiki, neo4j, svg, graphml, mcp, benchmark (only on their flags)"
+    },
+    {
+      "label": "Step 9 - Save manifest, update cost tracker, clean up, and report",
+      "file_type": "document",
+      "source_file": ".agents/skills/graphify/SKILL.md",
+      "source_location": "L484",
+      "id": "graphify_skill_step_9_save_manifest_update_cost_tracker_clean_up_and_report",
+      "community": 2,
+      "norm_label": "step 9 - save manifest, update cost tracker, clean up, and report"
+    },
+    {
+      "label": "Interpreter guard for subcommands",
+      "file_type": "document",
+      "source_file": ".agents/skills/graphify/SKILL.md",
+      "source_location": "L558",
+      "id": "graphify_skill_interpreter_guard_for_subcommands",
+      "community": 12,
+      "norm_label": "interpreter guard for subcommands"
+    },
+    {
+      "label": "For --update and --cluster-only",
+      "file_type": "document",
+      "source_file": ".agents/skills/graphify/SKILL.md",
+      "source_location": "L576",
+      "id": "graphify_skill_for_update_and_cluster_only",
+      "community": 12,
+      "norm_label": "for --update and --cluster-only"
+    },
+    {
+      "label": "For /graphify query",
+      "file_type": "document",
+      "source_file": ".agents/skills/graphify/SKILL.md",
+      "source_location": "L582",
+      "id": "graphify_skill_for_graphify_query",
+      "community": 12,
+      "norm_label": "for /graphify query"
+    },
+    {
+      "label": "For /graphify add and --watch",
+      "file_type": "document",
+      "source_file": ".agents/skills/graphify/SKILL.md",
+      "source_location": "L594",
+      "id": "graphify_skill_for_graphify_add_and_watch",
+      "community": 12,
+      "norm_label": "for /graphify add and --watch"
+    },
+    {
+      "label": "For the commit hook and native CLAUDE.md integration",
+      "file_type": "document",
+      "source_file": ".agents/skills/graphify/SKILL.md",
+      "source_location": "L600",
+      "id": "graphify_skill_for_the_commit_hook_and_native_claude_md_integration",
+      "community": 12,
+      "norm_label": "for the commit hook and native claude.md integration"
+    },
+    {
+      "label": "Honesty Rules",
+      "file_type": "document",
+      "source_file": ".agents/skills/graphify/SKILL.md",
+      "source_location": "L606",
+      "id": "graphify_skill_honesty_rules",
+      "community": 12,
+      "norm_label": "honesty rules"
+    },
+    {
+      "label": "add-watch.md",
+      "file_type": "document",
+      "source_file": ".agents/skills/graphify/references/add-watch.md",
+      "source_location": "L1",
+      "id": "references_add_watch",
+      "community": 19,
+      "norm_label": "add-watch.md"
+    },
+    {
+      "label": "graphify reference: add a URL and watch a folder",
+      "file_type": "document",
+      "source_file": ".agents/skills/graphify/references/add-watch.md",
+      "source_location": "L1",
+      "id": "references_add_watch_graphify_reference_add_a_url_and_watch_a_folder",
+      "community": 19,
+      "norm_label": "graphify reference: add a url and watch a folder"
+    },
+    {
+      "label": "For /graphify add",
+      "file_type": "document",
+      "source_file": ".agents/skills/graphify/references/add-watch.md",
+      "source_location": "L5",
+      "id": "references_add_watch_for_graphify_add",
+      "community": 19,
+      "norm_label": "for /graphify add"
+    },
+    {
+      "label": "For --watch",
+      "file_type": "document",
+      "source_file": ".agents/skills/graphify/references/add-watch.md",
+      "source_location": "L39",
+      "id": "references_add_watch_for_watch",
+      "community": 19,
+      "norm_label": "for --watch"
+    },
+    {
+      "label": "exports.md",
+      "file_type": "document",
+      "source_file": ".agents/skills/graphify/references/exports.md",
+      "source_location": "L1",
+      "id": "references_exports",
+      "community": 16,
+      "norm_label": "exports.md"
+    },
+    {
+      "label": "graphify reference: extra exports and benchmark",
+      "file_type": "document",
+      "source_file": ".agents/skills/graphify/references/exports.md",
+      "source_location": "L1",
+      "id": "references_exports_graphify_reference_extra_exports_and_benchmark",
+      "community": 16,
+      "norm_label": "graphify reference: extra exports and benchmark"
+    },
+    {
+      "label": "Step 6b - Wiki (only if --wiki flag)",
+      "file_type": "document",
+      "source_file": ".agents/skills/graphify/references/exports.md",
+      "source_location": "L5",
+      "id": "references_exports_step_6b_wiki_only_if_wiki_flag",
+      "community": 16,
+      "norm_label": "step 6b - wiki (only if --wiki flag)"
+    },
+    {
+      "label": "Step 7 - Neo4j export (only if --neo4j or --neo4j-push flag)",
+      "file_type": "document",
+      "source_file": ".agents/skills/graphify/references/exports.md",
+      "source_location": "L15",
+      "id": "references_exports_step_7_neo4j_export_only_if_neo4j_or_neo4j_push_flag",
+      "community": 16,
+      "norm_label": "step 7 - neo4j export (only if --neo4j or --neo4j-push flag)"
+    },
+    {
+      "label": "Step 7b - SVG export (only if --svg flag)",
+      "file_type": "document",
+      "source_file": ".agents/skills/graphify/references/exports.md",
+      "source_location": "L31",
+      "id": "references_exports_step_7b_svg_export_only_if_svg_flag",
+      "community": 16,
+      "norm_label": "step 7b - svg export (only if --svg flag)"
+    },
+    {
+      "label": "Step 7c - GraphML export (only if --graphml flag)",
+      "file_type": "document",
+      "source_file": ".agents/skills/graphify/references/exports.md",
+      "source_location": "L37",
+      "id": "references_exports_step_7c_graphml_export_only_if_graphml_flag",
+      "community": 16,
+      "norm_label": "step 7c - graphml export (only if --graphml flag)"
+    },
+    {
+      "label": "Step 7d - MCP server (only if --mcp flag)",
+      "file_type": "document",
+      "source_file": ".agents/skills/graphify/references/exports.md",
+      "source_location": "L43",
+      "id": "references_exports_step_7d_mcp_server_only_if_mcp_flag",
+      "community": 16,
+      "norm_label": "step 7d - mcp server (only if --mcp flag)"
+    },
+    {
+      "label": "Step 8 - Token reduction benchmark (only if total_words > 5000)",
+      "file_type": "document",
+      "source_file": ".agents/skills/graphify/references/exports.md",
+      "source_location": "L63",
+      "id": "references_exports_step_8_token_reduction_benchmark_only_if_total_words_5000",
+      "community": 16,
+      "norm_label": "step 8 - token reduction benchmark (only if total_words > 5000)"
+    },
+    {
+      "label": "extraction-spec.md",
+      "file_type": "document",
+      "source_file": ".agents/skills/graphify/references/extraction-spec.md",
+      "source_location": "L1",
+      "id": "references_extraction_spec",
+      "community": 29,
+      "norm_label": "extraction-spec.md"
+    },
+    {
+      "label": "graphify reference: extraction subagent prompt (compact)",
+      "file_type": "document",
+      "source_file": ".agents/skills/graphify/references/extraction-spec.md",
+      "source_location": "L1",
+      "id": "references_extraction_spec_graphify_reference_extraction_subagent_prompt_compact",
+      "community": 29,
+      "norm_label": "graphify reference: extraction subagent prompt (compact)"
+    },
+    {
+      "label": "github-and-merge.md",
+      "file_type": "document",
+      "source_file": ".agents/skills/graphify/references/github-and-merge.md",
+      "source_location": "L1",
+      "id": "references_github_and_merge",
+      "community": 26,
+      "norm_label": "github-and-merge.md"
+    },
+    {
+      "label": "graphify reference: GitHub clone and cross-repo merge",
+      "file_type": "document",
+      "source_file": ".agents/skills/graphify/references/github-and-merge.md",
+      "source_location": "L1",
+      "id": "references_github_and_merge_graphify_reference_github_clone_and_cross_repo_merge",
+      "community": 26,
+      "norm_label": "graphify reference: github clone and cross-repo merge"
+    },
+    {
+      "label": "Step 0 - Clone GitHub repo(s) (only if a GitHub URL was given)",
+      "file_type": "document",
+      "source_file": ".agents/skills/graphify/references/github-and-merge.md",
+      "source_location": "L5",
+      "id": "references_github_and_merge_step_0_clone_github_repo_s_only_if_a_github_url_was_given",
+      "community": 26,
+      "norm_label": "step 0 - clone github repo(s) (only if a github url was given)"
+    },
+    {
+      "label": "hooks.md",
+      "file_type": "document",
+      "source_file": ".agents/skills/graphify/references/hooks.md",
+      "source_location": "L1",
+      "id": "references_hooks",
+      "community": 20,
+      "norm_label": "hooks.md"
+    },
+    {
+      "label": "graphify reference: commit hook and native CLAUDE.md integration",
+      "file_type": "document",
+      "source_file": ".agents/skills/graphify/references/hooks.md",
+      "source_location": "L1",
+      "id": "references_hooks_graphify_reference_commit_hook_and_native_claude_md_integration",
+      "community": 20,
+      "norm_label": "graphify reference: commit hook and native claude.md integration"
+    },
+    {
+      "label": "For git commit hook",
+      "file_type": "document",
+      "source_file": ".agents/skills/graphify/references/hooks.md",
+      "source_location": "L5",
+      "id": "references_hooks_for_git_commit_hook",
+      "community": 20,
+      "norm_label": "for git commit hook"
+    },
+    {
+      "label": "For native CLAUDE.md integration",
+      "file_type": "document",
+      "source_file": ".agents/skills/graphify/references/hooks.md",
+      "source_location": "L21",
+      "id": "references_hooks_for_native_claude_md_integration",
+      "community": 20,
+      "norm_label": "for native claude.md integration"
+    },
+    {
+      "label": "query.md",
+      "file_type": "document",
+      "source_file": ".agents/skills/graphify/references/query.md",
+      "source_location": "L1",
+      "id": "references_query",
+      "community": 21,
+      "norm_label": "query.md"
+    },
+    {
+      "label": "graphify reference: query, path, explain",
+      "file_type": "document",
+      "source_file": ".agents/skills/graphify/references/query.md",
+      "source_location": "L1",
+      "id": "references_query_graphify_reference_query_path_explain",
+      "community": 21,
+      "norm_label": "graphify reference: query, path, explain"
+    },
+    {
+      "label": "For /graphify path",
+      "file_type": "document",
+      "source_file": ".agents/skills/graphify/references/query.md",
+      "source_location": "L136",
+      "id": "references_query_for_graphify_path",
+      "community": 21,
+      "norm_label": "for /graphify path"
+    },
+    {
+      "label": "For /graphify explain",
+      "file_type": "document",
+      "source_file": ".agents/skills/graphify/references/query.md",
+      "source_location": "L198",
+      "id": "references_query_for_graphify_explain",
+      "community": 21,
+      "norm_label": "for /graphify explain"
+    },
+    {
+      "label": "transcribe.md",
+      "file_type": "document",
+      "source_file": ".agents/skills/graphify/references/transcribe.md",
+      "source_location": "L1",
+      "id": "references_transcribe",
+      "community": 27,
+      "norm_label": "transcribe.md"
+    },
+    {
+      "label": "graphify reference: transcribe video and audio",
+      "file_type": "document",
+      "source_file": ".agents/skills/graphify/references/transcribe.md",
+      "source_location": "L1",
+      "id": "references_transcribe_graphify_reference_transcribe_video_and_audio",
+      "community": 27,
+      "norm_label": "graphify reference: transcribe video and audio"
+    },
+    {
+      "label": "Step 2.5 - Transcribe video / audio files (only if video files detected)",
+      "file_type": "document",
+      "source_file": ".agents/skills/graphify/references/transcribe.md",
+      "source_location": "L5",
+      "id": "references_transcribe_step_2_5_transcribe_video_audio_files_only_if_video_files_detected",
+      "community": 27,
+      "norm_label": "step 2.5 - transcribe video / audio files (only if video files detected)"
+    },
+    {
+      "label": "update.md",
+      "file_type": "document",
+      "source_file": ".agents/skills/graphify/references/update.md",
+      "source_location": "L1",
+      "id": "references_update",
+      "community": 22,
+      "norm_label": "update.md"
+    },
+    {
+      "label": "graphify reference: incremental update and cluster-only",
+      "file_type": "document",
+      "source_file": ".agents/skills/graphify/references/update.md",
+      "source_location": "L1",
+      "id": "references_update_graphify_reference_incremental_update_and_cluster_only",
+      "community": 22,
+      "norm_label": "graphify reference: incremental update and cluster-only"
+    },
+    {
+      "label": "For --update (incremental re-extraction)",
+      "file_type": "document",
+      "source_file": ".agents/skills/graphify/references/update.md",
+      "source_location": "L5",
+      "id": "references_update_for_update_incremental_re_extraction",
+      "community": 22,
+      "norm_label": "for --update (incremental re-extraction)"
+    },
+    {
+      "label": "For --cluster-only",
+      "file_type": "document",
+      "source_file": ".agents/skills/graphify/references/update.md",
+      "source_location": "L166",
+      "id": "references_update_for_cluster_only",
+      "community": 22,
+      "norm_label": "for --cluster-only"
+    },
+    {
+      "label": "AGENTS.md",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L1",
+      "id": "agents",
+      "community": 15,
+      "norm_label": "agents.md"
+    },
+    {
+      "label": "AGENTS.md",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L1",
+      "id": "agents_agents_md",
+      "community": 15,
+      "norm_label": "agents.md"
+    },
+    {
+      "label": "Project",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L3",
+      "id": "agents_project",
+      "community": 15,
+      "norm_label": "project"
+    },
+    {
+      "label": "Rules",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L13",
+      "id": "agents_rules",
+      "community": 15,
+      "norm_label": "rules"
+    },
+    {
+      "label": "Workflow",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L25",
+      "id": "agents_workflow",
+      "community": 15,
+      "norm_label": "workflow"
+    },
+    {
+      "label": "Validation",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L35",
+      "id": "agents_validation",
+      "community": 15,
+      "norm_label": "validation"
+    },
+    {
+      "label": "Definition of done",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L49",
+      "id": "agents_definition_of_done",
+      "community": 15,
+      "norm_label": "definition of done"
+    },
+    {
+      "label": "Graphify",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L58",
+      "id": "agents_graphify",
+      "community": 15,
+      "norm_label": "graphify"
+    },
+    {
+      "label": "CLAUDE.md",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L1",
+      "id": "claude",
+      "community": 23,
+      "norm_label": "claude.md"
+    },
+    {
+      "label": "Claude Code",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L3",
+      "id": "claude_claude_code",
+      "community": 23,
+      "norm_label": "claude code"
+    },
+    {
+      "label": "Graphify",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L15",
+      "id": "claude_graphify",
+      "community": 23,
+      "norm_label": "graphify"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "id": "readme",
+      "community": 17,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "ClientFlow",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "id": "readme_clientflow",
+      "community": 17,
+      "norm_label": "clientflow"
+    },
+    {
+      "label": "Monorepo structure",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L5",
+      "id": "readme_monorepo_structure",
+      "community": 17,
+      "norm_label": "monorepo structure"
+    },
+    {
+      "label": "Prerequisites",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L16",
+      "id": "readme_prerequisites",
+      "community": 17,
+      "norm_label": "prerequisites"
+    },
+    {
+      "label": "Installation",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L21",
+      "id": "readme_installation",
+      "community": 17,
+      "norm_label": "installation"
+    },
+    {
+      "label": "Root scripts",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L27",
+      "id": "readme_root_scripts",
+      "community": 17,
+      "norm_label": "root scripts"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "packages/config/README.md",
+      "source_location": "L1",
+      "id": "config_readme",
+      "community": 28,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "@clientflow/config",
+      "file_type": "document",
+      "source_file": "packages/config/README.md",
+      "source_location": "L1",
+      "id": "config_readme_clientflow_config",
+      "community": 28,
+      "norm_label": "@clientflow/config"
+    },
+    {
       "label": "PreToolUse Bash Hook (graphify search suggestion)",
       "file_type": "code",
-      "source_file": "C:/Users/jairo/dev/ClientFlow/.claude/settings.json",
+      "source_file": ".claude/settings.json",
       "source_location": "PreToolUse[0]",
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "_claude_settings_pretooluse_bash_hook",
       "community": 4,
-      "norm_label": "pretooluse bash hook (graphify search suggestion)"
+      "norm_label": "pretooluse bash hook (graphify search suggestion)",
+      "id": "_claude_settings_pretooluse_bash_hook"
     },
     {
       "label": "PreToolUse Read|Glob Hook (graphify query suggestion)",
       "file_type": "code",
-      "source_file": "C:/Users/jairo/dev/ClientFlow/.claude/settings.json",
+      "source_file": ".claude/settings.json",
       "source_location": "PreToolUse[1]",
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "_claude_settings_pretooluse_read_glob_hook",
       "community": 5,
-      "norm_label": "pretooluse read|glob hook (graphify query suggestion)"
+      "norm_label": "pretooluse read|glob hook (graphify query suggestion)",
+      "id": "_claude_settings_pretooluse_read_glob_hook"
     },
     {
       "label": "PreToolUse Bash Hook (graphify.EXE hook-check)",
       "file_type": "code",
-      "source_file": "C:/Users/jairo/dev/ClientFlow/.codex/hooks.json",
+      "source_file": ".codex/hooks.json",
       "source_location": "PreToolUse[0]",
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "_codex_hooks_pretooluse_bash_hook",
       "community": 6,
-      "norm_label": "pretooluse bash hook (graphify.exe hook-check)"
+      "norm_label": "pretooluse bash hook (graphify.exe hook-check)",
+      "id": "_codex_hooks_pretooluse_bash_hook"
     },
     {
       "label": "Claude Code Instructions (CLAUDE.md)",
       "file_type": "document",
-      "source_file": "C:/Users/jairo/dev/ClientFlow/CLAUDE.md",
+      "source_file": "CLAUDE.md",
       "source_location": null,
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "claude_claude_code_rules",
       "community": 9,
-      "norm_label": "claude code instructions (claude.md)"
+      "norm_label": "claude code instructions (claude.md)",
+      "id": "claude_claude_code_rules"
     },
     {
       "label": "Graphify Workflow",
@@ -93,9 +1506,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "agents_skills_graphify_skill_graphify_workflow",
       "community": 0,
-      "norm_label": "graphify workflow"
+      "norm_label": "graphify workflow",
+      "id": "agents_skills_graphify_skill_graphify_workflow"
     },
     {
       "label": "Semantic Extraction",
@@ -106,9 +1519,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "agents_skills_graphify_skill_semantic_extraction",
-      "community": 2,
-      "norm_label": "semantic extraction"
+      "community": 0,
+      "norm_label": "semantic extraction",
+      "id": "agents_skills_graphify_skill_semantic_extraction"
     },
     {
       "label": "Structural AST Extraction",
@@ -119,9 +1532,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "agents_skills_graphify_skill_structural_extraction",
       "community": 0,
-      "norm_label": "structural ast extraction"
+      "norm_label": "structural ast extraction",
+      "id": "agents_skills_graphify_skill_structural_extraction"
     },
     {
       "label": "Semantic Extraction Cache",
@@ -132,9 +1545,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "agents_skills_graphify_skill_semantic_cache",
-      "community": 2,
-      "norm_label": "semantic extraction cache"
+      "community": 0,
+      "norm_label": "semantic extraction cache",
+      "id": "agents_skills_graphify_skill_semantic_cache"
     },
     {
       "label": "Existing Graph Fast Path",
@@ -145,9 +1558,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "agents_skills_graphify_skill_existing_graph_fast_path",
       "community": 0,
-      "norm_label": "existing graph fast path"
+      "norm_label": "existing graph fast path",
+      "id": "agents_skills_graphify_skill_existing_graph_fast_path"
     },
     {
       "label": "URL Ingestion",
@@ -158,9 +1571,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "agents_skills_graphify_references_add_watch_url_ingestion",
-      "community": 3,
-      "norm_label": "url ingestion"
+      "community": 0,
+      "norm_label": "url ingestion",
+      "id": "agents_skills_graphify_references_add_watch_url_ingestion"
     },
     {
       "label": "Folder Watcher",
@@ -171,9 +1584,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "agents_skills_graphify_references_add_watch_folder_watcher",
-      "community": 3,
-      "norm_label": "folder watcher"
+      "community": 0,
+      "norm_label": "folder watcher",
+      "id": "agents_skills_graphify_references_add_watch_folder_watcher"
     },
     {
       "label": "Graph Exports",
@@ -184,9 +1597,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "agents_skills_graphify_references_exports_graph_exports",
       "community": 0,
-      "norm_label": "graph exports"
+      "norm_label": "graph exports",
+      "id": "agents_skills_graphify_references_exports_graph_exports"
     },
     {
       "label": "Graph MCP Server",
@@ -197,9 +1610,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "agents_skills_graphify_references_exports_mcp_server",
       "community": 0,
-      "norm_label": "graph mcp server"
+      "norm_label": "graph mcp server",
+      "id": "agents_skills_graphify_references_exports_mcp_server"
     },
     {
       "label": "Extraction Schema",
@@ -210,9 +1623,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "agents_skills_graphify_references_extraction_spec_extraction_schema",
-      "community": 2,
-      "norm_label": "extraction schema"
+      "community": 0,
+      "norm_label": "extraction schema",
+      "id": "agents_skills_graphify_references_extraction_spec_extraction_schema"
     },
     {
       "label": "Edge Confidence Rubric",
@@ -223,9 +1636,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "agents_skills_graphify_references_extraction_spec_confidence_rubric",
-      "community": 2,
-      "norm_label": "edge confidence rubric"
+      "community": 0,
+      "norm_label": "edge confidence rubric",
+      "id": "agents_skills_graphify_references_extraction_spec_confidence_rubric"
     },
     {
       "label": "Cross-Repository Graph Merge",
@@ -236,9 +1649,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "agents_skills_graphify_references_github_and_merge_cross_repo_merge",
       "community": 0,
-      "norm_label": "cross-repository graph merge"
+      "norm_label": "cross-repository graph merge",
+      "id": "agents_skills_graphify_references_github_and_merge_cross_repo_merge"
     },
     {
       "label": "Post-Commit Graph Hook",
@@ -249,9 +1662,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "agents_skills_graphify_references_hooks_post_commit_hook",
       "community": 7,
-      "norm_label": "post-commit graph hook"
+      "norm_label": "post-commit graph hook",
+      "id": "agents_skills_graphify_references_hooks_post_commit_hook"
     },
     {
       "label": "Graph Query",
@@ -262,9 +1675,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "agents_skills_graphify_references_query_graph_query",
-      "community": 1,
-      "norm_label": "graph query"
+      "community": 0,
+      "norm_label": "graph query",
+      "id": "agents_skills_graphify_references_query_graph_query"
     },
     {
       "label": "BFS and DFS Graph Traversal",
@@ -275,9 +1688,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "agents_skills_graphify_references_query_graph_traversal",
-      "community": 1,
-      "norm_label": "bfs and dfs graph traversal"
+      "community": 0,
+      "norm_label": "bfs and dfs graph traversal",
+      "id": "agents_skills_graphify_references_query_graph_traversal"
     },
     {
       "label": "Media Transcription",
@@ -288,9 +1701,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "agents_skills_graphify_references_transcribe_media_transcription",
       "community": 0,
-      "norm_label": "media transcription"
+      "norm_label": "media transcription",
+      "id": "agents_skills_graphify_references_transcribe_media_transcription"
     },
     {
       "label": "Incremental Graph Update",
@@ -301,9 +1714,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "agents_skills_graphify_references_update_incremental_update",
-      "community": 3,
-      "norm_label": "incremental graph update"
+      "community": 0,
+      "norm_label": "incremental graph update",
+      "id": "agents_skills_graphify_references_update_incremental_update"
     },
     {
       "label": "Cluster-Only Rebuild",
@@ -314,9 +1727,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "agents_skills_graphify_references_update_cluster_only",
       "community": 8,
-      "norm_label": "cluster-only rebuild"
+      "norm_label": "cluster-only rebuild",
+      "id": "agents_skills_graphify_references_update_cluster_only"
     },
     {
       "label": "ClientFlow Project Architecture",
@@ -327,9 +1740,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "agents_project_architecture",
-      "community": 1,
-      "norm_label": "clientflow project architecture"
+      "community": 0,
+      "norm_label": "clientflow project architecture",
+      "id": "agents_project_architecture"
     },
     {
       "label": "Project Graphify Workflow",
@@ -340,12 +1753,1363 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "agents_graphify_project_workflow",
-      "community": 1,
-      "norm_label": "project graphify workflow"
+      "community": 0,
+      "norm_label": "project graphify workflow",
+      "id": "agents_graphify_project_workflow"
     }
   ],
   "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/settings.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "claude_settings",
+      "target": "claude_settings_hooks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/settings.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "claude_settings_hooks",
+      "target": "claude_settings_hooks_pretooluse",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".codex/hooks.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "codex_hooks",
+      "target": "codex_hooks_hooks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".codex/hooks.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "codex_hooks_hooks",
+      "target": "codex_hooks_hooks_pretooluse",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/package.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "api_package",
+      "target": "api_package_name",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/package.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "api_package",
+      "target": "api_package_private",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/package.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "api_package",
+      "target": "api_package_scripts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/package.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "api_package",
+      "target": "api_package_version",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/package.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "api_package_scripts",
+      "target": "api_package_scripts_build",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/package.json",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "api_package_scripts",
+      "target": "api_package_scripts_clean",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/package.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "api_package_scripts",
+      "target": "api_package_scripts_dev",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/package.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "api_package_scripts",
+      "target": "api_package_scripts_lint",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/package.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "api_package_scripts",
+      "target": "api_package_scripts_typecheck",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/web/package.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "web_package",
+      "target": "web_package_name",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/web/package.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "web_package",
+      "target": "web_package_private",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/web/package.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "web_package",
+      "target": "web_package_scripts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/web/package.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "web_package",
+      "target": "web_package_version",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/web/package.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "web_package_scripts",
+      "target": "web_package_scripts_build",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/web/package.json",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "web_package_scripts",
+      "target": "web_package_scripts_clean",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/web/package.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "web_package_scripts",
+      "target": "web_package_scripts_dev",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/web/package.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "web_package_scripts",
+      "target": "web_package_scripts_lint",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/web/package.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "web_package_scripts",
+      "target": "web_package_scripts_typecheck",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "package",
+      "target": "package_devdependencies",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "package",
+      "target": "package_name",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "package",
+      "target": "package_packagemanager",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "package",
+      "target": "package_private",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "package",
+      "target": "package_scripts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "package",
+      "target": "package_version",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_build",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_clean",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_dev",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_lint",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_typecheck",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_turbo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_typescript",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "context": "import",
+      "source": "package_devdependencies_turbo",
+      "target": "turbo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages/config/package.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "config_package",
+      "target": "config_package_name",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages/config/package.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "config_package",
+      "target": "config_package_private",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages/config/package.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "config_package",
+      "target": "config_package_version",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages/types/package.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "types_package",
+      "target": "types_package_name",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages/types/package.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "types_package",
+      "target": "types_package_private",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages/types/package.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "types_package",
+      "target": "types_package_scripts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages/types/package.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "types_package",
+      "target": "types_package_type",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages/types/package.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "types_package",
+      "target": "types_package_version",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages/types/package.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "types_package_scripts",
+      "target": "types_package_scripts_build",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages/types/package.json",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "types_package_scripts",
+      "target": "types_package_scripts_clean",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages/types/package.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "types_package_scripts",
+      "target": "types_package_scripts_lint",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages/types/package.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "types_package_scripts",
+      "target": "types_package_scripts_typecheck",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages/types/tsconfig.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "types_tsconfig",
+      "target": "types_tsconfig_compileroptions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages/types/tsconfig.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "types_tsconfig",
+      "target": "types_tsconfig_include",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages/types/tsconfig.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "types_tsconfig_compileroptions",
+      "target": "types_tsconfig_compileroptions_declaration",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages/types/tsconfig.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "types_tsconfig_compileroptions",
+      "target": "types_tsconfig_compileroptions_module",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages/types/tsconfig.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "types_tsconfig_compileroptions",
+      "target": "types_tsconfig_compileroptions_moduleresolution",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages/types/tsconfig.json",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "types_tsconfig_compileroptions",
+      "target": "types_tsconfig_compileroptions_noemitonerror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages/types/tsconfig.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "types_tsconfig_compileroptions",
+      "target": "types_tsconfig_compileroptions_outdir",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages/types/tsconfig.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "types_tsconfig_compileroptions",
+      "target": "types_tsconfig_compileroptions_rootdir",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages/types/tsconfig.json",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "types_tsconfig_compileroptions",
+      "target": "types_tsconfig_compileroptions_skiplibcheck",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages/types/tsconfig.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "types_tsconfig_compileroptions",
+      "target": "types_tsconfig_compileroptions_strict",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages/types/tsconfig.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "types_tsconfig_compileroptions",
+      "target": "types_tsconfig_compileroptions_target",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "turbo.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "turbo",
+      "target": "turbo_schema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "turbo.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "turbo",
+      "target": "turbo_tasks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "turbo.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "turbo_tasks",
+      "target": "turbo_tasks_build",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "turbo.json",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "turbo_tasks",
+      "target": "turbo_tasks_clean",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "turbo.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "turbo_tasks",
+      "target": "turbo_tasks_dev",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "turbo.json",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "turbo_tasks",
+      "target": "turbo_tasks_lint",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "turbo.json",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "turbo_tasks",
+      "target": "turbo_tasks_typecheck",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "turbo.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "turbo_tasks_dev",
+      "target": "turbo_dev_cache",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "turbo.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "turbo_tasks_dev",
+      "target": "turbo_dev_persistent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "turbo.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "turbo_tasks_build",
+      "target": "turbo_build_dependson",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "turbo.json",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "turbo_tasks_build",
+      "target": "turbo_build_outputs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "turbo.json",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "turbo_tasks_lint",
+      "target": "turbo_lint_dependson",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "turbo.json",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "turbo_tasks_typecheck",
+      "target": "turbo_typecheck_dependson",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "turbo.json",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "turbo_tasks_clean",
+      "target": "turbo_clean_cache",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/graphify/SKILL.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "graphify_skill",
+      "target": "graphify_skill_graphify",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/graphify/SKILL.md",
+      "source_location": "L594",
+      "weight": 1.0,
+      "source": "graphify_skill_graphify",
+      "target": "graphify_skill_for_graphify_add_and_watch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/graphify/SKILL.md",
+      "source_location": "L582",
+      "weight": 1.0,
+      "source": "graphify_skill_graphify",
+      "target": "graphify_skill_for_graphify_query",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/graphify/SKILL.md",
+      "source_location": "L600",
+      "weight": 1.0,
+      "source": "graphify_skill_graphify",
+      "target": "graphify_skill_for_the_commit_hook_and_native_claude_md_integration",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/graphify/SKILL.md",
+      "source_location": "L576",
+      "weight": 1.0,
+      "source": "graphify_skill_graphify",
+      "target": "graphify_skill_for_update_and_cluster_only",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/graphify/SKILL.md",
+      "source_location": "L606",
+      "weight": 1.0,
+      "source": "graphify_skill_graphify",
+      "target": "graphify_skill_honesty_rules",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/graphify/SKILL.md",
+      "source_location": "L558",
+      "weight": 1.0,
+      "source": "graphify_skill_graphify",
+      "target": "graphify_skill_interpreter_guard_for_subcommands",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/graphify/SKILL.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "graphify_skill_graphify",
+      "target": "graphify_skill_usage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/graphify/SKILL.md",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "graphify_skill_graphify",
+      "target": "graphify_skill_what_graphify_is_for",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/graphify/SKILL.md",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "graphify_skill_graphify",
+      "target": "graphify_skill_what_you_must_do_when_invoked",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/graphify/SKILL.md",
+      "source_location": "L60",
+      "weight": 1.0,
+      "source": "graphify_skill_what_you_must_do_when_invoked",
+      "target": "graphify_skill_step_0_github_repos_and_multi_path_merge_only_if_a_url_or_several_paths",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/graphify/SKILL.md",
+      "source_location": "L64",
+      "weight": 1.0,
+      "source": "graphify_skill_what_you_must_do_when_invoked",
+      "target": "graphify_skill_step_1_ensure_graphify_is_installed",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/graphify/SKILL.md",
+      "source_location": "L143",
+      "weight": 1.0,
+      "source": "graphify_skill_what_you_must_do_when_invoked",
+      "target": "graphify_skill_step_2_5_video_and_audio_only_if_video_files_detected",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/graphify/SKILL.md",
+      "source_location": "L106",
+      "weight": 1.0,
+      "source": "graphify_skill_what_you_must_do_when_invoked",
+      "target": "graphify_skill_step_2_detect_files",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/graphify/SKILL.md",
+      "source_location": "L147",
+      "weight": 1.0,
+      "source": "graphify_skill_what_you_must_do_when_invoked",
+      "target": "graphify_skill_step_3_extract_entities_and_relationships",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/graphify/SKILL.md",
+      "source_location": "L366",
+      "weight": 1.0,
+      "source": "graphify_skill_what_you_must_do_when_invoked",
+      "target": "graphify_skill_step_4_build_graph_cluster_analyze_generate_outputs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/graphify/SKILL.md",
+      "source_location": "L418",
+      "weight": 1.0,
+      "source": "graphify_skill_what_you_must_do_when_invoked",
+      "target": "graphify_skill_step_5_label_communities",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/graphify/SKILL.md",
+      "source_location": "L458",
+      "weight": 1.0,
+      "source": "graphify_skill_what_you_must_do_when_invoked",
+      "target": "graphify_skill_step_6_generate_obsidian_vault_opt_in_html",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/graphify/SKILL.md",
+      "source_location": "L484",
+      "weight": 1.0,
+      "source": "graphify_skill_what_you_must_do_when_invoked",
+      "target": "graphify_skill_step_9_save_manifest_update_cost_tracker_clean_up_and_report",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/graphify/SKILL.md",
+      "source_location": "L478",
+      "weight": 1.0,
+      "source": "graphify_skill_what_you_must_do_when_invoked",
+      "target": "graphify_skill_steps_6b_8_wiki_neo4j_svg_graphml_mcp_benchmark_only_on_their_flags",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/graphify/SKILL.md",
+      "source_location": "L164",
+      "weight": 1.0,
+      "source": "graphify_skill_step_3_extract_entities_and_relationships",
+      "target": "graphify_skill_part_a_structural_extraction_for_code_files",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/graphify/SKILL.md",
+      "source_location": "L190",
+      "weight": 1.0,
+      "source": "graphify_skill_step_3_extract_entities_and_relationships",
+      "target": "graphify_skill_part_b_semantic_extraction_parallel_subagents",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/graphify/SKILL.md",
+      "source_location": "L332",
+      "weight": 1.0,
+      "source": "graphify_skill_step_3_extract_entities_and_relationships",
+      "target": "graphify_skill_part_c_merge_ast_semantic_into_final_extraction",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/graphify/references/add-watch.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "references_add_watch",
+      "target": "references_add_watch_graphify_reference_add_a_url_and_watch_a_folder",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/graphify/references/add-watch.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "references_add_watch_graphify_reference_add_a_url_and_watch_a_folder",
+      "target": "references_add_watch_for_graphify_add",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/graphify/references/add-watch.md",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "references_add_watch_graphify_reference_add_a_url_and_watch_a_folder",
+      "target": "references_add_watch_for_watch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/graphify/references/exports.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "references_exports",
+      "target": "references_exports_graphify_reference_extra_exports_and_benchmark",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/graphify/references/exports.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "references_exports_graphify_reference_extra_exports_and_benchmark",
+      "target": "references_exports_step_6b_wiki_only_if_wiki_flag",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/graphify/references/exports.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "references_exports_graphify_reference_extra_exports_and_benchmark",
+      "target": "references_exports_step_7_neo4j_export_only_if_neo4j_or_neo4j_push_flag",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/graphify/references/exports.md",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "references_exports_graphify_reference_extra_exports_and_benchmark",
+      "target": "references_exports_step_7b_svg_export_only_if_svg_flag",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/graphify/references/exports.md",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "references_exports_graphify_reference_extra_exports_and_benchmark",
+      "target": "references_exports_step_7c_graphml_export_only_if_graphml_flag",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/graphify/references/exports.md",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "references_exports_graphify_reference_extra_exports_and_benchmark",
+      "target": "references_exports_step_7d_mcp_server_only_if_mcp_flag",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/graphify/references/exports.md",
+      "source_location": "L63",
+      "weight": 1.0,
+      "source": "references_exports_graphify_reference_extra_exports_and_benchmark",
+      "target": "references_exports_step_8_token_reduction_benchmark_only_if_total_words_5000",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/graphify/references/extraction-spec.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "references_extraction_spec",
+      "target": "references_extraction_spec_graphify_reference_extraction_subagent_prompt_compact",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/graphify/references/github-and-merge.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "references_github_and_merge",
+      "target": "references_github_and_merge_graphify_reference_github_clone_and_cross_repo_merge",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/graphify/references/github-and-merge.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "references_github_and_merge_graphify_reference_github_clone_and_cross_repo_merge",
+      "target": "references_github_and_merge_step_0_clone_github_repo_s_only_if_a_github_url_was_given",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/graphify/references/hooks.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "references_hooks",
+      "target": "references_hooks_graphify_reference_commit_hook_and_native_claude_md_integration",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/graphify/references/hooks.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "references_hooks_graphify_reference_commit_hook_and_native_claude_md_integration",
+      "target": "references_hooks_for_git_commit_hook",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/graphify/references/hooks.md",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "references_hooks_graphify_reference_commit_hook_and_native_claude_md_integration",
+      "target": "references_hooks_for_native_claude_md_integration",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/graphify/references/query.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "references_query",
+      "target": "references_query_graphify_reference_query_path_explain",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/graphify/references/query.md",
+      "source_location": "L198",
+      "weight": 1.0,
+      "source": "references_query_graphify_reference_query_path_explain",
+      "target": "references_query_for_graphify_explain",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/graphify/references/query.md",
+      "source_location": "L136",
+      "weight": 1.0,
+      "source": "references_query_graphify_reference_query_path_explain",
+      "target": "references_query_for_graphify_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/graphify/references/transcribe.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "references_transcribe",
+      "target": "references_transcribe_graphify_reference_transcribe_video_and_audio",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/graphify/references/transcribe.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "references_transcribe_graphify_reference_transcribe_video_and_audio",
+      "target": "references_transcribe_step_2_5_transcribe_video_audio_files_only_if_video_files_detected",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/graphify/references/update.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "references_update",
+      "target": "references_update_graphify_reference_incremental_update_and_cluster_only",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/graphify/references/update.md",
+      "source_location": "L166",
+      "weight": 1.0,
+      "source": "references_update_graphify_reference_incremental_update_and_cluster_only",
+      "target": "references_update_for_cluster_only",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/graphify/references/update.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "references_update_graphify_reference_incremental_update_and_cluster_only",
+      "target": "references_update_for_update_incremental_re_extraction",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "agents",
+      "target": "agents_agents_md",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "agents_agents_md",
+      "target": "agents_definition_of_done",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "agents_agents_md",
+      "target": "agents_graphify",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "agents_agents_md",
+      "target": "agents_project",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "agents_agents_md",
+      "target": "agents_rules",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "agents_agents_md",
+      "target": "agents_validation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "agents_agents_md",
+      "target": "agents_workflow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "claude",
+      "target": "claude_claude_code",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "claude_claude_code",
+      "target": "claude_graphify",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "readme",
+      "target": "readme_clientflow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "readme_clientflow",
+      "target": "readme_installation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "readme_clientflow",
+      "target": "readme_monorepo_structure",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "readme_clientflow",
+      "target": "readme_prerequisites",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "readme_clientflow",
+      "target": "readme_root_scripts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages/config/README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "config_readme",
+      "target": "config_readme_clientflow_config",
+      "confidence_score": 1.0
+    },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
@@ -559,7 +3323,7 @@
       "relation": "participate_in",
       "confidence": "INFERRED",
       "confidence_score": 0.85,
-      "source_file": "C:/Users/jairo/dev/ClientFlow/.claude/settings.json"
+      "source_file": ".claude/settings.json"
     },
     {
       "id": "graphify_pipeline_stages",

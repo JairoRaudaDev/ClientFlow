@@ -4,10 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "node -e \"console.log('@clientflow/web is a placeholder; Next.js has not been initialized yet.')\"",
-    "build": "node -e \"console.log('@clientflow/web build skipped; Next.js has not been initialized yet.')\"",
-    "lint": "node -e \"console.log('@clientflow/web lint skipped; Next.js has not been initialized yet.')\"",
-    "typecheck": "node -e \"console.log('@clientflow/web typecheck skipped; Next.js has not been initialized yet.')\"",
+    "build": "tsc --project tsconfig.json --noEmit",
+    "lint": "eslint .",
+    "typecheck": "tsc --project tsconfig.json --noEmit",
     "clean": "node -e \"console.log('@clientflow/web clean skipped; Next.js has not been initialized yet.')\""
+  },
+  "devDependencies": {
+    "@clientflow/config": "workspace:*"
   }
 }
-

@@ -9,7 +9,7 @@ apps/
   web/       Frontend application placeholder
   api/       Backend application placeholder
 packages/
-  config/    Future shared tooling configuration
+  config/    Shared TypeScript, ESLint, and Prettier configuration
   types/     Shared TypeScript types
 ```
 
@@ -30,7 +30,12 @@ pnpm install
 - `pnpm build` builds workspace packages.
 - `pnpm lint` runs workspace lint tasks.
 - `pnpm typecheck` runs workspace TypeScript checks.
+- `pnpm format` formats supported workspace files with Prettier.
+- `pnpm format:check` verifies workspace formatting without changing files.
 - `pnpm clean` removes generated workspace output.
 
-The web and API applications are placeholders. Next.js and Express will be initialized in future commits.
+Workspace packages consume reusable code-quality defaults from
+`@clientflow/config`. Framework-specific configuration will be added when the
+web and API applications are initialized.
 
+The web and API applications are placeholders. Next.js and Express will be initialized in future commits.

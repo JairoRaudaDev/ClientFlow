@@ -1,67 +1,122 @@
 {
-  "C:\\Users\\jairo\\dev\\ClientFlow\\.claude\\settings.json": {
+  ".claude/settings.json": {
     "mtime": 1785442639.9629757,
     "ast_hash": "af5683cedca023035194f9ad92eb0eef",
     "semantic_hash": "af5683cedca023035194f9ad92eb0eef"
   },
-  "C:\\Users\\jairo\\dev\\ClientFlow\\.codex\\hooks.json": {
+  ".codex/hooks.json": {
     "mtime": 1785444201.0401788,
     "ast_hash": "a2b1d4dadfb95a1cfafcffce7947ab24",
     "semantic_hash": "a2b1d4dadfb95a1cfafcffce7947ab24"
   },
-  "C:\\Users\\jairo\\dev\\ClientFlow\\AGENTS.md": {
+  "AGENTS.md": {
     "mtime": 1785444483.063,
     "ast_hash": "d10e3e0a66fca22e6ccd7949040d9230",
     "semantic_hash": "d10e3e0a66fca22e6ccd7949040d9230"
   },
-  "C:\\Users\\jairo\\dev\\ClientFlow\\CLAUDE.md": {
+  "CLAUDE.md": {
     "mtime": 1785444491.261,
     "ast_hash": "494c8beadb9871befd40f20bf0cd0bb0",
     "semantic_hash": "494c8beadb9871befd40f20bf0cd0bb0"
   },
-  "C:\\Users\\jairo\\dev\\ClientFlow\\.agents\\skills\\graphify\\SKILL.md": {
+  ".agents/skills/graphify/SKILL.md": {
     "mtime": 1785444201.027663,
     "ast_hash": "7869351527b616553075b86f6148b0dc",
     "semantic_hash": "7869351527b616553075b86f6148b0dc"
   },
-  "C:\\Users\\jairo\\dev\\ClientFlow\\.agents\\skills\\graphify\\references\\add-watch.md": {
+  ".agents/skills/graphify/references/add-watch.md": {
     "mtime": 1780528995.6170406,
     "ast_hash": "0df0589623217ca38a12bdcabfb42f4c",
     "semantic_hash": "0df0589623217ca38a12bdcabfb42f4c"
   },
-  "C:\\Users\\jairo\\dev\\ClientFlow\\.agents\\skills\\graphify\\references\\exports.md": {
+  ".agents/skills/graphify/references/exports.md": {
     "mtime": 1780528995.6185489,
     "ast_hash": "7fb1a81aca17a462db70684a324fcfb0",
     "semantic_hash": "7fb1a81aca17a462db70684a324fcfb0"
   },
-  "C:\\Users\\jairo\\dev\\ClientFlow\\.agents\\skills\\graphify\\references\\extraction-spec.md": {
+  ".agents/skills/graphify/references/extraction-spec.md": {
     "mtime": 1780528995.619557,
     "ast_hash": "a86a7321597b23cc2b22e011b3dc6e1d",
     "semantic_hash": "a86a7321597b23cc2b22e011b3dc6e1d"
   },
-  "C:\\Users\\jairo\\dev\\ClientFlow\\.agents\\skills\\graphify\\references\\github-and-merge.md": {
+  ".agents/skills/graphify/references/github-and-merge.md": {
     "mtime": 1780528995.619557,
     "ast_hash": "cde13df085e4c492aeb7ba298a996d0d",
     "semantic_hash": "cde13df085e4c492aeb7ba298a996d0d"
   },
-  "C:\\Users\\jairo\\dev\\ClientFlow\\.agents\\skills\\graphify\\references\\hooks.md": {
+  ".agents/skills/graphify/references/hooks.md": {
     "mtime": 1780528995.620557,
     "ast_hash": "3f545db6ce646650bb9de588f5512a27",
     "semantic_hash": "3f545db6ce646650bb9de588f5512a27"
   },
-  "C:\\Users\\jairo\\dev\\ClientFlow\\.agents\\skills\\graphify\\references\\query.md": {
+  ".agents/skills/graphify/references/query.md": {
     "mtime": 1780528995.6604476,
     "ast_hash": "c2a8e798674a81b02aa9975f43023819",
     "semantic_hash": "c2a8e798674a81b02aa9975f43023819"
   },
-  "C:\\Users\\jairo\\dev\\ClientFlow\\.agents\\skills\\graphify\\references\\transcribe.md": {
+  ".agents/skills/graphify/references/transcribe.md": {
     "mtime": 1780528995.6644678,
     "ast_hash": "70f6aa30d6211f3a2c7e9fc45479f50c",
     "semantic_hash": "70f6aa30d6211f3a2c7e9fc45479f50c"
   },
-  "C:\\Users\\jairo\\dev\\ClientFlow\\.agents\\skills\\graphify\\references\\update.md": {
+  ".agents/skills/graphify/references/update.md": {
     "mtime": 1780528995.666468,
     "ast_hash": "735932eaa4f0c8fef9566c538ae3e5f8",
     "semantic_hash": "735932eaa4f0c8fef9566c538ae3e5f8"
+  },
+  "apps/api/package.json": {
+    "mtime": 1785444933.9677436,
+    "ast_hash": "152f4a131889853f5b2f780f7bd9309b",
+    "semantic_hash": ""
+  },
+  "apps/web/package.json": {
+    "mtime": 1785444933.9657438,
+    "ast_hash": "5e0854e0713b3f1a17cb99c2abcd6d4c",
+    "semantic_hash": ""
+  },
+  "package.json": {
+    "mtime": 1785444933.9627461,
+    "ast_hash": "7f1bc5e355cbb7682d6c8994bec1de08",
+    "semantic_hash": ""
+  },
+  "packages/config/package.json": {
+    "mtime": 1785444933.969747,
+    "ast_hash": "11232038ab04927b568cf62c11d65c13",
+    "semantic_hash": ""
+  },
+  "packages/types/package.json": {
+    "mtime": 1785444933.97225,
+    "ast_hash": "a27aee69a6cb09f52157a04a56d84135",
+    "semantic_hash": ""
+  },
+  "packages/types/src/index.ts": {
+    "mtime": 1785444933.973251,
+    "ast_hash": "066ac4469d49b5d186f1432f4df0e98b",
+    "semantic_hash": ""
+  },
+  "packages/types/tsconfig.json": {
+    "mtime": 1785444933.973251,
+    "ast_hash": "b17893524ad4641c7a5c797386a6fd80",
+    "semantic_hash": ""
+  },
+  "turbo.json": {
+    "mtime": 1785444933.9637449,
+    "ast_hash": "0afbd4bf63d0332a112931ed5baeed51",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1785444933.964744,
+    "ast_hash": "f466b29ea3f2fdf37b49ca1bbd256760",
+    "semantic_hash": ""
+  },
+  "packages/config/README.md": {
+    "mtime": 1785444933.9707472,
+    "ast_hash": "e490ced6f93e4307ea4d3af39f646f07",
+    "semantic_hash": ""
+  },
+  "pnpm-workspace.yaml": {
+    "mtime": 1785444933.9637449,
+    "ast_hash": "55ac03bd3708a0a85e586145cd34c516",
+    "semantic_hash": ""
   }
 }

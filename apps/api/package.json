@@ -4,10 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "node -e \"console.log('@clientflow/api is a placeholder; Express has not been initialized yet.')\"",
-    "build": "node -e \"console.log('@clientflow/api build skipped; Express has not been initialized yet.')\"",
-    "lint": "node -e \"console.log('@clientflow/api lint skipped; Express has not been initialized yet.')\"",
-    "typecheck": "node -e \"console.log('@clientflow/api typecheck skipped; Express has not been initialized yet.')\"",
+    "build": "tsc --project tsconfig.json --noEmit",
+    "lint": "eslint .",
+    "typecheck": "tsc --project tsconfig.json --noEmit",
     "clean": "node -e \"console.log('@clientflow/api clean skipped; Express has not been initialized yet.')\""
+  },
+  "devDependencies": {
+    "@clientflow/config": "workspace:*"
   }
 }
-

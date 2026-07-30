@@ -1,6 +1,20 @@
 {
   "name": "@clientflow/config",
   "version": "0.0.0",
-  "private": true
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./eslint/base": "./eslint/base.js",
+    "./eslint/node": "./eslint/node.js",
+    "./prettier": "./prettier/index.js",
+    "./typescript/base.json": "./typescript/base.json",
+    "./typescript/node.json": "./typescript/node.json"
+  },
+  "scripts": {
+    "dev": "node -e \"console.log('@clientflow/config provides static shared configuration.')\"",
+    "build": "tsc --project tsconfig.json --noEmit",
+    "lint": "eslint .",
+    "typecheck": "tsc --project tsconfig.json --noEmit",
+    "clean": "node -e \"require('node:fs').rmSync('dist', { recursive: true, force: true })\""
+  }
 }
-

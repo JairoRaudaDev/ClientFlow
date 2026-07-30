@@ -6,27 +6,21 @@
       "persistent": true
     },
     "build": {
-      "dependsOn": [
-        "^build"
-      ],
-      "outputs": [
-        ".next/**",
-        "dist/**"
-      ]
+      "dependsOn": ["^build"]
+    },
+    "@clientflow/types#build": {
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**"]
     },
     "lint": {
-      "dependsOn": [
-        "^lint"
-      ]
+      "dependsOn": ["^lint"]
     },
     "typecheck": {
-      "dependsOn": [
-        "^typecheck"
-      ]
+      "dependsOn": ["^typecheck"]
     },
     "clean": {
+      "dependsOn": ["^clean"],
       "cache": false
     }
   }
 }
-
