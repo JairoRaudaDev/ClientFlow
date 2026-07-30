@@ -1,16 +1,16 @@
 # Graph Report - ClientFlow  (2026-07-30)
 
 ## Corpus Check
-- 51 files · ~13,452 words
+- 51 files · ~13,476 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 401 nodes · 397 edges · 49 communities (33 shown, 16 thin omitted)
+- 409 nodes · 405 edges · 49 communities (33 shown, 16 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 1 edges (avg confidence: 0.85)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `193cac64`
+- Built from commit: `5df67690`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -68,9 +68,9 @@
 4. `Landing Design` - 12 edges
 5. `What You Must Do When Invoked` - 11 edges
 6. `compilerOptions` - 10 edges
-7. `/graphify` - 10 edges
-8. `Graphify Workflow` - 9 edges
-9. `tasks` - 8 edges
+7. `tasks` - 10 edges
+8. `/graphify` - 10 edges
+9. `Graphify Workflow` - 9 edges
 10. `ClientFlow` - 8 edges
 
 ## Surprising Connections (you probably didn't know these)
@@ -99,8 +99,8 @@ Cohesion: 0.13
 Nodes (18): Project Graphify Workflow, ClientFlow Project Architecture, Folder Watcher, URL Ingestion, Graph Exports, Graph MCP Server, Edge Confidence Rubric, Extraction Schema (+10 more)
 
 ### Community 1 - "Project Query Workflow"
-Cohesion: 0.10
-Nodes (20): dependsOn, outputs, cache, dependsOn, dependsOn, outputs, dependsOn, outputs (+12 more)
+Cohesion: 0.07
+Nodes (28): dependsOn, outputs, cache, dependsOn, dependsOn, outputs, cache, passThroughEnv (+20 more)
 
 ### Community 2 - "Semantic Extraction"
 Cohesion: 0.08
@@ -119,8 +119,8 @@ Cohesion: 0.10
 Nodes (20): dependencies, cors, dotenv, express, helmet, pg, @prisma/adapter-pg, @prisma/client (+12 more)
 
 ### Community 12 - "Community 12"
-Cohesion: 0.17
-Nodes (13): AppError, AppErrorOptions, errorHandler(), ErrorResponse, isErrorRecord(), isMalformedJsonError(), isPayloadTooLargeError(), logUnexpectedError() (+5 more)
+Cohesion: 0.18
+Nodes (12): AppError, AppErrorOptions, errorHandler(), ErrorResponse, isErrorRecord(), isMalformedJsonError(), isPayloadTooLargeError(), logUnexpectedError() (+4 more)
 
 ### Community 13 - "Community 13"
 Cohesion: 0.15
@@ -200,7 +200,7 @@ Nodes (7): compilerOptions, noEmit, outDir, rootDir, exclude, extends, include
 
 ### Community 45 - "Community 45"
 Cohesion: 0.13
-Nodes (18): adapter, checkDatabaseConnection(), connectDatabase(), disconnectDatabase(), prisma, corsOriginSchema, databaseUrlSchema, env (+10 more)
+Nodes (19): adapter, checkDatabaseConnection(), connectDatabase(), disconnectDatabase(), prisma, corsOriginSchema, databaseUrlSchema, env (+11 more)
 
 ### Community 46 - "Community 46"
 Cohesion: 0.11
@@ -211,7 +211,7 @@ Cohesion: 0.12
 Nodes (16): scripts, build, clean, db:format, db:generate, db:migrate, db:migrate:deploy, db:migrate:status (+8 more)
 
 ## Knowledge Gaps
-- **264 isolated node(s):** `PreToolUse`, `PreToolUse`, `name`, `version`, `private` (+259 more)
+- **270 isolated node(s):** `PreToolUse`, `PreToolUse`, `name`, `version`, `private` (+265 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **16 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -219,16 +219,16 @@ Nodes (16): scripts, build, clean, db:format, db:generate, db:migrate, db:migrat
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `tasks` connect `Project Query Workflow` to `Updates and Ingestion`?**
-  _High betweenness centrality (0.010) - this node is a cross-community bridge._
-- **Why does `scripts` connect `Community 47` to `Updates and Ingestion`?**
-  _High betweenness centrality (0.008) - this node is a cross-community bridge._
+  _High betweenness centrality (0.015) - this node is a cross-community bridge._
 - **What connects `PreToolUse`, `PreToolUse`, `name` to the rest of the system?**
-  _266 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _272 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Core Graphify Workflow` be split into smaller, more focused modules?**
   _Cohesion score 0.13071895424836602 - nodes in this community are weakly interconnected._
 - **Should `Project Query Workflow` be split into smaller, more focused modules?**
-  _Cohesion score 0.1 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.07142857142857142 - nodes in this community are weakly interconnected._
 - **Should `Semantic Extraction` be split into smaller, more focused modules?**
   _Cohesion score 0.08333333333333333 - nodes in this community are weakly interconnected._
 - **Should `Updates and Ingestion` be split into smaller, more focused modules?**
   _Cohesion score 0.11764705882352941 - nodes in this community are weakly interconnected._
+- **Should `Community 11` be split into smaller, more focused modules?**
+  _Cohesion score 0.09523809523809523 - nodes in this community are weakly interconnected._

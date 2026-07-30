@@ -5,6 +5,16 @@
       "cache": false,
       "persistent": true
     },
+    "@clientflow/api#dev": {
+      "cache": false,
+      "persistent": true,
+      "passThroughEnv": ["API_HOST", "API_PORT", "CORS_ORIGIN", "DATABASE_URL", "NODE_ENV"]
+    },
+    "@clientflow/web#dev": {
+      "cache": false,
+      "persistent": true,
+      "passThroughEnv": ["HOST", "NODE_ENV", "WEB_PORT"]
+    },
     "build": {
       "dependsOn": ["^build"]
     },

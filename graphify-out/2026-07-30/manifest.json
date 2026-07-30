@@ -65,8 +65,8 @@
     "semantic_hash": "735932eaa4f0c8fef9566c538ae3e5f8"
   },
   "apps/api/package.json": {
-    "mtime": 1785452354.15025,
-    "ast_hash": "697f4bba41343e46f1f5da74401bbcb3",
+    "mtime": 1785454675.139931,
+    "ast_hash": "5913f7250f50eccd64c45a0e92b57b27",
     "semantic_hash": ""
   },
   "apps/web/package.json": {
@@ -75,8 +75,8 @@
     "semantic_hash": ""
   },
   "package.json": {
-    "mtime": 1785446641.0350502,
-    "ast_hash": "b3d0145466900cd10fda60d6c57cfa1b",
+    "mtime": 1785453546.00236,
+    "ast_hash": "b03eac41f563943a548399db11b1cd5c",
     "semantic_hash": ""
   },
   "packages/config/package.json": {
@@ -105,8 +105,8 @@
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1785451117.0274286,
-    "ast_hash": "5ff83ab5ef4f6f1173ce959725111352",
+    "mtime": 1785453676.4238997,
+    "ast_hash": "a0a026b855e232f009d1c10e4cdfffb1",
     "semantic_hash": ""
   },
   "packages/config/README.md": {
@@ -120,8 +120,8 @@
     "semantic_hash": ""
   },
   "apps/api/tsconfig.json": {
-    "mtime": 1785451117.0138183,
-    "ast_hash": "788f014dcf0154f227b511942fae734c",
+    "mtime": 1785453545.9998424,
+    "ast_hash": "b266fc73fe3afd3a464fd166c08d0e09",
     "semantic_hash": ""
   },
   "apps/web/src/index.ts": {
@@ -140,8 +140,8 @@
     "semantic_hash": ""
   },
   "packages/config/eslint/base.js": {
-    "mtime": 1785446684.9344368,
-    "ast_hash": "6eb79a459cb6a3dc6997b1741a0e0f14",
+    "mtime": 1785453546.0053668,
+    "ast_hash": "3bd74ce080d55bbea678db0891268e23",
     "semantic_hash": ""
   },
   "packages/config/eslint/node.js": {
@@ -180,8 +180,8 @@
     "semantic_hash": ""
   },
   "docker-compose.yml": {
-    "mtime": 1785452803.851,
-    "ast_hash": "c3980f96d39e2160760e0cc2db7ea8a6",
+    "mtime": 1785454675.140929,
+    "ast_hash": "85274490a7a66813ac5d589f41bf66f2",
     "semantic_hash": ""
   },
   "apps/api/src/app.ts": {
@@ -190,13 +190,13 @@
     "semantic_hash": ""
   },
   "apps/api/src/config/env.ts": {
-    "mtime": 1785451126.0139232,
-    "ast_hash": "8dea8db8c0f8b5978da1d3c9c826799e",
+    "mtime": 1785453683.1829271,
+    "ast_hash": "96f4ed27f0179a59972aa04f6af44c98",
     "semantic_hash": ""
   },
   "apps/api/src/controllers/health.controller.ts": {
-    "mtime": 1785451117.0193303,
-    "ast_hash": "e45e40b42a8fa33dd0d3c487daae1979",
+    "mtime": 1785453545.9978418,
+    "ast_hash": "6bd8341b672015d8c034090d773d2244",
     "semantic_hash": ""
   },
   "apps/api/src/errors/app-error.ts": {
@@ -225,13 +225,13 @@
     "semantic_hash": ""
   },
   "apps/api/src/server.ts": {
-    "mtime": 1785452953.6565046,
-    "ast_hash": "39ea8717d52d1f39091f7de7ba957c57",
+    "mtime": 1785453618.320652,
+    "ast_hash": "2a6486fc87dfe394e1c485ef84b0d982",
     "semantic_hash": ""
   },
   "apps/api/tsconfig.build.json": {
-    "mtime": 1785451117.0153236,
-    "ast_hash": "9140fb2c4b7d2390dbea3c9ceceff425",
+    "mtime": 1785453546.000841,
+    "ast_hash": "bfbfc86f5a00c246b88030f3385d36b8",
     "semantic_hash": ""
   },
   ".claude/skills/landing-design/SKILL.md": {
@@ -240,8 +240,28 @@
     "semantic_hash": ""
   },
   "apps/api/README.md": {
-    "mtime": 1785452354.1512518,
-    "ast_hash": "c3809bf6d0c6bb8f95b68b3e27a07d10",
+    "mtime": 1785453676.4249065,
+    "ast_hash": "ba39acc457aea5c1f6dffb869a8ca138",
+    "semantic_hash": ""
+  },
+  "apps/api/prisma.config.ts": {
+    "mtime": 1785454675.1389265,
+    "ast_hash": "216c94412daebd529193bad02e96c377",
+    "semantic_hash": ""
+  },
+  "apps/api/prisma/migrations/20260730233714_init/migration.sql": {
+    "mtime": 1785454634.0125897,
+    "ast_hash": "dd310e1da905ddd9decc528d776ef304",
+    "semantic_hash": ""
+  },
+  "apps/api/prisma/seed.ts": {
+    "mtime": 1785453545.9958405,
+    "ast_hash": "a4f4f1c674c883fc0ed728e2f1cc4c9a",
+    "semantic_hash": ""
+  },
+  "apps/api/src/config/database.ts": {
+    "mtime": 1785453545.9958405,
+    "ast_hash": "ac3fe568ae43f0b4849b5d3e2c4bb049",
     "semantic_hash": ""
   }
 }
