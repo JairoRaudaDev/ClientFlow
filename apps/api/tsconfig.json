@@ -1,7 +1,10 @@
 {
   "extends": "@clientflow/config/typescript/node.json",
   "compilerOptions": {
-    "noEmit": true
+    "declaration": false,
+    "declarationMap": false,
+    "noEmit": true,
+    "rootDir": "src"
   },
   "include": ["src/**/*.ts"]
 }

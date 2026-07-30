@@ -123,10 +123,19 @@
       "norm_label": "private"
     },
     {
-      "label": "scripts",
+      "label": "type",
       "file_type": "code",
       "source_file": "apps/api/package.json",
       "source_location": "L5",
+      "id": "api_package_type",
+      "community": 11,
+      "norm_label": "type"
+    },
+    {
+      "label": "scripts",
+      "file_type": "code",
+      "source_file": "apps/api/package.json",
+      "source_location": "L6",
       "id": "api_package_scripts",
       "community": 11,
       "norm_label": "scripts"
@@ -135,7 +144,7 @@
       "label": "dev",
       "file_type": "code",
       "source_file": "apps/api/package.json",
-      "source_location": "L6",
+      "source_location": "L7",
       "id": "api_package_scripts_dev",
       "community": 11,
       "norm_label": "dev"
@@ -144,16 +153,25 @@
       "label": "build",
       "file_type": "code",
       "source_file": "apps/api/package.json",
-      "source_location": "L7",
+      "source_location": "L8",
       "id": "api_package_scripts_build",
       "community": 11,
       "norm_label": "build"
     },
     {
+      "label": "start",
+      "file_type": "code",
+      "source_file": "apps/api/package.json",
+      "source_location": "L9",
+      "id": "api_package_scripts_start",
+      "community": 11,
+      "norm_label": "start"
+    },
+    {
       "label": "lint",
       "file_type": "code",
       "source_file": "apps/api/package.json",
-      "source_location": "L8",
+      "source_location": "L10",
       "id": "api_package_scripts_lint",
       "community": 11,
       "norm_label": "lint"
@@ -162,7 +180,7 @@
       "label": "typecheck",
       "file_type": "code",
       "source_file": "apps/api/package.json",
-      "source_location": "L9",
+      "source_location": "L11",
       "id": "api_package_scripts_typecheck",
       "community": 11,
       "norm_label": "typecheck"
@@ -171,7 +189,7 @@
       "label": "clean",
       "file_type": "code",
       "source_file": "apps/api/package.json",
-      "source_location": "L10",
+      "source_location": "L12",
       "id": "api_package_scripts_clean",
       "community": 11,
       "norm_label": "clean"
@@ -180,7 +198,7 @@
       "label": "devDependencies",
       "file_type": "code",
       "source_file": "apps/api/package.json",
-      "source_location": "L12",
+      "source_location": "L14",
       "id": "api_package_devdependencies",
       "community": 11,
       "norm_label": "devdependencies"
@@ -189,73 +207,433 @@
       "label": "@clientflow/config",
       "file_type": "code",
       "source_file": "apps/api/package.json",
-      "source_location": "L13",
+      "source_location": "L15",
       "id": "api_package_devdependencies_clientflow_config",
       "community": 11,
       "norm_label": "@clientflow/config"
     },
     {
-      "label": "dev-server.mjs",
+      "label": "@types/cors",
       "file_type": "code",
-      "source_file": "apps/api/src/dev-server.mjs",
+      "source_file": "apps/api/package.json",
+      "source_location": "L16",
+      "id": "api_package_devdependencies_types_cors",
+      "community": 11,
+      "norm_label": "@types/cors"
+    },
+    {
+      "label": "@types/express",
+      "file_type": "code",
+      "source_file": "apps/api/package.json",
+      "source_location": "L17",
+      "id": "api_package_devdependencies_types_express",
+      "community": 11,
+      "norm_label": "@types/express"
+    },
+    {
+      "label": "tsx",
+      "file_type": "code",
+      "source_file": "apps/api/package.json",
+      "source_location": "L18",
+      "id": "api_package_devdependencies_tsx",
+      "community": 11,
+      "norm_label": "tsx"
+    },
+    {
+      "label": "dependencies",
+      "file_type": "code",
+      "source_file": "apps/api/package.json",
+      "source_location": "L20",
+      "id": "api_package_dependencies",
+      "community": 11,
+      "norm_label": "dependencies"
+    },
+    {
+      "label": "cors",
+      "file_type": "code",
+      "source_file": "apps/api/package.json",
+      "source_location": "L21",
+      "id": "api_package_dependencies_cors",
+      "community": 11,
+      "norm_label": "cors"
+    },
+    {
+      "label": "dotenv",
+      "file_type": "code",
+      "source_file": "apps/api/package.json",
+      "source_location": "L22",
+      "id": "api_package_dependencies_dotenv",
+      "community": 11,
+      "norm_label": "dotenv"
+    },
+    {
+      "label": "express",
+      "file_type": "code",
+      "source_file": "apps/api/package.json",
+      "source_location": "L23",
+      "id": "api_package_dependencies_express",
+      "community": 11,
+      "norm_label": "express"
+    },
+    {
+      "label": "helmet",
+      "file_type": "code",
+      "source_file": "apps/api/package.json",
+      "source_location": "L24",
+      "id": "api_package_dependencies_helmet",
+      "community": 11,
+      "norm_label": "helmet"
+    },
+    {
+      "label": "zod",
+      "file_type": "code",
+      "source_file": "apps/api/package.json",
+      "source_location": "L25",
+      "id": "api_package_dependencies_zod",
+      "community": 11,
+      "norm_label": "zod"
+    },
+    {
+      "label": "app.ts",
+      "file_type": "code",
+      "source_file": "apps/api/src/app.ts",
       "source_location": "L1",
-      "id": "apps_api_src_dev_server_mjs_src_dev_server",
-      "community": 42,
-      "norm_label": "dev-server.mjs"
+      "id": "src_app",
+      "community": 12,
+      "norm_label": "app.ts"
     },
     {
-      "label": "port",
+      "label": "app",
       "file_type": "code",
-      "source_file": "apps/api/src/dev-server.mjs",
-      "source_location": "L7",
-      "id": "apps_api_src_dev_server_mjs_src_dev_server_port",
-      "community": 42,
-      "norm_label": "port"
+      "source_file": "apps/api/src/app.ts",
+      "source_location": "L11",
+      "id": "src_app_app",
+      "community": 12,
+      "norm_label": "app"
     },
     {
-      "label": "healthResponse",
+      "label": "origin()",
       "file_type": "code",
-      "source_file": "apps/api/src/dev-server.mjs",
+      "source_file": "apps/api/src/app.ts",
+      "source_location": "L18",
+      "id": "src_app_origin",
+      "community": 12,
+      "norm_label": "origin()"
+    },
+    {
+      "label": "env.ts",
+      "file_type": "code",
+      "source_file": "apps/api/src/config/env.ts",
+      "source_location": "L1",
+      "id": "config_env",
+      "community": 12,
+      "norm_label": "env.ts"
+    },
+    {
+      "label": "corsOriginSchema",
+      "file_type": "code",
+      "source_file": "apps/api/src/config/env.ts",
+      "source_location": "L5",
+      "id": "config_env_corsoriginschema",
+      "community": 12,
+      "norm_label": "corsoriginschema"
+    },
+    {
+      "label": "environmentSchema",
+      "file_type": "code",
+      "source_file": "apps/api/src/config/env.ts",
+      "source_location": "L28",
+      "id": "config_env_environmentschema",
+      "community": 12,
+      "norm_label": "environmentschema"
+    },
+    {
+      "label": "parsedEnvironment",
+      "file_type": "code",
+      "source_file": "apps/api/src/config/env.ts",
+      "source_location": "L46",
+      "id": "config_env_parsedenvironment",
+      "community": 12,
+      "norm_label": "parsedenvironment"
+    },
+    {
+      "label": "env",
+      "file_type": "code",
+      "source_file": "apps/api/src/config/env.ts",
+      "source_location": "L60",
+      "id": "config_env_env",
+      "community": 12,
+      "norm_label": "env"
+    },
+    {
+      "label": "health.controller.ts",
+      "file_type": "code",
+      "source_file": "apps/api/src/controllers/health.controller.ts",
+      "source_location": "L1",
+      "id": "controllers_health_controller",
+      "community": 12,
+      "norm_label": "health.controller.ts"
+    },
+    {
+      "label": "getHealth()",
+      "file_type": "code",
+      "source_file": "apps/api/src/controllers/health.controller.ts",
+      "source_location": "L5",
+      "id": "controllers_health_controller_gethealth",
+      "community": 12,
+      "norm_label": "gethealth()"
+    },
+    {
+      "label": "app-error.ts",
+      "file_type": "code",
+      "source_file": "apps/api/src/errors/app-error.ts",
+      "source_location": "L1",
+      "id": "errors_app_error",
+      "community": 12,
+      "norm_label": "app-error.ts"
+    },
+    {
+      "label": "AppErrorOptions",
+      "file_type": "code",
+      "source_file": "apps/api/src/errors/app-error.ts",
+      "source_location": "L1",
+      "id": "errors_app_error_apperroroptions",
+      "community": 12,
+      "norm_label": "apperroroptions"
+    },
+    {
+      "label": "AppError",
+      "file_type": "code",
+      "source_file": "apps/api/src/errors/app-error.ts",
       "source_location": "L8",
-      "id": "src_dev_server_healthresponse",
-      "community": 42,
-      "norm_label": "healthresponse"
+      "id": "errors_app_error_apperror",
+      "community": 12,
+      "norm_label": "apperror"
     },
     {
-      "label": "server",
+      "label": ".constructor()",
       "file_type": "code",
-      "source_file": "apps/api/src/dev-server.mjs",
-      "source_location": "L14",
-      "id": "apps_api_src_dev_server_mjs_src_dev_server_server",
-      "community": 42,
-      "norm_label": "server"
+      "source_file": "apps/api/src/errors/app-error.ts",
+      "source_location": "L13",
+      "id": "errors_app_error_apperror_constructor",
+      "community": 12,
+      "norm_label": ".constructor()"
     },
     {
-      "label": "parsePort()",
+      "label": "error-handler.ts",
       "file_type": "code",
-      "source_file": "apps/api/src/dev-server.mjs",
-      "source_location": "L40",
-      "id": "apps_api_src_dev_server_mjs_src_dev_server_parseport",
-      "community": 42,
-      "norm_label": "parseport()"
+      "source_file": "apps/api/src/middleware/error-handler.ts",
+      "source_location": "L1",
+      "id": "middleware_error_handler",
+      "community": 12,
+      "norm_label": "error-handler.ts"
     },
     {
-      "label": "shutDown()",
+      "label": "ErrorResponse",
       "file_type": "code",
-      "source_file": "apps/api/src/dev-server.mjs",
+      "source_file": "apps/api/src/middleware/error-handler.ts",
+      "source_location": "L6",
+      "id": "middleware_error_handler_errorresponse",
+      "community": 12,
+      "norm_label": "errorresponse"
+    },
+    {
+      "label": "sendError()",
+      "file_type": "code",
+      "source_file": "apps/api/src/middleware/error-handler.ts",
+      "source_location": "L12",
+      "id": "middleware_error_handler_senderror",
+      "community": 12,
+      "norm_label": "senderror()"
+    },
+    {
+      "label": "isErrorRecord()",
+      "file_type": "code",
+      "source_file": "apps/api/src/middleware/error-handler.ts",
+      "source_location": "L22",
+      "id": "middleware_error_handler_iserrorrecord",
+      "community": 12,
+      "norm_label": "iserrorrecord()"
+    },
+    {
+      "label": "isMalformedJsonError()",
+      "file_type": "code",
+      "source_file": "apps/api/src/middleware/error-handler.ts",
+      "source_location": "L26",
+      "id": "middleware_error_handler_ismalformedjsonerror",
+      "community": 12,
+      "norm_label": "ismalformedjsonerror()"
+    },
+    {
+      "label": "isPayloadTooLargeError()",
+      "file_type": "code",
+      "source_file": "apps/api/src/middleware/error-handler.ts",
+      "source_location": "L35",
+      "id": "middleware_error_handler_ispayloadtoolargeerror",
+      "community": 12,
+      "norm_label": "ispayloadtoolargeerror()"
+    },
+    {
+      "label": "logUnexpectedError()",
+      "file_type": "code",
+      "source_file": "apps/api/src/middleware/error-handler.ts",
+      "source_location": "L39",
+      "id": "middleware_error_handler_logunexpectederror",
+      "community": 12,
+      "norm_label": "logunexpectederror()"
+    },
+    {
+      "label": "errorHandler()",
+      "file_type": "code",
+      "source_file": "apps/api/src/middleware/error-handler.ts",
       "source_location": "L50",
-      "id": "apps_api_src_dev_server_mjs_src_dev_server_shutdown",
-      "community": 42,
-      "norm_label": "shutdown()"
+      "id": "middleware_error_handler_errorhandler",
+      "community": 12,
+      "norm_label": "errorhandler()"
+    },
+    {
+      "label": "not-found.ts",
+      "file_type": "code",
+      "source_file": "apps/api/src/middleware/not-found.ts",
+      "source_location": "L1",
+      "id": "middleware_not_found",
+      "community": 12,
+      "norm_label": "not-found.ts"
+    },
+    {
+      "label": "notFound()",
+      "file_type": "code",
+      "source_file": "apps/api/src/middleware/not-found.ts",
+      "source_location": "L5",
+      "id": "middleware_not_found_notfound",
+      "community": 12,
+      "norm_label": "notfound()"
+    },
+    {
+      "label": "health.routes.ts",
+      "file_type": "code",
+      "source_file": "apps/api/src/routes/health.routes.ts",
+      "source_location": "L1",
+      "id": "routes_health_routes",
+      "community": 12,
+      "norm_label": "health.routes.ts"
+    },
+    {
+      "label": "healthRouter",
+      "file_type": "code",
+      "source_file": "apps/api/src/routes/health.routes.ts",
+      "source_location": "L5",
+      "id": "routes_health_routes_healthrouter",
+      "community": 12,
+      "norm_label": "healthrouter"
     },
     {
       "label": "index.ts",
       "file_type": "code",
-      "source_file": "apps/api/src/index.ts",
+      "source_file": "apps/api/src/routes/index.ts",
       "source_location": "L1",
-      "id": "apps_api_src_index_ts_src_index",
-      "community": 39,
+      "id": "routes_index",
+      "community": 12,
       "norm_label": "index.ts"
+    },
+    {
+      "label": "apiRouter",
+      "file_type": "code",
+      "source_file": "apps/api/src/routes/index.ts",
+      "source_location": "L5",
+      "id": "routes_index_apirouter",
+      "community": 12,
+      "norm_label": "apirouter"
+    },
+    {
+      "label": "server.ts",
+      "file_type": "code",
+      "source_file": "apps/api/src/server.ts",
+      "source_location": "L1",
+      "id": "src_server",
+      "community": 12,
+      "norm_label": "server.ts"
+    },
+    {
+      "label": "server",
+      "file_type": "code",
+      "source_file": "apps/api/src/server.ts",
+      "source_location": "L12",
+      "id": "src_server_server",
+      "community": 12,
+      "norm_label": "server"
+    },
+    {
+      "label": "shutDown()",
+      "file_type": "code",
+      "source_file": "apps/api/src/server.ts",
+      "source_location": "L33",
+      "id": "src_server_shutdown",
+      "community": 12,
+      "norm_label": "shutdown()"
+    },
+    {
+      "label": "formatHostForUrl()",
+      "file_type": "code",
+      "source_file": "apps/api/src/server.ts",
+      "source_location": "L72",
+      "id": "src_server_formathostforurl",
+      "community": 12,
+      "norm_label": "formathostforurl()"
+    },
+    {
+      "label": "tsconfig.build.json",
+      "file_type": "code",
+      "source_file": "apps/api/tsconfig.build.json",
+      "source_location": "L1",
+      "id": "api_tsconfig_build",
+      "community": 42,
+      "norm_label": "tsconfig.build.json"
+    },
+    {
+      "label": "extends",
+      "file_type": "code",
+      "source_file": "apps/api/tsconfig.build.json",
+      "source_location": "L2",
+      "id": "api_tsconfig_build_extends",
+      "community": 42,
+      "norm_label": "extends"
+    },
+    {
+      "label": "compilerOptions",
+      "file_type": "code",
+      "source_file": "apps/api/tsconfig.build.json",
+      "source_location": "L3",
+      "id": "api_tsconfig_build_compileroptions",
+      "community": 42,
+      "norm_label": "compileroptions"
+    },
+    {
+      "label": "noEmit",
+      "file_type": "code",
+      "source_file": "apps/api/tsconfig.build.json",
+      "source_location": "L4",
+      "id": "api_tsconfig_build_compileroptions_noemit",
+      "community": 42,
+      "norm_label": "noemit"
+    },
+    {
+      "label": "outDir",
+      "file_type": "code",
+      "source_file": "apps/api/tsconfig.build.json",
+      "source_location": "L5",
+      "id": "api_tsconfig_build_compileroptions_outdir",
+      "community": 42,
+      "norm_label": "outdir"
+    },
+    {
+      "label": "exclude",
+      "file_type": "code",
+      "source_file": "apps/api/tsconfig.build.json",
+      "source_location": "L7",
+      "id": "api_tsconfig_build_exclude",
+      "community": 42,
+      "norm_label": "exclude"
     },
     {
       "label": "tsconfig.json",
@@ -285,19 +663,46 @@
       "norm_label": "compileroptions"
     },
     {
-      "label": "noEmit",
+      "label": "declaration",
       "file_type": "code",
       "source_file": "apps/api/tsconfig.json",
       "source_location": "L4",
+      "id": "api_tsconfig_compileroptions_declaration",
+      "community": 35,
+      "norm_label": "declaration"
+    },
+    {
+      "label": "declarationMap",
+      "file_type": "code",
+      "source_file": "apps/api/tsconfig.json",
+      "source_location": "L5",
+      "id": "api_tsconfig_compileroptions_declarationmap",
+      "community": 35,
+      "norm_label": "declarationmap"
+    },
+    {
+      "label": "noEmit",
+      "file_type": "code",
+      "source_file": "apps/api/tsconfig.json",
+      "source_location": "L6",
       "id": "api_tsconfig_compileroptions_noemit",
       "community": 35,
       "norm_label": "noemit"
     },
     {
+      "label": "rootDir",
+      "file_type": "code",
+      "source_file": "apps/api/tsconfig.json",
+      "source_location": "L7",
+      "id": "api_tsconfig_compileroptions_rootdir",
+      "community": 35,
+      "norm_label": "rootdir"
+    },
+    {
       "label": "include",
       "file_type": "code",
       "source_file": "apps/api/tsconfig.json",
-      "source_location": "L6",
+      "source_location": "L9",
       "id": "api_tsconfig_include",
       "community": 35,
       "norm_label": "include"
@@ -415,8 +820,8 @@
       "file_type": "code",
       "source_file": "apps/web/src/dev-server.mjs",
       "source_location": "L1",
-      "id": "apps_web_src_dev_server_mjs_src_dev_server",
-      "community": 43,
+      "id": "src_dev_server",
+      "community": 44,
       "norm_label": "dev-server.mjs"
     },
     {
@@ -424,8 +829,8 @@
       "file_type": "code",
       "source_file": "apps/web/src/dev-server.mjs",
       "source_location": "L7",
-      "id": "apps_web_src_dev_server_mjs_src_dev_server_port",
-      "community": 43,
+      "id": "src_dev_server_port",
+      "community": 44,
       "norm_label": "port"
     },
     {
@@ -433,8 +838,8 @@
       "file_type": "code",
       "source_file": "apps/web/src/dev-server.mjs",
       "source_location": "L24",
-      "id": "apps_web_src_dev_server_mjs_src_dev_server_server",
-      "community": 43,
+      "id": "src_dev_server_server",
+      "community": 44,
       "norm_label": "server"
     },
     {
@@ -442,8 +847,8 @@
       "file_type": "code",
       "source_file": "apps/web/src/dev-server.mjs",
       "source_location": "L50",
-      "id": "apps_web_src_dev_server_mjs_src_dev_server_parseport",
-      "community": 43,
+      "id": "src_dev_server_parseport",
+      "community": 44,
       "norm_label": "parseport()"
     },
     {
@@ -451,8 +856,8 @@
       "file_type": "code",
       "source_file": "apps/web/src/dev-server.mjs",
       "source_location": "L60",
-      "id": "apps_web_src_dev_server_mjs_src_dev_server_shutdown",
-      "community": 43,
+      "id": "src_dev_server_shutdown",
+      "community": 44,
       "norm_label": "shutdown()"
     },
     {
@@ -641,7 +1046,7 @@
       "source_file": "package.json",
       "source_location": "L15",
       "id": "package_devdependencies",
-      "community": 32,
+      "community": 3,
       "norm_label": "devdependencies"
     },
     {
@@ -650,7 +1055,7 @@
       "source_file": "package.json",
       "source_location": "L16",
       "id": "package_devdependencies_eslint_js",
-      "community": 32,
+      "community": 3,
       "norm_label": "@eslint/js"
     },
     {
@@ -659,7 +1064,7 @@
       "source_file": "package.json",
       "source_location": "L17",
       "id": "package_devdependencies_types_node",
-      "community": 32,
+      "community": 3,
       "norm_label": "@types/node"
     },
     {
@@ -668,7 +1073,7 @@
       "source_file": "package.json",
       "source_location": "L18",
       "id": "package_devdependencies_eslint",
-      "community": 32,
+      "community": 3,
       "norm_label": "eslint"
     },
     {
@@ -677,7 +1082,7 @@
       "source_file": "package.json",
       "source_location": "L19",
       "id": "package_devdependencies_eslint_config_prettier",
-      "community": 32,
+      "community": 3,
       "norm_label": "eslint-config-prettier"
     },
     {
@@ -686,7 +1091,7 @@
       "source_file": "package.json",
       "source_location": "L20",
       "id": "package_devdependencies_globals",
-      "community": 32,
+      "community": 3,
       "norm_label": "globals"
     },
     {
@@ -695,7 +1100,7 @@
       "source_file": "package.json",
       "source_location": "L21",
       "id": "package_devdependencies_prettier",
-      "community": 32,
+      "community": 3,
       "norm_label": "prettier"
     },
     {
@@ -704,7 +1109,7 @@
       "source_file": "package.json",
       "source_location": "L22",
       "id": "package_devdependencies_turbo",
-      "community": 32,
+      "community": 3,
       "norm_label": "turbo"
     },
     {
@@ -713,7 +1118,7 @@
       "source_file": "package.json",
       "source_location": "L23",
       "id": "package_devdependencies_typescript",
-      "community": 32,
+      "community": 3,
       "norm_label": "typescript"
     },
     {
@@ -722,7 +1127,7 @@
       "source_file": "package.json",
       "source_location": "L24",
       "id": "package_devdependencies_typescript_eslint",
-      "community": 32,
+      "community": 3,
       "norm_label": "typescript-eslint"
     },
     {
@@ -1397,7 +1802,7 @@
       "source_file": "turbo.json",
       "source_location": "L1",
       "id": "turbo",
-      "community": 32,
+      "community": 3,
       "norm_label": "turbo.json"
     },
     {
@@ -1406,7 +1811,7 @@
       "source_file": "turbo.json",
       "source_location": "L2",
       "id": "turbo_schema",
-      "community": 32,
+      "community": 3,
       "norm_label": "$schema"
     },
     {
@@ -1491,10 +1896,37 @@
       "norm_label": "outputs"
     },
     {
-      "label": "lint",
+      "label": "@clientflow/api#build",
       "file_type": "code",
       "source_file": "turbo.json",
       "source_location": "L15",
+      "id": "turbo_tasks_clientflow_api_build",
+      "community": 1,
+      "norm_label": "@clientflow/api#build"
+    },
+    {
+      "label": "dependsOn",
+      "file_type": "code",
+      "source_file": "turbo.json",
+      "source_location": "L16",
+      "id": "turbo_clientflow_api_build_dependson",
+      "community": 1,
+      "norm_label": "dependson"
+    },
+    {
+      "label": "outputs",
+      "file_type": "code",
+      "source_file": "turbo.json",
+      "source_location": "L17",
+      "id": "turbo_clientflow_api_build_outputs",
+      "community": 1,
+      "norm_label": "outputs"
+    },
+    {
+      "label": "lint",
+      "file_type": "code",
+      "source_file": "turbo.json",
+      "source_location": "L19",
       "id": "turbo_tasks_lint",
       "community": 1,
       "norm_label": "lint"
@@ -1503,7 +1935,7 @@
       "label": "dependsOn",
       "file_type": "code",
       "source_file": "turbo.json",
-      "source_location": "L16",
+      "source_location": "L20",
       "id": "turbo_lint_dependson",
       "community": 1,
       "norm_label": "dependson"
@@ -1512,7 +1944,7 @@
       "label": "typecheck",
       "file_type": "code",
       "source_file": "turbo.json",
-      "source_location": "L18",
+      "source_location": "L22",
       "id": "turbo_tasks_typecheck",
       "community": 1,
       "norm_label": "typecheck"
@@ -1521,7 +1953,7 @@
       "label": "dependsOn",
       "file_type": "code",
       "source_file": "turbo.json",
-      "source_location": "L19",
+      "source_location": "L23",
       "id": "turbo_typecheck_dependson",
       "community": 1,
       "norm_label": "dependson"
@@ -1530,7 +1962,7 @@
       "label": "clean",
       "file_type": "code",
       "source_file": "turbo.json",
-      "source_location": "L21",
+      "source_location": "L25",
       "id": "turbo_tasks_clean",
       "community": 1,
       "norm_label": "clean"
@@ -1539,7 +1971,7 @@
       "label": "dependsOn",
       "file_type": "code",
       "source_file": "turbo.json",
-      "source_location": "L22",
+      "source_location": "L26",
       "id": "turbo_clean_dependson",
       "community": 1,
       "norm_label": "dependson"
@@ -1548,7 +1980,7 @@
       "label": "cache",
       "file_type": "code",
       "source_file": "turbo.json",
-      "source_location": "L23",
+      "source_location": "L27",
       "id": "turbo_clean_cache",
       "community": 1,
       "norm_label": "cache"
@@ -1559,7 +1991,7 @@
       "source_file": ".agents/skills/graphify/SKILL.md",
       "source_location": "L1",
       "id": "graphify_skill",
-      "community": 12,
+      "community": 2,
       "norm_label": "skill.md"
     },
     {
@@ -1568,7 +2000,7 @@
       "source_file": ".agents/skills/graphify/SKILL.md",
       "source_location": "L7",
       "id": "graphify_skill_graphify",
-      "community": 12,
+      "community": 2,
       "norm_label": "/graphify"
     },
     {
@@ -1577,7 +2009,7 @@
       "source_file": ".agents/skills/graphify/SKILL.md",
       "source_location": "L11",
       "id": "graphify_skill_usage",
-      "community": 12,
+      "community": 2,
       "norm_label": "usage"
     },
     {
@@ -1586,7 +2018,7 @@
       "source_file": ".agents/skills/graphify/SKILL.md",
       "source_location": "L44",
       "id": "graphify_skill_what_graphify_is_for",
-      "community": 12,
+      "community": 2,
       "norm_label": "what graphify is for"
     },
     {
@@ -1721,7 +2153,7 @@
       "source_file": ".agents/skills/graphify/SKILL.md",
       "source_location": "L558",
       "id": "graphify_skill_interpreter_guard_for_subcommands",
-      "community": 12,
+      "community": 2,
       "norm_label": "interpreter guard for subcommands"
     },
     {
@@ -1730,7 +2162,7 @@
       "source_file": ".agents/skills/graphify/SKILL.md",
       "source_location": "L576",
       "id": "graphify_skill_for_update_and_cluster_only",
-      "community": 12,
+      "community": 2,
       "norm_label": "for --update and --cluster-only"
     },
     {
@@ -1739,7 +2171,7 @@
       "source_file": ".agents/skills/graphify/SKILL.md",
       "source_location": "L582",
       "id": "graphify_skill_for_graphify_query",
-      "community": 12,
+      "community": 2,
       "norm_label": "for /graphify query"
     },
     {
@@ -1748,7 +2180,7 @@
       "source_file": ".agents/skills/graphify/SKILL.md",
       "source_location": "L594",
       "id": "graphify_skill_for_graphify_add_and_watch",
-      "community": 12,
+      "community": 2,
       "norm_label": "for /graphify add and --watch"
     },
     {
@@ -1757,7 +2189,7 @@
       "source_file": ".agents/skills/graphify/SKILL.md",
       "source_location": "L600",
       "id": "graphify_skill_for_the_commit_hook_and_native_claude_md_integration",
-      "community": 12,
+      "community": 2,
       "norm_label": "for the commit hook and native claude.md integration"
     },
     {
@@ -1766,7 +2198,7 @@
       "source_file": ".agents/skills/graphify/SKILL.md",
       "source_location": "L606",
       "id": "graphify_skill_honesty_rules",
-      "community": 12,
+      "community": 2,
       "norm_label": "honesty rules"
     },
     {
@@ -2058,6 +2490,123 @@
       "norm_label": "for --cluster-only"
     },
     {
+      "label": "SKILL.md",
+      "file_type": "document",
+      "source_file": ".claude/skills/landing-design/SKILL.md",
+      "source_location": "L1",
+      "id": "landing_design_skill",
+      "community": 32,
+      "norm_label": "skill.md"
+    },
+    {
+      "label": "Landing Design",
+      "file_type": "document",
+      "source_file": ".claude/skills/landing-design/SKILL.md",
+      "source_location": "L12",
+      "id": "landing_design_skill_landing_design",
+      "community": 32,
+      "norm_label": "landing design"
+    },
+    {
+      "label": "Authority",
+      "file_type": "document",
+      "source_file": ".claude/skills/landing-design/SKILL.md",
+      "source_location": "L17",
+      "id": "landing_design_skill_authority",
+      "community": 32,
+      "norm_label": "authority"
+    },
+    {
+      "label": "Required context",
+      "file_type": "document",
+      "source_file": ".claude/skills/landing-design/SKILL.md",
+      "source_location": "L29",
+      "id": "landing_design_skill_required_context",
+      "community": 32,
+      "norm_label": "required context"
+    },
+    {
+      "label": "Scope",
+      "file_type": "document",
+      "source_file": ".claude/skills/landing-design/SKILL.md",
+      "source_location": "L43",
+      "id": "landing_design_skill_scope",
+      "community": 32,
+      "norm_label": "scope"
+    },
+    {
+      "label": "Shared identity",
+      "file_type": "document",
+      "source_file": ".claude/skills/landing-design/SKILL.md",
+      "source_location": "L59",
+      "id": "landing_design_skill_shared_identity",
+      "community": 32,
+      "norm_label": "shared identity"
+    },
+    {
+      "label": "Marketing adaptations",
+      "file_type": "document",
+      "source_file": ".claude/skills/landing-design/SKILL.md",
+      "source_location": "L77",
+      "id": "landing_design_skill_marketing_adaptations",
+      "community": 32,
+      "norm_label": "marketing adaptations"
+    },
+    {
+      "label": "Page strategy",
+      "file_type": "document",
+      "source_file": ".claude/skills/landing-design/SKILL.md",
+      "source_location": "L92",
+      "id": "landing_design_skill_page_strategy",
+      "community": 32,
+      "norm_label": "page strategy"
+    },
+    {
+      "label": "Visual direction",
+      "file_type": "document",
+      "source_file": ".claude/skills/landing-design/SKILL.md",
+      "source_location": "L105",
+      "id": "landing_design_skill_visual_direction",
+      "community": 32,
+      "norm_label": "visual direction"
+    },
+    {
+      "label": "Product connection",
+      "file_type": "document",
+      "source_file": ".claude/skills/landing-design/SKILL.md",
+      "source_location": "L123",
+      "id": "landing_design_skill_product_connection",
+      "community": 32,
+      "norm_label": "product connection"
+    },
+    {
+      "label": "New patterns",
+      "file_type": "document",
+      "source_file": ".claude/skills/landing-design/SKILL.md",
+      "source_location": "L134",
+      "id": "landing_design_skill_new_patterns",
+      "community": 32,
+      "norm_label": "new patterns"
+    },
+    {
+      "label": "Implementation quality",
+      "file_type": "document",
+      "source_file": ".claude/skills/landing-design/SKILL.md",
+      "source_location": "L145",
+      "id": "landing_design_skill_implementation_quality",
+      "community": 32,
+      "norm_label": "implementation quality"
+    },
+    {
+      "label": "Review",
+      "file_type": "document",
+      "source_file": ".claude/skills/landing-design/SKILL.md",
+      "source_location": "L159",
+      "id": "landing_design_skill_review",
+      "community": 32,
+      "norm_label": "review"
+    },
+    {
       "label": "AGENTS.md",
       "file_type": "document",
       "source_file": "AGENTS.md",
@@ -2094,10 +2643,19 @@
       "norm_label": "rules"
     },
     {
-      "label": "Workflow",
+      "label": "Design",
       "file_type": "document",
       "source_file": "AGENTS.md",
       "source_location": "L25",
+      "id": "agents_design",
+      "community": 15,
+      "norm_label": "design"
+    },
+    {
+      "label": "Workflow",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L37",
       "id": "agents_workflow",
       "community": 15,
       "norm_label": "workflow"
@@ -2106,7 +2664,7 @@
       "label": "Validation",
       "file_type": "document",
       "source_file": "AGENTS.md",
-      "source_location": "L35",
+      "source_location": "L47",
       "id": "agents_validation",
       "community": 15,
       "norm_label": "validation"
@@ -2115,25 +2673,16 @@
       "label": "Definition of done",
       "file_type": "document",
       "source_file": "AGENTS.md",
-      "source_location": "L49",
+      "source_location": "L61",
       "id": "agents_definition_of_done",
       "community": 15,
       "norm_label": "definition of done"
     },
     {
-      "label": "Interface design",
-      "file_type": "document",
-      "source_file": "AGENTS.md",
-      "source_location": "L58",
-      "id": "agents_interface_design",
-      "community": 15,
-      "norm_label": "interface design"
-    },
-    {
       "label": "Graphify",
       "file_type": "document",
       "source_file": "AGENTS.md",
-      "source_location": "L65",
+      "source_location": "L70",
       "id": "agents_graphify",
       "community": 15,
       "norm_label": "graphify"
@@ -2187,7 +2736,7 @@
       "label": "Monorepo structure",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L7",
+      "source_location": "L9",
       "id": "readme_monorepo_structure",
       "community": 17,
       "norm_label": "monorepo structure"
@@ -2196,7 +2745,7 @@
       "label": "Prerequisites",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L18",
+      "source_location": "L20",
       "id": "readme_prerequisites",
       "community": 17,
       "norm_label": "prerequisites"
@@ -2205,7 +2754,7 @@
       "label": "Docker development environment",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L23",
+      "source_location": "L25",
       "id": "readme_docker_development_environment",
       "community": 17,
       "norm_label": "docker development environment"
@@ -2214,7 +2763,7 @@
       "label": "Installation",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L53",
+      "source_location": "L56",
       "id": "readme_installation",
       "community": 17,
       "norm_label": "installation"
@@ -2223,10 +2772,73 @@
       "label": "Root scripts",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L59",
+      "source_location": "L62",
       "id": "readme_root_scripts",
       "community": 17,
       "norm_label": "root scripts"
+    },
+    {
+      "label": "API",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L75",
+      "id": "readme_api",
+      "community": 17,
+      "norm_label": "api"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "apps/api/README.md",
+      "source_location": "L1",
+      "id": "api_readme",
+      "community": 39,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "ClientFlow API",
+      "file_type": "document",
+      "source_file": "apps/api/README.md",
+      "source_location": "L1",
+      "id": "api_readme_clientflow_api",
+      "community": 39,
+      "norm_label": "clientflow api"
+    },
+    {
+      "label": "Configuration",
+      "file_type": "document",
+      "source_file": "apps/api/README.md",
+      "source_location": "L9",
+      "id": "api_readme_configuration",
+      "community": 39,
+      "norm_label": "configuration"
+    },
+    {
+      "label": "Commands",
+      "file_type": "document",
+      "source_file": "apps/api/README.md",
+      "source_location": "L27",
+      "id": "api_readme_commands",
+      "community": 39,
+      "norm_label": "commands"
+    },
+    {
+      "label": "Health endpoint",
+      "file_type": "document",
+      "source_file": "apps/api/README.md",
+      "source_location": "L43",
+      "id": "api_readme_health_endpoint",
+      "community": 39,
+      "norm_label": "health endpoint"
+    },
+    {
+      "label": "Request handling",
+      "file_type": "document",
+      "source_file": "apps/api/README.md",
+      "source_location": "L60",
+      "id": "api_readme_request_handling",
+      "community": 39,
+      "norm_label": "request handling"
     },
     {
       "label": "README.md",
@@ -2272,6 +2884,60 @@
       "id": "config_readme_prettier",
       "community": 28,
       "norm_label": "prettier"
+    },
+    {
+      "label": "dev-server.mjs",
+      "file_type": "code",
+      "source_file": "apps/web/src/dev-server.mjs",
+      "source_location": "L1",
+      "community": 43,
+      "norm_label": "dev-server.mjs",
+      "id": "apps_web_src_dev_server_mjs_src_dev_server"
+    },
+    {
+      "label": "port",
+      "file_type": "code",
+      "source_file": "apps/web/src/dev-server.mjs",
+      "source_location": "L7",
+      "community": 43,
+      "norm_label": "port",
+      "id": "apps_web_src_dev_server_mjs_src_dev_server_port"
+    },
+    {
+      "label": "server",
+      "file_type": "code",
+      "source_file": "apps/web/src/dev-server.mjs",
+      "source_location": "L24",
+      "community": 43,
+      "norm_label": "server",
+      "id": "apps_web_src_dev_server_mjs_src_dev_server_server"
+    },
+    {
+      "label": "parsePort()",
+      "file_type": "code",
+      "source_file": "apps/web/src/dev-server.mjs",
+      "source_location": "L50",
+      "community": 43,
+      "norm_label": "parseport()",
+      "id": "apps_web_src_dev_server_mjs_src_dev_server_parseport"
+    },
+    {
+      "label": "shutDown()",
+      "file_type": "code",
+      "source_file": "apps/web/src/dev-server.mjs",
+      "source_location": "L60",
+      "community": 43,
+      "norm_label": "shutdown()",
+      "id": "apps_web_src_dev_server_mjs_src_dev_server_shutdown"
+    },
+    {
+      "label": "Interface design",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L58",
+      "community": 15,
+      "norm_label": "interface design",
+      "id": "agents_interface_design"
     },
     {
       "label": "index.ts",
@@ -2712,6 +3378,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/package.json",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "api_package",
+      "target": "api_package_dependencies"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/package.json",
       "source_location": "L12",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -2747,6 +3423,16 @@
       "confidence_score": 1.0,
       "source": "api_package",
       "target": "api_package_scripts"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/package.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "api_package",
+      "target": "api_package_type"
     },
     {
       "relation": "contains",
@@ -2806,6 +3492,16 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "api_package_scripts",
+      "target": "api_package_scripts_start"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/package.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "api_package_scripts",
       "target": "api_package_scripts_typecheck"
     },
     {
@@ -2821,52 +3517,714 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "apps/api/src/dev-server.mjs",
-      "source_location": "L40",
+      "source_file": "apps/api/package.json",
+      "source_location": "L18",
       "weight": 1.0,
-      "source": "apps_api_src_dev_server_mjs_src_dev_server",
-      "target": "apps_api_src_dev_server_mjs_src_dev_server_parseport",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "api_package_devdependencies",
+      "target": "api_package_devdependencies_tsx"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "apps/api/src/dev-server.mjs",
+      "source_file": "apps/api/package.json",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "api_package_devdependencies",
+      "target": "api_package_devdependencies_types_cors"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/package.json",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "api_package_devdependencies",
+      "target": "api_package_devdependencies_types_express"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/package.json",
+      "source_location": "L21",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "api_package_dependencies",
+      "target": "api_package_dependencies_cors"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/package.json",
+      "source_location": "L22",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "api_package_dependencies",
+      "target": "api_package_dependencies_dotenv"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/package.json",
+      "source_location": "L23",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "api_package_dependencies",
+      "target": "api_package_dependencies_express"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/package.json",
+      "source_location": "L24",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "api_package_dependencies",
+      "target": "api_package_dependencies_helmet"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/package.json",
+      "source_location": "L25",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "api_package_dependencies",
+      "target": "api_package_dependencies_zod"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/app.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app",
+      "target": "config_env"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/app.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app",
+      "target": "config_env_env"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/app.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app",
+      "target": "errors_app_error"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/app.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app",
+      "target": "errors_app_error_apperror"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/app.ts",
       "source_location": "L7",
       "weight": 1.0,
-      "source": "apps_api_src_dev_server_mjs_src_dev_server",
-      "target": "apps_api_src_dev_server_mjs_src_dev_server_port",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "src_app",
+      "target": "middleware_error_handler"
     },
     {
-      "relation": "contains",
+      "relation": "imports",
+      "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "apps/api/src/dev-server.mjs",
-      "source_location": "L14",
+      "source_file": "apps/api/src/app.ts",
+      "source_location": "L7",
       "weight": 1.0,
-      "source": "apps_api_src_dev_server_mjs_src_dev_server",
-      "target": "apps_api_src_dev_server_mjs_src_dev_server_server",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "src_app",
+      "target": "middleware_error_handler_errorhandler"
     },
     {
-      "relation": "contains",
+      "relation": "imports_from",
+      "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "apps/api/src/dev-server.mjs",
-      "source_location": "L50",
-      "weight": 1.0,
-      "source": "apps_api_src_dev_server_mjs_src_dev_server",
-      "target": "apps_api_src_dev_server_mjs_src_dev_server_shutdown",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/api/src/dev-server.mjs",
+      "source_file": "apps/api/src/app.ts",
       "source_location": "L8",
       "weight": 1.0,
-      "source": "apps_api_src_dev_server_mjs_src_dev_server",
-      "target": "src_dev_server_healthresponse",
+      "confidence_score": 1.0,
+      "source": "src_app",
+      "target": "middleware_not_found"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/app.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app",
+      "target": "middleware_not_found_notfound"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/app.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app",
+      "target": "routes_index"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/app.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app",
+      "target": "routes_index_apirouter"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/app.ts",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app",
+      "target": "src_app_app"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/app.ts",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app",
+      "target": "src_app_origin"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/server.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_server",
+      "target": "src_app"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/server.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_server",
+      "target": "src_app_app"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/config/env.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "config_env",
+      "target": "config_env_corsoriginschema"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/config/env.ts",
+      "source_location": "L60",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "config_env",
+      "target": "config_env_env"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/config/env.ts",
+      "source_location": "L28",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "config_env",
+      "target": "config_env_environmentschema"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/config/env.ts",
+      "source_location": "L46",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "config_env",
+      "target": "config_env_parsedenvironment"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/controllers/health.controller.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "controllers_health_controller",
+      "target": "config_env"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/middleware/error-handler.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "middleware_error_handler",
+      "target": "config_env"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/server.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_server",
+      "target": "config_env"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/controllers/health.controller.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "controllers_health_controller",
+      "target": "config_env_env"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/middleware/error-handler.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "middleware_error_handler",
+      "target": "config_env_env"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/server.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_server",
+      "target": "config_env_env"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/controllers/health.controller.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "controllers_health_controller",
+      "target": "controllers_health_controller_gethealth"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/routes/health.routes.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_health_routes",
+      "target": "controllers_health_controller"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/routes/health.routes.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_health_routes",
+      "target": "controllers_health_controller_gethealth"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/errors/app-error.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "errors_app_error",
+      "target": "errors_app_error_apperror"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/errors/app-error.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "errors_app_error",
+      "target": "errors_app_error_apperroroptions"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/middleware/error-handler.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "middleware_error_handler",
+      "target": "errors_app_error"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/middleware/not-found.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "middleware_not_found",
+      "target": "errors_app_error"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/errors/app-error.ts",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "errors_app_error_apperror",
+      "target": "errors_app_error_apperror_constructor"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/middleware/error-handler.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "middleware_error_handler",
+      "target": "errors_app_error_apperror"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/middleware/not-found.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "middleware_not_found",
+      "target": "errors_app_error_apperror"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/middleware/error-handler.ts",
+      "source_location": "L50",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "middleware_error_handler",
+      "target": "middleware_error_handler_errorhandler"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/middleware/error-handler.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "middleware_error_handler",
+      "target": "middleware_error_handler_errorresponse"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/middleware/error-handler.ts",
+      "source_location": "L22",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "middleware_error_handler",
+      "target": "middleware_error_handler_iserrorrecord"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/middleware/error-handler.ts",
+      "source_location": "L26",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "middleware_error_handler",
+      "target": "middleware_error_handler_ismalformedjsonerror"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/middleware/error-handler.ts",
+      "source_location": "L35",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "middleware_error_handler",
+      "target": "middleware_error_handler_ispayloadtoolargeerror"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/middleware/error-handler.ts",
+      "source_location": "L39",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "middleware_error_handler",
+      "target": "middleware_error_handler_logunexpectederror"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/middleware/error-handler.ts",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "middleware_error_handler",
+      "target": "middleware_error_handler_senderror"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/middleware/error-handler.ts",
+      "source_location": "L57",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "middleware_error_handler_errorhandler",
+      "target": "middleware_error_handler_senderror"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/middleware/error-handler.ts",
+      "source_location": "L29",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "middleware_error_handler_ismalformedjsonerror",
+      "target": "middleware_error_handler_iserrorrecord"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/middleware/error-handler.ts",
+      "source_location": "L36",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "middleware_error_handler_ispayloadtoolargeerror",
+      "target": "middleware_error_handler_iserrorrecord"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/middleware/error-handler.ts",
+      "source_location": "L56",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "middleware_error_handler_errorhandler",
+      "target": "middleware_error_handler_ismalformedjsonerror"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/middleware/error-handler.ts",
+      "source_location": "L61",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "middleware_error_handler_errorhandler",
+      "target": "middleware_error_handler_ispayloadtoolargeerror"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/middleware/error-handler.ts",
+      "source_location": "L71",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "middleware_error_handler_errorhandler",
+      "target": "middleware_error_handler_logunexpectederror"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/middleware/not-found.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "middleware_not_found",
+      "target": "middleware_not_found_notfound"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/routes/health.routes.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_health_routes",
+      "target": "routes_health_routes_healthrouter"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/routes/index.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_index",
+      "target": "routes_health_routes"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/routes/index.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_index",
+      "target": "routes_health_routes_healthrouter"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/routes/index.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_index",
+      "target": "routes_index_apirouter"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/server.ts",
+      "source_location": "L72",
+      "weight": 1.0,
+      "source": "src_server",
+      "target": "src_server_formathostforurl",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/server.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_server",
+      "target": "src_server_server"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/server.ts",
+      "source_location": "L29",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_server",
+      "target": "src_server_shutdown"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/tsconfig.build.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "api_tsconfig_build",
+      "target": "api_tsconfig_build_compileroptions"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/tsconfig.build.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "api_tsconfig_build",
+      "target": "api_tsconfig_build_exclude"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/tsconfig.build.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "api_tsconfig_build",
+      "target": "api_tsconfig_build_extends"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/tsconfig.build.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "api_tsconfig_build_compileroptions",
+      "target": "api_tsconfig_build_compileroptions_noemit"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/tsconfig.build.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "api_tsconfig_build_compileroptions",
+      "target": "api_tsconfig_build_compileroptions_outdir"
     },
     {
       "relation": "contains",
@@ -2906,7 +4264,37 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "api_tsconfig_compileroptions",
+      "target": "api_tsconfig_compileroptions_declaration"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/tsconfig.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "api_tsconfig_compileroptions",
+      "target": "api_tsconfig_compileroptions_declarationmap"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/tsconfig.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "api_tsconfig_compileroptions",
       "target": "api_tsconfig_compileroptions_noemit"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/tsconfig.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "api_tsconfig_compileroptions",
+      "target": "api_tsconfig_compileroptions_rootdir"
     },
     {
       "relation": "contains",
@@ -3024,9 +4412,9 @@
       "source_file": "apps/web/src/dev-server.mjs",
       "source_location": "L50",
       "weight": 1.0,
-      "source": "apps_web_src_dev_server_mjs_src_dev_server",
-      "target": "apps_web_src_dev_server_mjs_src_dev_server_parseport",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "src_dev_server",
+      "target": "src_dev_server_parseport"
     },
     {
       "relation": "contains",
@@ -3034,9 +4422,9 @@
       "source_file": "apps/web/src/dev-server.mjs",
       "source_location": "L7",
       "weight": 1.0,
-      "source": "apps_web_src_dev_server_mjs_src_dev_server",
-      "target": "apps_web_src_dev_server_mjs_src_dev_server_port",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "src_dev_server",
+      "target": "src_dev_server_port"
     },
     {
       "relation": "contains",
@@ -3044,9 +4432,9 @@
       "source_file": "apps/web/src/dev-server.mjs",
       "source_location": "L24",
       "weight": 1.0,
-      "source": "apps_web_src_dev_server_mjs_src_dev_server",
-      "target": "apps_web_src_dev_server_mjs_src_dev_server_server",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "src_dev_server",
+      "target": "src_dev_server_server"
     },
     {
       "relation": "contains",
@@ -3054,9 +4442,9 @@
       "source_file": "apps/web/src/dev-server.mjs",
       "source_location": "L60",
       "weight": 1.0,
-      "source": "apps_web_src_dev_server_mjs_src_dev_server",
-      "target": "apps_web_src_dev_server_mjs_src_dev_server_shutdown",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "src_dev_server",
+      "target": "src_dev_server_shutdown"
     },
     {
       "relation": "contains",
@@ -4106,6 +5494,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "turbo.json",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "turbo_tasks",
+      "target": "turbo_tasks_clientflow_api_build"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "turbo.json",
       "source_location": "L11",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -4201,6 +5599,26 @@
       "confidence_score": 1.0,
       "source": "turbo_tasks_clientflow_types_build",
       "target": "turbo_clientflow_types_build_outputs"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "turbo.json",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "turbo_tasks_clientflow_api_build",
+      "target": "turbo_clientflow_api_build_dependson"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "turbo.json",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "turbo_tasks_clientflow_api_build",
+      "target": "turbo_clientflow_api_build_outputs"
     },
     {
       "relation": "contains",
@@ -4715,6 +6133,126 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/landing-design/SKILL.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "landing_design_skill",
+      "target": "landing_design_skill_landing_design"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/landing-design/SKILL.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "landing_design_skill_landing_design",
+      "target": "landing_design_skill_authority"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/landing-design/SKILL.md",
+      "source_location": "L145",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "landing_design_skill_landing_design",
+      "target": "landing_design_skill_implementation_quality"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/landing-design/SKILL.md",
+      "source_location": "L77",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "landing_design_skill_landing_design",
+      "target": "landing_design_skill_marketing_adaptations"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/landing-design/SKILL.md",
+      "source_location": "L134",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "landing_design_skill_landing_design",
+      "target": "landing_design_skill_new_patterns"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/landing-design/SKILL.md",
+      "source_location": "L92",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "landing_design_skill_landing_design",
+      "target": "landing_design_skill_page_strategy"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/landing-design/SKILL.md",
+      "source_location": "L123",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "landing_design_skill_landing_design",
+      "target": "landing_design_skill_product_connection"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/landing-design/SKILL.md",
+      "source_location": "L29",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "landing_design_skill_landing_design",
+      "target": "landing_design_skill_required_context"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/landing-design/SKILL.md",
+      "source_location": "L159",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "landing_design_skill_landing_design",
+      "target": "landing_design_skill_review"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/landing-design/SKILL.md",
+      "source_location": "L43",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "landing_design_skill_landing_design",
+      "target": "landing_design_skill_scope"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/landing-design/SKILL.md",
+      "source_location": "L59",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "landing_design_skill_landing_design",
+      "target": "landing_design_skill_shared_identity"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/landing-design/SKILL.md",
+      "source_location": "L105",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "landing_design_skill_landing_design",
+      "target": "landing_design_skill_visual_direction"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "AGENTS.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -4736,6 +6274,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "AGENTS.md",
+      "source_location": "L25",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_agents_md",
+      "target": "agents_design"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
       "source_location": "L58",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -4748,9 +6296,9 @@
       "source_file": "AGENTS.md",
       "source_location": "L58",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_agents_md",
-      "target": "agents_interface_design",
-      "confidence_score": 1.0
+      "target": "agents_interface_design"
     },
     {
       "relation": "contains",
@@ -4826,11 +6374,21 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
+      "source_location": "L75",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme_clientflow",
+      "target": "readme_api"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_clientflow",
-      "target": "readme_docker_development_environment",
-      "confidence_score": 1.0
+      "target": "readme_docker_development_environment"
     },
     {
       "relation": "contains",
@@ -4875,6 +6433,56 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "apps/api/README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "api_readme",
+      "target": "api_readme_clientflow_api"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/README.md",
+      "source_location": "L27",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "api_readme_clientflow_api",
+      "target": "api_readme_commands"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/README.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "api_readme_clientflow_api",
+      "target": "api_readme_configuration"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/README.md",
+      "source_location": "L43",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "api_readme_clientflow_api",
+      "target": "api_readme_health_endpoint"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/README.md",
+      "source_location": "L60",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "api_readme_clientflow_api",
+      "target": "api_readme_request_handling"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "packages/config/README.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -4911,6 +6519,46 @@
       "confidence_score": 1.0,
       "source": "config_readme_clientflow_config",
       "target": "config_readme_typescript"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/web/src/dev-server.mjs",
+      "source_location": "L50",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "apps_web_src_dev_server_mjs_src_dev_server",
+      "target": "apps_web_src_dev_server_mjs_src_dev_server_parseport"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/web/src/dev-server.mjs",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "apps_web_src_dev_server_mjs_src_dev_server",
+      "target": "apps_web_src_dev_server_mjs_src_dev_server_port"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/web/src/dev-server.mjs",
+      "source_location": "L24",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "apps_web_src_dev_server_mjs_src_dev_server",
+      "target": "apps_web_src_dev_server_mjs_src_dev_server_server"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/web/src/dev-server.mjs",
+      "source_location": "L60",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "apps_web_src_dev_server_mjs_src_dev_server",
+      "target": "apps_web_src_dev_server_mjs_src_dev_server_shutdown"
     },
     {
       "relation": "references",
@@ -5141,5 +6789,5 @@
       "source_file": ".agents/skills/graphify/SKILL.md"
     }
   ],
-  "built_at_commit": "c3260ab6a77fa29577d1b6736c30cc43eccfbb1d"
+  "built_at_commit": "fc634596ef3093de2408ac7d355882389ee804af"
 }

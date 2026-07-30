@@ -10,13 +10,13 @@
     "semantic_hash": "a2b1d4dadfb95a1cfafcffce7947ab24"
   },
   "AGENTS.md": {
-    "mtime": 1785446719.2932558,
-    "ast_hash": "a28933339c4da72a4a10c156a9d05ffd",
+    "mtime": 1785450349.001,
+    "ast_hash": "7f75ba5b2237739219b9d488f204b9cf",
     "semantic_hash": ""
   },
   "CLAUDE.md": {
-    "mtime": 1785446719.294257,
-    "ast_hash": "40b45701ea70f96356229ecce3e6cf40",
+    "mtime": 1785446880.9885015,
+    "ast_hash": "494c8beadb9871befd40f20bf0cd0bb0",
     "semantic_hash": ""
   },
   ".agents/skills/graphify/SKILL.md": {
@@ -65,13 +65,13 @@
     "semantic_hash": "735932eaa4f0c8fef9566c538ae3e5f8"
   },
   "apps/api/package.json": {
-    "mtime": 1785446641.0382273,
-    "ast_hash": "e6f851c501ae7ffa98d1851e5cef2eed",
+    "mtime": 1785452354.15025,
+    "ast_hash": "697f4bba41343e46f1f5da74401bbcb3",
     "semantic_hash": ""
   },
   "apps/web/package.json": {
-    "mtime": 1785446641.0372267,
-    "ast_hash": "5059fbe7447894ea4a0fd52f973c4cfb",
+    "mtime": 1785447967.4794805,
+    "ast_hash": "31f8ebc0bc7a35dfb8e1c9c8d4f50a66",
     "semantic_hash": ""
   },
   "package.json": {
@@ -100,13 +100,13 @@
     "semantic_hash": ""
   },
   "turbo.json": {
-    "mtime": 1785446767.5923812,
-    "ast_hash": "91b8409fb500386677cc07a67907508f",
+    "mtime": 1785451161.004091,
+    "ast_hash": "eaeed9d100c3198d9512cc69edc0b51b",
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1785446641.0422256,
-    "ast_hash": "2185a0e0efa8893590bad3c899fcc951",
+    "mtime": 1785451117.0274286,
+    "ast_hash": "5ff83ab5ef4f6f1173ce959725111352",
     "semantic_hash": ""
   },
   "packages/config/README.md": {
@@ -119,14 +119,9 @@
     "ast_hash": "94959a14ffe26db859e218b25f9b1f52",
     "semantic_hash": ""
   },
-  "apps/api/src/index.ts": {
-    "mtime": 1785446641.0513873,
-    "ast_hash": "e2ebd7ddedcadeeadbf819c35985c768",
-    "semantic_hash": ""
-  },
   "apps/api/tsconfig.json": {
-    "mtime": 1785446684.8736196,
-    "ast_hash": "1448edef4058dd578ddc354a37a3e51d",
+    "mtime": 1785451117.0138183,
+    "ast_hash": "788f014dcf0154f227b511942fae734c",
     "semantic_hash": ""
   },
   "apps/web/src/index.ts": {
@@ -177,6 +172,76 @@
   "prettier.config.mjs": {
     "mtime": 1785446641.0523872,
     "ast_hash": "86c8977cbd07d6fbe37ad02e9866986f",
+    "semantic_hash": ""
+  },
+  "apps/web/src/dev-server.mjs": {
+    "mtime": 1785448003.9114861,
+    "ast_hash": "131286e8b12880e77a6f5ff9f611ab5f",
+    "semantic_hash": ""
+  },
+  "docker-compose.yml": {
+    "mtime": 1785451117.0274286,
+    "ast_hash": "c3980f96d39e2160760e0cc2db7ea8a6",
+    "semantic_hash": ""
+  },
+  "apps/api/src/app.ts": {
+    "mtime": 1785452098.139,
+    "ast_hash": "73c497440b33a0e9f0291be34ac64010",
+    "semantic_hash": ""
+  },
+  "apps/api/src/config/env.ts": {
+    "mtime": 1785451126.0139232,
+    "ast_hash": "8dea8db8c0f8b5978da1d3c9c826799e",
+    "semantic_hash": ""
+  },
+  "apps/api/src/controllers/health.controller.ts": {
+    "mtime": 1785451117.0193303,
+    "ast_hash": "e45e40b42a8fa33dd0d3c487daae1979",
+    "semantic_hash": ""
+  },
+  "apps/api/src/errors/app-error.ts": {
+    "mtime": 1785451117.020331,
+    "ast_hash": "c5734a4ff701d5688690c43298b0ca60",
+    "semantic_hash": ""
+  },
+  "apps/api/src/middleware/error-handler.ts": {
+    "mtime": 1785451126.0750115,
+    "ast_hash": "b503d7641af4963d272d2f72778db0d9",
+    "semantic_hash": ""
+  },
+  "apps/api/src/middleware/not-found.ts": {
+    "mtime": 1785451117.0223525,
+    "ast_hash": "5b2764e59497e96521b7473787bbbbc1",
+    "semantic_hash": ""
+  },
+  "apps/api/src/routes/health.routes.ts": {
+    "mtime": 1785451117.0233512,
+    "ast_hash": "5764ed6558f8c7f26705c85d03ed5a50",
+    "semantic_hash": ""
+  },
+  "apps/api/src/routes/index.ts": {
+    "mtime": 1785451117.0243537,
+    "ast_hash": "7ff26784abcb28066975516f3029dd5f",
+    "semantic_hash": ""
+  },
+  "apps/api/src/server.ts": {
+    "mtime": 1785452425.8604364,
+    "ast_hash": "7e2890ad12fe419e37bd53448fa6579f",
+    "semantic_hash": ""
+  },
+  "apps/api/tsconfig.build.json": {
+    "mtime": 1785451117.0153236,
+    "ast_hash": "9140fb2c4b7d2390dbea3c9ceceff425",
+    "semantic_hash": ""
+  },
+  ".claude/skills/landing-design/SKILL.md": {
+    "mtime": 1785450174.89,
+    "ast_hash": "2e83f47354d6905148507d7b8f7401f0",
+    "semantic_hash": ""
+  },
+  "apps/api/README.md": {
+    "mtime": 1785452354.1512518,
+    "ast_hash": "c3809bf6d0c6bb8f95b68b3e27a07d10",
     "semantic_hash": ""
   }
 }

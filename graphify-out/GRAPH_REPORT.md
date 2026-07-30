@@ -1,16 +1,16 @@
 # Graph Report - ClientFlow  (2026-07-30)
 
 ## Corpus Check
-- 37 files · ~10,175 words
+- 47 files · ~12,061 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 282 nodes · 244 edges · 44 communities (29 shown, 15 thin omitted)
+- 356 nodes · 339 edges · 45 communities (29 shown, 16 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 1 edges (avg confidence: 0.85)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `c3260ab6`
+- Built from commit: `fc634596`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -53,20 +53,22 @@
 - [[_COMMUNITY_Community 36|Community 36]]
 - [[_COMMUNITY_Community 37|Community 37]]
 - [[_COMMUNITY_Community 38|Community 38]]
+- [[_COMMUNITY_Community 39|Community 39]]
 - [[_COMMUNITY_Community 42|Community 42]]
 - [[_COMMUNITY_Community 43|Community 43]]
+- [[_COMMUNITY_Community 44|Community 44]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `compilerOptions` - 16 edges
-2. `What You Must Do When Invoked` - 11 edges
-3. `compilerOptions` - 10 edges
-4. `/graphify` - 10 edges
-5. `Graphify Workflow` - 9 edges
-6. `scripts` - 8 edges
-7. `tasks` - 7 edges
-8. `graphify reference: extra exports and benchmark` - 7 edges
-9. `scripts` - 6 edges
-10. `scripts` - 6 edges
+2. `Landing Design` - 12 edges
+3. `What You Must Do When Invoked` - 11 edges
+4. `compilerOptions` - 10 edges
+5. `/graphify` - 10 edges
+6. `Graphify Workflow` - 9 edges
+7. `scripts` - 8 edges
+8. `tasks` - 8 edges
+9. `scripts` - 7 edges
+10. `graphify reference: extra exports and benchmark` - 7 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `Incremental Graph Update` --conceptually_related_to--> `Semantic Extraction Cache`  [INFERRED]
@@ -87,35 +89,35 @@
 - **Graphify Auto-Suggestion Hooks (Claude Code + Codex)** — _claude_settings_pretooluse_bash_hook, _claude_settings_pretooluse_read_glob_hook, _codex_hooks_pretooluse_bash_hook [INFERRED 0.85]
 - **Graphify Extraction Pipeline** — agents_skills_graphify_skill_structural_extraction, agents_skills_graphify_skill_semantic_extraction, agents_skills_graphify_skill_semantic_cache [EXTRACTED 1.00]
 
-## Communities (44 total, 15 thin omitted)
+## Communities (45 total, 16 thin omitted)
 
 ### Community 0 - "Core Graphify Workflow"
 Cohesion: 0.13
 Nodes (18): Project Graphify Workflow, ClientFlow Project Architecture, Folder Watcher, URL Ingestion, Graph Exports, Graph MCP Server, Edge Confidence Rubric, Extraction Schema (+10 more)
 
 ### Community 1 - "Project Query Workflow"
-Cohesion: 0.12
-Nodes (17): dependsOn, outputs, cache, dependsOn, dependsOn, outputs, cache, persistent (+9 more)
+Cohesion: 0.10
+Nodes (20): dependsOn, outputs, cache, dependsOn, dependsOn, outputs, dependsOn, outputs (+12 more)
 
 ### Community 2 - "Semantic Extraction"
-Cohesion: 0.14
-Nodes (14): Part A - Structural extraction for code files, Part B - Semantic extraction (parallel subagents), Part C - Merge AST + semantic into final extraction, Step 0 - GitHub repos and multi-path merge (only if a URL or several paths), Step 1 - Ensure graphify is installed, Step 2.5 - Video and audio (only if video files detected), Step 2 - Detect files, Step 3 - Extract entities and relationships (+6 more)
+Cohesion: 0.08
+Nodes (23): For /graphify add and --watch, For /graphify query, For the commit hook and native CLAUDE.md integration, For --update and --cluster-only, /graphify, Honesty Rules, Interpreter guard for subcommands, Part A - Structural extraction for code files (+15 more)
 
 ### Community 3 - "Updates and Ingestion"
-Cohesion: 0.15
-Nodes (12): name, packageManager, private, scripts, build, clean, dev, format (+4 more)
+Cohesion: 0.08
+Nodes (23): devDependencies, eslint, eslint-config-prettier, @eslint/js, globals, prettier, turbo, @types/node (+15 more)
 
 ### Community 10 - "Community 10"
 Cohesion: 0.15
 Nodes (12): compilerOptions, declaration, module, moduleResolution, noEmitOnError, outDir, rootDir, skipLibCheck (+4 more)
 
 ### Community 11 - "Community 11"
-Cohesion: 0.17
-Nodes (11): devDependencies, @clientflow/config, name, private, scripts, build, clean, dev (+3 more)
+Cohesion: 0.09
+Nodes (22): dependencies, cors, dotenv, express, helmet, zod, devDependencies, @clientflow/config (+14 more)
 
 ### Community 12 - "Community 12"
-Cohesion: 0.20
-Nodes (9): For /graphify add and --watch, For /graphify query, For the commit hook and native CLAUDE.md integration, For --update and --cluster-only, /graphify, Honesty Rules, Interpreter guard for subcommands, Usage (+1 more)
+Cohesion: 0.11
+Nodes (19): corsOriginSchema, env, environmentSchema, parsedEnvironment, getHealth(), AppError, AppErrorOptions, errorHandler() (+11 more)
 
 ### Community 13 - "Community 13"
 Cohesion: 0.15
@@ -126,16 +128,16 @@ Cohesion: 0.17
 Nodes (11): devDependencies, @clientflow/config, name, private, scripts, build, clean, dev (+3 more)
 
 ### Community 15 - "Community 15"
-Cohesion: 0.22
-Nodes (7): Definition of done, Graphify, Interface design, Project, Rules, Validation, Workflow
+Cohesion: 0.20
+Nodes (8): Definition of done, Design, Graphify, Interface design, Project, Rules, Validation, Workflow
 
 ### Community 16 - "Community 16"
 Cohesion: 0.25
 Nodes (7): graphify reference: extra exports and benchmark, Step 6b - Wiki (only if --wiki flag), Step 7 - Neo4j export (only if --neo4j or --neo4j-push flag), Step 7b - SVG export (only if --svg flag), Step 7c - GraphML export (only if --graphml flag), Step 7d - MCP server (only if --mcp flag), Step 8 - Token reduction benchmark (only if total_words > 5000)
 
 ### Community 17 - "Community 17"
-Cohesion: 0.29
-Nodes (6): ClientFlow, Docker development environment, Installation, Monorepo structure, Prerequisites, Root scripts
+Cohesion: 0.25
+Nodes (7): API, ClientFlow, Docker development environment, Installation, Monorepo structure, Prerequisites, Root scripts
 
 ### Community 18 - "Community 18"
 Cohesion: 0.12
@@ -166,8 +168,8 @@ Cohesion: 0.11
 Nodes (17): compilerOptions, declaration, declarationMap, esModuleInterop, forceConsistentCasingInFileNames, module, moduleResolution, noEmitOnError (+9 more)
 
 ### Community 32 - "Community 32"
-Cohesion: 0.17
-Nodes (11): devDependencies, eslint, eslint-config-prettier, @eslint/js, globals, prettier, turbo, @types/node (+3 more)
+Cohesion: 0.15
+Nodes (12): Authority, Implementation quality, Landing Design, Marketing adaptations, New patterns, Page strategy, Product connection, Required context (+4 more)
 
 ### Community 33 - "Community 33"
 Cohesion: 0.29
@@ -178,36 +180,40 @@ Cohesion: 0.33
 Nodes (5): compilerOptions, lib, types, extends, $schema
 
 ### Community 35 - "Community 35"
-Cohesion: 0.40
-Nodes (4): compilerOptions, noEmit, extends, include
+Cohesion: 0.25
+Nodes (7): compilerOptions, declaration, declarationMap, noEmit, rootDir, extends, include
 
 ### Community 36 - "Community 36"
 Cohesion: 0.40
 Nodes (4): compilerOptions, noEmit, extends, include
 
+### Community 39 - "Community 39"
+Cohesion: 0.33
+Nodes (5): ClientFlow API, Commands, Configuration, Health endpoint, Request handling
+
 ### Community 42 - "Community 42"
 Cohesion: 0.33
-Nodes (3): port, server, healthResponse
+Nodes (5): compilerOptions, noEmit, outDir, exclude, extends
 
 ## Knowledge Gaps
-- **189 isolated node(s):** `PreToolUse`, `PreToolUse`, `name`, `version`, `private` (+184 more)
+- **230 isolated node(s):** `PreToolUse`, `PreToolUse`, `name`, `version`, `private` (+225 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **15 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **16 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `devDependencies` connect `Community 32` to `Updates and Ingestion`?**
-  _High betweenness centrality (0.014) - this node is a cross-community bridge._
-- **Why does `tasks` connect `Project Query Workflow` to `Community 32`?**
-  _High betweenness centrality (0.013) - this node is a cross-community bridge._
+- **Why does `tasks` connect `Project Query Workflow` to `Updates and Ingestion`?**
+  _High betweenness centrality (0.010) - this node is a cross-community bridge._
 - **What connects `PreToolUse`, `PreToolUse`, `name` to the rest of the system?**
-  _191 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _232 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Core Graphify Workflow` be split into smaller, more focused modules?**
   _Cohesion score 0.13071895424836602 - nodes in this community are weakly interconnected._
 - **Should `Project Query Workflow` be split into smaller, more focused modules?**
-  _Cohesion score 0.11764705882352941 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.1 - nodes in this community are weakly interconnected._
 - **Should `Semantic Extraction` be split into smaller, more focused modules?**
-  _Cohesion score 0.14285714285714285 - nodes in this community are weakly interconnected._
-- **Should `Community 18` be split into smaller, more focused modules?**
-  _Cohesion score 0.11764705882352941 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.08333333333333333 - nodes in this community are weakly interconnected._
+- **Should `Updates and Ingestion` be split into smaller, more focused modules?**
+  _Cohesion score 0.08 - nodes in this community are weakly interconnected._
+- **Should `Community 11` be split into smaller, more focused modules?**
+  _Cohesion score 0.08695652173913043 - nodes in this community are weakly interconnected._

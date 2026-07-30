@@ -12,6 +12,10 @@
       "dependsOn": ["^build"],
       "outputs": ["dist/**"]
     },
+    "@clientflow/api#build": {
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**"]
+    },
     "lint": {
       "dependsOn": ["^lint"]
     },
