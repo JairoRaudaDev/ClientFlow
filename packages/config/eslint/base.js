@@ -11,6 +11,7 @@ const ignoredDirectories = [
   '**/.next/**',
   '**/.turbo/**',
   '**/coverage/**',
+  '**/src/generated/prisma/**',
 ];
 
 export default defineConfig(

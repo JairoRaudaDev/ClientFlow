@@ -180,7 +180,7 @@
     "semantic_hash": ""
   },
   "docker-compose.yml": {
-    "mtime": 1785451117.0274286,
+    "mtime": 1785452803.851,
     "ast_hash": "c3980f96d39e2160760e0cc2db7ea8a6",
     "semantic_hash": ""
   },
@@ -225,8 +225,8 @@
     "semantic_hash": ""
   },
   "apps/api/src/server.ts": {
-    "mtime": 1785452425.8604364,
-    "ast_hash": "7e2890ad12fe419e37bd53448fa6579f",
+    "mtime": 1785452953.6565046,
+    "ast_hash": "39ea8717d52d1f39091f7de7ba957c57",
     "semantic_hash": ""
   },
   "apps/api/tsconfig.build.json": {

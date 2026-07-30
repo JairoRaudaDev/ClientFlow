@@ -137,68 +137,176 @@
       "source_file": "apps/api/package.json",
       "source_location": "L6",
       "id": "api_package_scripts",
-      "community": 11,
+      "community": 46,
       "norm_label": "scripts"
+    },
+    {
+      "label": "predev",
+      "file_type": "code",
+      "source_file": "apps/api/package.json",
+      "source_location": "L7",
+      "id": "api_package_scripts_predev",
+      "community": 46,
+      "norm_label": "predev"
     },
     {
       "label": "dev",
       "file_type": "code",
       "source_file": "apps/api/package.json",
-      "source_location": "L7",
+      "source_location": "L8",
       "id": "api_package_scripts_dev",
-      "community": 11,
+      "community": 46,
       "norm_label": "dev"
+    },
+    {
+      "label": "prebuild",
+      "file_type": "code",
+      "source_file": "apps/api/package.json",
+      "source_location": "L9",
+      "id": "api_package_scripts_prebuild",
+      "community": 46,
+      "norm_label": "prebuild"
     },
     {
       "label": "build",
       "file_type": "code",
       "source_file": "apps/api/package.json",
-      "source_location": "L8",
+      "source_location": "L10",
       "id": "api_package_scripts_build",
-      "community": 11,
+      "community": 46,
       "norm_label": "build"
     },
     {
       "label": "start",
       "file_type": "code",
       "source_file": "apps/api/package.json",
-      "source_location": "L9",
+      "source_location": "L11",
       "id": "api_package_scripts_start",
-      "community": 11,
+      "community": 46,
       "norm_label": "start"
     },
     {
       "label": "lint",
       "file_type": "code",
       "source_file": "apps/api/package.json",
-      "source_location": "L10",
+      "source_location": "L12",
       "id": "api_package_scripts_lint",
-      "community": 11,
+      "community": 46,
       "norm_label": "lint"
+    },
+    {
+      "label": "pretypecheck",
+      "file_type": "code",
+      "source_file": "apps/api/package.json",
+      "source_location": "L13",
+      "id": "api_package_scripts_pretypecheck",
+      "community": 46,
+      "norm_label": "pretypecheck"
     },
     {
       "label": "typecheck",
       "file_type": "code",
       "source_file": "apps/api/package.json",
-      "source_location": "L11",
+      "source_location": "L14",
       "id": "api_package_scripts_typecheck",
-      "community": 11,
+      "community": 46,
       "norm_label": "typecheck"
     },
     {
       "label": "clean",
       "file_type": "code",
       "source_file": "apps/api/package.json",
-      "source_location": "L12",
+      "source_location": "L15",
       "id": "api_package_scripts_clean",
-      "community": 11,
+      "community": 46,
       "norm_label": "clean"
+    },
+    {
+      "label": "db:generate",
+      "file_type": "code",
+      "source_file": "apps/api/package.json",
+      "source_location": "L16",
+      "id": "api_package_scripts_db_generate",
+      "community": 46,
+      "norm_label": "db:generate"
+    },
+    {
+      "label": "db:validate",
+      "file_type": "code",
+      "source_file": "apps/api/package.json",
+      "source_location": "L17",
+      "id": "api_package_scripts_db_validate",
+      "community": 46,
+      "norm_label": "db:validate"
+    },
+    {
+      "label": "db:format",
+      "file_type": "code",
+      "source_file": "apps/api/package.json",
+      "source_location": "L18",
+      "id": "api_package_scripts_db_format",
+      "community": 46,
+      "norm_label": "db:format"
+    },
+    {
+      "label": "db:migrate",
+      "file_type": "code",
+      "source_file": "apps/api/package.json",
+      "source_location": "L19",
+      "id": "api_package_scripts_db_migrate",
+      "community": 46,
+      "norm_label": "db:migrate"
+    },
+    {
+      "label": "db:migrate:deploy",
+      "file_type": "code",
+      "source_file": "apps/api/package.json",
+      "source_location": "L20",
+      "id": "api_package_scripts_db_migrate_deploy",
+      "community": 46,
+      "norm_label": "db:migrate:deploy"
+    },
+    {
+      "label": "db:migrate:status",
+      "file_type": "code",
+      "source_file": "apps/api/package.json",
+      "source_location": "L21",
+      "id": "api_package_scripts_db_migrate_status",
+      "community": 46,
+      "norm_label": "db:migrate:status"
+    },
+    {
+      "label": "predb:seed",
+      "file_type": "code",
+      "source_file": "apps/api/package.json",
+      "source_location": "L22",
+      "id": "api_package_scripts_predb_seed",
+      "community": 46,
+      "norm_label": "predb:seed"
+    },
+    {
+      "label": "db:seed",
+      "file_type": "code",
+      "source_file": "apps/api/package.json",
+      "source_location": "L23",
+      "id": "api_package_scripts_db_seed",
+      "community": 46,
+      "norm_label": "db:seed"
+    },
+    {
+      "label": "db:studio",
+      "file_type": "code",
+      "source_file": "apps/api/package.json",
+      "source_location": "L24",
+      "id": "api_package_scripts_db_studio",
+      "community": 46,
+      "norm_label": "db:studio"
     },
     {
       "label": "devDependencies",
       "file_type": "code",
       "source_file": "apps/api/package.json",
-      "source_location": "L14",
+      "source_location": "L26",
       "id": "api_package_devdependencies",
       "community": 11,
       "norm_label": "devdependencies"
@@ -207,7 +315,7 @@
       "label": "@clientflow/config",
       "file_type": "code",
       "source_file": "apps/api/package.json",
-      "source_location": "L15",
+      "source_location": "L27",
       "id": "api_package_devdependencies_clientflow_config",
       "community": 11,
       "norm_label": "@clientflow/config"
@@ -216,7 +324,7 @@
       "label": "@types/cors",
       "file_type": "code",
       "source_file": "apps/api/package.json",
-      "source_location": "L16",
+      "source_location": "L28",
       "id": "api_package_devdependencies_types_cors",
       "community": 11,
       "norm_label": "@types/cors"
@@ -225,16 +333,34 @@
       "label": "@types/express",
       "file_type": "code",
       "source_file": "apps/api/package.json",
-      "source_location": "L17",
+      "source_location": "L29",
       "id": "api_package_devdependencies_types_express",
       "community": 11,
       "norm_label": "@types/express"
     },
     {
+      "label": "@types/pg",
+      "file_type": "code",
+      "source_file": "apps/api/package.json",
+      "source_location": "L30",
+      "id": "api_package_devdependencies_types_pg",
+      "community": 11,
+      "norm_label": "@types/pg"
+    },
+    {
+      "label": "prisma",
+      "file_type": "code",
+      "source_file": "apps/api/package.json",
+      "source_location": "L31",
+      "id": "api_package_devdependencies_prisma",
+      "community": 11,
+      "norm_label": "prisma"
+    },
+    {
       "label": "tsx",
       "file_type": "code",
       "source_file": "apps/api/package.json",
-      "source_location": "L18",
+      "source_location": "L32",
       "id": "api_package_devdependencies_tsx",
       "community": 11,
       "norm_label": "tsx"
@@ -243,16 +369,34 @@
       "label": "dependencies",
       "file_type": "code",
       "source_file": "apps/api/package.json",
-      "source_location": "L20",
+      "source_location": "L34",
       "id": "api_package_dependencies",
       "community": 11,
       "norm_label": "dependencies"
     },
     {
+      "label": "@prisma/adapter-pg",
+      "file_type": "code",
+      "source_file": "apps/api/package.json",
+      "source_location": "L35",
+      "id": "api_package_dependencies_prisma_adapter_pg",
+      "community": 11,
+      "norm_label": "@prisma/adapter-pg"
+    },
+    {
+      "label": "@prisma/client",
+      "file_type": "code",
+      "source_file": "apps/api/package.json",
+      "source_location": "L36",
+      "id": "api_package_dependencies_prisma_client",
+      "community": 11,
+      "norm_label": "@prisma/client"
+    },
+    {
       "label": "cors",
       "file_type": "code",
       "source_file": "apps/api/package.json",
-      "source_location": "L21",
+      "source_location": "L37",
       "id": "api_package_dependencies_cors",
       "community": 11,
       "norm_label": "cors"
@@ -261,7 +405,7 @@
       "label": "dotenv",
       "file_type": "code",
       "source_file": "apps/api/package.json",
-      "source_location": "L22",
+      "source_location": "L38",
       "id": "api_package_dependencies_dotenv",
       "community": 11,
       "norm_label": "dotenv"
@@ -270,7 +414,7 @@
       "label": "express",
       "file_type": "code",
       "source_file": "apps/api/package.json",
-      "source_location": "L23",
+      "source_location": "L39",
       "id": "api_package_dependencies_express",
       "community": 11,
       "norm_label": "express"
@@ -279,19 +423,82 @@
       "label": "helmet",
       "file_type": "code",
       "source_file": "apps/api/package.json",
-      "source_location": "L24",
+      "source_location": "L40",
       "id": "api_package_dependencies_helmet",
       "community": 11,
       "norm_label": "helmet"
     },
     {
+      "label": "pg",
+      "file_type": "code",
+      "source_file": "apps/api/package.json",
+      "source_location": "L41",
+      "id": "api_package_dependencies_pg",
+      "community": 11,
+      "norm_label": "pg"
+    },
+    {
       "label": "zod",
       "file_type": "code",
       "source_file": "apps/api/package.json",
-      "source_location": "L25",
+      "source_location": "L42",
       "id": "api_package_dependencies_zod",
       "community": 11,
       "norm_label": "zod"
+    },
+    {
+      "label": "prisma.config.ts",
+      "file_type": "code",
+      "source_file": "apps/api/prisma.config.ts",
+      "source_location": "L1",
+      "id": "api_prisma_config",
+      "community": 48,
+      "norm_label": "prisma.config.ts"
+    },
+    {
+      "label": "getDatabaseUrl()",
+      "file_type": "code",
+      "source_file": "apps/api/prisma.config.ts",
+      "source_location": "L7",
+      "id": "api_prisma_config_getdatabaseurl",
+      "community": 48,
+      "norm_label": "getdatabaseurl()"
+    },
+    {
+      "label": "seed.ts",
+      "file_type": "code",
+      "source_file": "apps/api/prisma/seed.ts",
+      "source_location": "L1",
+      "id": "prisma_seed",
+      "community": 45,
+      "norm_label": "seed.ts"
+    },
+    {
+      "label": "adapter",
+      "file_type": "code",
+      "source_file": "apps/api/prisma/seed.ts",
+      "source_location": "L12",
+      "id": "prisma_seed_adapter",
+      "community": 45,
+      "norm_label": "adapter"
+    },
+    {
+      "label": "prisma",
+      "file_type": "code",
+      "source_file": "apps/api/prisma/seed.ts",
+      "source_location": "L15",
+      "id": "prisma_seed_prisma",
+      "community": 45,
+      "norm_label": "prisma"
+    },
+    {
+      "label": "seed()",
+      "file_type": "code",
+      "source_file": "apps/api/prisma/seed.ts",
+      "source_location": "L17",
+      "id": "prisma_seed_seed",
+      "community": 45,
+      "norm_label": "seed()"
     },
     {
       "label": "app.ts",
@@ -321,48 +528,111 @@
       "norm_label": "origin()"
     },
     {
+      "label": "database.ts",
+      "file_type": "code",
+      "source_file": "apps/api/src/config/database.ts",
+      "source_location": "L1",
+      "id": "config_database",
+      "community": 45,
+      "norm_label": "database.ts"
+    },
+    {
+      "label": "adapter",
+      "file_type": "code",
+      "source_file": "apps/api/src/config/database.ts",
+      "source_location": "L6",
+      "id": "config_database_adapter",
+      "community": 45,
+      "norm_label": "adapter"
+    },
+    {
+      "label": "prisma",
+      "file_type": "code",
+      "source_file": "apps/api/src/config/database.ts",
+      "source_location": "L10",
+      "id": "config_database_prisma",
+      "community": 45,
+      "norm_label": "prisma"
+    },
+    {
+      "label": "checkDatabaseConnection()",
+      "file_type": "code",
+      "source_file": "apps/api/src/config/database.ts",
+      "source_location": "L12",
+      "id": "config_database_checkdatabaseconnection",
+      "community": 45,
+      "norm_label": "checkdatabaseconnection()"
+    },
+    {
+      "label": "connectDatabase()",
+      "file_type": "code",
+      "source_file": "apps/api/src/config/database.ts",
+      "source_location": "L16",
+      "id": "config_database_connectdatabase",
+      "community": 45,
+      "norm_label": "connectdatabase()"
+    },
+    {
+      "label": "disconnectDatabase()",
+      "file_type": "code",
+      "source_file": "apps/api/src/config/database.ts",
+      "source_location": "L22",
+      "id": "config_database_disconnectdatabase",
+      "community": 45,
+      "norm_label": "disconnectdatabase()"
+    },
+    {
       "label": "env.ts",
       "file_type": "code",
       "source_file": "apps/api/src/config/env.ts",
       "source_location": "L1",
       "id": "config_env",
-      "community": 12,
+      "community": 45,
       "norm_label": "env.ts"
     },
     {
       "label": "corsOriginSchema",
       "file_type": "code",
       "source_file": "apps/api/src/config/env.ts",
-      "source_location": "L5",
+      "source_location": "L7",
       "id": "config_env_corsoriginschema",
-      "community": 12,
+      "community": 45,
       "norm_label": "corsoriginschema"
+    },
+    {
+      "label": "databaseUrlSchema",
+      "file_type": "code",
+      "source_file": "apps/api/src/config/env.ts",
+      "source_location": "L30",
+      "id": "config_env_databaseurlschema",
+      "community": 45,
+      "norm_label": "databaseurlschema"
     },
     {
       "label": "environmentSchema",
       "file_type": "code",
       "source_file": "apps/api/src/config/env.ts",
-      "source_location": "L28",
+      "source_location": "L36",
       "id": "config_env_environmentschema",
-      "community": 12,
+      "community": 45,
       "norm_label": "environmentschema"
     },
     {
       "label": "parsedEnvironment",
       "file_type": "code",
       "source_file": "apps/api/src/config/env.ts",
-      "source_location": "L46",
+      "source_location": "L65",
       "id": "config_env_parsedenvironment",
-      "community": 12,
+      "community": 45,
       "norm_label": "parsedenvironment"
     },
     {
       "label": "env",
       "file_type": "code",
       "source_file": "apps/api/src/config/env.ts",
-      "source_location": "L60",
+      "source_location": "L79",
       "id": "config_env_env",
-      "community": 12,
+      "community": 45,
       "norm_label": "env"
     },
     {
@@ -371,16 +641,16 @@
       "source_file": "apps/api/src/controllers/health.controller.ts",
       "source_location": "L1",
       "id": "controllers_health_controller",
-      "community": 12,
+      "community": 45,
       "norm_label": "health.controller.ts"
     },
     {
       "label": "getHealth()",
       "file_type": "code",
       "source_file": "apps/api/src/controllers/health.controller.ts",
-      "source_location": "L5",
+      "source_location": "L6",
       "id": "controllers_health_controller_gethealth",
-      "community": 12,
+      "community": 45,
       "norm_label": "gethealth()"
     },
     {
@@ -551,35 +821,53 @@
       "source_file": "apps/api/src/server.ts",
       "source_location": "L1",
       "id": "src_server",
-      "community": 12,
+      "community": 45,
       "norm_label": "server.ts"
     },
     {
-      "label": "server",
+      "label": "startServer()",
       "file_type": "code",
       "source_file": "apps/api/src/server.ts",
-      "source_location": "L12",
-      "id": "src_server_server",
-      "community": 12,
-      "norm_label": "server"
+      "source_location": "L15",
+      "id": "src_server_startserver",
+      "community": 45,
+      "norm_label": "startserver()"
+    },
+    {
+      "label": "handleServerError()",
+      "file_type": "code",
+      "source_file": "apps/api/src/server.ts",
+      "source_location": "L48",
+      "id": "src_server_handleservererror",
+      "community": 45,
+      "norm_label": "handleservererror()"
     },
     {
       "label": "shutDown()",
       "file_type": "code",
       "source_file": "apps/api/src/server.ts",
-      "source_location": "L33",
+      "source_location": "L67",
       "id": "src_server_shutdown",
-      "community": 12,
+      "community": 45,
       "norm_label": "shutdown()"
     },
     {
       "label": "formatHostForUrl()",
       "file_type": "code",
       "source_file": "apps/api/src/server.ts",
-      "source_location": "L72",
+      "source_location": "L107",
       "id": "src_server_formathostforurl",
-      "community": 12,
+      "community": 45,
       "norm_label": "formathostforurl()"
+    },
+    {
+      "label": "closeHttpServer()",
+      "file_type": "code",
+      "source_file": "apps/api/src/server.ts",
+      "source_location": "L111",
+      "id": "src_server_closehttpserver",
+      "community": 45,
+      "norm_label": "closehttpserver()"
     },
     {
       "label": "tsconfig.build.json",
@@ -627,10 +915,28 @@
       "norm_label": "outdir"
     },
     {
+      "label": "rootDir",
+      "file_type": "code",
+      "source_file": "apps/api/tsconfig.build.json",
+      "source_location": "L6",
+      "id": "api_tsconfig_build_compileroptions_rootdir",
+      "community": 42,
+      "norm_label": "rootdir"
+    },
+    {
+      "label": "include",
+      "file_type": "code",
+      "source_file": "apps/api/tsconfig.build.json",
+      "source_location": "L8",
+      "id": "api_tsconfig_build_include",
+      "community": 42,
+      "norm_label": "include"
+    },
+    {
       "label": "exclude",
       "file_type": "code",
       "source_file": "apps/api/tsconfig.build.json",
-      "source_location": "L7",
+      "source_location": "L9",
       "id": "api_tsconfig_build_exclude",
       "community": 42,
       "norm_label": "exclude"
@@ -974,7 +1280,7 @@
       "source_file": "package.json",
       "source_location": "L6",
       "id": "package_scripts",
-      "community": 3,
+      "community": 47,
       "norm_label": "scripts"
     },
     {
@@ -983,7 +1289,7 @@
       "source_file": "package.json",
       "source_location": "L7",
       "id": "package_scripts_dev",
-      "community": 3,
+      "community": 47,
       "norm_label": "dev"
     },
     {
@@ -992,7 +1298,7 @@
       "source_file": "package.json",
       "source_location": "L8",
       "id": "package_scripts_build",
-      "community": 3,
+      "community": 47,
       "norm_label": "build"
     },
     {
@@ -1001,7 +1307,7 @@
       "source_file": "package.json",
       "source_location": "L9",
       "id": "package_scripts_lint",
-      "community": 3,
+      "community": 47,
       "norm_label": "lint"
     },
     {
@@ -1010,7 +1316,7 @@
       "source_file": "package.json",
       "source_location": "L10",
       "id": "package_scripts_typecheck",
-      "community": 3,
+      "community": 47,
       "norm_label": "typecheck"
     },
     {
@@ -1019,7 +1325,7 @@
       "source_file": "package.json",
       "source_location": "L11",
       "id": "package_scripts_format",
-      "community": 3,
+      "community": 47,
       "norm_label": "format"
     },
     {
@@ -1028,7 +1334,7 @@
       "source_file": "package.json",
       "source_location": "L12",
       "id": "package_scripts_format_check",
-      "community": 3,
+      "community": 47,
       "norm_label": "format:check"
     },
     {
@@ -1037,14 +1343,86 @@
       "source_file": "package.json",
       "source_location": "L13",
       "id": "package_scripts_clean",
-      "community": 3,
+      "community": 47,
       "norm_label": "clean"
+    },
+    {
+      "label": "db:generate",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L14",
+      "id": "package_scripts_db_generate",
+      "community": 47,
+      "norm_label": "db:generate"
+    },
+    {
+      "label": "db:validate",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L15",
+      "id": "package_scripts_db_validate",
+      "community": 47,
+      "norm_label": "db:validate"
+    },
+    {
+      "label": "db:format",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L16",
+      "id": "package_scripts_db_format",
+      "community": 47,
+      "norm_label": "db:format"
+    },
+    {
+      "label": "db:migrate",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L17",
+      "id": "package_scripts_db_migrate",
+      "community": 47,
+      "norm_label": "db:migrate"
+    },
+    {
+      "label": "db:migrate:deploy",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L18",
+      "id": "package_scripts_db_migrate_deploy",
+      "community": 47,
+      "norm_label": "db:migrate:deploy"
+    },
+    {
+      "label": "db:migrate:status",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L19",
+      "id": "package_scripts_db_migrate_status",
+      "community": 47,
+      "norm_label": "db:migrate:status"
+    },
+    {
+      "label": "db:seed",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L20",
+      "id": "package_scripts_db_seed",
+      "community": 47,
+      "norm_label": "db:seed"
+    },
+    {
+      "label": "db:studio",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L21",
+      "id": "package_scripts_db_studio",
+      "community": 47,
+      "norm_label": "db:studio"
     },
     {
       "label": "devDependencies",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L15",
+      "source_location": "L23",
       "id": "package_devdependencies",
       "community": 3,
       "norm_label": "devdependencies"
@@ -1053,7 +1431,7 @@
       "label": "@eslint/js",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L16",
+      "source_location": "L24",
       "id": "package_devdependencies_eslint_js",
       "community": 3,
       "norm_label": "@eslint/js"
@@ -1062,7 +1440,7 @@
       "label": "@types/node",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L17",
+      "source_location": "L25",
       "id": "package_devdependencies_types_node",
       "community": 3,
       "norm_label": "@types/node"
@@ -1071,7 +1449,7 @@
       "label": "eslint",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L18",
+      "source_location": "L26",
       "id": "package_devdependencies_eslint",
       "community": 3,
       "norm_label": "eslint"
@@ -1080,7 +1458,7 @@
       "label": "eslint-config-prettier",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L19",
+      "source_location": "L27",
       "id": "package_devdependencies_eslint_config_prettier",
       "community": 3,
       "norm_label": "eslint-config-prettier"
@@ -1089,7 +1467,7 @@
       "label": "globals",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L20",
+      "source_location": "L28",
       "id": "package_devdependencies_globals",
       "community": 3,
       "norm_label": "globals"
@@ -1098,7 +1476,7 @@
       "label": "prettier",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L21",
+      "source_location": "L29",
       "id": "package_devdependencies_prettier",
       "community": 3,
       "norm_label": "prettier"
@@ -1107,7 +1485,7 @@
       "label": "turbo",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L22",
+      "source_location": "L30",
       "id": "package_devdependencies_turbo",
       "community": 3,
       "norm_label": "turbo"
@@ -1116,7 +1494,7 @@
       "label": "typescript",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L23",
+      "source_location": "L31",
       "id": "package_devdependencies_typescript",
       "community": 3,
       "norm_label": "typescript"
@@ -1125,7 +1503,7 @@
       "label": "typescript-eslint",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L24",
+      "source_location": "L32",
       "id": "package_devdependencies_typescript_eslint",
       "community": 3,
       "norm_label": "typescript-eslint"
@@ -2763,7 +3141,7 @@
       "label": "Installation",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L56",
+      "source_location": "L60",
       "id": "readme_installation",
       "community": 17,
       "norm_label": "installation"
@@ -2772,7 +3150,7 @@
       "label": "Root scripts",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L62",
+      "source_location": "L66",
       "id": "readme_root_scripts",
       "community": 17,
       "norm_label": "root scripts"
@@ -2781,10 +3159,19 @@
       "label": "API",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L75",
+      "source_location": "L87",
       "id": "readme_api",
       "community": 17,
       "norm_label": "api"
+    },
+    {
+      "label": "Database",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L111",
+      "id": "readme_database",
+      "community": 17,
+      "norm_label": "database"
     },
     {
       "label": "README.md",
@@ -2817,16 +3204,25 @@
       "label": "Commands",
       "file_type": "document",
       "source_file": "apps/api/README.md",
-      "source_location": "L27",
+      "source_location": "L30",
       "id": "api_readme_commands",
       "community": 39,
       "norm_label": "commands"
     },
     {
+      "label": "Prisma and migrations",
+      "file_type": "document",
+      "source_file": "apps/api/README.md",
+      "source_location": "L55",
+      "id": "api_readme_prisma_and_migrations",
+      "community": 39,
+      "norm_label": "prisma and migrations"
+    },
+    {
       "label": "Health endpoint",
       "file_type": "document",
       "source_file": "apps/api/README.md",
-      "source_location": "L43",
+      "source_location": "L75",
       "id": "api_readme_health_endpoint",
       "community": 39,
       "norm_label": "health endpoint"
@@ -2835,7 +3231,7 @@
       "label": "Request handling",
       "file_type": "document",
       "source_file": "apps/api/README.md",
-      "source_location": "L60",
+      "source_location": "L97",
       "id": "api_readme_request_handling",
       "community": 39,
       "norm_label": "request handling"
@@ -2884,6 +3280,15 @@
       "id": "config_readme_prettier",
       "community": 28,
       "norm_label": "prettier"
+    },
+    {
+      "label": "server",
+      "file_type": "code",
+      "source_file": "apps/api/src/server.ts",
+      "source_location": "L12",
+      "community": 45,
+      "norm_label": "server",
+      "id": "src_server_server"
     },
     {
       "label": "dev-server.mjs",
@@ -3468,6 +3873,86 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/package.json",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "api_package_scripts",
+      "target": "api_package_scripts_db_format",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/package.json",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "api_package_scripts",
+      "target": "api_package_scripts_db_generate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/package.json",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "api_package_scripts",
+      "target": "api_package_scripts_db_migrate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/package.json",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "api_package_scripts",
+      "target": "api_package_scripts_db_migrate_deploy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/package.json",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "api_package_scripts",
+      "target": "api_package_scripts_db_migrate_status",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/package.json",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "api_package_scripts",
+      "target": "api_package_scripts_db_seed",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/package.json",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "api_package_scripts",
+      "target": "api_package_scripts_db_studio",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/package.json",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "api_package_scripts",
+      "target": "api_package_scripts_db_validate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/package.json",
       "source_location": "L6",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -3483,6 +3968,46 @@
       "confidence_score": 1.0,
       "source": "api_package_scripts",
       "target": "api_package_scripts_lint"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/package.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "api_package_scripts",
+      "target": "api_package_scripts_prebuild",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/package.json",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "api_package_scripts",
+      "target": "api_package_scripts_predb_seed",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/package.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "api_package_scripts",
+      "target": "api_package_scripts_predev",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/package.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "api_package_scripts",
+      "target": "api_package_scripts_pretypecheck",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3518,6 +4043,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/package.json",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "api_package_devdependencies",
+      "target": "api_package_devdependencies_prisma",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/package.json",
       "source_location": "L18",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -3543,6 +4078,16 @@
       "confidence_score": 1.0,
       "source": "api_package_devdependencies",
       "target": "api_package_devdependencies_types_express"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/package.json",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "api_package_devdependencies",
+      "target": "api_package_devdependencies_types_pg",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3588,11 +4133,103 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/package.json",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "api_package_dependencies",
+      "target": "api_package_dependencies_pg",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/package.json",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "api_package_dependencies",
+      "target": "api_package_dependencies_prisma_adapter_pg",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/package.json",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "api_package_dependencies",
+      "target": "api_package_dependencies_prisma_client",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/package.json",
       "source_location": "L25",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "api_package_dependencies",
       "target": "api_package_dependencies_zod"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/prisma.config.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "api_prisma_config",
+      "target": "api_prisma_config_getdatabaseurl",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/prisma/seed.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "prisma_seed",
+      "target": "config_env",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/prisma/seed.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "prisma_seed",
+      "target": "config_env_env",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/prisma/seed.ts",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "prisma_seed",
+      "target": "prisma_seed_adapter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/prisma/seed.ts",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "prisma_seed",
+      "target": "prisma_seed_prisma",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/prisma/seed.ts",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "prisma_seed",
+      "target": "prisma_seed_seed",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -3749,12 +4386,215 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/config/database.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "config_database",
+      "target": "config_database_adapter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/config/database.ts",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "config_database",
+      "target": "config_database_checkdatabaseconnection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/config/database.ts",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "config_database",
+      "target": "config_database_connectdatabase",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/config/database.ts",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "config_database",
+      "target": "config_database_disconnectdatabase",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/config/database.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "config_database",
+      "target": "config_database_prisma",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/config/database.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "config_database",
+      "target": "config_env",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/config/database.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "config_database",
+      "target": "config_env_env",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/controllers/health.controller.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "controllers_health_controller",
+      "target": "config_database",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/server.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_server",
+      "target": "config_database",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/config/database.ts",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "config_database_connectdatabase",
+      "target": "config_database_checkdatabaseconnection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/controllers/health.controller.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "controllers_health_controller",
+      "target": "config_database_checkdatabaseconnection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "apps/api/src/controllers/health.controller.ts",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "controllers_health_controller_gethealth",
+      "target": "config_database_checkdatabaseconnection"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/server.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_server",
+      "target": "config_database_connectdatabase",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/server.ts",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "src_server_startserver",
+      "target": "config_database_connectdatabase",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/server.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_server",
+      "target": "config_database_disconnectdatabase",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/server.ts",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "src_server_handleservererror",
+      "target": "config_database_disconnectdatabase",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/server.ts",
+      "source_location": "L87",
+      "weight": 1.0,
+      "source": "src_server_shutdown",
+      "target": "config_database_disconnectdatabase",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/server.ts",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "src_server_startserver",
+      "target": "config_database_disconnectdatabase",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "apps/api/src/config/env.ts",
       "source_location": "L5",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "config_env",
       "target": "config_env_corsoriginschema"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/config/env.ts",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "config_env",
+      "target": "config_env_databaseurlschema",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4150,10 +4990,30 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/server.ts",
-      "source_location": "L72",
+      "source_location": "L111",
       "weight": 1.0,
       "source": "src_server",
-      "target": "src_server_formathostforurl",
+      "target": "src_server_closehttpserver",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/server.ts",
+      "source_location": "L72",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_server",
+      "target": "src_server_formathostforurl"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/server.ts",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "src_server",
+      "target": "src_server_handleservererror",
       "confidence_score": 1.0
     },
     {
@@ -4175,6 +5035,27 @@
       "confidence_score": 1.0,
       "source": "src_server",
       "target": "src_server_shutdown"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/server.ts",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "src_server",
+      "target": "src_server_startserver",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/server.ts",
+      "source_location": "L84",
+      "weight": 1.0,
+      "source": "src_server_shutdown",
+      "target": "src_server_closehttpserver",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4210,6 +5091,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/tsconfig.build.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "api_tsconfig_build",
+      "target": "api_tsconfig_build_include",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/tsconfig.build.json",
       "source_location": "L4",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -4225,6 +5116,16 @@
       "confidence_score": 1.0,
       "source": "api_tsconfig_build_compileroptions",
       "target": "api_tsconfig_build_compileroptions_outdir"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/tsconfig.build.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "api_tsconfig_build_compileroptions",
+      "target": "api_tsconfig_build_compileroptions_rootdir",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4576,6 +5477,86 @@
       "confidence_score": 1.0,
       "source": "package_scripts",
       "target": "package_scripts_clean"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_db_format",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_db_generate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_db_migrate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_db_migrate_deploy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_db_migrate_status",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_db_seed",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_db_studio",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_db_validate",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -6384,6 +7365,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
+      "source_location": "L111",
+      "weight": 1.0,
+      "source": "readme_clientflow",
+      "target": "readme_database",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
       "source_location": "L23",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -6469,6 +7460,16 @@
       "confidence_score": 1.0,
       "source": "api_readme_clientflow_api",
       "target": "api_readme_health_endpoint"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/README.md",
+      "source_location": "L55",
+      "weight": 1.0,
+      "source": "api_readme_clientflow_api",
+      "target": "api_readme_prisma_and_migrations",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -6789,5 +7790,5 @@
       "source_file": ".agents/skills/graphify/SKILL.md"
     }
   ],
-  "built_at_commit": "fc634596ef3093de2408ac7d355882389ee804af"
+  "built_at_commit": "193cac64af1604ee84b931a9c314ea94bc86f636"
 }

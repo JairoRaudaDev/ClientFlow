@@ -11,3 +11,4 @@ graphify-out
 .codex
 AGENTS.md
 CLAUDE.md
+apps/api/src/generated/prisma

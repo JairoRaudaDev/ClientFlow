@@ -10,7 +10,15 @@
     "typecheck": "turbo run typecheck",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "clean": "turbo run clean"
+    "clean": "turbo run clean",
+    "db:generate": "pnpm --filter @clientflow/api db:generate",
+    "db:validate": "pnpm --filter @clientflow/api db:validate",
+    "db:format": "pnpm --filter @clientflow/api db:format",
+    "db:migrate": "pnpm --filter @clientflow/api db:migrate",
+    "db:migrate:deploy": "pnpm --filter @clientflow/api db:migrate:deploy",
+    "db:migrate:status": "pnpm --filter @clientflow/api db:migrate:status",
+    "db:seed": "pnpm --filter @clientflow/api db:seed",
+    "db:studio": "pnpm --filter @clientflow/api db:studio"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",

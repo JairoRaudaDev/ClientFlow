@@ -4,6 +4,10 @@ ENV COREPACK_HOME=/corepack
 
 WORKDIR /workspace
 
+RUN apt-get update \
+    && apt-get install --yes --no-install-recommends openssl \
+    && rm -rf /var/lib/apt/lists/*
+
 COPY package.json pnpm-lock.yaml pnpm-workspace.yaml turbo.json ./
 COPY apps/web/package.json ./apps/web/package.json
 COPY apps/api/package.json ./apps/api/package.json
@@ -20,4 +24,8 @@ RUN chown -R node:node /corepack /workspace
 
 USER node
 
-CMD ["pnpm", "--filter", "@clientflow/api", "dev"]
+RUN pnpm --filter @clientflow/api db:generate
+
+WORKDIR /workspace/apps/api
+
+CMD ["node", "--import", "tsx", "src/server.ts"]

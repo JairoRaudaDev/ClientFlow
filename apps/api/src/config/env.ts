@@ -2,6 +2,8 @@ import 'dotenv/config';
 
 import { z } from 'zod';
 
+const developmentDatabaseUrl = 'postgresql://clientflow:clientflow@localhost:5432/clientflow';
+
 const corsOriginSchema = z
   .url('must be a valid URL')
   .refine((origin) => ['http:', 'https:'].includes(new URL(origin).protocol), {
@@ -25,23 +27,40 @@ const corsOriginSchema = z
   )
   .transform((origin) => new URL(origin).origin);
 
-const environmentSchema = z.object({
-  NODE_ENV: z.enum(['development', 'test', 'production']).default('development'),
-  API_HOST: z.string().trim().min(1, 'must not be empty').default('0.0.0.0'),
-  API_PORT: z.preprocess((value) => value ?? 4000, z.coerce.number().int().min(1).max(65_535)),
-  CORS_ORIGIN: z
-    .string()
-    .trim()
-    .min(1, 'must contain at least one origin')
-    .default('http://localhost:3000')
-    .transform((value) =>
-      value
-        .split(',')
-        .map((origin) => origin.trim())
-        .filter((origin) => origin.length > 0),
-    )
-    .pipe(z.array(corsOriginSchema).min(1, 'must contain at least one valid origin')),
-});
+const databaseUrlSchema = z
+  .url('must be a valid PostgreSQL connection string')
+  .refine((databaseUrl) => ['postgres:', 'postgresql:'].includes(new URL(databaseUrl).protocol), {
+    message: 'must use the postgres or postgresql protocol',
+  });
+
+const environmentSchema = z
+  .object({
+    NODE_ENV: z.enum(['development', 'test', 'production']).default('development'),
+    API_HOST: z.string().trim().min(1, 'must not be empty').default('0.0.0.0'),
+    API_PORT: z.preprocess((value) => value ?? 4000, z.coerce.number().int().min(1).max(65_535)),
+    CORS_ORIGIN: z
+      .string()
+      .trim()
+      .min(1, 'must contain at least one origin')
+      .default('http://localhost:3000')
+      .transform((value) =>
+        value
+          .split(',')
+          .map((origin) => origin.trim())
+          .filter((origin) => origin.length > 0),
+      )
+      .pipe(z.array(corsOriginSchema).min(1, 'must contain at least one valid origin')),
+    DATABASE_URL: databaseUrlSchema.optional(),
+  })
+  .superRefine((environment, context) => {
+    if (environment.NODE_ENV !== 'development' && environment.DATABASE_URL === undefined) {
+      context.addIssue({
+        code: 'custom',
+        path: ['DATABASE_URL'],
+        message: `is required when NODE_ENV is ${environment.NODE_ENV}`,
+      });
+    }
+  });
 
 const parsedEnvironment = environmentSchema.safeParse(process.env);
 
@@ -62,4 +81,5 @@ export const env = Object.freeze({
   apiHost: parsedEnvironment.data.API_HOST,
   apiPort: parsedEnvironment.data.API_PORT,
   corsOrigins: parsedEnvironment.data.CORS_ORIGIN,
+  databaseUrl: parsedEnvironment.data.DATABASE_URL ?? developmentDatabaseUrl,
 });

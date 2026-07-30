@@ -1,11 +1,11 @@
 # Graph Report - ClientFlow  (2026-07-30)
 
 ## Corpus Check
-- 47 files · ~12,024 words
+- 47 files · ~12,061 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 355 nodes · 338 edges · 45 communities (29 shown, 16 thin omitted)
+- 356 nodes · 339 edges · 45 communities (29 shown, 16 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 1 edges (avg confidence: 0.85)
 - Token cost: 0 input · 0 output
 
@@ -116,7 +116,7 @@ Cohesion: 0.09
 Nodes (22): dependencies, cors, dotenv, express, helmet, zod, devDependencies, @clientflow/config (+14 more)
 
 ### Community 12 - "Community 12"
-Cohesion: 0.12
+Cohesion: 0.11
 Nodes (19): corsOriginSchema, env, environmentSchema, parsedEnvironment, getHealth(), AppError, AppErrorOptions, errorHandler() (+11 more)
 
 ### Community 13 - "Community 13"

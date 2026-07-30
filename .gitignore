@@ -57,6 +57,7 @@ $RECYCLE.BIN/
 *.db-journal
 *.sqlite
 *.sqlite3
+apps/api/src/generated/prisma/
 
 # graphify
 graphify-out/cost.json

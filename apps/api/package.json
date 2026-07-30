@@ -4,24 +4,41 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "predev": "pnpm db:generate",
     "dev": "node --watch --import tsx src/server.ts",
+    "prebuild": "pnpm db:generate",
     "build": "tsc --project tsconfig.build.json",
     "start": "node dist/server.js",
     "lint": "eslint .",
+    "pretypecheck": "pnpm db:generate",
     "typecheck": "tsc --project tsconfig.json --noEmit",
-    "clean": "node -e \"require('node:fs').rmSync('dist', { recursive: true, force: true })\""
+    "clean": "node -e \"const fs = require('node:fs'); for (const path of ['dist', 'src/generated/prisma']) fs.rmSync(path, { recursive: true, force: true })\"",
+    "db:generate": "prisma generate --config prisma.config.ts",
+    "db:validate": "prisma validate --config prisma.config.ts",
+    "db:format": "prisma format --config prisma.config.ts",
+    "db:migrate": "prisma migrate dev --config prisma.config.ts",
+    "db:migrate:deploy": "prisma migrate deploy --config prisma.config.ts",
+    "db:migrate:status": "prisma migrate status --config prisma.config.ts",
+    "predb:seed": "pnpm db:generate",
+    "db:seed": "prisma db seed --config prisma.config.ts",
+    "db:studio": "prisma studio --config prisma.config.ts"
   },
   "devDependencies": {
     "@clientflow/config": "workspace:*",
     "@types/cors": "^2.8.19",
     "@types/express": "^5.0.6",
+    "@types/pg": "^8.20.0",
+    "prisma": "7.9.1",
     "tsx": "^4.23.1"
   },
   "dependencies": {
+    "@prisma/adapter-pg": "7.9.1",
+    "@prisma/client": "7.9.1",
     "cors": "^2.8.6",
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
     "helmet": "^8.3.0",
+    "pg": "^8.22.0",
     "zod": "^4.4.3"
   }
 }
