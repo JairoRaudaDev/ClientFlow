@@ -3,6 +3,8 @@ import 'dotenv/config';
 import { z } from 'zod';
 
 const developmentDatabaseUrl = 'postgresql://clientflow:clientflow@localhost:5432/clientflow';
+const developmentJwtSecret = 'clientflow-local-development-secret-change-me';
+const developmentSeedUserPassword = 'ClientFlowDemo123!';
 
 const corsOriginSchema = z
   .url('must be a valid URL')
@@ -33,6 +35,11 @@ const databaseUrlSchema = z
     message: 'must use the postgres or postgresql protocol',
   });
 
+const accessTokenTtlSchema = z
+  .string()
+  .trim()
+  .regex(/^[1-9]\d*[smhd]$/, 'must be a positive duration such as 15m, 1h, or 7d');
+
 const environmentSchema = z
   .object({
     NODE_ENV: z.enum(['development', 'test', 'production']).default('development'),
@@ -51,6 +58,11 @@ const environmentSchema = z
       )
       .pipe(z.array(corsOriginSchema).min(1, 'must contain at least one valid origin')),
     DATABASE_URL: databaseUrlSchema.optional(),
+    JWT_SECRET: z.string().min(32, 'must contain at least 32 characters').optional(),
+    JWT_ISSUER: z.string().trim().min(1, 'must not be empty').default('clientflow-api'),
+    JWT_AUDIENCE: z.string().trim().min(1, 'must not be empty').default('clientflow-web'),
+    JWT_ACCESS_TOKEN_TTL: accessTokenTtlSchema.default('1h'),
+    SEED_USER_PASSWORD: z.string().min(8).max(128).optional(),
   })
   .superRefine((environment, context) => {
     if (environment.NODE_ENV !== 'development' && environment.DATABASE_URL === undefined) {
@@ -58,6 +70,14 @@ const environmentSchema = z
         code: 'custom',
         path: ['DATABASE_URL'],
         message: `is required when NODE_ENV is ${environment.NODE_ENV}`,
+      });
+    }
+
+    if (environment.NODE_ENV === 'production' && environment.JWT_SECRET === undefined) {
+      context.addIssue({
+        code: 'custom',
+        path: ['JWT_SECRET'],
+        message: 'is required when NODE_ENV is production',
       });
     }
   });
@@ -82,4 +102,11 @@ export const env = Object.freeze({
   apiPort: parsedEnvironment.data.API_PORT,
   corsOrigins: parsedEnvironment.data.CORS_ORIGIN,
   databaseUrl: parsedEnvironment.data.DATABASE_URL ?? developmentDatabaseUrl,
+  jwtSecret: parsedEnvironment.data.JWT_SECRET ?? developmentJwtSecret,
+  jwtIssuer: parsedEnvironment.data.JWT_ISSUER,
+  jwtAudience: parsedEnvironment.data.JWT_AUDIENCE,
+  jwtAccessTokenTtl: parsedEnvironment.data.JWT_ACCESS_TOKEN_TTL,
+  seedUserPassword:
+    parsedEnvironment.data.SEED_USER_PASSWORD ??
+    (parsedEnvironment.data.NODE_ENV === 'production' ? undefined : developmentSeedUserPassword),
 });

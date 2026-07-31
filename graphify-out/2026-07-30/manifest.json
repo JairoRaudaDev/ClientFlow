@@ -65,8 +65,8 @@
     "semantic_hash": "735932eaa4f0c8fef9566c538ae3e5f8"
   },
   "apps/api/package.json": {
-    "mtime": 1785454675.139931,
-    "ast_hash": "5913f7250f50eccd64c45a0e92b57b27",
+    "mtime": 1785458250.7661412,
+    "ast_hash": "a009209e80e8efea73806f67208fb4a3",
     "semantic_hash": ""
   },
   "apps/web/package.json": {
@@ -100,13 +100,13 @@
     "semantic_hash": ""
   },
   "turbo.json": {
-    "mtime": 1785451161.004091,
-    "ast_hash": "eaeed9d100c3198d9512cc69edc0b51b",
+    "mtime": 1785458479.9145582,
+    "ast_hash": "2aef79e7c0f8c0786d686cbb9fd9c038",
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1785453676.4238997,
-    "ast_hash": "a0a026b855e232f009d1c10e4cdfffb1",
+    "mtime": 1785458618.6532733,
+    "ast_hash": "578ce2add849e7d2f0c1c0fdeef626b4",
     "semantic_hash": ""
   },
   "packages/config/README.md": {
@@ -180,8 +180,8 @@
     "semantic_hash": ""
   },
   "docker-compose.yml": {
-    "mtime": 1785454675.140929,
-    "ast_hash": "85274490a7a66813ac5d589f41bf66f2",
+    "mtime": 1785458479.9135575,
+    "ast_hash": "8247c5502fd689e8543d1caf5d8586e5",
     "semantic_hash": ""
   },
   "apps/api/src/app.ts": {
@@ -190,8 +190,8 @@
     "semantic_hash": ""
   },
   "apps/api/src/config/env.ts": {
-    "mtime": 1785453683.1829271,
-    "ast_hash": "96f4ed27f0179a59972aa04f6af44c98",
+    "mtime": 1785458394.9871235,
+    "ast_hash": "d046a14f2a0b0038e229e722f8077c08",
     "semantic_hash": ""
   },
   "apps/api/src/controllers/health.controller.ts": {
@@ -200,13 +200,13 @@
     "semantic_hash": ""
   },
   "apps/api/src/errors/app-error.ts": {
-    "mtime": 1785451117.020331,
-    "ast_hash": "c5734a4ff701d5688690c43298b0ca60",
+    "mtime": 1785458394.986123,
+    "ast_hash": "3d50c023df4e822938dc7dc8847c39f7",
     "semantic_hash": ""
   },
   "apps/api/src/middleware/error-handler.ts": {
-    "mtime": 1785451126.0750115,
-    "ast_hash": "b503d7641af4963d272d2f72778db0d9",
+    "mtime": 1785458394.9871235,
+    "ast_hash": "bc3bf4e481d498c9bf2311e915070748",
     "semantic_hash": ""
   },
   "apps/api/src/middleware/not-found.ts": {
@@ -220,8 +220,8 @@
     "semantic_hash": ""
   },
   "apps/api/src/routes/index.ts": {
-    "mtime": 1785451117.0243537,
-    "ast_hash": "7ff26784abcb28066975516f3029dd5f",
+    "mtime": 1785458458.8046148,
+    "ast_hash": "2e72e8cae68c1c3b90568721a0eac3a3",
     "semantic_hash": ""
   },
   "apps/api/src/server.ts": {
@@ -240,8 +240,8 @@
     "semantic_hash": ""
   },
   "apps/api/README.md": {
-    "mtime": 1785453676.4249065,
-    "ast_hash": "ba39acc457aea5c1f6dffb869a8ca138",
+    "mtime": 1785458641.0474584,
+    "ast_hash": "a474280ef3ef976e3d7dc715bd0bbd2b",
     "semantic_hash": ""
   },
   "apps/api/prisma.config.ts": {
@@ -255,13 +255,58 @@
     "semantic_hash": ""
   },
   "apps/api/prisma/seed.ts": {
-    "mtime": 1785453545.9958405,
-    "ast_hash": "a4f4f1c674c883fc0ed728e2f1cc4c9a",
+    "mtime": 1785458479.911558,
+    "ast_hash": "0b10c003cfc8aa0c38accdc08b87c262",
     "semantic_hash": ""
   },
   "apps/api/src/config/database.ts": {
     "mtime": 1785453545.9958405,
     "ast_hash": "ac3fe568ae43f0b4849b5d3e2c4bb049",
+    "semantic_hash": ""
+  },
+  "apps/api/src/middleware/authenticate.ts": {
+    "mtime": 1785458505.976107,
+    "ast_hash": "2e427122813732957a121e5cb4798a39",
+    "semantic_hash": ""
+  },
+  "apps/api/src/middleware/validate-request.ts": {
+    "mtime": 1785458458.7991843,
+    "ast_hash": "b06e1c1aaac5496afcb758b069cb4ca2",
+    "semantic_hash": ""
+  },
+  "apps/api/src/modules/auth/auth.controller.ts": {
+    "mtime": 1785458506.0160735,
+    "ast_hash": "b692343f5d54ea648fab3b2019d0eb2b",
+    "semantic_hash": ""
+  },
+  "apps/api/src/modules/auth/auth.routes.ts": {
+    "mtime": 1785458458.8024256,
+    "ast_hash": "1319577ed637946726a8a7be02ba5b87",
+    "semantic_hash": ""
+  },
+  "apps/api/src/modules/auth/auth.schemas.ts": {
+    "mtime": 1785458458.7991843,
+    "ast_hash": "7513c5c13266e235d2394414be793c78",
+    "semantic_hash": ""
+  },
+  "apps/api/src/modules/auth/auth.service.ts": {
+    "mtime": 1785458564.7449467,
+    "ast_hash": "489d09c27d35bcf329a6212e134d38b7",
+    "semantic_hash": ""
+  },
+  "apps/api/src/modules/auth/auth.types.ts": {
+    "mtime": 1785458394.9916506,
+    "ast_hash": "1fb930c67f711fb955d70653ede86190",
+    "semantic_hash": ""
+  },
+  "apps/api/src/services/jwt.service.ts": {
+    "mtime": 1785458564.7439408,
+    "ast_hash": "894d8860285b14ca08bbdcfa509e1711",
+    "semantic_hash": ""
+  },
+  "apps/api/src/types/express.d.ts": {
+    "mtime": 1785458458.8036146,
+    "ast_hash": "185b5325bc9487f93af20e9ab8775759",
     "semantic_hash": ""
   }
 }

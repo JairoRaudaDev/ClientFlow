@@ -3,8 +3,8 @@
 ClientFlow is a planned full-stack CRM for freelancers and small agencies. This repository
 currently provides the monorepo and local development foundation for the future Next.js
 frontend, Express API, PostgreSQL database, and shared TypeScript packages. The API now has a
-production-oriented Express foundation and Prisma-backed database connection. Authentication and
-business endpoints are intentionally not implemented yet.
+production-oriented Express foundation, Prisma-backed database connection, and JWT access-token
+authentication. Business endpoints are intentionally not implemented yet.
 
 ## Monorepo structure
 
@@ -103,10 +103,43 @@ pnpm --filter @clientflow/api build
 pnpm --filter @clientflow/api start
 ```
 
-API runtime variables are `NODE_ENV`, `API_HOST`, `API_PORT`, `CORS_ORIGIN`, and `DATABASE_URL`.
-`CORS_ORIGIN` accepts one origin or a comma-separated list, for example
-`http://localhost:3000,http://localhost:3001`. See `.env.example` for defaults and
-[`apps/api/README.md`](apps/api/README.md) for API scripts, responses, and configuration details.
+API runtime variables are `NODE_ENV`, `API_HOST`, `API_PORT`, `CORS_ORIGIN`, `DATABASE_URL`,
+`JWT_SECRET`, `JWT_ISSUER`, `JWT_AUDIENCE`, and `JWT_ACCESS_TOKEN_TTL`. `CORS_ORIGIN` accepts one
+origin or a comma-separated list, for example `http://localhost:3000,http://localhost:3001`. See
+`.env.example` for defaults and [`apps/api/README.md`](apps/api/README.md) for API scripts,
+responses, and configuration details.
+
+## Authentication
+
+The API supports:
+
+- `POST /auth/register` to create a user, a workspace, and an `OWNER` membership atomically
+- `POST /auth/login` to verify credentials and issue an access token
+- `GET /auth/me` to return the current user and database-backed memberships
+
+Registration and login return a short-lived JWT access token. Send it to protected endpoints using
+`Authorization: Bearer <access-token>`. For example:
+
+```bash
+curl -X POST http://localhost:4000/auth/login \
+  -H "Content-Type: application/json" \
+  -d '{"email":"demo@clientflow.local","password":"ClientFlowDemo123!"}'
+```
+
+Create the local demo account explicitly:
+
+```bash
+pnpm db:seed
+```
+
+The development-only credentials are `demo@clientflow.local` / `ClientFlowDemo123!`. Override the
+password with `SEED_USER_PASSWORD` when needed. These credentials and all `.env.example` secrets
+are local defaults only.
+
+Access tokens are currently short-lived. Refresh tokens are not implemented, logout is client-side
+token removal, and API rate limiting will be added in a later security change. The placeholder
+frontend does not implement authentication. See [`apps/api/README.md`](apps/api/README.md) for
+request and response examples and the complete authentication error list.
 
 ## Database
 
@@ -138,9 +171,9 @@ pnpm db:seed
 pnpm db:studio
 ```
 
-The seed creates one demo user, one demo workspace, and one owner membership. Its password hash is
-an intentionally non-authenticatable placeholder: the seeded user cannot log in until a later
-authentication change replaces the seed behavior.
+The seed creates or updates one authenticatable demo user, one demo workspace, and one owner
+membership. It uses the same versioned asynchronous scrypt password hashing as registration.
 
-The web application remains a temporary built-in Node.js placeholder. No authentication,
-authorization, client/project CRUD, or billing functionality is implemented.
+The web application remains a temporary built-in Node.js placeholder. It does not contain
+authentication UI or token storage. Workspace authorization, client/project CRUD, and billing are
+not implemented.

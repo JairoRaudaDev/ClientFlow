@@ -8,7 +8,17 @@
     "@clientflow/api#dev": {
       "cache": false,
       "persistent": true,
-      "passThroughEnv": ["API_HOST", "API_PORT", "CORS_ORIGIN", "DATABASE_URL", "NODE_ENV"]
+      "passThroughEnv": [
+        "API_HOST",
+        "API_PORT",
+        "CORS_ORIGIN",
+        "DATABASE_URL",
+        "JWT_ACCESS_TOKEN_TTL",
+        "JWT_AUDIENCE",
+        "JWT_ISSUER",
+        "JWT_SECRET",
+        "NODE_ENV"
+      ]
     },
     "@clientflow/web#dev": {
       "cache": false,

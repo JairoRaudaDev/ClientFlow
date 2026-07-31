@@ -1,19 +1,27 @@
 import type { ErrorRequestHandler, Response } from 'express';
 
 import { env } from '../config/env.js';
-import { AppError } from '../errors/app-error.js';
+import { AppError, type AppErrorDetail } from '../errors/app-error.js';
 
 interface ErrorResponse {
   success: false;
   message: string;
   code: string;
+  details?: ReadonlyArray<AppErrorDetail>;
 }
 
-function sendError(response: Response, statusCode: number, message: string, code: string): void {
+function sendError(
+  response: Response,
+  statusCode: number,
+  message: string,
+  code: string,
+  details?: ReadonlyArray<AppErrorDetail>,
+): void {
   const body: ErrorResponse = {
     success: false,
     message,
     code,
+    ...(details === undefined ? {} : { details }),
   };
 
   response.status(statusCode).json(body);
@@ -64,7 +72,7 @@ export const errorHandler: ErrorRequestHandler = (error, _request, response, nex
   }
 
   if (error instanceof AppError && error.isOperational) {
-    sendError(response, error.statusCode, error.message, error.code);
+    sendError(response, error.statusCode, error.message, error.code, error.details);
     return;
   }
 

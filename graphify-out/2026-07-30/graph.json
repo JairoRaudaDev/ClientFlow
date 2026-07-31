@@ -92,7 +92,7 @@
       "source_file": "apps/api/package.json",
       "source_location": "L1",
       "id": "api_package",
-      "community": 11,
+      "community": 46,
       "norm_label": "package.json"
     },
     {
@@ -101,7 +101,7 @@
       "source_file": "apps/api/package.json",
       "source_location": "L2",
       "id": "api_package_name",
-      "community": 11,
+      "community": 46,
       "norm_label": "name"
     },
     {
@@ -110,7 +110,7 @@
       "source_file": "apps/api/package.json",
       "source_location": "L3",
       "id": "api_package_version",
-      "community": 11,
+      "community": 46,
       "norm_label": "version"
     },
     {
@@ -119,7 +119,7 @@
       "source_file": "apps/api/package.json",
       "source_location": "L4",
       "id": "api_package_private",
-      "community": 11,
+      "community": 46,
       "norm_label": "private"
     },
     {
@@ -128,7 +128,7 @@
       "source_file": "apps/api/package.json",
       "source_location": "L5",
       "id": "api_package_type",
-      "community": 11,
+      "community": 46,
       "norm_label": "type"
     },
     {
@@ -308,7 +308,7 @@
       "source_file": "apps/api/package.json",
       "source_location": "L26",
       "id": "api_package_devdependencies",
-      "community": 11,
+      "community": 46,
       "norm_label": "devdependencies"
     },
     {
@@ -317,7 +317,7 @@
       "source_file": "apps/api/package.json",
       "source_location": "L27",
       "id": "api_package_devdependencies_clientflow_config",
-      "community": 11,
+      "community": 46,
       "norm_label": "@clientflow/config"
     },
     {
@@ -326,7 +326,7 @@
       "source_file": "apps/api/package.json",
       "source_location": "L28",
       "id": "api_package_devdependencies_types_cors",
-      "community": 11,
+      "community": 46,
       "norm_label": "@types/cors"
     },
     {
@@ -335,7 +335,7 @@
       "source_file": "apps/api/package.json",
       "source_location": "L29",
       "id": "api_package_devdependencies_types_express",
-      "community": 11,
+      "community": 46,
       "norm_label": "@types/express"
     },
     {
@@ -344,7 +344,7 @@
       "source_file": "apps/api/package.json",
       "source_location": "L30",
       "id": "api_package_devdependencies_types_pg",
-      "community": 11,
+      "community": 46,
       "norm_label": "@types/pg"
     },
     {
@@ -353,7 +353,7 @@
       "source_file": "apps/api/package.json",
       "source_location": "L31",
       "id": "api_package_devdependencies_prisma",
-      "community": 11,
+      "community": 46,
       "norm_label": "prisma"
     },
     {
@@ -362,7 +362,7 @@
       "source_file": "apps/api/package.json",
       "source_location": "L32",
       "id": "api_package_devdependencies_tsx",
-      "community": 11,
+      "community": 46,
       "norm_label": "tsx"
     },
     {
@@ -429,10 +429,19 @@
       "norm_label": "helmet"
     },
     {
-      "label": "pg",
+      "label": "jose",
       "file_type": "code",
       "source_file": "apps/api/package.json",
       "source_location": "L41",
+      "id": "api_package_dependencies_jose",
+      "community": 11,
+      "norm_label": "jose"
+    },
+    {
+      "label": "pg",
+      "file_type": "code",
+      "source_file": "apps/api/package.json",
+      "source_location": "L42",
       "id": "api_package_dependencies_pg",
       "community": 11,
       "norm_label": "pg"
@@ -441,7 +450,7 @@
       "label": "zod",
       "file_type": "code",
       "source_file": "apps/api/package.json",
-      "source_location": "L42",
+      "source_location": "L43",
       "id": "api_package_dependencies_zod",
       "community": 11,
       "norm_label": "zod"
@@ -594,7 +603,7 @@
       "label": "corsOriginSchema",
       "file_type": "code",
       "source_file": "apps/api/src/config/env.ts",
-      "source_location": "L7",
+      "source_location": "L9",
       "id": "config_env_corsoriginschema",
       "community": 45,
       "norm_label": "corsoriginschema"
@@ -603,16 +612,25 @@
       "label": "databaseUrlSchema",
       "file_type": "code",
       "source_file": "apps/api/src/config/env.ts",
-      "source_location": "L30",
+      "source_location": "L32",
       "id": "config_env_databaseurlschema",
       "community": 45,
       "norm_label": "databaseurlschema"
     },
     {
+      "label": "accessTokenTtlSchema",
+      "file_type": "code",
+      "source_file": "apps/api/src/config/env.ts",
+      "source_location": "L38",
+      "id": "config_env_accesstokenttlschema",
+      "community": 45,
+      "norm_label": "accesstokenttlschema"
+    },
+    {
       "label": "environmentSchema",
       "file_type": "code",
       "source_file": "apps/api/src/config/env.ts",
-      "source_location": "L36",
+      "source_location": "L43",
       "id": "config_env_environmentschema",
       "community": 45,
       "norm_label": "environmentschema"
@@ -621,7 +639,7 @@
       "label": "parsedEnvironment",
       "file_type": "code",
       "source_file": "apps/api/src/config/env.ts",
-      "source_location": "L65",
+      "source_location": "L85",
       "id": "config_env_parsedenvironment",
       "community": 45,
       "norm_label": "parsedenvironment"
@@ -630,7 +648,7 @@
       "label": "env",
       "file_type": "code",
       "source_file": "apps/api/src/config/env.ts",
-      "source_location": "L79",
+      "source_location": "L99",
       "id": "config_env_env",
       "community": 45,
       "norm_label": "env"
@@ -672,10 +690,19 @@
       "norm_label": "apperroroptions"
     },
     {
+      "label": "AppErrorDetail",
+      "file_type": "code",
+      "source_file": "apps/api/src/errors/app-error.ts",
+      "source_location": "L9",
+      "id": "errors_app_error_apperrordetail",
+      "community": 12,
+      "norm_label": "apperrordetail"
+    },
+    {
       "label": "AppError",
       "file_type": "code",
       "source_file": "apps/api/src/errors/app-error.ts",
-      "source_location": "L8",
+      "source_location": "L14",
       "id": "errors_app_error_apperror",
       "community": 12,
       "norm_label": "apperror"
@@ -684,10 +711,46 @@
       "label": ".constructor()",
       "file_type": "code",
       "source_file": "apps/api/src/errors/app-error.ts",
-      "source_location": "L13",
+      "source_location": "L20",
       "id": "errors_app_error_apperror_constructor",
       "community": 12,
       "norm_label": ".constructor()"
+    },
+    {
+      "label": "authenticate.ts",
+      "file_type": "code",
+      "source_file": "apps/api/src/middleware/authenticate.ts",
+      "source_location": "L1",
+      "id": "middleware_authenticate",
+      "community": 49,
+      "norm_label": "authenticate.ts"
+    },
+    {
+      "label": "authenticate()",
+      "file_type": "code",
+      "source_file": "apps/api/src/middleware/authenticate.ts",
+      "source_location": "L7",
+      "id": "middleware_authenticate_authenticate",
+      "community": 49,
+      "norm_label": "authenticate()"
+    },
+    {
+      "label": "countAuthorizationHeaders()",
+      "file_type": "code",
+      "source_file": "apps/api/src/middleware/authenticate.ts",
+      "source_location": "L83",
+      "id": "middleware_authenticate_countauthorizationheaders",
+      "community": 49,
+      "norm_label": "countauthorizationheaders()"
+    },
+    {
+      "label": "invalidAccessTokenError()",
+      "file_type": "code",
+      "source_file": "apps/api/src/middleware/authenticate.ts",
+      "source_location": "L95",
+      "id": "middleware_authenticate_invalidaccesstokenerror",
+      "community": 49,
+      "norm_label": "invalidaccesstokenerror()"
     },
     {
       "label": "error-handler.ts",
@@ -711,7 +774,7 @@
       "label": "sendError()",
       "file_type": "code",
       "source_file": "apps/api/src/middleware/error-handler.ts",
-      "source_location": "L12",
+      "source_location": "L13",
       "id": "middleware_error_handler_senderror",
       "community": 12,
       "norm_label": "senderror()"
@@ -720,7 +783,7 @@
       "label": "isErrorRecord()",
       "file_type": "code",
       "source_file": "apps/api/src/middleware/error-handler.ts",
-      "source_location": "L22",
+      "source_location": "L30",
       "id": "middleware_error_handler_iserrorrecord",
       "community": 12,
       "norm_label": "iserrorrecord()"
@@ -729,7 +792,7 @@
       "label": "isMalformedJsonError()",
       "file_type": "code",
       "source_file": "apps/api/src/middleware/error-handler.ts",
-      "source_location": "L26",
+      "source_location": "L34",
       "id": "middleware_error_handler_ismalformedjsonerror",
       "community": 12,
       "norm_label": "ismalformedjsonerror()"
@@ -738,7 +801,7 @@
       "label": "isPayloadTooLargeError()",
       "file_type": "code",
       "source_file": "apps/api/src/middleware/error-handler.ts",
-      "source_location": "L35",
+      "source_location": "L43",
       "id": "middleware_error_handler_ispayloadtoolargeerror",
       "community": 12,
       "norm_label": "ispayloadtoolargeerror()"
@@ -747,7 +810,7 @@
       "label": "logUnexpectedError()",
       "file_type": "code",
       "source_file": "apps/api/src/middleware/error-handler.ts",
-      "source_location": "L39",
+      "source_location": "L47",
       "id": "middleware_error_handler_logunexpectederror",
       "community": 12,
       "norm_label": "logunexpectederror()"
@@ -756,7 +819,7 @@
       "label": "errorHandler()",
       "file_type": "code",
       "source_file": "apps/api/src/middleware/error-handler.ts",
-      "source_location": "L50",
+      "source_location": "L58",
       "id": "middleware_error_handler_errorhandler",
       "community": 12,
       "norm_label": "errorhandler()"
@@ -778,6 +841,312 @@
       "id": "middleware_not_found_notfound",
       "community": 12,
       "norm_label": "notfound()"
+    },
+    {
+      "label": "validate-request.ts",
+      "file_type": "code",
+      "source_file": "apps/api/src/middleware/validate-request.ts",
+      "source_location": "L1",
+      "id": "middleware_validate_request",
+      "community": 49,
+      "norm_label": "validate-request.ts"
+    },
+    {
+      "label": "validateRequestBody()",
+      "file_type": "code",
+      "source_file": "apps/api/src/middleware/validate-request.ts",
+      "source_location": "L6",
+      "id": "middleware_validate_request_validaterequestbody",
+      "community": 49,
+      "norm_label": "validaterequestbody()"
+    },
+    {
+      "label": "auth.controller.ts",
+      "file_type": "code",
+      "source_file": "apps/api/src/modules/auth/auth.controller.ts",
+      "source_location": "L1",
+      "id": "auth_auth_controller",
+      "community": 49,
+      "norm_label": "auth.controller.ts"
+    },
+    {
+      "label": "SuccessResponse",
+      "file_type": "code",
+      "source_file": "apps/api/src/modules/auth/auth.controller.ts",
+      "source_location": "L8",
+      "id": "auth_auth_controller_successresponse",
+      "community": 49,
+      "norm_label": "successresponse"
+    },
+    {
+      "label": "register()",
+      "file_type": "code",
+      "source_file": "apps/api/src/modules/auth/auth.controller.ts",
+      "source_location": "L13",
+      "id": "auth_auth_controller_register",
+      "community": 49,
+      "norm_label": "register()"
+    },
+    {
+      "label": "login()",
+      "file_type": "code",
+      "source_file": "apps/api/src/modules/auth/auth.controller.ts",
+      "source_location": "L30",
+      "id": "auth_auth_controller_login",
+      "community": 49,
+      "norm_label": "login()"
+    },
+    {
+      "label": "getMe()",
+      "file_type": "code",
+      "source_file": "apps/api/src/modules/auth/auth.controller.ts",
+      "source_location": "L47",
+      "id": "auth_auth_controller_getme",
+      "community": 49,
+      "norm_label": "getme()"
+    },
+    {
+      "label": "auth.routes.ts",
+      "file_type": "code",
+      "source_file": "apps/api/src/modules/auth/auth.routes.ts",
+      "source_location": "L1",
+      "id": "auth_auth_routes",
+      "community": 49,
+      "norm_label": "auth.routes.ts"
+    },
+    {
+      "label": "authRouter",
+      "file_type": "code",
+      "source_file": "apps/api/src/modules/auth/auth.routes.ts",
+      "source_location": "L8",
+      "id": "auth_auth_routes_authrouter",
+      "community": 12,
+      "norm_label": "authrouter"
+    },
+    {
+      "label": "auth.schemas.ts",
+      "file_type": "code",
+      "source_file": "apps/api/src/modules/auth/auth.schemas.ts",
+      "source_location": "L1",
+      "id": "auth_auth_schemas",
+      "community": 49,
+      "norm_label": "auth.schemas.ts"
+    },
+    {
+      "label": "nameSchema",
+      "file_type": "code",
+      "source_file": "apps/api/src/modules/auth/auth.schemas.ts",
+      "source_location": "L3",
+      "id": "auth_auth_schemas_nameschema",
+      "community": 49,
+      "norm_label": "nameschema"
+    },
+    {
+      "label": "emailSchema",
+      "file_type": "code",
+      "source_file": "apps/api/src/modules/auth/auth.schemas.ts",
+      "source_location": "L9",
+      "id": "auth_auth_schemas_emailschema",
+      "community": 49,
+      "norm_label": "emailschema"
+    },
+    {
+      "label": "passwordSchema",
+      "file_type": "code",
+      "source_file": "apps/api/src/modules/auth/auth.schemas.ts",
+      "source_location": "L16",
+      "id": "auth_auth_schemas_passwordschema",
+      "community": 49,
+      "norm_label": "passwordschema"
+    },
+    {
+      "label": "workspaceNameSchema",
+      "file_type": "code",
+      "source_file": "apps/api/src/modules/auth/auth.schemas.ts",
+      "source_location": "L21",
+      "id": "auth_auth_schemas_workspacenameschema",
+      "community": 49,
+      "norm_label": "workspacenameschema"
+    },
+    {
+      "label": "registerBodySchema",
+      "file_type": "code",
+      "source_file": "apps/api/src/modules/auth/auth.schemas.ts",
+      "source_location": "L27",
+      "id": "auth_auth_schemas_registerbodyschema",
+      "community": 49,
+      "norm_label": "registerbodyschema"
+    },
+    {
+      "label": "loginBodySchema",
+      "file_type": "code",
+      "source_file": "apps/api/src/modules/auth/auth.schemas.ts",
+      "source_location": "L34",
+      "id": "auth_auth_schemas_loginbodyschema",
+      "community": 49,
+      "norm_label": "loginbodyschema"
+    },
+    {
+      "label": "RegisterInput",
+      "file_type": "code",
+      "source_file": "apps/api/src/modules/auth/auth.schemas.ts",
+      "source_location": "L39",
+      "id": "auth_auth_schemas_registerinput",
+      "community": 49,
+      "norm_label": "registerinput"
+    },
+    {
+      "label": "LoginInput",
+      "file_type": "code",
+      "source_file": "apps/api/src/modules/auth/auth.schemas.ts",
+      "source_location": "L40",
+      "id": "auth_auth_schemas_logininput",
+      "community": 49,
+      "norm_label": "logininput"
+    },
+    {
+      "label": "auth.service.ts",
+      "file_type": "code",
+      "source_file": "apps/api/src/modules/auth/auth.service.ts",
+      "source_location": "L1",
+      "id": "auth_auth_service",
+      "community": 49,
+      "norm_label": "auth.service.ts"
+    },
+    {
+      "label": "registerUser()",
+      "file_type": "code",
+      "source_file": "apps/api/src/modules/auth/auth.service.ts",
+      "source_location": "L33",
+      "id": "auth_auth_service_registeruser",
+      "community": 49,
+      "norm_label": "registeruser()"
+    },
+    {
+      "label": "loginUser()",
+      "file_type": "code",
+      "source_file": "apps/api/src/modules/auth/auth.service.ts",
+      "source_location": "L71",
+      "id": "auth_auth_service_loginuser",
+      "community": 49,
+      "norm_label": "loginuser()"
+    },
+    {
+      "label": "getCurrentUserAuthContext()",
+      "file_type": "code",
+      "source_file": "apps/api/src/modules/auth/auth.service.ts",
+      "source_location": "L96",
+      "id": "auth_auth_service_getcurrentuserauthcontext",
+      "community": 49,
+      "norm_label": "getcurrentuserauthcontext()"
+    },
+    {
+      "label": "createAuthenticationData()",
+      "file_type": "code",
+      "source_file": "apps/api/src/modules/auth/auth.service.ts",
+      "source_location": "L105",
+      "id": "auth_auth_service_createauthenticationdata",
+      "community": 49,
+      "norm_label": "createauthenticationdata()"
+    },
+    {
+      "label": "createDefaultWorkspaceName()",
+      "file_type": "code",
+      "source_file": "apps/api/src/modules/auth/auth.service.ts",
+      "source_location": "L116",
+      "id": "auth_auth_service_createdefaultworkspacename",
+      "community": 49,
+      "norm_label": "createdefaultworkspacename()"
+    },
+    {
+      "label": "invalidCredentialsError()",
+      "file_type": "code",
+      "source_file": "apps/api/src/modules/auth/auth.service.ts",
+      "source_location": "L125",
+      "id": "auth_auth_service_invalidcredentialserror",
+      "community": 49,
+      "norm_label": "invalidcredentialserror()"
+    },
+    {
+      "label": "isUserUniqueConstraintError()",
+      "file_type": "code",
+      "source_file": "apps/api/src/modules/auth/auth.service.ts",
+      "source_location": "L133",
+      "id": "auth_auth_service_isuseruniqueconstrainterror",
+      "community": 49,
+      "norm_label": "isuseruniqueconstrainterror()"
+    },
+    {
+      "label": "auth.types.ts",
+      "file_type": "code",
+      "source_file": "apps/api/src/modules/auth/auth.types.ts",
+      "source_location": "L1",
+      "id": "auth_auth_types",
+      "community": 49,
+      "norm_label": "auth.types.ts"
+    },
+    {
+      "label": "PublicUser",
+      "file_type": "code",
+      "source_file": "apps/api/src/modules/auth/auth.types.ts",
+      "source_location": "L3",
+      "id": "auth_auth_types_publicuser",
+      "community": 49,
+      "norm_label": "publicuser"
+    },
+    {
+      "label": "PublicWorkspace",
+      "file_type": "code",
+      "source_file": "apps/api/src/modules/auth/auth.types.ts",
+      "source_location": "L11",
+      "id": "auth_auth_types_publicworkspace",
+      "community": 49,
+      "norm_label": "publicworkspace"
+    },
+    {
+      "label": "PublicMembership",
+      "file_type": "code",
+      "source_file": "apps/api/src/modules/auth/auth.types.ts",
+      "source_location": "L18",
+      "id": "auth_auth_types_publicmembership",
+      "community": 49,
+      "norm_label": "publicmembership"
+    },
+    {
+      "label": "AuthContext",
+      "file_type": "code",
+      "source_file": "apps/api/src/modules/auth/auth.types.ts",
+      "source_location": "L24",
+      "id": "auth_auth_types_authcontext",
+      "community": 49,
+      "norm_label": "authcontext"
+    },
+    {
+      "label": "AuthenticationData",
+      "file_type": "code",
+      "source_file": "apps/api/src/modules/auth/auth.types.ts",
+      "source_location": "L29",
+      "id": "auth_auth_types_authenticationdata",
+      "community": 49,
+      "norm_label": "authenticationdata"
+    },
+    {
+      "label": "SafeUserRecord",
+      "file_type": "code",
+      "source_file": "apps/api/src/modules/auth/auth.types.ts",
+      "source_location": "L35",
+      "id": "auth_auth_types_safeuserrecord",
+      "community": 49,
+      "norm_label": "safeuserrecord"
+    },
+    {
+      "label": "mapAuthContext()",
+      "file_type": "code",
+      "source_file": "apps/api/src/modules/auth/auth.types.ts",
+      "source_location": "L39",
+      "id": "auth_auth_types_mapauthcontext",
+      "community": 49,
+      "norm_label": "mapauthcontext()"
     },
     {
       "label": "health.routes.ts",
@@ -810,7 +1179,7 @@
       "label": "apiRouter",
       "file_type": "code",
       "source_file": "apps/api/src/routes/index.ts",
-      "source_location": "L5",
+      "source_location": "L6",
       "id": "routes_index_apirouter",
       "community": 12,
       "norm_label": "apirouter"
@@ -868,6 +1237,105 @@
       "id": "src_server_closehttpserver",
       "community": 45,
       "norm_label": "closehttpserver()"
+    },
+    {
+      "label": "jwt.service.ts",
+      "file_type": "code",
+      "source_file": "apps/api/src/services/jwt.service.ts",
+      "source_location": "L1",
+      "id": "services_jwt_service",
+      "community": 49,
+      "norm_label": "jwt.service.ts"
+    },
+    {
+      "label": "secret",
+      "file_type": "code",
+      "source_file": "apps/api/src/services/jwt.service.ts",
+      "source_location": "L10",
+      "id": "services_jwt_service_secret",
+      "community": 49,
+      "norm_label": "secret"
+    },
+    {
+      "label": "VerifiedAccessToken",
+      "file_type": "code",
+      "source_file": "apps/api/src/services/jwt.service.ts",
+      "source_location": "L12",
+      "id": "services_jwt_service_verifiedaccesstoken",
+      "community": 49,
+      "norm_label": "verifiedaccesstoken"
+    },
+    {
+      "label": "AccessTokenExpiredError",
+      "file_type": "code",
+      "source_file": "apps/api/src/services/jwt.service.ts",
+      "source_location": "L16",
+      "id": "services_jwt_service_accesstokenexpirederror",
+      "community": 49,
+      "norm_label": "accesstokenexpirederror"
+    },
+    {
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "apps/api/src/services/jwt.service.ts",
+      "source_location": "L17",
+      "id": "services_jwt_service_accesstokenexpirederror_constructor",
+      "community": 49,
+      "norm_label": ".constructor()"
+    },
+    {
+      "label": "InvalidAccessTokenError",
+      "file_type": "code",
+      "source_file": "apps/api/src/services/jwt.service.ts",
+      "source_location": "L23",
+      "id": "services_jwt_service_invalidaccesstokenerror",
+      "community": 49,
+      "norm_label": "invalidaccesstokenerror"
+    },
+    {
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "apps/api/src/services/jwt.service.ts",
+      "source_location": "L24",
+      "id": "services_jwt_service_invalidaccesstokenerror_constructor",
+      "community": 49,
+      "norm_label": ".constructor()"
+    },
+    {
+      "label": "createAccessToken()",
+      "file_type": "code",
+      "source_file": "apps/api/src/services/jwt.service.ts",
+      "source_location": "L30",
+      "id": "services_jwt_service_createaccesstoken",
+      "community": 49,
+      "norm_label": "createaccesstoken()"
+    },
+    {
+      "label": "verifyAccessToken()",
+      "file_type": "code",
+      "source_file": "apps/api/src/services/jwt.service.ts",
+      "source_location": "L42",
+      "id": "services_jwt_service_verifyaccesstoken",
+      "community": 49,
+      "norm_label": "verifyaccesstoken()"
+    },
+    {
+      "label": "express.d.ts",
+      "file_type": "code",
+      "source_file": "apps/api/src/types/express.d.ts",
+      "source_location": "L1",
+      "id": "types_express_d",
+      "community": 49,
+      "norm_label": "express.d.ts"
+    },
+    {
+      "label": "Request",
+      "file_type": "code",
+      "source_file": "apps/api/src/types/express.d.ts",
+      "source_location": "L5",
+      "id": "types_express_d_request",
+      "community": 49,
+      "norm_label": "request"
     },
     {
       "label": "tsconfig.build.json",
@@ -2229,10 +2697,82 @@
       "norm_label": "persistent"
     },
     {
-      "label": "build",
+      "label": "@clientflow/api#dev",
       "file_type": "code",
       "source_file": "turbo.json",
       "source_location": "L8",
+      "id": "turbo_tasks_clientflow_api_dev",
+      "community": 1,
+      "norm_label": "@clientflow/api#dev"
+    },
+    {
+      "label": "cache",
+      "file_type": "code",
+      "source_file": "turbo.json",
+      "source_location": "L9",
+      "id": "turbo_clientflow_api_dev_cache",
+      "community": 1,
+      "norm_label": "cache"
+    },
+    {
+      "label": "persistent",
+      "file_type": "code",
+      "source_file": "turbo.json",
+      "source_location": "L10",
+      "id": "turbo_clientflow_api_dev_persistent",
+      "community": 1,
+      "norm_label": "persistent"
+    },
+    {
+      "label": "passThroughEnv",
+      "file_type": "code",
+      "source_file": "turbo.json",
+      "source_location": "L11",
+      "id": "turbo_clientflow_api_dev_passthroughenv",
+      "community": 1,
+      "norm_label": "passthroughenv"
+    },
+    {
+      "label": "@clientflow/web#dev",
+      "file_type": "code",
+      "source_file": "turbo.json",
+      "source_location": "L23",
+      "id": "turbo_tasks_clientflow_web_dev",
+      "community": 1,
+      "norm_label": "@clientflow/web#dev"
+    },
+    {
+      "label": "cache",
+      "file_type": "code",
+      "source_file": "turbo.json",
+      "source_location": "L24",
+      "id": "turbo_clientflow_web_dev_cache",
+      "community": 1,
+      "norm_label": "cache"
+    },
+    {
+      "label": "persistent",
+      "file_type": "code",
+      "source_file": "turbo.json",
+      "source_location": "L25",
+      "id": "turbo_clientflow_web_dev_persistent",
+      "community": 1,
+      "norm_label": "persistent"
+    },
+    {
+      "label": "passThroughEnv",
+      "file_type": "code",
+      "source_file": "turbo.json",
+      "source_location": "L26",
+      "id": "turbo_clientflow_web_dev_passthroughenv",
+      "community": 1,
+      "norm_label": "passthroughenv"
+    },
+    {
+      "label": "build",
+      "file_type": "code",
+      "source_file": "turbo.json",
+      "source_location": "L28",
       "id": "turbo_tasks_build",
       "community": 1,
       "norm_label": "build"
@@ -2241,7 +2781,7 @@
       "label": "dependsOn",
       "file_type": "code",
       "source_file": "turbo.json",
-      "source_location": "L9",
+      "source_location": "L29",
       "id": "turbo_build_dependson",
       "community": 1,
       "norm_label": "dependson"
@@ -2250,7 +2790,7 @@
       "label": "@clientflow/types#build",
       "file_type": "code",
       "source_file": "turbo.json",
-      "source_location": "L11",
+      "source_location": "L31",
       "id": "turbo_tasks_clientflow_types_build",
       "community": 1,
       "norm_label": "@clientflow/types#build"
@@ -2259,7 +2799,7 @@
       "label": "dependsOn",
       "file_type": "code",
       "source_file": "turbo.json",
-      "source_location": "L12",
+      "source_location": "L32",
       "id": "turbo_clientflow_types_build_dependson",
       "community": 1,
       "norm_label": "dependson"
@@ -2268,7 +2808,7 @@
       "label": "outputs",
       "file_type": "code",
       "source_file": "turbo.json",
-      "source_location": "L13",
+      "source_location": "L33",
       "id": "turbo_clientflow_types_build_outputs",
       "community": 1,
       "norm_label": "outputs"
@@ -2277,7 +2817,7 @@
       "label": "@clientflow/api#build",
       "file_type": "code",
       "source_file": "turbo.json",
-      "source_location": "L15",
+      "source_location": "L35",
       "id": "turbo_tasks_clientflow_api_build",
       "community": 1,
       "norm_label": "@clientflow/api#build"
@@ -2286,7 +2826,7 @@
       "label": "dependsOn",
       "file_type": "code",
       "source_file": "turbo.json",
-      "source_location": "L16",
+      "source_location": "L36",
       "id": "turbo_clientflow_api_build_dependson",
       "community": 1,
       "norm_label": "dependson"
@@ -2295,7 +2835,7 @@
       "label": "outputs",
       "file_type": "code",
       "source_file": "turbo.json",
-      "source_location": "L17",
+      "source_location": "L37",
       "id": "turbo_clientflow_api_build_outputs",
       "community": 1,
       "norm_label": "outputs"
@@ -2304,7 +2844,7 @@
       "label": "lint",
       "file_type": "code",
       "source_file": "turbo.json",
-      "source_location": "L19",
+      "source_location": "L39",
       "id": "turbo_tasks_lint",
       "community": 1,
       "norm_label": "lint"
@@ -2313,7 +2853,7 @@
       "label": "dependsOn",
       "file_type": "code",
       "source_file": "turbo.json",
-      "source_location": "L20",
+      "source_location": "L40",
       "id": "turbo_lint_dependson",
       "community": 1,
       "norm_label": "dependson"
@@ -2322,7 +2862,7 @@
       "label": "typecheck",
       "file_type": "code",
       "source_file": "turbo.json",
-      "source_location": "L22",
+      "source_location": "L42",
       "id": "turbo_tasks_typecheck",
       "community": 1,
       "norm_label": "typecheck"
@@ -2331,7 +2871,7 @@
       "label": "dependsOn",
       "file_type": "code",
       "source_file": "turbo.json",
-      "source_location": "L23",
+      "source_location": "L43",
       "id": "turbo_typecheck_dependson",
       "community": 1,
       "norm_label": "dependson"
@@ -2340,7 +2880,7 @@
       "label": "clean",
       "file_type": "code",
       "source_file": "turbo.json",
-      "source_location": "L25",
+      "source_location": "L45",
       "id": "turbo_tasks_clean",
       "community": 1,
       "norm_label": "clean"
@@ -2349,7 +2889,7 @@
       "label": "dependsOn",
       "file_type": "code",
       "source_file": "turbo.json",
-      "source_location": "L26",
+      "source_location": "L46",
       "id": "turbo_clean_dependson",
       "community": 1,
       "norm_label": "dependson"
@@ -2358,7 +2898,7 @@
       "label": "cache",
       "file_type": "code",
       "source_file": "turbo.json",
-      "source_location": "L27",
+      "source_location": "L47",
       "id": "turbo_clean_cache",
       "community": 1,
       "norm_label": "cache"
@@ -3165,10 +3705,19 @@
       "norm_label": "api"
     },
     {
+      "label": "Authentication",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L112",
+      "id": "readme_authentication",
+      "community": 17,
+      "norm_label": "authentication"
+    },
+    {
       "label": "Database",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L111",
+      "source_location": "L144",
       "id": "readme_database",
       "community": 17,
       "norm_label": "database"
@@ -3195,7 +3744,7 @@
       "label": "Configuration",
       "file_type": "document",
       "source_file": "apps/api/README.md",
-      "source_location": "L9",
+      "source_location": "L10",
       "id": "api_readme_configuration",
       "community": 39,
       "norm_label": "configuration"
@@ -3204,7 +3753,7 @@
       "label": "Commands",
       "file_type": "document",
       "source_file": "apps/api/README.md",
-      "source_location": "L30",
+      "source_location": "L39",
       "id": "api_readme_commands",
       "community": 39,
       "norm_label": "commands"
@@ -3213,16 +3762,61 @@
       "label": "Prisma and migrations",
       "file_type": "document",
       "source_file": "apps/api/README.md",
-      "source_location": "L55",
+      "source_location": "L64",
       "id": "api_readme_prisma_and_migrations",
       "community": 39,
       "norm_label": "prisma and migrations"
     },
     {
+      "label": "Authentication",
+      "file_type": "document",
+      "source_file": "apps/api/README.md",
+      "source_location": "L92",
+      "id": "api_readme_authentication",
+      "community": 39,
+      "norm_label": "authentication"
+    },
+    {
+      "label": "Register",
+      "file_type": "document",
+      "source_file": "apps/api/README.md",
+      "source_location": "L98",
+      "id": "api_readme_register",
+      "community": 39,
+      "norm_label": "register"
+    },
+    {
+      "label": "Login",
+      "file_type": "document",
+      "source_file": "apps/api/README.md",
+      "source_location": "L147",
+      "id": "api_readme_login",
+      "community": 39,
+      "norm_label": "login"
+    },
+    {
+      "label": "Current user",
+      "file_type": "document",
+      "source_file": "apps/api/README.md",
+      "source_location": "L160",
+      "id": "api_readme_current_user",
+      "community": 39,
+      "norm_label": "current user"
+    },
+    {
+      "label": "Authentication errors",
+      "file_type": "document",
+      "source_file": "apps/api/README.md",
+      "source_location": "L200",
+      "id": "api_readme_authentication_errors",
+      "community": 39,
+      "norm_label": "authentication errors"
+    },
+    {
       "label": "Health endpoint",
       "file_type": "document",
       "source_file": "apps/api/README.md",
-      "source_location": "L75",
+      "source_location": "L221",
       "id": "api_readme_health_endpoint",
       "community": 39,
       "norm_label": "health endpoint"
@@ -3231,7 +3825,7 @@
       "label": "Request handling",
       "file_type": "document",
       "source_file": "apps/api/README.md",
-      "source_location": "L97",
+      "source_location": "L243",
       "id": "api_readme_request_handling",
       "community": 39,
       "norm_label": "request handling"
@@ -3875,9 +4469,9 @@
       "source_file": "apps/api/package.json",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_package_scripts",
-      "target": "api_package_scripts_db_format",
-      "confidence_score": 1.0
+      "target": "api_package_scripts_db_format"
     },
     {
       "relation": "contains",
@@ -3885,9 +4479,9 @@
       "source_file": "apps/api/package.json",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_package_scripts",
-      "target": "api_package_scripts_db_generate",
-      "confidence_score": 1.0
+      "target": "api_package_scripts_db_generate"
     },
     {
       "relation": "contains",
@@ -3895,9 +4489,9 @@
       "source_file": "apps/api/package.json",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_package_scripts",
-      "target": "api_package_scripts_db_migrate",
-      "confidence_score": 1.0
+      "target": "api_package_scripts_db_migrate"
     },
     {
       "relation": "contains",
@@ -3905,9 +4499,9 @@
       "source_file": "apps/api/package.json",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_package_scripts",
-      "target": "api_package_scripts_db_migrate_deploy",
-      "confidence_score": 1.0
+      "target": "api_package_scripts_db_migrate_deploy"
     },
     {
       "relation": "contains",
@@ -3915,9 +4509,9 @@
       "source_file": "apps/api/package.json",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_package_scripts",
-      "target": "api_package_scripts_db_migrate_status",
-      "confidence_score": 1.0
+      "target": "api_package_scripts_db_migrate_status"
     },
     {
       "relation": "contains",
@@ -3925,9 +4519,9 @@
       "source_file": "apps/api/package.json",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_package_scripts",
-      "target": "api_package_scripts_db_seed",
-      "confidence_score": 1.0
+      "target": "api_package_scripts_db_seed"
     },
     {
       "relation": "contains",
@@ -3935,9 +4529,9 @@
       "source_file": "apps/api/package.json",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_package_scripts",
-      "target": "api_package_scripts_db_studio",
-      "confidence_score": 1.0
+      "target": "api_package_scripts_db_studio"
     },
     {
       "relation": "contains",
@@ -3945,9 +4539,9 @@
       "source_file": "apps/api/package.json",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_package_scripts",
-      "target": "api_package_scripts_db_validate",
-      "confidence_score": 1.0
+      "target": "api_package_scripts_db_validate"
     },
     {
       "relation": "contains",
@@ -3975,9 +4569,9 @@
       "source_file": "apps/api/package.json",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_package_scripts",
-      "target": "api_package_scripts_prebuild",
-      "confidence_score": 1.0
+      "target": "api_package_scripts_prebuild"
     },
     {
       "relation": "contains",
@@ -3985,9 +4579,9 @@
       "source_file": "apps/api/package.json",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_package_scripts",
-      "target": "api_package_scripts_predb_seed",
-      "confidence_score": 1.0
+      "target": "api_package_scripts_predb_seed"
     },
     {
       "relation": "contains",
@@ -3995,9 +4589,9 @@
       "source_file": "apps/api/package.json",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_package_scripts",
-      "target": "api_package_scripts_predev",
-      "confidence_score": 1.0
+      "target": "api_package_scripts_predev"
     },
     {
       "relation": "contains",
@@ -4005,9 +4599,9 @@
       "source_file": "apps/api/package.json",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_package_scripts",
-      "target": "api_package_scripts_pretypecheck",
-      "confidence_score": 1.0
+      "target": "api_package_scripts_pretypecheck"
     },
     {
       "relation": "contains",
@@ -4045,9 +4639,9 @@
       "source_file": "apps/api/package.json",
       "source_location": "L31",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_package_devdependencies",
-      "target": "api_package_devdependencies_prisma",
-      "confidence_score": 1.0
+      "target": "api_package_devdependencies_prisma"
     },
     {
       "relation": "contains",
@@ -4085,9 +4679,9 @@
       "source_file": "apps/api/package.json",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_package_devdependencies",
-      "target": "api_package_devdependencies_types_pg",
-      "confidence_score": 1.0
+      "target": "api_package_devdependencies_types_pg"
     },
     {
       "relation": "contains",
@@ -4136,8 +4730,18 @@
       "source_location": "L41",
       "weight": 1.0,
       "source": "api_package_dependencies",
-      "target": "api_package_dependencies_pg",
+      "target": "api_package_dependencies_jose",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/package.json",
+      "source_location": "L41",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "api_package_dependencies",
+      "target": "api_package_dependencies_pg"
     },
     {
       "relation": "contains",
@@ -4145,9 +4749,9 @@
       "source_file": "apps/api/package.json",
       "source_location": "L35",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_package_dependencies",
-      "target": "api_package_dependencies_prisma_adapter_pg",
-      "confidence_score": 1.0
+      "target": "api_package_dependencies_prisma_adapter_pg"
     },
     {
       "relation": "contains",
@@ -4155,9 +4759,9 @@
       "source_file": "apps/api/package.json",
       "source_location": "L36",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_package_dependencies",
-      "target": "api_package_dependencies_prisma_client",
-      "confidence_score": 1.0
+      "target": "api_package_dependencies_prisma_client"
     },
     {
       "relation": "contains",
@@ -4175,9 +4779,9 @@
       "source_file": "apps/api/prisma.config.ts",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_prisma_config",
-      "target": "api_prisma_config_getdatabaseurl",
-      "confidence_score": 1.0
+      "target": "api_prisma_config_getdatabaseurl"
     },
     {
       "relation": "imports_from",
@@ -4186,9 +4790,9 @@
       "source_file": "apps/api/prisma/seed.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "prisma_seed",
-      "target": "config_env",
-      "confidence_score": 1.0
+      "target": "config_env"
     },
     {
       "relation": "imports",
@@ -4197,9 +4801,9 @@
       "source_file": "apps/api/prisma/seed.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "prisma_seed",
-      "target": "config_env_env",
-      "confidence_score": 1.0
+      "target": "config_env_env"
     },
     {
       "relation": "contains",
@@ -4207,9 +4811,9 @@
       "source_file": "apps/api/prisma/seed.ts",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "prisma_seed",
-      "target": "prisma_seed_adapter",
-      "confidence_score": 1.0
+      "target": "prisma_seed_adapter"
     },
     {
       "relation": "contains",
@@ -4217,9 +4821,9 @@
       "source_file": "apps/api/prisma/seed.ts",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "prisma_seed",
-      "target": "prisma_seed_prisma",
-      "confidence_score": 1.0
+      "target": "prisma_seed_prisma"
     },
     {
       "relation": "contains",
@@ -4227,9 +4831,9 @@
       "source_file": "apps/api/prisma/seed.ts",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "prisma_seed",
-      "target": "prisma_seed_seed",
-      "confidence_score": 1.0
+      "target": "prisma_seed_seed"
     },
     {
       "relation": "imports_from",
@@ -4384,14 +4988,25 @@
       "target": "src_app_app"
     },
     {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.service.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "auth_auth_service",
+      "target": "config_database",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/config/database.ts",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "config_database",
-      "target": "config_database_adapter",
-      "confidence_score": 1.0
+      "target": "config_database_adapter"
     },
     {
       "relation": "contains",
@@ -4399,9 +5014,9 @@
       "source_file": "apps/api/src/config/database.ts",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "config_database",
-      "target": "config_database_checkdatabaseconnection",
-      "confidence_score": 1.0
+      "target": "config_database_checkdatabaseconnection"
     },
     {
       "relation": "contains",
@@ -4409,9 +5024,9 @@
       "source_file": "apps/api/src/config/database.ts",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "config_database",
-      "target": "config_database_connectdatabase",
-      "confidence_score": 1.0
+      "target": "config_database_connectdatabase"
     },
     {
       "relation": "contains",
@@ -4419,9 +5034,9 @@
       "source_file": "apps/api/src/config/database.ts",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "config_database",
-      "target": "config_database_disconnectdatabase",
-      "confidence_score": 1.0
+      "target": "config_database_disconnectdatabase"
     },
     {
       "relation": "contains",
@@ -4429,9 +5044,9 @@
       "source_file": "apps/api/src/config/database.ts",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "config_database",
-      "target": "config_database_prisma",
-      "confidence_score": 1.0
+      "target": "config_database_prisma"
     },
     {
       "relation": "imports_from",
@@ -4440,9 +5055,9 @@
       "source_file": "apps/api/src/config/database.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "config_database",
-      "target": "config_env",
-      "confidence_score": 1.0
+      "target": "config_env"
     },
     {
       "relation": "imports",
@@ -4451,9 +5066,9 @@
       "source_file": "apps/api/src/config/database.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "config_database",
-      "target": "config_env_env",
-      "confidence_score": 1.0
+      "target": "config_env_env"
     },
     {
       "relation": "imports_from",
@@ -4462,9 +5077,9 @@
       "source_file": "apps/api/src/controllers/health.controller.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "controllers_health_controller",
-      "target": "config_database",
-      "confidence_score": 1.0
+      "target": "config_database"
     },
     {
       "relation": "imports_from",
@@ -4473,8 +5088,19 @@
       "source_file": "apps/api/src/server.ts",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_server",
-      "target": "config_database",
+      "target": "config_database"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.service.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "auth_auth_service",
+      "target": "config_database_prisma",
       "confidence_score": 1.0
     },
     {
@@ -4484,9 +5110,9 @@
       "source_file": "apps/api/src/config/database.ts",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "config_database_connectdatabase",
-      "target": "config_database_checkdatabaseconnection",
-      "confidence_score": 1.0
+      "target": "config_database_checkdatabaseconnection"
     },
     {
       "relation": "imports",
@@ -4495,9 +5121,9 @@
       "source_file": "apps/api/src/controllers/health.controller.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "controllers_health_controller",
-      "target": "config_database_checkdatabaseconnection",
-      "confidence_score": 1.0
+      "target": "config_database_checkdatabaseconnection"
     },
     {
       "relation": "calls",
@@ -4517,9 +5143,9 @@
       "source_file": "apps/api/src/server.ts",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_server",
-      "target": "config_database_connectdatabase",
-      "confidence_score": 1.0
+      "target": "config_database_connectdatabase"
     },
     {
       "relation": "calls",
@@ -4528,9 +5154,9 @@
       "source_file": "apps/api/src/server.ts",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_server_startserver",
-      "target": "config_database_connectdatabase",
-      "confidence_score": 1.0
+      "target": "config_database_connectdatabase"
     },
     {
       "relation": "imports",
@@ -4539,9 +5165,9 @@
       "source_file": "apps/api/src/server.ts",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_server",
-      "target": "config_database_disconnectdatabase",
-      "confidence_score": 1.0
+      "target": "config_database_disconnectdatabase"
     },
     {
       "relation": "calls",
@@ -4550,9 +5176,9 @@
       "source_file": "apps/api/src/server.ts",
       "source_location": "L61",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_server_handleservererror",
-      "target": "config_database_disconnectdatabase",
-      "confidence_score": 1.0
+      "target": "config_database_disconnectdatabase"
     },
     {
       "relation": "calls",
@@ -4561,9 +5187,9 @@
       "source_file": "apps/api/src/server.ts",
       "source_location": "L87",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_server_shutdown",
-      "target": "config_database_disconnectdatabase",
-      "confidence_score": 1.0
+      "target": "config_database_disconnectdatabase"
     },
     {
       "relation": "calls",
@@ -4572,8 +5198,29 @@
       "source_file": "apps/api/src/server.ts",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_server_startserver",
-      "target": "config_database_disconnectdatabase",
+      "target": "config_database_disconnectdatabase"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.service.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "auth_auth_service",
+      "target": "config_env",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/config/env.ts",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "config_env",
+      "target": "config_env_accesstokenttlschema",
       "confidence_score": 1.0
     },
     {
@@ -4592,9 +5239,9 @@
       "source_file": "apps/api/src/config/env.ts",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "config_env",
-      "target": "config_env_databaseurlschema",
-      "confidence_score": 1.0
+      "target": "config_env_databaseurlschema"
     },
     {
       "relation": "contains",
@@ -4652,12 +5299,34 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/services/jwt.service.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "services_jwt_service",
+      "target": "config_env",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "apps/api/src/server.ts",
       "source_location": "L4",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "src_server",
       "target": "config_env"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.service.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "auth_auth_service",
+      "target": "config_env_env",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -4680,6 +5349,17 @@
       "confidence_score": 1.0,
       "source": "middleware_error_handler",
       "target": "config_env_env"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/services/jwt.service.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "services_jwt_service",
+      "target": "config_env_env",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -4725,6 +5405,28 @@
       "target": "controllers_health_controller_gethealth"
     },
     {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.controller.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "auth_auth_controller",
+      "target": "errors_app_error",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.service.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "auth_auth_service",
+      "target": "errors_app_error",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/errors/app-error.ts",
@@ -4733,6 +5435,16 @@
       "confidence_score": 1.0,
       "source": "errors_app_error",
       "target": "errors_app_error_apperror"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/errors/app-error.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "errors_app_error",
+      "target": "errors_app_error_apperrordetail",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4748,6 +5460,17 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/middleware/authenticate.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "middleware_authenticate",
+      "target": "errors_app_error",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "apps/api/src/middleware/error-handler.ts",
       "source_location": "L4",
       "weight": 1.0,
@@ -4767,6 +5490,61 @@
       "target": "errors_app_error"
     },
     {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/middleware/validate-request.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "middleware_validate_request",
+      "target": "errors_app_error",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/middleware/error-handler.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "middleware_error_handler",
+      "target": "errors_app_error_apperrordetail",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/middleware/error-handler.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "middleware_error_handler_errorresponse",
+      "target": "errors_app_error_apperrordetail",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.controller.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "auth_auth_controller",
+      "target": "errors_app_error_apperror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.service.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "auth_auth_service",
+      "target": "errors_app_error_apperror",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/errors/app-error.ts",
@@ -4775,6 +5553,17 @@
       "confidence_score": 1.0,
       "source": "errors_app_error_apperror",
       "target": "errors_app_error_apperror_constructor"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/middleware/authenticate.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "middleware_authenticate",
+      "target": "errors_app_error_apperror",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -4797,6 +5586,168 @@
       "confidence_score": 1.0,
       "source": "middleware_not_found",
       "target": "errors_app_error_apperror"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/middleware/validate-request.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "middleware_validate_request",
+      "target": "errors_app_error_apperror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.routes.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "auth_auth_routes",
+      "target": "middleware_authenticate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/middleware/authenticate.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "middleware_authenticate",
+      "target": "auth_auth_service",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/middleware/authenticate.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "middleware_authenticate",
+      "target": "auth_auth_service_getcurrentuserauthcontext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/middleware/authenticate.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "middleware_authenticate",
+      "target": "middleware_authenticate_authenticate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/middleware/authenticate.ts",
+      "source_location": "L83",
+      "weight": 1.0,
+      "source": "middleware_authenticate",
+      "target": "middleware_authenticate_countauthorizationheaders",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/middleware/authenticate.ts",
+      "source_location": "L95",
+      "weight": 1.0,
+      "source": "middleware_authenticate",
+      "target": "middleware_authenticate_invalidaccesstokenerror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/middleware/authenticate.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "middleware_authenticate",
+      "target": "services_jwt_service",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/middleware/authenticate.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "middleware_authenticate",
+      "target": "services_jwt_service_accesstokenexpirederror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/middleware/authenticate.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "middleware_authenticate",
+      "target": "services_jwt_service_verifyaccesstoken",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.routes.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "auth_auth_routes",
+      "target": "middleware_authenticate_authenticate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "apps/api/src/middleware/authenticate.ts",
+      "source_location": "L69",
+      "weight": 1.0,
+      "source": "middleware_authenticate_authenticate",
+      "target": "auth_auth_service_getcurrentuserauthcontext"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/middleware/authenticate.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "middleware_authenticate_authenticate",
+      "target": "middleware_authenticate_countauthorizationheaders",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/middleware/authenticate.ts",
+      "source_location": "L64",
+      "weight": 1.0,
+      "source": "middleware_authenticate_authenticate",
+      "target": "middleware_authenticate_invalidaccesstokenerror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "apps/api/src/middleware/authenticate.ts",
+      "source_location": "L51",
+      "weight": 1.0,
+      "source": "middleware_authenticate_authenticate",
+      "target": "services_jwt_service_verifyaccesstoken"
     },
     {
       "relation": "contains",
@@ -4945,6 +5896,781 @@
       "target": "middleware_not_found_notfound"
     },
     {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.routes.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "auth_auth_routes",
+      "target": "middleware_validate_request",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/middleware/validate-request.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "middleware_validate_request",
+      "target": "middleware_validate_request_validaterequestbody",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.routes.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "auth_auth_routes",
+      "target": "middleware_validate_request_validaterequestbody",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.controller.ts",
+      "source_location": "L47",
+      "weight": 1.0,
+      "source": "auth_auth_controller",
+      "target": "auth_auth_controller_getme",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.controller.ts",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "auth_auth_controller",
+      "target": "auth_auth_controller_login",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.controller.ts",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "auth_auth_controller",
+      "target": "auth_auth_controller_register",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.controller.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "auth_auth_controller",
+      "target": "auth_auth_controller_successresponse",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.controller.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "auth_auth_controller",
+      "target": "auth_auth_schemas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.controller.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "auth_auth_controller",
+      "target": "auth_auth_schemas_logininput",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.controller.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "auth_auth_controller",
+      "target": "auth_auth_schemas_registerinput",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.controller.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "auth_auth_controller",
+      "target": "auth_auth_service",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.controller.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "auth_auth_controller",
+      "target": "auth_auth_service_loginuser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.controller.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "auth_auth_controller",
+      "target": "auth_auth_service_registeruser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.controller.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "auth_auth_controller",
+      "target": "auth_auth_types",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.controller.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "auth_auth_controller",
+      "target": "auth_auth_types_authcontext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.controller.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "auth_auth_controller",
+      "target": "auth_auth_types_authenticationdata",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.routes.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "auth_auth_routes",
+      "target": "auth_auth_controller",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "apps/api/src/modules/auth/auth.controller.ts",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "auth_auth_controller_register",
+      "target": "auth_auth_service_registeruser"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.routes.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "auth_auth_routes",
+      "target": "auth_auth_controller_register",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "apps/api/src/modules/auth/auth.controller.ts",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "auth_auth_controller_login",
+      "target": "auth_auth_service_loginuser"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.routes.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "auth_auth_routes",
+      "target": "auth_auth_controller_login",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.routes.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "auth_auth_routes",
+      "target": "auth_auth_controller_getme",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.routes.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "auth_auth_routes",
+      "target": "auth_auth_routes_authrouter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.routes.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "auth_auth_routes",
+      "target": "auth_auth_schemas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.routes.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "auth_auth_routes",
+      "target": "auth_auth_schemas_loginbodyschema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.routes.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "auth_auth_routes",
+      "target": "auth_auth_schemas_registerbodyschema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/routes/index.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "routes_index",
+      "target": "auth_auth_routes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/routes/index.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "routes_index",
+      "target": "auth_auth_routes_authrouter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.schemas.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "auth_auth_schemas",
+      "target": "auth_auth_schemas_emailschema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.schemas.ts",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "auth_auth_schemas",
+      "target": "auth_auth_schemas_loginbodyschema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.schemas.ts",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "auth_auth_schemas",
+      "target": "auth_auth_schemas_logininput",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.schemas.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "auth_auth_schemas",
+      "target": "auth_auth_schemas_nameschema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.schemas.ts",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "auth_auth_schemas",
+      "target": "auth_auth_schemas_passwordschema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.schemas.ts",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "auth_auth_schemas",
+      "target": "auth_auth_schemas_registerbodyschema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.schemas.ts",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "auth_auth_schemas",
+      "target": "auth_auth_schemas_registerinput",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.schemas.ts",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "auth_auth_schemas",
+      "target": "auth_auth_schemas_workspacenameschema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.service.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "auth_auth_service",
+      "target": "auth_auth_schemas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.service.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "auth_auth_service",
+      "target": "auth_auth_schemas_registerinput",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.service.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "auth_auth_service",
+      "target": "auth_auth_schemas_logininput",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.service.ts",
+      "source_location": "L105",
+      "weight": 1.0,
+      "source": "auth_auth_service",
+      "target": "auth_auth_service_createauthenticationdata",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.service.ts",
+      "source_location": "L116",
+      "weight": 1.0,
+      "source": "auth_auth_service",
+      "target": "auth_auth_service_createdefaultworkspacename",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.service.ts",
+      "source_location": "L96",
+      "weight": 1.0,
+      "source": "auth_auth_service",
+      "target": "auth_auth_service_getcurrentuserauthcontext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.service.ts",
+      "source_location": "L125",
+      "weight": 1.0,
+      "source": "auth_auth_service",
+      "target": "auth_auth_service_invalidcredentialserror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.service.ts",
+      "source_location": "L133",
+      "weight": 1.0,
+      "source": "auth_auth_service",
+      "target": "auth_auth_service_isuseruniqueconstrainterror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.service.ts",
+      "source_location": "L71",
+      "weight": 1.0,
+      "source": "auth_auth_service",
+      "target": "auth_auth_service_loginuser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.service.ts",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "auth_auth_service",
+      "target": "auth_auth_service_registeruser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.service.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "auth_auth_service",
+      "target": "auth_auth_types",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.service.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "auth_auth_service",
+      "target": "auth_auth_types_authcontext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.service.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "auth_auth_service",
+      "target": "auth_auth_types_authenticationdata",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.service.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "auth_auth_service",
+      "target": "auth_auth_types_mapauthcontext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.service.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "auth_auth_service",
+      "target": "services_jwt_service",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.service.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "auth_auth_service",
+      "target": "services_jwt_service_createaccesstoken",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.service.ts",
+      "source_location": "L57",
+      "weight": 1.0,
+      "source": "auth_auth_service_registeruser",
+      "target": "auth_auth_service_createauthenticationdata",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.service.ts",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "auth_auth_service_registeruser",
+      "target": "auth_auth_service_createdefaultworkspacename",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.service.ts",
+      "source_location": "L59",
+      "weight": 1.0,
+      "source": "auth_auth_service_registeruser",
+      "target": "auth_auth_service_isuseruniqueconstrainterror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "apps/api/src/modules/auth/auth.service.ts",
+      "source_location": "L57",
+      "weight": 1.0,
+      "source": "auth_auth_service_registeruser",
+      "target": "auth_auth_types_mapauthcontext"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.service.ts",
+      "source_location": "L93",
+      "weight": 1.0,
+      "source": "auth_auth_service_loginuser",
+      "target": "auth_auth_service_createauthenticationdata",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.service.ts",
+      "source_location": "L87",
+      "weight": 1.0,
+      "source": "auth_auth_service_loginuser",
+      "target": "auth_auth_service_getcurrentuserauthcontext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.service.ts",
+      "source_location": "L84",
+      "weight": 1.0,
+      "source": "auth_auth_service_loginuser",
+      "target": "auth_auth_service_invalidcredentialserror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "apps/api/src/modules/auth/auth.service.ts",
+      "source_location": "L102",
+      "weight": 1.0,
+      "source": "auth_auth_service_getcurrentuserauthcontext",
+      "target": "auth_auth_types_mapauthcontext"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.service.ts",
+      "source_location": "L106",
+      "weight": 1.0,
+      "source": "auth_auth_service_createauthenticationdata",
+      "target": "services_jwt_service_createaccesstoken",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.types.ts",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "auth_auth_types",
+      "target": "auth_auth_types_authcontext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.types.ts",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "auth_auth_types",
+      "target": "auth_auth_types_authenticationdata",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.types.ts",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "auth_auth_types",
+      "target": "auth_auth_types_mapauthcontext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.types.ts",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "auth_auth_types",
+      "target": "auth_auth_types_publicmembership",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.types.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "auth_auth_types",
+      "target": "auth_auth_types_publicuser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.types.ts",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "auth_auth_types",
+      "target": "auth_auth_types_publicworkspace",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.types.ts",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "auth_auth_types",
+      "target": "auth_auth_types_safeuserrecord",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/types/express.d.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "types_express_d",
+      "target": "auth_auth_types",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "context": "type",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.types.ts",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "auth_auth_types_safeuserrecord",
+      "target": "auth_auth_types_publicuser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "context": "type",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/modules/auth/auth.types.ts",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "auth_auth_types_authenticationdata",
+      "target": "auth_auth_types_authcontext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/types/express.d.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "types_express_d",
+      "target": "auth_auth_types_authcontext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "field",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/types/express.d.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "types_express_d_request",
+      "target": "auth_auth_types_authcontext",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/routes/health.routes.ts",
@@ -4992,9 +6718,9 @@
       "source_file": "apps/api/src/server.ts",
       "source_location": "L111",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_server",
-      "target": "src_server_closehttpserver",
-      "confidence_score": 1.0
+      "target": "src_server_closehttpserver"
     },
     {
       "relation": "contains",
@@ -5012,9 +6738,9 @@
       "source_file": "apps/api/src/server.ts",
       "source_location": "L48",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_server",
-      "target": "src_server_handleservererror",
-      "confidence_score": 1.0
+      "target": "src_server_handleservererror"
     },
     {
       "relation": "contains",
@@ -5042,9 +6768,9 @@
       "source_file": "apps/api/src/server.ts",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_server",
-      "target": "src_server_startserver",
-      "confidence_score": 1.0
+      "target": "src_server_startserver"
     },
     {
       "relation": "calls",
@@ -5053,8 +6779,98 @@
       "source_file": "apps/api/src/server.ts",
       "source_location": "L84",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_server_shutdown",
-      "target": "src_server_closehttpserver",
+      "target": "src_server_closehttpserver"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/services/jwt.service.ts",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "services_jwt_service",
+      "target": "services_jwt_service_accesstokenexpirederror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/services/jwt.service.ts",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "services_jwt_service",
+      "target": "services_jwt_service_createaccesstoken",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/services/jwt.service.ts",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "services_jwt_service",
+      "target": "services_jwt_service_invalidaccesstokenerror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/services/jwt.service.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "services_jwt_service",
+      "target": "services_jwt_service_secret",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/services/jwt.service.ts",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "services_jwt_service",
+      "target": "services_jwt_service_verifiedaccesstoken",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/services/jwt.service.ts",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "services_jwt_service",
+      "target": "services_jwt_service_verifyaccesstoken",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/services/jwt.service.ts",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "services_jwt_service_accesstokenexpirederror",
+      "target": "services_jwt_service_accesstokenexpirederror_constructor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/services/jwt.service.ts",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "services_jwt_service_invalidaccesstokenerror",
+      "target": "services_jwt_service_invalidaccesstokenerror_constructor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/types/express.d.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "types_express_d",
+      "target": "types_express_d_request",
       "confidence_score": 1.0
     },
     {
@@ -5093,9 +6909,9 @@
       "source_file": "apps/api/tsconfig.build.json",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_tsconfig_build",
-      "target": "api_tsconfig_build_include",
-      "confidence_score": 1.0
+      "target": "api_tsconfig_build_include"
     },
     {
       "relation": "contains",
@@ -5123,9 +6939,9 @@
       "source_file": "apps/api/tsconfig.build.json",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_tsconfig_build_compileroptions",
-      "target": "api_tsconfig_build_compileroptions_rootdir",
-      "confidence_score": 1.0
+      "target": "api_tsconfig_build_compileroptions_rootdir"
     },
     {
       "relation": "contains",
@@ -5484,9 +7300,9 @@
       "source_file": "package.json",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_scripts",
-      "target": "package_scripts_db_format",
-      "confidence_score": 1.0
+      "target": "package_scripts_db_format"
     },
     {
       "relation": "contains",
@@ -5494,9 +7310,9 @@
       "source_file": "package.json",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_scripts",
-      "target": "package_scripts_db_generate",
-      "confidence_score": 1.0
+      "target": "package_scripts_db_generate"
     },
     {
       "relation": "contains",
@@ -5504,9 +7320,9 @@
       "source_file": "package.json",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_scripts",
-      "target": "package_scripts_db_migrate",
-      "confidence_score": 1.0
+      "target": "package_scripts_db_migrate"
     },
     {
       "relation": "contains",
@@ -5514,9 +7330,9 @@
       "source_file": "package.json",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_scripts",
-      "target": "package_scripts_db_migrate_deploy",
-      "confidence_score": 1.0
+      "target": "package_scripts_db_migrate_deploy"
     },
     {
       "relation": "contains",
@@ -5524,9 +7340,9 @@
       "source_file": "package.json",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_scripts",
-      "target": "package_scripts_db_migrate_status",
-      "confidence_score": 1.0
+      "target": "package_scripts_db_migrate_status"
     },
     {
       "relation": "contains",
@@ -5534,9 +7350,9 @@
       "source_file": "package.json",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_scripts",
-      "target": "package_scripts_db_seed",
-      "confidence_score": 1.0
+      "target": "package_scripts_db_seed"
     },
     {
       "relation": "contains",
@@ -5544,9 +7360,9 @@
       "source_file": "package.json",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_scripts",
-      "target": "package_scripts_db_studio",
-      "confidence_score": 1.0
+      "target": "package_scripts_db_studio"
     },
     {
       "relation": "contains",
@@ -5554,9 +7370,9 @@
       "source_file": "package.json",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_scripts",
-      "target": "package_scripts_db_validate",
-      "confidence_score": 1.0
+      "target": "package_scripts_db_validate"
     },
     {
       "relation": "contains",
@@ -6485,11 +8301,31 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "turbo.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "turbo_tasks",
+      "target": "turbo_tasks_clientflow_api_dev"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "turbo.json",
       "source_location": "L11",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "turbo_tasks",
       "target": "turbo_tasks_clientflow_types_build"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "turbo.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "turbo_tasks",
+      "target": "turbo_tasks_clientflow_web_dev"
     },
     {
       "relation": "contains",
@@ -6540,6 +8376,66 @@
       "confidence_score": 1.0,
       "source": "turbo_tasks_dev",
       "target": "turbo_dev_persistent"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "turbo.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "turbo_tasks_clientflow_api_dev",
+      "target": "turbo_clientflow_api_dev_cache"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "turbo.json",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "turbo_tasks_clientflow_api_dev",
+      "target": "turbo_clientflow_api_dev_passthroughenv"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "turbo.json",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "turbo_tasks_clientflow_api_dev",
+      "target": "turbo_clientflow_api_dev_persistent"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "turbo.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "turbo_tasks_clientflow_web_dev",
+      "target": "turbo_clientflow_web_dev_cache"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "turbo.json",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "turbo_tasks_clientflow_web_dev",
+      "target": "turbo_clientflow_web_dev_passthroughenv"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "turbo.json",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "turbo_tasks_clientflow_web_dev",
+      "target": "turbo_clientflow_web_dev_persistent"
     },
     {
       "relation": "contains",
@@ -7365,11 +9261,21 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L111",
+      "source_location": "L112",
       "weight": 1.0,
       "source": "readme_clientflow",
-      "target": "readme_database",
+      "target": "readme_authentication",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L111",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme_clientflow",
+      "target": "readme_database"
     },
     {
       "relation": "contains",
@@ -7435,6 +9341,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/README.md",
+      "source_location": "L92",
+      "weight": 1.0,
+      "source": "api_readme_clientflow_api",
+      "target": "api_readme_authentication",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/README.md",
       "source_location": "L27",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -7467,9 +9383,9 @@
       "source_file": "apps/api/README.md",
       "source_location": "L55",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_readme_clientflow_api",
-      "target": "api_readme_prisma_and_migrations",
-      "confidence_score": 1.0
+      "target": "api_readme_prisma_and_migrations"
     },
     {
       "relation": "contains",
@@ -7480,6 +9396,46 @@
       "confidence_score": 1.0,
       "source": "api_readme_clientflow_api",
       "target": "api_readme_request_handling"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/README.md",
+      "source_location": "L200",
+      "weight": 1.0,
+      "source": "api_readme_authentication",
+      "target": "api_readme_authentication_errors",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/README.md",
+      "source_location": "L160",
+      "weight": 1.0,
+      "source": "api_readme_authentication",
+      "target": "api_readme_current_user",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/README.md",
+      "source_location": "L147",
+      "weight": 1.0,
+      "source": "api_readme_authentication",
+      "target": "api_readme_login",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/README.md",
+      "source_location": "L98",
+      "weight": 1.0,
+      "source": "api_readme_authentication",
+      "target": "api_readme_register",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -7790,5 +9746,5 @@
       "source_file": ".agents/skills/graphify/SKILL.md"
     }
   ],
-  "built_at_commit": "193cac64af1604ee84b931a9c314ea94bc86f636"
+  "built_at_commit": "6b175b680d53bdb0bb4f3dc9110e04ef6fdbecd4"
 }
