@@ -33,8 +33,27 @@ model Workspace {
   createdAt   DateTime     @default(now()) @map("created_at") @db.Timestamptz(3)
   updatedAt   DateTime     @updatedAt @map("updated_at") @db.Timestamptz(3)
   memberships Membership[]
+  clients     Client[]
 
   @@map("workspaces")
+}
+
+model Client {
+  id          String    @id @default(uuid()) @db.Uuid
+  workspaceId String    @map("workspace_id") @db.Uuid
+  name        String    @db.VarChar(120)
+  email       String?   @db.VarChar(254)
+  company     String?   @db.VarChar(120)
+  phone       String?   @db.VarChar(32)
+  notes       String?   @db.Text
+  createdAt   DateTime  @default(now()) @map("created_at") @db.Timestamptz(3)
+  updatedAt   DateTime  @updatedAt @map("updated_at") @db.Timestamptz(3)
+  workspace   Workspace @relation(fields: [workspaceId], references: [id], onDelete: Cascade)
+
+  @@index([workspaceId])
+  @@index([workspaceId, createdAt])
+  @@index([workspaceId, name])
+  @@map("clients")
 }
 
 model Membership {

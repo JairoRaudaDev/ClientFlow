@@ -2,10 +2,8 @@
 
 The ClientFlow API is an Express 5 application written in strict TypeScript. Its current foundation
 provides security headers, configurable CORS, bounded request-body parsing, a health route,
-structured error responses, Prisma ORM with PostgreSQL, JWT access-token authentication, and
-graceful HTTP/database shutdown.
-
-Workspace authorization and business routes are not implemented yet.
+structured error responses, Prisma ORM with PostgreSQL, JWT access-token authentication,
+workspace-scoped client management, and graceful HTTP/database shutdown.
 
 ## Configuration
 
@@ -67,11 +65,12 @@ Prisma configuration is in `prisma.config.ts`, the schema and committed migratio
 `prisma`, and generated client code is written to `src/generated/prisma`. Generated code is ignored
 by Git and must not be edited.
 
-The initial schema has only:
+The schema contains:
 
 - `User`, with a unique email and required password hash
 - `Workspace`
 - `Membership`, linking users and workspaces with `OWNER`, `ADMIN`, or `MEMBER`
+- `Client`, which belongs to a workspace and is deleted if that workspace is deleted
 
 Create development migrations with `db:migrate`; apply committed migrations in Docker or
 deployment-style environments with `db:migrate:deploy`. Docker Compose runs a one-shot migration
@@ -218,6 +217,121 @@ lockout, email verification, password reset, and multi-factor authentication are
 deferred. The API has no authentication bypass for the demo account, and the placeholder frontend
 does not implement login, registration, or token storage.
 
+## Client management
+
+All client routes require both headers below. `X-Workspace-Id` is an explicit selected workspace
+UUID, not a value accepted from a URL, request body, cookie, or token claim. The API verifies the
+current membership against PostgreSQL on every client request and scopes every client query and
+mutation to that workspace. Any current workspace member can manage clients; granular role
+permissions are not implemented yet.
+
+```text
+Authorization: Bearer <access-token>
+X-Workspace-Id: <workspace-uuid>
+```
+
+| Method   | Route                | Purpose                                |
+| -------- | -------------------- | -------------------------------------- |
+| `POST`   | `/clients`           | Create a client                        |
+| `GET`    | `/clients`           | List clients and perform simple search |
+| `QUERY`  | `/clients/search`    | Read-only structured client search     |
+| `GET`    | `/clients/:clientId` | Read one client                        |
+| `PATCH`  | `/clients/:clientId` | Update one client                      |
+| `DELETE` | `/clients/:clientId` | Permanently delete one client          |
+
+Client responses use this safe public shape inside the existing `{ "success": true, "data": ... }`
+envelope:
+
+```json
+{
+  "id": "<uuid>",
+  "workspaceId": "<uuid>",
+  "name": "Acme Consulting",
+  "email": "hello@acme.example",
+  "company": "Acme",
+  "phone": "+1 555 0100",
+  "notes": "Interested in a new website.",
+  "createdAt": "<timestamp>",
+  "updatedAt": "<timestamp>"
+}
+```
+
+`POST /clients` accepts a strict JSON object with required `name` (trimmed, 2–120 characters)
+and optional `email`, `company`, `phone`, and `notes`. Email is normalized to lowercase; optional
+empty strings become `null`. `PATCH /clients/:clientId` accepts the same allowed fields, requires
+at least one field, preserves omitted fields, and permits optional fields to be explicitly cleared
+with `null` or an empty string. Unknown fields, including `workspaceId`, `id`, and timestamps, are
+rejected with `422 VALIDATION_ERROR`.
+
+### Lists and simple search
+
+`GET /clients` accepts optional `q`, `page`, `pageSize`, `sortBy`, and `sortOrder` query
+parameters. Defaults are `page=1`, `pageSize=20`, `sortBy=createdAt`, and `sortOrder=desc`.
+Pages start at 1 and page sizes must be from 1 through 100. Allowed sort fields are `name`,
+`company`, `createdAt`, and `updatedAt`; `asc` and `desc` are allowed directions. Ordering includes
+`id` as a deterministic secondary key.
+
+```bash
+curl 'http://localhost:4000/clients?q=acme&page=1&pageSize=20&sortBy=name&sortOrder=asc' \
+  -H "Authorization: Bearer <access-token>" \
+  -H "X-Workspace-Id: <workspace-uuid>"
+```
+
+`q` performs basic case-insensitive substring matching against client name, company, email, and
+phone. It does not search notes and is not full-text search. List and structured-search responses
+include `clients` plus this pagination object; an out-of-range page safely returns an empty list.
+
+```json
+{
+  "page": 1,
+  "pageSize": 20,
+  "total": 0,
+  "totalPages": 0,
+  "hasNextPage": false,
+  "hasPreviousPage": false
+}
+```
+
+### Structured QUERY search
+
+`QUERY /clients/search` is a read-only, idempotent alternative for structured filters; it does not
+replace `GET /clients`. It accepts a strict optional JSON body with `search`, `filters.hasEmail`,
+`filters.hasPhone`, `sort.field`, `sort.direction`, `pagination.page`, and
+`pagination.pageSize`. Boolean email and phone filters test whether those values are null or not
+null. The endpoint uses the same searchable fields, sorting allowlist, pagination response, and
+workspace isolation as `GET /clients`, and returns `Cache-Control: private, no-store`.
+
+```bash
+curl -X QUERY http://localhost:4000/clients/search \
+  -H "Authorization: Bearer <access-token>" \
+  -H "X-Workspace-Id: <workspace-uuid>" \
+  -H "Content-Type: application/json" \
+  --data '{
+    "search": "acme",
+    "filters": { "hasEmail": true },
+    "sort": { "field": "name", "direction": "asc" },
+    "pagination": { "page": 1, "pageSize": 20 }
+  }'
+```
+
+`QUERY` is registered only for the exact HTTP method. `POST`, `PUT`, `PATCH`, and `DELETE` never
+invoke the structured search handler.
+
+### Workspace and client errors
+
+| Status | Code                        | Meaning                                                          |
+| -----: | --------------------------- | ---------------------------------------------------------------- |
+|    400 | `WORKSPACE_HEADER_REQUIRED` | No workspace was selected                                        |
+|    400 | `INVALID_WORKSPACE_HEADER`  | The header is absent more than once or is not a UUID             |
+|    403 | `WORKSPACE_ACCESS_DENIED`   | The authenticated user is not a member of the selected workspace |
+|    404 | `CLIENT_NOT_FOUND`          | No client exists in the selected workspace                       |
+
+Cross-workspace client lookups, updates, and deletion attempts return the same
+`CLIENT_NOT_FOUND` response and never reveal whether another workspace owns the ID. Client data is
+never logged by this module; unexpected error responses do not include Prisma metadata, SQL, or
+request data. CORS permits configured browser origins to send `Authorization`, `Content-Type`, and
+`X-Workspace-Id`, including for `QUERY` preflight requests.
+
 ## Health endpoint
 
 The API connects to PostgreSQL and verifies it with `SELECT 1` before opening the HTTP listener.
@@ -255,5 +369,5 @@ Global middleware runs in this order:
 Unknown routes, invalid JSON, rejected CORS origins, oversized bodies, and unexpected failures all
 return JSON. Stack traces and internal error details are never sent to clients.
 
-CORS allows `GET`, `HEAD`, `PUT`, `PATCH`, `POST`, `DELETE`, `OPTIONS`, and `QUERY`. There is no
-business `QUERY` route.
+CORS allows `GET`, `HEAD`, `PUT`, `PATCH`, `POST`, `DELETE`, `OPTIONS`, and `QUERY`, and permits
+the explicit `X-Workspace-Id` header for configured browser origins.

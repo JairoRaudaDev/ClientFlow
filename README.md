@@ -3,9 +3,9 @@
 ClientFlow is a planned full-stack CRM for freelancers and small agencies. This repository
 provides the monorepo and local development foundation for the Next.js frontend, Express API,
 PostgreSQL database, and shared TypeScript packages. The API has a production-oriented Express
-foundation, Prisma-backed database connection, and JWT access-token authentication. The web
-application has an initial Next.js App Router layout and routing structure. Business endpoints
-and frontend business functionality are intentionally not implemented yet.
+foundation, Prisma-backed database connection, JWT access-token authentication, and workspace-scoped
+client management endpoints. The web application has an initial Next.js App Router layout and
+routing structure. Frontend business functionality is intentionally not implemented yet.
 
 ## Monorepo structure
 
@@ -135,7 +135,7 @@ client-side session handling built around a central `SessionProvider`:
 - The dashboard, clients, projects, and settings pages are still structural placeholders with
   empty states. They render no client, project, or business data.
 
-Client/project CRUD and billing will be added in later changes.
+The client-management frontend, project CRUD, and billing will be added in later changes.
 
 The browser-accessible API base URL is configured with:
 
@@ -261,8 +261,8 @@ Current limitations, by design:
 
 Prisma ORM is owned by `apps/api`. Its initial schema contains `User`, `Workspace`, and
 `Membership`, with `OWNER`, `ADMIN`, and `MEMBER` membership roles. A user may belong to multiple
-workspaces, and each user/workspace pair is unique. Client and project models will be added in
-later work.
+workspaces, and each user/workspace pair is unique. `Client` records belong to workspaces and are
+deleted with their workspace. Project models will be added in later work.
 
 The generated Prisma Client is written to `apps/api/src/generated/prisma`, is ignored by Git, and
 is regenerated automatically before API development, type checking, and builds. After editing
@@ -292,5 +292,6 @@ membership. It uses the same versioned asynchronous scrypt password hashing as r
 
 The web application's authentication UI stores only a short-lived access token in `sessionStorage`
 and enforces client-side route protection as described in [Authentication](#authentication). API
-authorization remains the actual security boundary. Workspace authorization (roles), client/project
-CRUD, and billing are not implemented.
+authorization remains the actual security boundary. Client endpoints use the selected workspace
+header and database-backed membership authorization. Granular workspace role restrictions, project
+CRUD, client UI, and billing are not implemented.
