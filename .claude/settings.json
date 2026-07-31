@@ -19,16 +19,6 @@
           }
         ]
       }
-    ],
-    "Stop": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "python .claude/hooks/graphify_stale_check.py"
-          }
-        ]
-      }
     ]
   }
 }
