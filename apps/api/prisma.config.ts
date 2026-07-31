@@ -2,7 +2,7 @@ import 'dotenv/config';
 
 import { defineConfig } from 'prisma/config';
 
-const developmentDatabaseUrl = 'postgresql://clientflow:clientflow@localhost:5432/clientflow';
+const developmentDatabaseUrl = 'postgresql://clientflow:clientflow@127.0.0.1:5432/clientflow';
 
 function getDatabaseUrl(): string {
   const configuredDatabaseUrl = process.env['DATABASE_URL'];

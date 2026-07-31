@@ -16,7 +16,7 @@ local defaults. Non-development environments must provide `DATABASE_URL`.
 | `API_HOST`             | `0.0.0.0`                                                      | Network interface used by the HTTP server       |
 | `API_PORT`             | `4000`                                                         | HTTP port from `1` through `65535`              |
 | `CORS_ORIGIN`          | `http://localhost:3000`                                        | One origin or a comma-separated list of origins |
-| `DATABASE_URL`         | `postgresql://clientflow:clientflow@localhost:5432/clientflow` | PostgreSQL connection string                    |
+| `DATABASE_URL`         | `postgresql://clientflow:clientflow@127.0.0.1:5432/clientflow` | PostgreSQL connection string                    |
 | `JWT_SECRET`           | Local-only fallback                                            | HS256 secret, at least 32 characters            |
 | `JWT_ISSUER`           | `clientflow-api`                                               | Required JWT issuer claim                       |
 | `JWT_AUDIENCE`         | `clientflow-web`                                               | Required JWT audience claim                     |
@@ -28,8 +28,9 @@ checks and server-to-server requests, are accepted. Browser requests from unconf
 receive a structured `403` response.
 
 `DATABASE_URL` accepts the `postgresql://` and `postgres://` protocols. Commands running on the
-host connect through `localhost`; Docker Compose supplies a URL using the `postgres` service
-hostname. Connection strings are never written to startup logs.
+host connect through `127.0.0.1` (IPv4 loopback) so the Prisma CLI works with Docker Desktop on
+Windows, which publishes ports only to IPv4; Docker Compose supplies a URL using the `postgres`
+service hostname. Connection strings are never written to startup logs.
 
 Production requires both `DATABASE_URL` and `JWT_SECRET`. The JWT secret is never logged. The
 development defaults are not production credentials.
@@ -76,9 +77,11 @@ Create development migrations with `db:migrate`; apply committed migrations in D
 deployment-style environments with `db:migrate:deploy`. Docker Compose runs a one-shot migration
 service before starting the API. It does not seed automatically.
 
-The explicit, idempotent `db:seed` command creates or updates Demo User, Demo Workspace, and their
-owner membership. It does not run during API or Docker startup. The local-only demo credentials
-are:
+The explicit, idempotent `db:seed` command creates or updates Demo User, Demo Workspace, their
+owner membership, and three fictional demo clients (`Northstar Creative`, `Acme Consulting`, and
+`Rivera Photography`) using fixed UUIDs and contact details under the reserved `.example` domain.
+Re-running the seed updates those records in place and never duplicates them. It does not run
+during API or Docker startup. The local-only demo credentials are:
 
 ```text
 Email: demo@clientflow.local
@@ -214,8 +217,8 @@ Validation errors additionally contain safe `field` and `message` details.
 Access tokens are currently short-lived. Refresh tokens and server-side revocation are not
 implemented. Logout therefore means removing the token on the client. Rate limiting, account
 lockout, email verification, password reset, and multi-factor authentication are intentionally
-deferred. The API has no authentication bypass for the demo account, and the placeholder frontend
-does not implement login, registration, or token storage.
+deferred. The API has no authentication bypass for the demo account. The web application stores the
+access token in `sessionStorage`, restores it on reload, and revalidates it against `GET /auth/me`.
 
 ## Client management
 
@@ -223,7 +226,7 @@ All client routes require both headers below. `X-Workspace-Id` is an explicit se
 UUID, not a value accepted from a URL, request body, cookie, or token claim. The API verifies the
 current membership against PostgreSQL on every client request and scopes every client query and
 mutation to that workspace. Any current workspace member can manage clients; granular role
-permissions are not implemented yet.
+permissions are intentionally not part of this MVP.
 
 ```text
 Authorization: Bearer <access-token>

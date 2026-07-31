@@ -11,9 +11,6 @@ export default function MarketingLayout({ children }: { children: ReactNode }) {
         <Container className="flex items-center justify-between gap-4 py-4">
           <Brand />
           <nav aria-label="Primary" className="flex items-center gap-6">
-            <Link href="/pricing" className="text-muted hover:text-foreground text-sm font-medium">
-              Pricing
-            </Link>
             <Link href="/login" className="text-muted hover:text-foreground text-sm font-medium">
               Log in
             </Link>
@@ -33,9 +30,6 @@ export default function MarketingLayout({ children }: { children: ReactNode }) {
         <Container className="text-muted flex flex-col gap-2 py-6 text-sm sm:flex-row sm:items-center sm:justify-between">
           <p>&copy; {new Date().getFullYear()} ClientFlow.</p>
           <nav aria-label="Footer" className="flex items-center gap-4">
-            <Link href="/pricing" className="hover:text-foreground">
-              Pricing
-            </Link>
             <Link href="/login" className="hover:text-foreground">
               Log in
             </Link>

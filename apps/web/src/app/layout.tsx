@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     template: '%s | ClientFlow',
   },
   description:
-    'A lightweight client and project management workspace for freelancers and small agencies.',
+    'A secure client management workspace for freelancers and small service businesses.',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

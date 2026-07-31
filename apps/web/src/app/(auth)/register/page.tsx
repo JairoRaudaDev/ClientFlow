@@ -23,9 +23,7 @@ export default async function RegisterPage({ searchParams }: RegisterPageProps) 
       <Card className="space-y-6">
         <div className="space-y-1">
           <h1 className="text-foreground text-xl font-semibold">Create your account</h1>
-          <p className="text-muted text-sm">
-            Set up your workspace to start tracking clients and projects.
-          </p>
+          <p className="text-muted text-sm">Set up your workspace to start tracking clients.</p>
         </div>
         <RegisterForm redirectTo={destination} />
         <p className="text-muted text-sm">

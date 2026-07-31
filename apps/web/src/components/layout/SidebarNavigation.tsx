@@ -3,7 +3,6 @@ import { NavLink } from '@/components/layout/NavLink';
 const links = [
   { href: '/dashboard', label: 'Dashboard' },
   { href: '/clients', label: 'Clients' },
-  { href: '/projects', label: 'Projects' },
   { href: '/settings', label: 'Settings' },
 ];
 

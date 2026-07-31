@@ -19,9 +19,8 @@ dependency and extend the appropriate configuration:
 }
 ```
 
-The API placeholder uses the Node.js configuration. Framework-specific options,
-including browser libraries and Next.js settings, will be added when those
-frameworks are initialized.
+The API package uses the Node.js configuration. The Next.js web package combines
+`eslint-config-next` with the shared base configuration.
 
 ## ESLint
 
@@ -41,5 +40,6 @@ begin to contain Node-specific application code.
 `prettier.config.mjs` loads it so `pnpm format` and `pnpm format:check` apply the
 same style across the workspace.
 
-React, Next.js, Express, testing, and other framework-specific configurations
-are intentionally deferred until those tools are introduced.
+Framework-specific configuration lives in each package: the Next.js web app
+extends `eslint-config-next`, and the Express API uses the Node.js configuration.
+

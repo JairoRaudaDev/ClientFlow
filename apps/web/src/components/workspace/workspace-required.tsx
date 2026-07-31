@@ -13,8 +13,8 @@ export function WorkspaceRequired() {
       <Card className="flex flex-col items-center gap-2 text-center">
         <h2 className="text-foreground text-sm font-medium">No workspace access</h2>
         <p className="text-muted max-w-sm text-sm">
-          Your account is not a member of any workspace yet. Contact a workspace owner for an
-          invitation.
+          Your account is not a member of any workspace. Registration normally creates one, so
+          this is unexpected.
         </p>
       </Card>
     );

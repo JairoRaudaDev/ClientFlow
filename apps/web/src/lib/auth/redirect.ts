@@ -1,4 +1,4 @@
-const ALLOWED_WORKSPACE_ROUTES = ['/dashboard', '/clients', '/projects', '/settings'];
+const ALLOWED_WORKSPACE_ROUTES = ['/dashboard', '/clients', '/settings'];
 
 const DEFAULT_DESTINATION = '/dashboard';
 

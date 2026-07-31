@@ -2,7 +2,7 @@ import 'dotenv/config';
 
 import { z } from 'zod';
 
-const developmentDatabaseUrl = 'postgresql://clientflow:clientflow@localhost:5432/clientflow';
+const developmentDatabaseUrl = 'postgresql://clientflow:clientflow@127.0.0.1:5432/clientflow';
 const developmentJwtSecret = 'clientflow-local-development-secret-change-me';
 const developmentSeedUserPassword = 'ClientFlowDemo123!';
 

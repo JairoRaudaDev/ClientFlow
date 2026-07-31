@@ -349,11 +349,6 @@
     "ast_hash": "bdd6d45174151677be393eeeac323e12",
     "semantic_hash": "bdd6d45174151677be393eeeac323e12"
   },
-  "apps/web/src/app/(marketing)/pricing/page.tsx": {
-    "mtime": 1785464516.73563,
-    "ast_hash": "69813a12f2c132d629b2c325ab09816a",
-    "semantic_hash": "69813a12f2c132d629b2c325ab09816a"
-  },
   "apps/web/src/app/(workspace)/clients/page.tsx": {
     "mtime": 1785464543.6179724,
     "ast_hash": "9bf356bfcf88c905e3333ff8008e9912",
@@ -368,11 +363,6 @@
     "mtime": 1785467860.0546668,
     "ast_hash": "bba5797c859a3d6968871beda32d88d4",
     "semantic_hash": ""
-  },
-  "apps/web/src/app/(workspace)/projects/page.tsx": {
-    "mtime": 1785464546.1306808,
-    "ast_hash": "2c914327d6ae40d24ee0c95f2e44c1ed",
-    "semantic_hash": "2c914327d6ae40d24ee0c95f2e44c1ed"
   },
   "apps/web/src/app/(workspace)/settings/page.tsx": {
     "mtime": 1785465390.8998864,
@@ -414,11 +404,6 @@
     "ast_hash": "e21d684178086ecf78bee9127075cec0",
     "semantic_hash": "e21d684178086ecf78bee9127075cec0"
   },
-  "apps/web/src/components/ui/Badge.tsx": {
-    "mtime": 1785464459.6544905,
-    "ast_hash": "466a8fd91272dac77401d1c8c486414a",
-    "semantic_hash": "466a8fd91272dac77401d1c8c486414a"
-  },
   "apps/web/src/components/ui/ButtonLink.tsx": {
     "mtime": 1785464458.1403666,
     "ast_hash": "457a1916eae43397e7e41c388b7398c6",
@@ -433,11 +418,6 @@
     "mtime": 1785465390.9931943,
     "ast_hash": "1dc7148af84b8a5e6962961a80a598bd",
     "semantic_hash": "1dc7148af84b8a5e6962961a80a598bd"
-  },
-  "apps/web/src/components/ui/EmptyState.tsx": {
-    "mtime": 1785464461.5910864,
-    "ast_hash": "08a946eba05cd647069bc78adc8d7c78",
-    "semantic_hash": "08a946eba05cd647069bc78adc8d7c78"
   },
   "apps/web/src/components/ui/PageHeader.tsx": {
     "mtime": 1785465391.0073707,
@@ -603,5 +583,755 @@
     "mtime": 1785467762.0598812,
     "ast_hash": "613456a5114c0f9fc4a045bbb2fd1232",
     "semantic_hash": ""
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\.claude\\settings.json": {
+    "mtime": 1785483298.769,
+    "ast_hash": "65623a626077c78ef6bc09deb64824e5",
+    "semantic_hash": "65623a626077c78ef6bc09deb64824e5"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\.claude\\settings.local.json": {
+    "mtime": 1785464341.0871084,
+    "ast_hash": "ad37e53569be4ded6fffbda69d2c425e",
+    "semantic_hash": "ad37e53569be4ded6fffbda69d2c425e"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\.codex\\hooks.json": {
+    "mtime": 1785444201.0401788,
+    "ast_hash": "a2b1d4dadfb95a1cfafcffce7947ab24",
+    "semantic_hash": "a2b1d4dadfb95a1cfafcffce7947ab24"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\api\\package.json": {
+    "mtime": 1785458250.7661412,
+    "ast_hash": "a009209e80e8efea73806f67208fb4a3",
+    "semantic_hash": "a009209e80e8efea73806f67208fb4a3"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\api\\prisma.config.ts": {
+    "mtime": 1785484812.145633,
+    "ast_hash": "dc8a85161df6c13e06e52f31cfd29eeb",
+    "semantic_hash": "dc8a85161df6c13e06e52f31cfd29eeb"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\api\\prisma\\migrations\\20260730233714_init\\migration.sql": {
+    "mtime": 1785454634.0125897,
+    "ast_hash": "dd310e1da905ddd9decc528d776ef304",
+    "semantic_hash": "dd310e1da905ddd9decc528d776ef304"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\api\\prisma\\migrations\\20260731040543_add_client\\migration.sql": {
+    "mtime": 1785470743.0,
+    "ast_hash": "5759c1e3fa89c8044d58467ee2a224df",
+    "semantic_hash": "5759c1e3fa89c8044d58467ee2a224df"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\api\\prisma\\seed.ts": {
+    "mtime": 1785483870.1161027,
+    "ast_hash": "fe1e92376e8eb97c3496db827b2543d7",
+    "semantic_hash": "fe1e92376e8eb97c3496db827b2543d7"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\api\\src\\app.ts": {
+    "mtime": 1785470088.7010229,
+    "ast_hash": "17a91277632114190dc369995595bb71",
+    "semantic_hash": "17a91277632114190dc369995595bb71"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\api\\src\\config\\database.ts": {
+    "mtime": 1785453545.9958405,
+    "ast_hash": "ac3fe568ae43f0b4849b5d3e2c4bb049",
+    "semantic_hash": "ac3fe568ae43f0b4849b5d3e2c4bb049"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\api\\src\\config\\env.ts": {
+    "mtime": 1785484812.067793,
+    "ast_hash": "431ad0eb29c4324b904dbff530437b73",
+    "semantic_hash": "431ad0eb29c4324b904dbff530437b73"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\api\\src\\controllers\\health.controller.ts": {
+    "mtime": 1785453545.9978418,
+    "ast_hash": "6bd8341b672015d8c034090d773d2244",
+    "semantic_hash": "6bd8341b672015d8c034090d773d2244"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\api\\src\\errors\\app-error.ts": {
+    "mtime": 1785458394.986123,
+    "ast_hash": "3d50c023df4e822938dc7dc8847c39f7",
+    "semantic_hash": "3d50c023df4e822938dc7dc8847c39f7"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\api\\src\\middleware\\authenticate.ts": {
+    "mtime": 1785458505.976107,
+    "ast_hash": "2e427122813732957a121e5cb4798a39",
+    "semantic_hash": "2e427122813732957a121e5cb4798a39"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\api\\src\\middleware\\error-handler.ts": {
+    "mtime": 1785458394.9871235,
+    "ast_hash": "bc3bf4e481d498c9bf2311e915070748",
+    "semantic_hash": "bc3bf4e481d498c9bf2311e915070748"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\api\\src\\middleware\\not-found.ts": {
+    "mtime": 1785451117.0223525,
+    "ast_hash": "5b2764e59497e96521b7473787bbbbc1",
+    "semantic_hash": "5b2764e59497e96521b7473787bbbbc1"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\api\\src\\middleware\\require-workspace.ts": {
+    "mtime": 1785470088.7030232,
+    "ast_hash": "5aa2fd4fcd7f39e03beb5a227e152413",
+    "semantic_hash": "5aa2fd4fcd7f39e03beb5a227e152413"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\api\\src\\middleware\\validate-request.ts": {
+    "mtime": 1785470088.7030232,
+    "ast_hash": "e900b165492b7e524930cf6c5f8219fb",
+    "semantic_hash": "e900b165492b7e524930cf6c5f8219fb"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\api\\src\\modules\\auth\\auth.controller.ts": {
+    "mtime": 1785458506.0160735,
+    "ast_hash": "b692343f5d54ea648fab3b2019d0eb2b",
+    "semantic_hash": "b692343f5d54ea648fab3b2019d0eb2b"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\api\\src\\modules\\auth\\auth.routes.ts": {
+    "mtime": 1785458458.8024256,
+    "ast_hash": "1319577ed637946726a8a7be02ba5b87",
+    "semantic_hash": "1319577ed637946726a8a7be02ba5b87"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\api\\src\\modules\\auth\\auth.schemas.ts": {
+    "mtime": 1785458458.7991843,
+    "ast_hash": "7513c5c13266e235d2394414be793c78",
+    "semantic_hash": "7513c5c13266e235d2394414be793c78"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\api\\src\\modules\\auth\\auth.service.ts": {
+    "mtime": 1785459243.574907,
+    "ast_hash": "75fb1d8bcdac117fff9f3459e615f477",
+    "semantic_hash": "75fb1d8bcdac117fff9f3459e615f477"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\api\\src\\modules\\auth\\auth.types.ts": {
+    "mtime": 1785458394.9916506,
+    "ast_hash": "1fb930c67f711fb955d70653ede86190",
+    "semantic_hash": "1fb930c67f711fb955d70653ede86190"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\api\\src\\modules\\clients\\client.controller.ts": {
+    "mtime": 1785470919.3935034,
+    "ast_hash": "96f6eadf1a495e77967ee356d5b65217",
+    "semantic_hash": "96f6eadf1a495e77967ee356d5b65217"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\api\\src\\modules\\clients\\client.mapper.ts": {
+    "mtime": 1785470919.4063852,
+    "ast_hash": "7a585a2110132d33335ec49a120e78e5",
+    "semantic_hash": "7a585a2110132d33335ec49a120e78e5"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\api\\src\\modules\\clients\\client.routes.ts": {
+    "mtime": 1785470919.419417,
+    "ast_hash": "238826aa66ae344485f0999b7e025ab1",
+    "semantic_hash": "238826aa66ae344485f0999b7e025ab1"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\api\\src\\modules\\clients\\client.schemas.ts": {
+    "mtime": 1785470153.7954073,
+    "ast_hash": "2258edf45136a4540e2702439d242eaf",
+    "semantic_hash": "2258edf45136a4540e2702439d242eaf"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\api\\src\\modules\\clients\\client.service.ts": {
+    "mtime": 1785470232.807562,
+    "ast_hash": "c5c7a9485be6c39656e089cd885bace4",
+    "semantic_hash": "c5c7a9485be6c39656e089cd885bace4"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\api\\src\\modules\\clients\\client.types.ts": {
+    "mtime": 1785470153.792894,
+    "ast_hash": "59f7a10ec65e4ceb319cd4ad475cee42",
+    "semantic_hash": "59f7a10ec65e4ceb319cd4ad475cee42"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\api\\src\\routes\\health.routes.ts": {
+    "mtime": 1785451117.0233512,
+    "ast_hash": "5764ed6558f8c7f26705c85d03ed5a50",
+    "semantic_hash": "5764ed6558f8c7f26705c85d03ed5a50"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\api\\src\\routes\\index.ts": {
+    "mtime": 1785470191.1972754,
+    "ast_hash": "9a4bddaf5d196ef8e28353bd0f72504c",
+    "semantic_hash": "9a4bddaf5d196ef8e28353bd0f72504c"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\api\\src\\server.ts": {
+    "mtime": 1785453618.320652,
+    "ast_hash": "2a6486fc87dfe394e1c485ef84b0d982",
+    "semantic_hash": "2a6486fc87dfe394e1c485ef84b0d982"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\api\\src\\services\\jwt.service.ts": {
+    "mtime": 1785458564.7439408,
+    "ast_hash": "894d8860285b14ca08bbdcfa509e1711",
+    "semantic_hash": "894d8860285b14ca08bbdcfa509e1711"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\api\\src\\services\\password.service.ts": {
+    "mtime": 1785458527.5642397,
+    "ast_hash": "8c4726c00f3952cddb1b7094557aaf55",
+    "semantic_hash": "8c4726c00f3952cddb1b7094557aaf55"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\api\\src\\types\\express.d.ts": {
+    "mtime": 1785470088.702026,
+    "ast_hash": "e4bc5067c946ec46c62200b82ba2f86e",
+    "semantic_hash": "e4bc5067c946ec46c62200b82ba2f86e"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\api\\tsconfig.build.json": {
+    "mtime": 1785453546.000841,
+    "ast_hash": "bfbfc86f5a00c246b88030f3385d36b8",
+    "semantic_hash": "bfbfc86f5a00c246b88030f3385d36b8"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\api\\tsconfig.json": {
+    "mtime": 1785453545.9998424,
+    "ast_hash": "b266fc73fe3afd3a464fd166c08d0e09",
+    "semantic_hash": "b266fc73fe3afd3a464fd166c08d0e09"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\eslint.config.mjs": {
+    "mtime": 1785464856.8383808,
+    "ast_hash": "ad4d0f66da4d23fe14e154f51a19a86d",
+    "semantic_hash": "ad4d0f66da4d23fe14e154f51a19a86d"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\next-env.d.ts": {
+    "mtime": 1785472609.8000138,
+    "ast_hash": "b698cdd97fe8e3bd16dcd74899ad7cef",
+    "semantic_hash": "b698cdd97fe8e3bd16dcd74899ad7cef"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\next.config.ts": {
+    "mtime": 1785469102.831,
+    "ast_hash": "5f7c623047600e78c2749d37bb338901",
+    "semantic_hash": "5f7c623047600e78c2749d37bb338901"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\package.json": {
+    "mtime": 1785466084.0986292,
+    "ast_hash": "e4b77f67559910d364b342cab5b6404f",
+    "semantic_hash": "e4b77f67559910d364b342cab5b6404f"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\postcss.config.mjs": {
+    "mtime": 1785464352.6712258,
+    "ast_hash": "27808b58abfd6d09739e715b81724384",
+    "semantic_hash": "27808b58abfd6d09739e715b81724384"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\app\\(auth)\\layout.tsx": {
+    "mtime": 1785464521.0093784,
+    "ast_hash": "d92e1a0ee103556ab2bfb198d5344cab",
+    "semantic_hash": "d92e1a0ee103556ab2bfb198d5344cab"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\app\\(auth)\\login\\page.tsx": {
+    "mtime": 1785467903.4198833,
+    "ast_hash": "d92c4cca69b42841f0e5136925608c5f",
+    "semantic_hash": "d92c4cca69b42841f0e5136925608c5f"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\app\\(auth)\\register\\page.tsx": {
+    "mtime": 1785483742.866316,
+    "ast_hash": "6d5352aeca5cd126fc15207384176477",
+    "semantic_hash": "6d5352aeca5cd126fc15207384176477"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\app\\(marketing)\\layout.tsx": {
+    "mtime": 1785483742.7965417,
+    "ast_hash": "d87790910a7fc4f8457b4f94b6a55d9f",
+    "semantic_hash": "d87790910a7fc4f8457b4f94b6a55d9f"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\app\\(marketing)\\page.tsx": {
+    "mtime": 1785483750.7390354,
+    "ast_hash": "b57e0ee20ffa43eab5aa7fbc0fe8d722",
+    "semantic_hash": "b57e0ee20ffa43eab5aa7fbc0fe8d722"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\app\\(workspace)\\clients\\[clientId]\\edit\\page.tsx": {
+    "mtime": 1785472383.5207238,
+    "ast_hash": "7708033bc400de4a7031b20a61cac7ea",
+    "semantic_hash": "7708033bc400de4a7031b20a61cac7ea"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\app\\(workspace)\\clients\\[clientId]\\page.tsx": {
+    "mtime": 1785472381.9048455,
+    "ast_hash": "02afd7caa0805a2ac299d8b497e22f5c",
+    "semantic_hash": "02afd7caa0805a2ac299d8b497e22f5c"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\app\\(workspace)\\clients\\new\\page.tsx": {
+    "mtime": 1785472380.1453295,
+    "ast_hash": "4f2cc8c0a8c1bbf667f06995f56d9dfb",
+    "semantic_hash": "4f2cc8c0a8c1bbf667f06995f56d9dfb"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\app\\(workspace)\\clients\\page.tsx": {
+    "mtime": 1785472378.0257761,
+    "ast_hash": "e14c506b7a4a7389671010cdc7111858",
+    "semantic_hash": "e14c506b7a4a7389671010cdc7111858"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\app\\(workspace)\\dashboard\\page.tsx": {
+    "mtime": 1785483834.2573977,
+    "ast_hash": "3f4b481c531ac88c36ad2e17a97f36aa",
+    "semantic_hash": "3f4b481c531ac88c36ad2e17a97f36aa"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\app\\(workspace)\\layout.tsx": {
+    "mtime": 1785472219.2722113,
+    "ast_hash": "badd608b26b4fc9cb70cd1e7bf4a6c0a",
+    "semantic_hash": "badd608b26b4fc9cb70cd1e7bf4a6c0a"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\app\\(workspace)\\settings\\page.tsx": {
+    "mtime": 1785483851.9333336,
+    "ast_hash": "7d6faad8ca33b0080b29ddaf48e96828",
+    "semantic_hash": "7d6faad8ca33b0080b29ddaf48e96828"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\app\\layout.tsx": {
+    "mtime": 1785483778.3806736,
+    "ast_hash": "491f2da60bd82ef4f6267b13ed0e7938",
+    "semantic_hash": "491f2da60bd82ef4f6267b13ed0e7938"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\app\\not-found.tsx": {
+    "mtime": 1785464551.8825572,
+    "ast_hash": "e2deccb8694979b30ba21feeb1c05405",
+    "semantic_hash": "e2deccb8694979b30ba21feeb1c05405"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\app\\providers.tsx": {
+    "mtime": 1785467845.8242016,
+    "ast_hash": "f1baab396a0856201a5f608846fb97fb",
+    "semantic_hash": "f1baab396a0856201a5f608846fb97fb"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\components\\auth\\auth-form-error.tsx": {
+    "mtime": 1785466150.1582766,
+    "ast_hash": "e8551f949be99d4ee68cc760443b081f",
+    "semantic_hash": "e8551f949be99d4ee68cc760443b081f"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\components\\auth\\authenticated-route.tsx": {
+    "mtime": 1785467837.6723678,
+    "ast_hash": "d5ce0e4bc996f9abaffab3ff44022953",
+    "semantic_hash": "d5ce0e4bc996f9abaffab3ff44022953"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\components\\auth\\form-field.tsx": {
+    "mtime": 1785466147.2798438,
+    "ast_hash": "28db3b15d04da23a4a2a3eb09b81bdad",
+    "semantic_hash": "28db3b15d04da23a4a2a3eb09b81bdad"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\components\\auth\\guest-only-route.tsx": {
+    "mtime": 1785467842.4789145,
+    "ast_hash": "46c583f026c5b473a53431acff558462",
+    "semantic_hash": "46c583f026c5b473a53431acff558462"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\components\\auth\\login-form.tsx": {
+    "mtime": 1785467885.3553567,
+    "ast_hash": "83bea88fdacead0201f0b24b966ac1bd",
+    "semantic_hash": "83bea88fdacead0201f0b24b966ac1bd"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\components\\auth\\register-form.tsx": {
+    "mtime": 1785467896.0270152,
+    "ast_hash": "1df9410e5bfa68eafc12bb7cd1f2cb82",
+    "semantic_hash": "1df9410e5bfa68eafc12bb7cd1f2cb82"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\components\\auth\\session-error.tsx": {
+    "mtime": 1785467831.1394463,
+    "ast_hash": "29d36d582d0dbb9c8e256f6c09adc750",
+    "semantic_hash": "29d36d582d0dbb9c8e256f6c09adc750"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\components\\auth\\session-loading.tsx": {
+    "mtime": 1785467823.9912753,
+    "ast_hash": "e0fb97b26c042368c2cae6db869d19b8",
+    "semantic_hash": "e0fb97b26c042368c2cae6db869d19b8"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\components\\auth\\session-provider.tsx": {
+    "mtime": 1785472138.4234078,
+    "ast_hash": "1b15d2db3e0b19a1d701467b5f550b2a",
+    "semantic_hash": "1b15d2db3e0b19a1d701467b5f550b2a"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\components\\clients\\client-card-list.tsx": {
+    "mtime": 1785472303.9464276,
+    "ast_hash": "a00ff1aa4126f6ef636c7b1076e2173e",
+    "semantic_hash": "a00ff1aa4126f6ef636c7b1076e2173e"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\components\\clients\\client-delete-dialog.tsx": {
+    "mtime": 1785472274.2692654,
+    "ast_hash": "e433247fa6618699b775d8787dfdb73a",
+    "semantic_hash": "e433247fa6618699b775d8787dfdb73a"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\components\\clients\\client-details.tsx": {
+    "mtime": 1785472502.6625803,
+    "ast_hash": "01995cf834d584e52b62dec281f5b06b",
+    "semantic_hash": "01995cf834d584e52b62dec281f5b06b"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\components\\clients\\client-empty-state.tsx": {
+    "mtime": 1785472259.4601998,
+    "ast_hash": "f68abe93a7b462ccf61c1bab72f9d93f",
+    "semantic_hash": "f68abe93a7b462ccf61c1bab72f9d93f"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\components\\clients\\client-error-state.tsx": {
+    "mtime": 1785472252.8968291,
+    "ast_hash": "916d64bd6bc6f10203a0c86588f76fd3",
+    "semantic_hash": "916d64bd6bc6f10203a0c86588f76fd3"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\components\\clients\\client-form.tsx": {
+    "mtime": 1785472289.8105354,
+    "ast_hash": "773141bc900106d151be093cb3d2a79c",
+    "semantic_hash": "773141bc900106d151be093cb3d2a79c"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\components\\clients\\client-list-toolbar.tsx": {
+    "mtime": 1785472537.6870387,
+    "ast_hash": "4c664fc201e7563ea63988517026540b",
+    "semantic_hash": "4c664fc201e7563ea63988517026540b"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\components\\clients\\client-list.tsx": {
+    "mtime": 1785472502.7586095,
+    "ast_hash": "c0f1056fefb16fe3d16eda58d33e2157",
+    "semantic_hash": "c0f1056fefb16fe3d16eda58d33e2157"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\components\\clients\\client-not-found-state.tsx": {
+    "mtime": 1785472255.4487374,
+    "ast_hash": "c4bbfbf15523149c9f04362f014df793",
+    "semantic_hash": "c4bbfbf15523149c9f04362f014df793"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\components\\clients\\client-status-notice.tsx": {
+    "mtime": 1785472263.282642,
+    "ast_hash": "be32d5be7ef23db11df90e079a094b6d",
+    "semantic_hash": "be32d5be7ef23db11df90e079a094b6d"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\components\\clients\\client-table.tsx": {
+    "mtime": 1785472298.8297722,
+    "ast_hash": "1af3a8baa483350496be0bb5a1b45abd",
+    "semantic_hash": "1af3a8baa483350496be0bb5a1b45abd"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\components\\clients\\create-client-view.tsx": {
+    "mtime": 1785472502.8540044,
+    "ast_hash": "f3834468e95c3f8c799025c46ab64c26",
+    "semantic_hash": "f3834468e95c3f8c799025c46ab64c26"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\components\\clients\\edit-client-view.tsx": {
+    "mtime": 1785472502.9575746,
+    "ast_hash": "8917383788f01dd22ad79a9e2a823cc2",
+    "semantic_hash": "8917383788f01dd22ad79a9e2a823cc2"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\components\\dashboard\\dashboard-view.tsx": {
+    "mtime": 1785483829.6443465,
+    "ast_hash": "89abac12f4d02bbe7ac81a528d1cb806",
+    "semantic_hash": "89abac12f4d02bbe7ac81a528d1cb806"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\components\\layout\\AppShell.tsx": {
+    "mtime": 1785472223.0147963,
+    "ast_hash": "2c03367b6339c7b30ff80e88d7fb9fa4",
+    "semantic_hash": "2c03367b6339c7b30ff80e88d7fb9fa4"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\components\\layout\\Brand.tsx": {
+    "mtime": 1785464474.3924744,
+    "ast_hash": "06e5f9a03e2466f956f6e484a2e69c76",
+    "semantic_hash": "06e5f9a03e2466f956f6e484a2e69c76"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\components\\layout\\MobileNavigation.tsx": {
+    "mtime": 1785483735.8822372,
+    "ast_hash": "9bc8f2df1fc5feade5a3a928a8bd4dbc",
+    "semantic_hash": "9bc8f2df1fc5feade5a3a928a8bd4dbc"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\components\\layout\\NavLink.tsx": {
+    "mtime": 1785472224.450133,
+    "ast_hash": "151f38830a2a041edb8fd1f2b1e85870",
+    "semantic_hash": "151f38830a2a041edb8fd1f2b1e85870"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\components\\layout\\SessionAccount.tsx": {
+    "mtime": 1785467866.6812065,
+    "ast_hash": "a380eeea116889b786494873a7e1a27a",
+    "semantic_hash": "a380eeea116889b786494873a7e1a27a"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\components\\layout\\SidebarNavigation.tsx": {
+    "mtime": 1785483735.7695508,
+    "ast_hash": "4503e0c28888dec9c9e04b65dd9ad2ab",
+    "semantic_hash": "4503e0c28888dec9c9e04b65dd9ad2ab"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\components\\settings\\settings-view.tsx": {
+    "mtime": 1785483846.9533436,
+    "ast_hash": "5138d82354712e06923ab23415d65dc6",
+    "semantic_hash": "5138d82354712e06923ab23415d65dc6"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\components\\ui\\ButtonLink.tsx": {
+    "mtime": 1785464458.1403666,
+    "ast_hash": "457a1916eae43397e7e41c388b7398c6",
+    "semantic_hash": "457a1916eae43397e7e41c388b7398c6"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\components\\ui\\Card.tsx": {
+    "mtime": 1785465390.9841626,
+    "ast_hash": "786977dfeea139a5d824f75ce4334e1b",
+    "semantic_hash": "786977dfeea139a5d824f75ce4334e1b"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\components\\ui\\Container.tsx": {
+    "mtime": 1785465390.9931943,
+    "ast_hash": "1dc7148af84b8a5e6962961a80a598bd",
+    "semantic_hash": "1dc7148af84b8a5e6962961a80a598bd"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\components\\ui\\PageHeader.tsx": {
+    "mtime": 1785465391.0073707,
+    "ast_hash": "1b20490973f354db133f15dff3a21da0",
+    "semantic_hash": "1b20490973f354db133f15dff3a21da0"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\components\\workspace\\active-workspace-provider.tsx": {
+    "mtime": 1785472204.1326792,
+    "ast_hash": "e56936ccedacba398b255848a5b6615a",
+    "semantic_hash": "e56936ccedacba398b255848a5b6615a"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\components\\workspace\\workspace-required.tsx": {
+    "mtime": 1785483785.5758922,
+    "ast_hash": "88cafb0f4a6ea0959404b8cce554fc5a",
+    "semantic_hash": "88cafb0f4a6ea0959404b8cce554fc5a"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\components\\workspace\\workspace-selector.tsx": {
+    "mtime": 1785472209.9408085,
+    "ast_hash": "bf8be47cd31f3d8037b91328f2b636c1",
+    "semantic_hash": "bf8be47cd31f3d8037b91328f2b636c1"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\hooks\\use-active-workspace.ts": {
+    "mtime": 1785472205.970624,
+    "ast_hash": "75bccc41a2dbb96ee15e42482bf39203",
+    "semantic_hash": "75bccc41a2dbb96ee15e42482bf39203"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\hooks\\use-client.ts": {
+    "mtime": 1785472527.0981379,
+    "ast_hash": "b167010becd5c6f96f8162333013e5bc",
+    "semantic_hash": "b167010becd5c6f96f8162333013e5bc"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\hooks\\use-clients.ts": {
+    "mtime": 1785472573.3369803,
+    "ast_hash": "226db04bf302db95db3824b30b8ec51d",
+    "semantic_hash": "226db04bf302db95db3824b30b8ec51d"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\hooks\\use-dashboard.ts": {
+    "mtime": 1785483804.6092885,
+    "ast_hash": "f44135ad4940bfc2fa6f664a352195e4",
+    "semantic_hash": "f44135ad4940bfc2fa6f664a352195e4"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\hooks\\use-session.ts": {
+    "mtime": 1785467819.533352,
+    "ast_hash": "d0e9bce45ae18a05462f71e04c81f439",
+    "semantic_hash": "d0e9bce45ae18a05462f71e04c81f439"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\lib\\api\\auth.ts": {
+    "mtime": 1785467800.1703744,
+    "ast_hash": "93f5a0849e12a41258de3ac6cb8cad08",
+    "semantic_hash": "93f5a0849e12a41258de3ac6cb8cad08"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\lib\\api\\client.ts": {
+    "mtime": 1785472145.9244864,
+    "ast_hash": "2706214db6e46120fcfc5e870843c4f0",
+    "semantic_hash": "2706214db6e46120fcfc5e870843c4f0"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\lib\\api\\clients.ts": {
+    "mtime": 1785472168.53365,
+    "ast_hash": "1fffd34eabe2da4e896dd9a3680cc43e",
+    "semantic_hash": "1fffd34eabe2da4e896dd9a3680cc43e"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\lib\\api\\errors.ts": {
+    "mtime": 1785467781.1700983,
+    "ast_hash": "e3e3a49fa185ed3d8277a3e78aceb5f1",
+    "semantic_hash": "e3e3a49fa185ed3d8277a3e78aceb5f1"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\lib\\auth\\redirect.ts": {
+    "mtime": 1785483735.96639,
+    "ast_hash": "3b95d994da02a20eacee870ceb8b4cc0",
+    "semantic_hash": "3b95d994da02a20eacee870ceb8b4cc0"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\lib\\auth\\session-error.ts": {
+    "mtime": 1785467766.810583,
+    "ast_hash": "9520a4c8400da5bd2f151d5d041fce25",
+    "semantic_hash": "9520a4c8400da5bd2f151d5d041fce25"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\lib\\auth\\token-storage.ts": {
+    "mtime": 1785467778.0165408,
+    "ast_hash": "c7d4ba8bca90a66f318da573f3ffa7b9",
+    "semantic_hash": "c7d4ba8bca90a66f318da573f3ffa7b9"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\lib\\clients\\client-error-handling.ts": {
+    "mtime": 1785472178.2297764,
+    "ast_hash": "d4df56d462a9e8cdac56e47b5d9a308b",
+    "semantic_hash": "d4df56d462a9e8cdac56e47b5d9a308b"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\lib\\clients\\client-query-state.ts": {
+    "mtime": 1785472188.9589906,
+    "ast_hash": "dad627a4c4c8021c7530062022a194ff",
+    "semantic_hash": "dad627a4c4c8021c7530062022a194ff"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\lib\\clients\\client-validation.ts": {
+    "mtime": 1785472174.2124496,
+    "ast_hash": "f915e61ec4dab8d3848e22cf5658af9b",
+    "semantic_hash": "f915e61ec4dab8d3848e22cf5658af9b"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\lib\\cn.ts": {
+    "mtime": 1785464426.8518693,
+    "ast_hash": "17047248a75301753af85a34ea043bea",
+    "semantic_hash": "17047248a75301753af85a34ea043bea"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\lib\\format\\date.ts": {
+    "mtime": 1785472169.8627143,
+    "ast_hash": "2d305175c357a41b598ede9ce9eee94f",
+    "semantic_hash": "2d305175c357a41b598ede9ce9eee94f"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\lib\\validation\\auth.ts": {
+    "mtime": 1785466134.312436,
+    "ast_hash": "935fb8d2be22ac0bf0d670f556837ef4",
+    "semantic_hash": "935fb8d2be22ac0bf0d670f556837ef4"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\lib\\workspace\\workspace-storage.ts": {
+    "mtime": 1785472157.3646035,
+    "ast_hash": "2a8cfc9cd34c75bc975aecb88b2b9ef3",
+    "semantic_hash": "2a8cfc9cd34c75bc975aecb88b2b9ef3"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\types\\auth.ts": {
+    "mtime": 1785466094.5136943,
+    "ast_hash": "131d38bf38f08ef39b210c567a08e263",
+    "semantic_hash": "131d38bf38f08ef39b210c567a08e263"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\types\\client.ts": {
+    "mtime": 1785472151.9046915,
+    "ast_hash": "f275e13ed839e67db6dfe0ed1294b42e",
+    "semantic_hash": "f275e13ed839e67db6dfe0ed1294b42e"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\types\\session.ts": {
+    "mtime": 1785472129.2531695,
+    "ast_hash": "5f77cb621796ad0331f3f6e80e11eb63",
+    "semantic_hash": "5f77cb621796ad0331f3f6e80e11eb63"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\src\\types\\workspace.ts": {
+    "mtime": 1785472154.8207273,
+    "ast_hash": "62853f1e8a9eb8c3f8a5989fec42fa15",
+    "semantic_hash": "62853f1e8a9eb8c3f8a5989fec42fa15"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\web\\tsconfig.json": {
+    "mtime": 1785464368.1616828,
+    "ast_hash": "3720b191393d33d4d4b7ba32007e66f9",
+    "semantic_hash": "3720b191393d33d4d4b7ba32007e66f9"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\eslint.config.mjs": {
+    "mtime": 1785446641.0523872,
+    "ast_hash": "c60be2fe8dc158484d257e5a17229578",
+    "semantic_hash": "c60be2fe8dc158484d257e5a17229578"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\package.json": {
+    "mtime": 1785453546.00236,
+    "ast_hash": "b03eac41f563943a548399db11b1cd5c",
+    "semantic_hash": "b03eac41f563943a548399db11b1cd5c"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\packages\\config\\eslint\\base.js": {
+    "mtime": 1785464855.7202072,
+    "ast_hash": "4f12b325df7357271fd7d29199bafbd6",
+    "semantic_hash": "4f12b325df7357271fd7d29199bafbd6"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\packages\\config\\eslint\\node.js": {
+    "mtime": 1785446641.0462246,
+    "ast_hash": "abeb405992a22a547f204bf869b511e7",
+    "semantic_hash": "abeb405992a22a547f204bf869b511e7"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\packages\\config\\package.json": {
+    "mtime": 1785446641.0392268,
+    "ast_hash": "aac3f423dad864483c06731d5819cedd",
+    "semantic_hash": "aac3f423dad864483c06731d5819cedd"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\packages\\config\\prettier\\index.js": {
+    "mtime": 1785446641.0483866,
+    "ast_hash": "d05264b30005492924c96c4dc09e92f7",
+    "semantic_hash": "d05264b30005492924c96c4dc09e92f7"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\packages\\config\\tsconfig.json": {
+    "mtime": 1785446684.9651043,
+    "ast_hash": "cca1bf012d8f0bd99b3b4ec761893530",
+    "semantic_hash": "cca1bf012d8f0bd99b3b4ec761893530"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\packages\\config\\typescript\\base.json": {
+    "mtime": 1785446641.0442252,
+    "ast_hash": "c2c4ec2b24b04e0b949a3fba008bf18b",
+    "semantic_hash": "c2c4ec2b24b04e0b949a3fba008bf18b"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\packages\\config\\typescript\\node.json": {
+    "mtime": 1785446684.9736166,
+    "ast_hash": "347ecb20d4df985f870c8abe0646f409",
+    "semantic_hash": "347ecb20d4df985f870c8abe0646f409"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\packages\\types\\package.json": {
+    "mtime": 1785446641.0402281,
+    "ast_hash": "fb7b809ca54a92b5c33823223c796db4",
+    "semantic_hash": "fb7b809ca54a92b5c33823223c796db4"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\packages\\types\\src\\index.ts": {
+    "mtime": 1785446684.986137,
+    "ast_hash": "e2ebd7ddedcadeeadbf819c35985c768",
+    "semantic_hash": "e2ebd7ddedcadeeadbf819c35985c768"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\packages\\types\\tsconfig.json": {
+    "mtime": 1785446684.989647,
+    "ast_hash": "429e606eebe93e8a46bc161f221b9de8",
+    "semantic_hash": "429e606eebe93e8a46bc161f221b9de8"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\prettier.config.mjs": {
+    "mtime": 1785446641.0523872,
+    "ast_hash": "86c8977cbd07d6fbe37ad02e9866986f",
+    "semantic_hash": "86c8977cbd07d6fbe37ad02e9866986f"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\turbo.json": {
+    "mtime": 1785466087.366195,
+    "ast_hash": "7436346e414f559815acce9679b3ac5c",
+    "semantic_hash": "7436346e414f559815acce9679b3ac5c"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\.agents\\skills\\graphify\\SKILL.md": {
+    "mtime": 1785444201.027663,
+    "ast_hash": "7869351527b616553075b86f6148b0dc",
+    "semantic_hash": "7869351527b616553075b86f6148b0dc"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\.agents\\skills\\graphify\\references\\add-watch.md": {
+    "mtime": 1780528995.6170406,
+    "ast_hash": "0df0589623217ca38a12bdcabfb42f4c",
+    "semantic_hash": "0df0589623217ca38a12bdcabfb42f4c"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\.agents\\skills\\graphify\\references\\exports.md": {
+    "mtime": 1780528995.6185489,
+    "ast_hash": "7fb1a81aca17a462db70684a324fcfb0",
+    "semantic_hash": "7fb1a81aca17a462db70684a324fcfb0"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\.agents\\skills\\graphify\\references\\extraction-spec.md": {
+    "mtime": 1780528995.619557,
+    "ast_hash": "a86a7321597b23cc2b22e011b3dc6e1d",
+    "semantic_hash": "a86a7321597b23cc2b22e011b3dc6e1d"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\.agents\\skills\\graphify\\references\\github-and-merge.md": {
+    "mtime": 1780528995.619557,
+    "ast_hash": "cde13df085e4c492aeb7ba298a996d0d",
+    "semantic_hash": "cde13df085e4c492aeb7ba298a996d0d"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\.agents\\skills\\graphify\\references\\hooks.md": {
+    "mtime": 1780528995.620557,
+    "ast_hash": "3f545db6ce646650bb9de588f5512a27",
+    "semantic_hash": "3f545db6ce646650bb9de588f5512a27"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\.agents\\skills\\graphify\\references\\query.md": {
+    "mtime": 1780528995.6604476,
+    "ast_hash": "c2a8e798674a81b02aa9975f43023819",
+    "semantic_hash": "c2a8e798674a81b02aa9975f43023819"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\.agents\\skills\\graphify\\references\\transcribe.md": {
+    "mtime": 1780528995.6644678,
+    "ast_hash": "70f6aa30d6211f3a2c7e9fc45479f50c",
+    "semantic_hash": "70f6aa30d6211f3a2c7e9fc45479f50c"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\.agents\\skills\\graphify\\references\\update.md": {
+    "mtime": 1780528995.666468,
+    "ast_hash": "735932eaa4f0c8fef9566c538ae3e5f8",
+    "semantic_hash": "735932eaa4f0c8fef9566c538ae3e5f8"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\.claude\\skills\\landing-design\\SKILL.md": {
+    "mtime": 1785450174.89,
+    "ast_hash": "2e83f47354d6905148507d7b8f7401f0",
+    "semantic_hash": "2e83f47354d6905148507d7b8f7401f0"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\.interface-design\\system.md": {
+    "mtime": 1785484001.4663384,
+    "ast_hash": "68e64d90acde56aeb3612103e6f6438c",
+    "semantic_hash": "68e64d90acde56aeb3612103e6f6438c"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\AGENTS.md": {
+    "mtime": 1785450349.001,
+    "ast_hash": "7f75ba5b2237739219b9d488f204b9cf",
+    "semantic_hash": "7f75ba5b2237739219b9d488f204b9cf"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\CLAUDE.md": {
+    "mtime": 1785446880.9885015,
+    "ast_hash": "494c8beadb9871befd40f20bf0cd0bb0",
+    "semantic_hash": "494c8beadb9871befd40f20bf0cd0bb0"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\README.md": {
+    "mtime": 1785484854.4897027,
+    "ast_hash": "1f30462359a2a7bf2553105073d21786",
+    "semantic_hash": "1f30462359a2a7bf2553105073d21786"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\apps\\api\\README.md": {
+    "mtime": 1785484863.2784126,
+    "ast_hash": "dbd308cbbb0f0245a17cdfe5ea62d041",
+    "semantic_hash": "dbd308cbbb0f0245a17cdfe5ea62d041"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\docker-compose.yml": {
+    "mtime": 1785466089.076651,
+    "ast_hash": "648ba5c5218cd9368fedaf6239c7d02f",
+    "semantic_hash": "648ba5c5218cd9368fedaf6239c7d02f"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\packages\\config\\README.md": {
+    "mtime": 1785484014.0596135,
+    "ast_hash": "6b0ebecf0f14243caaf7ca0e34bc87f8",
+    "semantic_hash": "6b0ebecf0f14243caaf7ca0e34bc87f8"
+  },
+  "C:\\Users\\jairo\\dev\\ClientFlow\\pnpm-workspace.yaml": {
+    "mtime": 1785446685.009684,
+    "ast_hash": "94959a14ffe26db859e218b25f9b1f52",
+    "semantic_hash": "94959a14ffe26db859e218b25f9b1f52"
   }
 }
