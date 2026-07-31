@@ -116,16 +116,35 @@ URLs:
 - `(auth)` — focused authentication routes: `/login` and `/register`
 - `(workspace)` — the application shell: `/dashboard`, `/clients`, `/projects`, and `/settings`
 
-None of this is wired up to real functionality yet:
+The login and register pages are working forms wired to the API:
 
-- The login and register pages are static placeholder surfaces. They do not submit data, call the
-  API, or store tokens.
-- The workspace routes are not protected and are not redirected based on authentication state.
-  Anyone can currently reach `/dashboard`, `/clients`, `/projects`, and `/settings`.
+- `/register` and `/login` validate input client-side with Zod, call `POST /auth/register` and
+  `POST /auth/login`, show field-level and form-level errors, and provide loading/disabled states
+  that prevent duplicate submissions.
+- On success, both forms store only the returned access token in `sessionStorage`
+  (`clientflow.accessToken`) and redirect to `/dashboard` with `router.replace`.
+- The workspace routes are still not protected and are not redirected based on authentication
+  state. Anyone can currently reach `/dashboard`, `/clients`, `/projects`, and `/settings`.
 - The dashboard, clients, projects, and settings pages are structural placeholders with empty
-  states. They render no client, project, or business data.
+  states. They render no client, project, or business data, and the application does not yet
+  hydrate the authenticated user from `/auth/me` or reflect a signed-in state anywhere in the
+  shell.
+- Session hydration, route protection, token-expiration handling, and logout are deferred to the
+  next authentication-session change. See [Authentication](#authentication) for the current
+  limitations.
 
-Client/project CRUD, authentication wiring, and billing will be added in later changes.
+Client/project CRUD and billing will be added in later changes.
+
+The browser-accessible API base URL is configured with:
+
+```text
+NEXT_PUBLIC_API_URL=http://localhost:4000
+```
+
+Set it in `.env` (or the environment) before building or running the web application. The web
+client falls back to `http://localhost:4000` when the variable is absent, which is only correct
+for local development. Production deployments must set `NEXT_PUBLIC_API_URL` to the API's real
+public URL — the value is inlined into the browser bundle, so it must never carry secrets.
 
 ## API
 
@@ -180,9 +199,21 @@ password with `SEED_USER_PASSWORD` when needed. These credentials and all `.env.
 are local defaults only.
 
 Access tokens are currently short-lived. Refresh tokens are not implemented, logout is client-side
-token removal, and API rate limiting will be added in a later security change. The web application
-does not implement authentication yet. See [`apps/api/README.md`](apps/api/README.md) for request
-and response examples and the complete authentication error list.
+token removal, and API rate limiting will be added in a later security change. See
+[`apps/api/README.md`](apps/api/README.md) for request and response examples and the complete
+authentication error list.
+
+The web application's `/register` and `/login` pages call these endpoints directly from the
+browser and store only the access token, temporarily, in `sessionStorage`. This is intentionally
+minimal:
+
+- Routes are not protected yet — reaching `/dashboard` does not require a token.
+- The application does not hydrate the current user or call `/auth/me` on startup.
+- Logout is not implemented; there is no way to clear the stored token from the UI yet.
+- Access-token expiration is not handled — an expired token is not detected or refreshed.
+- Refresh tokens, token rotation, and token revocation are not implemented.
+
+These will be addressed in the next authentication-session commit.
 
 ## Database
 
@@ -217,5 +248,6 @@ pnpm db:studio
 The seed creates or updates one authenticatable demo user, one demo workspace, and one owner
 membership. It uses the same versioned asynchronous scrypt password hashing as registration.
 
-The web application does not contain authentication UI or token storage yet. Workspace
-authorization, client/project CRUD, and billing are not implemented.
+The web application's authentication UI stores only a short-lived access token in `sessionStorage`
+and does not yet enforce sessions or protect routes. Workspace authorization, client/project CRUD,
+and billing are not implemented.

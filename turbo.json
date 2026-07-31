@@ -23,7 +23,7 @@
     "@clientflow/web#dev": {
       "cache": false,
       "persistent": true,
-      "passThroughEnv": ["HOST", "NODE_ENV", "WEB_PORT"]
+      "passThroughEnv": ["HOST", "NODE_ENV", "NEXT_PUBLIC_API_URL", "WEB_PORT"]
     },
     "build": {
       "dependsOn": ["^build"]

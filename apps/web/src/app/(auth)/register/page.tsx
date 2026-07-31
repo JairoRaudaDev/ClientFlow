@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
+import { RegisterForm } from '@/components/auth/register-form';
 import { Card } from '@/components/ui/Card';
 
 export const metadata: Metadata = {
@@ -13,10 +14,10 @@ export default function RegisterPage() {
       <div className="space-y-1">
         <h1 className="text-foreground text-xl font-semibold">Create your account</h1>
         <p className="text-muted text-sm">
-          Registration is not connected yet. This screen holds the space where account creation will
-          be introduced in an upcoming change.
+          Set up your workspace to start tracking clients and projects.
         </p>
       </div>
+      <RegisterForm />
       <p className="text-muted text-sm">
         Already have an account?{' '}
         <Link href="/login" className="text-accent font-medium hover:underline">
