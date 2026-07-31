@@ -1,16 +1,17 @@
 # ClientFlow
 
 ClientFlow is a planned full-stack CRM for freelancers and small agencies. This repository
-currently provides the monorepo and local development foundation for the future Next.js
-frontend, Express API, PostgreSQL database, and shared TypeScript packages. The API now has a
-production-oriented Express foundation, Prisma-backed database connection, and JWT access-token
-authentication. Business endpoints are intentionally not implemented yet.
+provides the monorepo and local development foundation for the Next.js frontend, Express API,
+PostgreSQL database, and shared TypeScript packages. The API has a production-oriented Express
+foundation, Prisma-backed database connection, and JWT access-token authentication. The web
+application has an initial Next.js App Router layout and routing structure. Business endpoints
+and frontend business functionality are intentionally not implemented yet.
 
 ## Monorepo structure
 
 ```text
 apps/
-  web/       Frontend application placeholder
+  web/       Next.js frontend application
   api/       Express backend application
 packages/
   config/    Shared TypeScript, ESLint, and Prettier configuration
@@ -24,7 +25,7 @@ packages/
 
 ## Docker development environment
 
-Start the web placeholder, Express API, and PostgreSQL with one command:
+Start the Next.js web app, Express API, and PostgreSQL with one command:
 
 ```bash
 docker compose up --build
@@ -81,8 +82,50 @@ pnpm install
 - `pnpm db:seed` explicitly runs the idempotent development seed.
 - `pnpm db:studio` opens Prisma Studio.
 
-Workspace packages consume reusable code-quality defaults from
-`@clientflow/config`. The web framework will be added when that application is initialized.
+Workspace packages consume reusable code-quality defaults from `@clientflow/config`.
+
+## Web
+
+The web application is a Next.js App Router project using TypeScript and Tailwind CSS. It listens
+on port `3000` and host `0.0.0.0` by default.
+
+Run only the web application in development:
+
+```bash
+pnpm --filter @clientflow/web dev
+```
+
+Build and run the compiled application:
+
+```bash
+pnpm --filter @clientflow/web build
+pnpm --filter @clientflow/web start
+```
+
+Lint and type-check the workspace directly:
+
+```bash
+pnpm --filter @clientflow/web lint
+pnpm --filter @clientflow/web typecheck
+```
+
+`src/app` is organized into three route groups that share visual layouts without changing public
+URLs:
+
+- `(marketing)` — public routes: `/` and `/pricing`
+- `(auth)` — focused authentication routes: `/login` and `/register`
+- `(workspace)` — the application shell: `/dashboard`, `/clients`, `/projects`, and `/settings`
+
+None of this is wired up to real functionality yet:
+
+- The login and register pages are static placeholder surfaces. They do not submit data, call the
+  API, or store tokens.
+- The workspace routes are not protected and are not redirected based on authentication state.
+  Anyone can currently reach `/dashboard`, `/clients`, `/projects`, and `/settings`.
+- The dashboard, clients, projects, and settings pages are structural placeholders with empty
+  states. They render no client, project, or business data.
+
+Client/project CRUD, authentication wiring, and billing will be added in later changes.
 
 ## API
 
@@ -137,9 +180,9 @@ password with `SEED_USER_PASSWORD` when needed. These credentials and all `.env.
 are local defaults only.
 
 Access tokens are currently short-lived. Refresh tokens are not implemented, logout is client-side
-token removal, and API rate limiting will be added in a later security change. The placeholder
-frontend does not implement authentication. See [`apps/api/README.md`](apps/api/README.md) for
-request and response examples and the complete authentication error list.
+token removal, and API rate limiting will be added in a later security change. The web application
+does not implement authentication yet. See [`apps/api/README.md`](apps/api/README.md) for request
+and response examples and the complete authentication error list.
 
 ## Database
 
@@ -174,6 +217,5 @@ pnpm db:studio
 The seed creates or updates one authenticatable demo user, one demo workspace, and one owner
 membership. It uses the same versioned asynchronous scrypt password hashing as registration.
 
-The web application remains a temporary built-in Node.js placeholder. It does not contain
-authentication UI or token storage. Workspace authorization, client/project CRUD, and billing are
-not implemented.
+The web application does not contain authentication UI or token storage yet. Workspace
+authorization, client/project CRUD, and billing are not implemented.

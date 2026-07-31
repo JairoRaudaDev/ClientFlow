@@ -1,16 +1,16 @@
 # Graph Report - ClientFlow  (2026-07-30)
 
 ## Corpus Check
-- 60 files · ~15,764 words
+- 90 files · ~18,792 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 467 nodes · 526 edges · 50 communities (34 shown, 16 thin omitted)
+- 577 nodes · 685 edges · 54 communities (36 shown, 18 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 1 edges (avg confidence: 0.85)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `6b175b68`
+- Built from commit: `d20b48a6`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -54,6 +54,7 @@
 - [[_COMMUNITY_Community 37|Community 37]]
 - [[_COMMUNITY_Community 38|Community 38]]
 - [[_COMMUNITY_Community 39|Community 39]]
+- [[_COMMUNITY_Community 40|Community 40]]
 - [[_COMMUNITY_Community 42|Community 42]]
 - [[_COMMUNITY_Community 43|Community 43]]
 - [[_COMMUNITY_Community 44|Community 44]]
@@ -61,18 +62,21 @@
 - [[_COMMUNITY_Community 46|Community 46]]
 - [[_COMMUNITY_Community 47|Community 47]]
 - [[_COMMUNITY_Community 49|Community 49]]
+- [[_COMMUNITY_Community 50|Community 50]]
+- [[_COMMUNITY_Community 51|Community 51]]
+- [[_COMMUNITY_Community 52|Community 52]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `scripts` - 19 edges
 2. `scripts` - 16 edges
 3. `compilerOptions` - 16 edges
 4. `Landing Design` - 12 edges
-5. `What You Must Do When Invoked` - 11 edges
-6. `compilerOptions` - 10 edges
-7. `tasks` - 10 edges
-8. `/graphify` - 10 edges
-9. `env` - 9 edges
-10. `AppError` - 9 edges
+5. `cn()` - 11 edges
+6. `compilerOptions` - 11 edges
+7. `tasks` - 11 edges
+8. `What You Must Do When Invoked` - 11 edges
+9. `compilerOptions` - 10 edges
+10. `/graphify` - 10 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `Incremental Graph Update` --conceptually_related_to--> `Semantic Extraction Cache`  [INFERRED]
@@ -93,43 +97,43 @@
 - **Graphify Auto-Suggestion Hooks (Claude Code + Codex)** — _claude_settings_pretooluse_bash_hook, _claude_settings_pretooluse_read_glob_hook, _codex_hooks_pretooluse_bash_hook [INFERRED 0.85]
 - **Graphify Extraction Pipeline** — agents_skills_graphify_skill_structural_extraction, agents_skills_graphify_skill_semantic_extraction, agents_skills_graphify_skill_semantic_cache [EXTRACTED 1.00]
 
-## Communities (50 total, 16 thin omitted)
+## Communities (54 total, 18 thin omitted)
 
 ### Community 0 - "Core Graphify Workflow"
 Cohesion: 0.13
 Nodes (18): Project Graphify Workflow, ClientFlow Project Architecture, Folder Watcher, URL Ingestion, Graph Exports, Graph MCP Server, Edge Confidence Rubric, Extraction Schema (+10 more)
 
 ### Community 1 - "Project Query Workflow"
-Cohesion: 0.07
-Nodes (28): dependsOn, outputs, cache, dependsOn, dependsOn, outputs, cache, passThroughEnv (+20 more)
+Cohesion: 0.06
+Nodes (31): dependsOn, outputs, cache, dependsOn, dependsOn, outputs, cache, passThroughEnv (+23 more)
 
 ### Community 2 - "Semantic Extraction"
 Cohesion: 0.08
 Nodes (23): For /graphify add and --watch, For /graphify query, For the commit hook and native CLAUDE.md integration, For --update and --cluster-only, /graphify, Honesty Rules, Interpreter guard for subcommands, Part A - Structural extraction for code files (+15 more)
 
 ### Community 3 - "Updates and Ingestion"
-Cohesion: 0.12
-Nodes (15): devDependencies, eslint, eslint-config-prettier, @eslint/js, globals, prettier, turbo, @types/node (+7 more)
+Cohesion: 0.06
+Nodes (31): devDependencies, eslint, eslint-config-prettier, @eslint/js, globals, prettier, turbo, @types/node (+23 more)
 
 ### Community 10 - "Community 10"
 Cohesion: 0.15
 Nodes (12): compilerOptions, declaration, module, moduleResolution, noEmitOnError, outDir, rootDir, skipLibCheck (+4 more)
 
 ### Community 11 - "Community 11"
-Cohesion: 0.20
-Nodes (10): dependencies, cors, dotenv, express, helmet, jose, pg, @prisma/adapter-pg (+2 more)
+Cohesion: 0.09
+Nodes (21): dependencies, cors, dotenv, express, helmet, jose, pg, @prisma/adapter-pg (+13 more)
 
 ### Community 12 - "Community 12"
-Cohesion: 0.15
-Nodes (15): authRouter, AppError, AppErrorDetail, AppErrorOptions, errorHandler(), ErrorResponse, isErrorRecord(), isMalformedJsonError() (+7 more)
+Cohesion: 0.08
+Nodes (21): AppShell(), Brand(), links, MobileNavigation(), NavLink(), links, SidebarNavigation(), cn() (+13 more)
 
 ### Community 13 - "Community 13"
 Cohesion: 0.15
 Nodes (12): devDependencies, @clientflow/config, name, private, scripts, build, clean, dev (+4 more)
 
 ### Community 14 - "Community 14"
-Cohesion: 0.17
-Nodes (11): devDependencies, @clientflow/config, name, private, scripts, build, clean, dev (+3 more)
+Cohesion: 0.08
+Nodes (23): dependencies, next, react, react-dom, devDependencies, @clientflow/config, eslint, eslint-config-next (+15 more)
 
 ### Community 15 - "Community 15"
 Cohesion: 0.20
@@ -163,6 +167,10 @@ Nodes (3): For /graphify explain, For /graphify path, graphify reference: query,
 Cohesion: 0.50
 Nodes (3): For --cluster-only, For --update (incremental re-extraction), graphify reference: incremental update and cluster-only
 
+### Community 24 - "Community 24"
+Cohesion: 0.50
+Nodes (3): hooks, PreToolUse, Stop
+
 ### Community 28 - "Community 28"
 Cohesion: 0.40
 Nodes (4): @clientflow/config, ESLint, Prettier, TypeScript
@@ -188,52 +196,56 @@ Cohesion: 0.25
 Nodes (7): compilerOptions, declaration, declarationMap, noEmit, rootDir, extends, include
 
 ### Community 36 - "Community 36"
-Cohesion: 0.40
-Nodes (4): compilerOptions, noEmit, extends, include
+Cohesion: 0.12
+Nodes (15): compilerOptions, allowJs, incremental, isolatedModules, jsx, lib, module, moduleResolution (+7 more)
 
 ### Community 39 - "Community 39"
 Cohesion: 0.17
 Nodes (11): Authentication, Authentication errors, ClientFlow API, Commands, Configuration, Current user, Health endpoint, Login (+3 more)
 
+### Community 40 - "Community 40"
+Cohesion: 0.15
+Nodes (10): metadata, metadata, metrics, metadata, metadata, sections, EmptyState(), EmptyStateProps (+2 more)
+
 ### Community 42 - "Community 42"
 Cohesion: 0.25
 Nodes (7): compilerOptions, noEmit, outDir, rootDir, exclude, extends, include
 
+### Community 43 - "Community 43"
+Cohesion: 0.18
+Nodes (10): Border radius, ClientFlow interface design system, Component patterns, Depth strategy, Direction, Motion, Palette, Signature element (+2 more)
+
 ### Community 45 - "Community 45"
-Cohesion: 0.13
-Nodes (19): adapter, checkDatabaseConnection(), connectDatabase(), disconnectDatabase(), prisma, accessTokenTtlSchema, corsOriginSchema, databaseUrlSchema (+11 more)
+Cohesion: 0.08
+Nodes (30): adapter, checkDatabaseConnection(), connectDatabase(), disconnectDatabase(), accessTokenTtlSchema, corsOriginSchema, databaseUrlSchema, env (+22 more)
 
 ### Community 46 - "Community 46"
-Cohesion: 0.06
-Nodes (30): devDependencies, @clientflow/config, prisma, tsx, @types/cors, @types/express, @types/pg, name (+22 more)
-
-### Community 47 - "Community 47"
-Cohesion: 0.12
-Nodes (16): scripts, build, clean, db:format, db:generate, db:migrate, db:migrate:deploy, db:migrate:status (+8 more)
+Cohesion: 0.11
+Nodes (19): scripts, build, clean, db:format, db:generate, db:migrate, db:migrate:deploy, db:migrate:status (+11 more)
 
 ### Community 49 - "Community 49"
-Cohesion: 0.08
-Nodes (37): getMe(), login(), register(), SuccessResponse, emailSchema, loginBodySchema, LoginInput, nameSchema (+29 more)
+Cohesion: 0.07
+Nodes (41): getMe(), login(), register(), SuccessResponse, authRouter, emailSchema, loginBodySchema, LoginInput (+33 more)
 
 ## Knowledge Gaps
-- **284 isolated node(s):** `PreToolUse`, `PreToolUse`, `name`, `version`, `private` (+279 more)
+- **337 isolated node(s):** `PreToolUse`, `Stop`, `allow`, `PreToolUse`, `name` (+332 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **16 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **18 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `tasks` connect `Project Query Workflow` to `Updates and Ingestion`?**
-  _High betweenness centrality (0.011) - this node is a cross-community bridge._
-- **What connects `PreToolUse`, `PreToolUse`, `name` to the rest of the system?**
-  _286 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _High betweenness centrality (0.008) - this node is a cross-community bridge._
+- **What connects `Stop hook: block ending the turn if source files changed since the last graphify`, `PreToolUse`, `Stop` to the rest of the system?**
+  _340 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Core Graphify Workflow` be split into smaller, more focused modules?**
   _Cohesion score 0.13071895424836602 - nodes in this community are weakly interconnected._
 - **Should `Project Query Workflow` be split into smaller, more focused modules?**
-  _Cohesion score 0.07142857142857142 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.06451612903225806 - nodes in this community are weakly interconnected._
 - **Should `Semantic Extraction` be split into smaller, more focused modules?**
   _Cohesion score 0.08333333333333333 - nodes in this community are weakly interconnected._
 - **Should `Updates and Ingestion` be split into smaller, more focused modules?**
-  _Cohesion score 0.11764705882352941 - nodes in this community are weakly interconnected._
-- **Should `Community 18` be split into smaller, more focused modules?**
-  _Cohesion score 0.11764705882352941 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.06060606060606061 - nodes in this community are weakly interconnected._
+- **Should `Community 11` be split into smaller, more focused modules?**
+  _Cohesion score 0.09090909090909091 - nodes in this community are weakly interconnected._

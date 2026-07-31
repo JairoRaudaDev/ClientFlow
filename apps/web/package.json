@@ -3,13 +3,26 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "node src/dev-server.mjs",
-    "build": "tsc --project tsconfig.json --noEmit",
+    "dev": "node -e \"const{spawnSync}=require('node:child_process');const port=process.env.WEB_PORT??'3000';const result=spawnSync('next',['dev','--hostname','0.0.0.0','--port',port],{stdio:'inherit',shell:true});process.exit(result.status??1)\"",
+    "build": "next build",
+    "start": "node -e \"const{spawnSync}=require('node:child_process');const port=process.env.WEB_PORT??'3000';const result=spawnSync('next',['start','--hostname','0.0.0.0','--port',port],{stdio:'inherit',shell:true});process.exit(result.status??1)\"",
     "lint": "eslint .",
     "typecheck": "tsc --project tsconfig.json --noEmit",
-    "clean": "node -e \"console.log('@clientflow/web clean skipped; Next.js has not been initialized yet.')\""
+    "clean": "node -e \"const fs = require('node:fs'); for (const path of ['.next', 'tsconfig.tsbuildinfo']) fs.rmSync(path, { recursive: true, force: true })\""
   },
   "devDependencies": {
-    "@clientflow/config": "workspace:*"
+    "@clientflow/config": "workspace:*",
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.4",
+    "eslint": "9.39.5",
+    "eslint-config-next": "^16.2.12",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^4.3.3"
+  },
+  "dependencies": {
+    "next": "^16.2.12",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
   }
 }

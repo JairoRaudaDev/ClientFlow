@@ -12,3 +12,4 @@ graphify-out
 AGENTS.md
 CLAUDE.md
 apps/api/src/generated/prisma
+apps/web/next-env.d.ts
