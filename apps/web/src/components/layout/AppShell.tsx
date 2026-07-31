@@ -3,17 +3,21 @@ import type { ReactNode } from 'react';
 
 import { Brand } from '@/components/layout/Brand';
 import { MobileNavigation } from '@/components/layout/MobileNavigation';
+import { SessionAccount } from '@/components/layout/SessionAccount';
 import { SidebarNavigation } from '@/components/layout/SidebarNavigation';
 
 export function AppShell({ children }: { children: ReactNode }) {
   return (
     <div className="min-h-dvh">
       <header className="border-border bg-surface border-b">
-        <div className="flex items-center justify-between px-4 py-3 sm:px-6">
+        <div className="flex flex-wrap items-center justify-between gap-3 px-4 py-3 sm:px-6">
           <Brand />
-          <Link href="/" className="text-muted hover:text-foreground text-sm font-medium">
-            Back to site
-          </Link>
+          <div className="flex min-w-0 items-center gap-4">
+            <Link href="/" className="text-muted hover:text-foreground text-sm font-medium">
+              Back to site
+            </Link>
+            <SessionAccount />
+          </div>
         </div>
         <MobileNavigation />
       </header>

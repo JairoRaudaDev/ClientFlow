@@ -27,6 +27,10 @@ function isApiErrorBody(value: unknown): value is ApiErrorBody {
 interface ApiRequestOptions<TBody> {
   method: 'GET' | 'POST';
   body?: TBody;
+  /** Sent as `Authorization: Bearer <token>`. Never logged, never placed in the URL. */
+  accessToken?: string;
+  /** An external signal the caller can use to cancel a stale or superseded request. */
+  signal?: AbortSignal;
 }
 
 export async function apiRequest<TResponse, TBody = undefined>(
@@ -36,6 +40,19 @@ export async function apiRequest<TResponse, TBody = undefined>(
   const url = `${getApiBaseUrl()}${path.startsWith('/') ? path : `/${path}`}`;
   const controller = new AbortController();
   const timeoutId = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS);
+  const externalSignal = options.signal;
+
+  function onExternalAbort() {
+    controller.abort();
+  }
+
+  if (externalSignal !== undefined) {
+    if (externalSignal.aborted) {
+      controller.abort();
+    } else {
+      externalSignal.addEventListener('abort', onExternalAbort);
+    }
+  }
 
   let response: Response;
 
@@ -45,6 +62,9 @@ export async function apiRequest<TResponse, TBody = undefined>(
       headers: {
         Accept: 'application/json',
         ...(options.body === undefined ? {} : { 'Content-Type': 'application/json' }),
+        ...(options.accessToken === undefined
+          ? {}
+          : { Authorization: `Bearer ${options.accessToken}` }),
       },
       body: options.body === undefined ? undefined : JSON.stringify(options.body),
       cache: 'no-store',
@@ -53,6 +73,13 @@ export async function apiRequest<TResponse, TBody = undefined>(
     });
   } catch (error) {
     if (error instanceof DOMException && error.name === 'AbortError') {
+      if (externalSignal?.aborted === true) {
+        throw new ApiRequestError({
+          kind: 'aborted',
+          message: 'The request was cancelled.',
+        });
+      }
+
       throw new ApiRequestError({
         kind: 'timeout',
         message: 'The request took too long. Please try again.',
@@ -65,6 +92,10 @@ export async function apiRequest<TResponse, TBody = undefined>(
     });
   } finally {
     clearTimeout(timeoutId);
+
+    if (externalSignal !== undefined) {
+      externalSignal.removeEventListener('abort', onExternalAbort);
+    }
   }
 
   const rawBody = await response.text();

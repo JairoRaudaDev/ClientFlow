@@ -116,22 +116,24 @@ URLs:
 - `(auth)` — focused authentication routes: `/login` and `/register`
 - `(workspace)` — the application shell: `/dashboard`, `/clients`, `/projects`, and `/settings`
 
-The login and register pages are working forms wired to the API:
+The login and register pages are working forms wired to the API, and the whole application now has
+client-side session handling built around a central `SessionProvider`:
 
 - `/register` and `/login` validate input client-side with Zod, call `POST /auth/register` and
   `POST /auth/login`, show field-level and form-level errors, and provide loading/disabled states
   that prevent duplicate submissions.
-- On success, both forms store only the returned access token in `sessionStorage`
-  (`clientflow.accessToken`) and redirect to `/dashboard` with `router.replace`.
-- The workspace routes are still not protected and are not redirected based on authentication
-  state. Anyone can currently reach `/dashboard`, `/clients`, `/projects`, and `/settings`.
-- The dashboard, clients, projects, and settings pages are structural placeholders with empty
-  states. They render no client, project, or business data, and the application does not yet
-  hydrate the authenticated user from `/auth/me` or reflect a signed-in state anywhere in the
-  shell.
-- Session hydration, route protection, token-expiration handling, and logout are deferred to the
-  next authentication-session change. See [Authentication](#authentication) for the current
-  limitations.
+- On success, both forms call `startSession(...)` on the session context, which persists the
+  returned access token to `sessionStorage` (`clientflow.accessToken`), populates the user and
+  memberships in memory, and redirects with `router.replace` to a safe post-authentication
+  destination (see [Authentication](#authentication)).
+- `/dashboard`, `/clients`, `/projects`, and `/settings` are protected: an `AuthenticatedRoute`
+  guard shows a session-checking state, then either renders the workspace shell or redirects
+  unauthenticated visitors to `/login` with the original destination preserved.
+- `/login` and `/register` are guest-only: a `GuestOnlyRoute` guard redirects an already
+  authenticated visitor away to the dashboard or the requested destination instead of showing the
+  form again.
+- The dashboard, clients, projects, and settings pages are still structural placeholders with
+  empty states. They render no client, project, or business data.
 
 Client/project CRUD and billing will be added in later changes.
 
@@ -203,17 +205,57 @@ token removal, and API rate limiting will be added in a later security change. S
 [`apps/api/README.md`](apps/api/README.md) for request and response examples and the complete
 authentication error list.
 
+### Client-side session handling
+
 The web application's `/register` and `/login` pages call these endpoints directly from the
-browser and store only the access token, temporarily, in `sessionStorage`. This is intentionally
-minimal:
+browser, and a central `SessionProvider` (mounted in `apps/web/src/app/providers.tsx`, inside the
+root layout) owns all client-side session state:
 
-- Routes are not protected yet — reaching `/dashboard` does not require a token.
-- The application does not hydrate the current user or call `/auth/me` on startup.
-- Logout is not implemented; there is no way to clear the stored token from the UI yet.
-- Access-token expiration is not handled — an expired token is not detected or refreshed.
+- **Session state model.** The session context exposes a `status` of `initializing`,
+  `authenticated`, `unauthenticated`, or `error`, plus the current user, memberships, access token,
+  and an `endReason` of `expired`, `invalid`, `logged-out`, or `null`. Initial state is always
+  `initializing` on both the server-rendered and client-hydrated markup — `sessionStorage` is only
+  inspected after mount, so there is no hydration mismatch.
+- **Hydration through `/auth/me`.** On mount, if a token exists in `sessionStorage`
+  (`clientflow.accessToken`), the provider calls `GET /auth/me` with
+  `Authorization: Bearer <access-token>` to validate it and load the current user and
+  database-backed memberships. A missing token goes straight to `unauthenticated` without calling
+  the API.
+- **Failure classification.** `ACCESS_TOKEN_EXPIRED`, `INVALID_ACCESS_TOKEN`,
+  `AUTHENTICATION_REQUIRED`, and `INVALID_AUTHORIZATION_HEADER` responses clear the stored token
+  and mark the session `unauthenticated` with `endReason: 'expired'` or `'invalid'`. Network
+  errors, timeouts, 5xx responses, and malformed responses do **not** clear the token — they set
+  `status: 'error'` and preserve the token so a temporary outage cannot silently sign someone out.
+- **Protected workspace routes.** `/dashboard`, `/clients`, `/projects`, and `/settings` are wrapped
+  in an `AuthenticatedRoute` Client Component. It shows a session-checking state while
+  `initializing`, a recoverable error state (with Retry and Sign out) while `error`, and only
+  renders the workspace shell once `authenticated`. Unauthenticated visitors are redirected with
+  `router.replace` to `/login?next=<path>`, with `reason=session-expired` or `reason=session-invalid`
+  appended when applicable. There is no protected-content flash.
+- **Guest-only auth routes.** `/login` and `/register` are wrapped in a `GuestOnlyRoute` Client
+  Component that redirects an already authenticated visitor to the sanitized destination (or
+  `/dashboard`) instead of showing the form.
+- **Safe redirects only.** The `next` query parameter is never trusted directly. It is checked
+  against an allowlist of internal workspace routes (`/dashboard`, `/clients`, `/projects`,
+  `/settings`, and their nested paths); anything else — absolute URLs, protocol-relative URLs,
+  `javascript:` URLs, backslash tricks, `/login`, `/register`, or unknown paths — falls back to
+  `/dashboard`. This prevents an open redirect.
+- **Logout.** The application shell shows the signed-in user's name and email with a Log out
+  button. Logout clears `sessionStorage` and in-memory session state and navigates to
+  `/login?reason=logged-out`. There is currently no backend logout endpoint — logout only removes
+  the client-side token; the JWT itself is not revoked.
+- **Revalidation.** The session is revalidated on initial hydration, on an explicit retry from the
+  error state, and when an authenticated tab regains visibility after being inactive, throttled to
+  at most once per minute. There is no polling and no background refresh-token mechanism.
+
+Current limitations, by design:
+
 - Refresh tokens, token rotation, and token revocation are not implemented.
-
-These will be addressed in the next authentication-session commit.
+- Cookies are not used; the token lives only in `sessionStorage`, scoped to the current browser
+  tab. Closing the tab ends the session.
+- Route guards are client-side only — they protect the UI, not the API. The Express API remains
+  the sole authorization boundary and independently rejects missing, expired, or invalid tokens.
+- Workspace switching and role-based frontend permissions are not implemented.
 
 ## Database
 
@@ -249,5 +291,6 @@ The seed creates or updates one authenticatable demo user, one demo workspace, a
 membership. It uses the same versioned asynchronous scrypt password hashing as registration.
 
 The web application's authentication UI stores only a short-lived access token in `sessionStorage`
-and does not yet enforce sessions or protect routes. Workspace authorization, client/project CRUD,
-and billing are not implemented.
+and enforces client-side route protection as described in [Authentication](#authentication). API
+authorization remains the actual security boundary. Workspace authorization (roles), client/project
+CRUD, and billing are not implemented.

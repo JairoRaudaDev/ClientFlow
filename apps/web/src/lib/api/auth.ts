@@ -1,6 +1,15 @@
-import type { AuthenticationData } from '@/types/auth';
+import type { AuthenticationData, PublicMembership, PublicUser } from '@/types/auth';
 
 import { apiRequest } from './client';
+
+export interface CurrentSessionData {
+  user: PublicUser;
+  memberships: PublicMembership[];
+}
+
+export interface GetCurrentUserOptions {
+  signal?: AbortSignal;
+}
 
 export interface RegisterInput {
   name: string;
@@ -51,5 +60,16 @@ export function login(input: LoginInput): Promise<AuthenticationData> {
       email: normalizeEmail(input.email),
       password: input.password,
     },
+  });
+}
+
+export function getCurrentUser(
+  accessToken: string,
+  options?: GetCurrentUserOptions,
+): Promise<CurrentSessionData> {
+  return apiRequest<CurrentSessionData>('/auth/me', {
+    method: 'GET',
+    accessToken,
+    signal: options?.signal,
   });
 }

@@ -3,7 +3,7 @@ export interface ApiErrorDetail {
   message: string;
 }
 
-export type ApiRequestErrorKind = 'api' | 'timeout' | 'network' | 'parse';
+export type ApiRequestErrorKind = 'api' | 'timeout' | 'network' | 'parse' | 'aborted';
 
 interface ApiRequestErrorOptions {
   kind: ApiRequestErrorKind;

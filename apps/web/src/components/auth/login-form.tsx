@@ -3,9 +3,9 @@
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 
+import { useSession } from '@/hooks/use-session';
 import { login } from '@/lib/api/auth';
 import { ApiRequestError } from '@/lib/api/errors';
-import { saveAccessToken } from '@/lib/auth/token-storage';
 import { loginSchema } from '@/lib/validation/auth';
 
 import { AuthFormError } from './auth-form-error';
@@ -23,8 +23,13 @@ const initialValues: FormValues = {
 
 type FieldErrors = Partial<Record<keyof FormValues, string>>;
 
-export function LoginForm() {
+interface LoginFormProps {
+  redirectTo: string;
+}
+
+export function LoginForm({ redirectTo }: LoginFormProps) {
   const router = useRouter();
+  const { startSession } = useSession();
   const [values, setValues] = useState<FormValues>(initialValues);
   const [fieldErrors, setFieldErrors] = useState<FieldErrors>({});
   const [formError, setFormError] = useState<string | undefined>(undefined);
@@ -76,8 +81,15 @@ export function LoginForm() {
     try {
       const data = await login(result.data);
 
-      saveAccessToken(data.accessToken);
-      router.replace('/dashboard');
+      if (!startSession(data)) {
+        setIsSubmitting(false);
+        setFormError(
+          "We couldn't start your session. Check your browser storage settings and try again.",
+        );
+        return;
+      }
+
+      router.replace(redirectTo);
     } catch (error) {
       setIsSubmitting(false);
 

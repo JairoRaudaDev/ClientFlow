@@ -4,15 +4,17 @@ function isBrowser(): boolean {
   return typeof window !== 'undefined';
 }
 
-export function saveAccessToken(token: string): void {
+/** Returns false when storage is unavailable so callers can avoid starting a session that will not persist. */
+export function saveAccessToken(token: string): boolean {
   if (!isBrowser()) {
-    return;
+    return false;
   }
 
   try {
     window.sessionStorage.setItem(ACCESS_TOKEN_KEY, token);
+    return true;
   } catch {
-    // Storage may be unavailable (private browsing, quota, disabled storage). Nothing to recover.
+    return false;
   }
 }
 
