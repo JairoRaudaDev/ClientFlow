@@ -24,11 +24,15 @@ function isApiErrorBody(value: unknown): value is ApiErrorBody {
   return typeof value === 'object' && value !== null && 'success' in value && !value.success;
 }
 
+type ApiRequestMethod = 'GET' | 'POST' | 'PATCH' | 'DELETE' | 'QUERY';
+
 interface ApiRequestOptions<TBody> {
-  method: 'GET' | 'POST';
+  method: ApiRequestMethod;
   body?: TBody;
   /** Sent as `Authorization: Bearer <token>`. Never logged, never placed in the URL. */
   accessToken?: string;
+  /** Sent as `X-Workspace-Id`. Never logged, never placed in the URL. */
+  workspaceId?: string;
   /** An external signal the caller can use to cancel a stale or superseded request. */
   signal?: AbortSignal;
 }
@@ -65,6 +69,7 @@ export async function apiRequest<TResponse, TBody = undefined>(
         ...(options.accessToken === undefined
           ? {}
           : { Authorization: `Bearer ${options.accessToken}` }),
+        ...(options.workspaceId === undefined ? {} : { 'X-Workspace-Id': options.workspaceId }),
       },
       body: options.body === undefined ? undefined : JSON.stringify(options.body),
       cache: 'no-store',
@@ -96,6 +101,10 @@ export async function apiRequest<TResponse, TBody = undefined>(
     if (externalSignal !== undefined) {
       externalSignal.removeEventListener('abort', onExternalAbort);
     }
+  }
+
+  if (response.status === 204) {
+    return undefined as TResponse;
   }
 
   const rawBody = await response.text();

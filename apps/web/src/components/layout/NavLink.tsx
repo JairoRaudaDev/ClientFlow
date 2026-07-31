@@ -8,7 +8,8 @@ import { cn } from '@/lib/cn';
 
 export function NavLink({ href, className, ...props }: ComponentProps<typeof Link>) {
   const pathname = usePathname();
-  const isActive = pathname === href;
+  const hrefPath = typeof href === 'string' ? href : (href.pathname ?? '');
+  const isActive = pathname === hrefPath || pathname.startsWith(`${hrefPath}/`);
 
   return (
     <Link

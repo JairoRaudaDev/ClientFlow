@@ -13,6 +13,7 @@ import type {
   PublicUser,
 } from '@/types/auth';
 import type {
+  AuthenticationErrorCode,
   SessionContextValue,
   SessionEndReason,
   SessionStatus,
@@ -204,6 +205,21 @@ export function SessionProvider({ children }: { children: ReactNode }) {
     });
   }, []);
 
+  const handleAuthenticationFailure = useCallback((code: AuthenticationErrorCode) => {
+    activeRequestRef.current?.abort();
+    activeRequestRef.current = null;
+    clearAccessToken();
+
+    setState({
+      status: 'unauthenticated',
+      user: null,
+      memberships: [],
+      accessToken: null,
+      error: null,
+      endReason: classifySessionFailure(code) ?? 'invalid',
+    });
+  }, []);
+
   const value = useMemo<SessionContextValue>(
     () => ({
       status: state.status,
@@ -215,8 +231,9 @@ export function SessionProvider({ children }: { children: ReactNode }) {
       startSession,
       refreshSession,
       logout,
+      handleAuthenticationFailure,
     }),
-    [state, startSession, refreshSession, logout],
+    [state, startSession, refreshSession, logout, handleAuthenticationFailure],
   );
 
   return <SessionContext.Provider value={value}>{children}</SessionContext.Provider>;

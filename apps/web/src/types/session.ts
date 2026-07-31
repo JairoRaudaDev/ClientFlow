@@ -4,6 +4,13 @@ export type SessionStatus = 'initializing' | 'authenticated' | 'unauthenticated'
 
 export type SessionEndReason = 'expired' | 'invalid' | 'logged-out' | null;
 
+/** API error codes that mean the access token itself is no longer usable. */
+export type AuthenticationErrorCode =
+  | 'ACCESS_TOKEN_EXPIRED'
+  | 'INVALID_ACCESS_TOKEN'
+  | 'AUTHENTICATION_REQUIRED'
+  | 'INVALID_AUTHORIZATION_HEADER';
+
 export interface SessionError {
   message: string;
 }
@@ -23,4 +30,6 @@ export interface SessionContextValue {
   startSession: (data: AuthenticationData) => boolean;
   refreshSession: () => Promise<void>;
   logout: (options?: LogoutOptions) => void;
+  /** Ends the session in response to an authentication failure reported by any protected API call. */
+  handleAuthenticationFailure: (code: AuthenticationErrorCode) => void;
 }

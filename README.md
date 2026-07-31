@@ -132,10 +132,12 @@ client-side session handling built around a central `SessionProvider`:
 - `/login` and `/register` are guest-only: a `GuestOnlyRoute` guard redirects an already
   authenticated visitor away to the dashboard or the requested destination instead of showing the
   form again.
-- The dashboard, clients, projects, and settings pages are still structural placeholders with
-  empty states. They render no client, project, or business data.
+- The dashboard, projects, and settings pages are still structural placeholders with empty
+  states. They render no project or business data.
+- `/clients` is a working client-management interface. See
+  [Client management](#client-management) below.
 
-The client-management frontend, project CRUD, and billing will be added in later changes.
+Project CRUD and billing will be added in later changes.
 
 The browser-accessible API base URL is configured with:
 
@@ -257,6 +259,96 @@ Current limitations, by design:
   the sole authorization boundary and independently rejects missing, expired, or invalid tokens.
 - Workspace switching and role-based frontend permissions are not implemented.
 
+## Client management
+
+`/clients` is a working, browser-rendered client-management interface backed directly by the
+Express API's client endpoints (`POST/GET /clients`, `QUERY /clients/search`, and
+`GET/PATCH/DELETE /clients/:clientId`). There is no Next.js API route or proxy in front of it —
+every request is made from a Client Component using the same `sessionStorage` access token as the
+rest of the authenticated app, plus an `X-Workspace-Id` header identifying the active workspace.
+Client data is isolated by workspace; the API independently enforces that isolation regardless of
+what the frontend sends.
+
+### Active workspace
+
+The API requires every client request to carry `X-Workspace-Id`, and a user can belong to more
+than one workspace, so the frontend maintains an explicit "active workspace" separate from the
+session:
+
+- An `ActiveWorkspaceProvider` (mounted inside `(workspace)/layout.tsx`, below `AuthenticatedRoute`
+  and above `AppShell`) derives the active workspace from the session's `memberships` list.
+- With exactly one membership, that workspace is selected automatically. With more than one, a
+  workspace id previously stored in `sessionStorage` (`clientflow.activeWorkspaceId`) is restored
+  if it still matches a current membership; otherwise the provider enters a `selection-required`
+  state and blocks client requests until the user picks one from the workspace selector in the
+  application header. With zero memberships, it enters an `unavailable` state with an honest
+  blocking message — no client content is requested or rendered in either case.
+- Only the workspace id is stored client-side, never the full membership or workspace object, and
+  it is cleared when the provider unmounts (i.e., on logout or leaving the workspace route group).
+- Switching workspaces from the selector persists the new id, clears in-memory client data, resets
+  the client list back to page 1, and refetches for the newly selected workspace.
+- If any client request returns `WORKSPACE_ACCESS_DENIED`, the frontend clears the stored
+  workspace id, re-evaluates the user's remaining memberships, and shows a safe "you no longer have
+  access to that workspace" message instead of the raw API error — it does not sign the user out.
+
+### List, search, sort, and pagination
+
+- `GET /clients` powers the default list and the simple `q` search box (name, company, email, and
+  phone — never notes), debounced ~400ms and reflected in the URL (`?q=...`) with `router.replace`
+  so typing doesn't spam browser history.
+- The "Has email" / "Has phone" filters map to `undefined` / `true` / `false`. As soon as either is
+  set to something other than "Any", the frontend switches to `QUERY /clients/search` with a JSON
+  body (`search`, `filters`, `sort`, `pagination`) instead of `GET /clients`; clearing both filters
+  reverts to the simple `GET` request. The `QUERY` request is sent with the real HTTP `QUERY`
+  method (not emulated via `POST`) directly to the Express API, with `Authorization`,
+  `X-Workspace-Id`, and `Content-Type` headers, and is read-only.
+- Sorting exposes friendly labels ("Newest first", "Name A–Z", etc.) that map to the API's
+  allowlisted `sortBy`/`sortOrder` values — arbitrary field names never reach the API.
+- Pagination is server-driven from the API's pagination metadata (fixed page size of 20); Previous
+  and Next are disabled based on `hasPreviousPage`/`hasNextPage`, and search, filters, sort, and
+  page all live in the URL so results are bookmarkable and shareable.
+- Search, filters, sort, page, and workspace changes all reset pagination to page 1 and cancel any
+  in-flight request for the previous parameters.
+
+### Create, edit, and delete
+
+- `/clients/new` and `/clients/[clientId]/edit` share one `ClientForm` component with Zod
+  validation matching the API's constraints (name required, 2–120 characters; email, company,
+  phone, and notes optional with the API's exact length limits; empty optional fields are sent as
+  `null`, never as empty strings).
+- On success, create redirects to `/clients/<id>?status=created` and edit redirects to
+  `/clients/<id>?status=updated`; both show a dismissible success notice that is stripped from the
+  URL after rendering.
+- Deletion (from the client list or the client detail page) requires an accessible native
+  `<dialog>` confirmation naming the client — there is no `window.confirm` and no immediate delete
+  on click. The dialog traps focus, supports Escape-to-cancel (disabled mid-delete), and disables
+  repeated confirm clicks. A successful delete from the detail page redirects to
+  `/clients?status=deleted`; a successful delete from the list refetches the current page, or the
+  previous page if the deleted row was the last one on a page beyond the first.
+- `DELETE /clients/:clientId` returns `204 No Content`; the frontend does not attempt to parse a
+  body from that response.
+
+### Errors and limitations
+
+- `VALIDATION_ERROR` responses map to per-field errors on the form; unrecognized fields surface as
+  a form-level message. `CLIENT_NOT_FOUND` renders a dedicated not-found state (also used for a
+  route id that fails UUID validation before any request is made, so an invalid id never reaches
+  the API). Network failures, timeouts, and unexpected server errors render a generic recoverable
+  error state with a retry action.
+- Authentication failures from any client request (`ACCESS_TOKEN_EXPIRED`, `INVALID_ACCESS_TOKEN`,
+  `AUTHENTICATION_REQUIRED`, `INVALID_AUTHORIZATION_HEADER`) end the session through the same
+  `SessionProvider` used everywhere else, via a `handleAuthenticationFailure(code)` method on the
+  session context — there is no second, duplicate token store.
+- The list and detail views use a responsive table (desktop) and stacked cards (mobile), each
+  hidden from the accessibility tree at the other breakpoint via `display: none`, so there are
+  never duplicate focusable controls for the same client.
+- Client data is not cached or persisted in browser storage; it is fetched fresh from the API on
+  every view. API authorization remains the sole source of truth for what a user can see — the
+  frontend guards are UX, not security.
+- Any workspace member can currently create, edit, and delete clients; granular role-based write
+  restrictions are not implemented. Projects, billing, client import/export, tags, custom fields,
+  activity history, and bulk actions are not implemented.
+
 ## Database
 
 Prisma ORM is owned by `apps/api`. Its initial schema contains `User`, `Workspace`, and
@@ -293,5 +385,6 @@ membership. It uses the same versioned asynchronous scrypt password hashing as r
 The web application's authentication UI stores only a short-lived access token in `sessionStorage`
 and enforces client-side route protection as described in [Authentication](#authentication). API
 authorization remains the actual security boundary. Client endpoints use the selected workspace
-header and database-backed membership authorization. Granular workspace role restrictions, project
-CRUD, client UI, and billing are not implemented.
+header and database-backed membership authorization, described in
+[Client management](#client-management). Granular workspace role restrictions, project CRUD, and
+billing are not implemented.

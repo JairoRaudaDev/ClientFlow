@@ -5,6 +5,7 @@ import { Brand } from '@/components/layout/Brand';
 import { MobileNavigation } from '@/components/layout/MobileNavigation';
 import { SessionAccount } from '@/components/layout/SessionAccount';
 import { SidebarNavigation } from '@/components/layout/SidebarNavigation';
+import { WorkspaceSelector } from '@/components/workspace/workspace-selector';
 
 export function AppShell({ children }: { children: ReactNode }) {
   return (
@@ -13,6 +14,7 @@ export function AppShell({ children }: { children: ReactNode }) {
         <div className="flex flex-wrap items-center justify-between gap-3 px-4 py-3 sm:px-6">
           <Brand />
           <div className="flex min-w-0 items-center gap-4">
+            <WorkspaceSelector />
             <Link href="/" className="text-muted hover:text-foreground text-sm font-medium">
               Back to site
             </Link>
